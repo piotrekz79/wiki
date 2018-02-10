@@ -31,7 +31,7 @@ example response :
 		"id": 1,
 		"organization": "5GinFIRE",
 		"name": "Portal Administrator",
-		"email": "tranoris@ece.upatras.gr",
+		"email": "auser@example.com",
 		"username": "admin",
 		"password": "",
 		"active": true,
