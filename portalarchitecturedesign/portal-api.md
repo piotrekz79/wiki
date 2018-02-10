@@ -9,10 +9,10 @@ The API, Produces("application/json") and Consumes("application/json") except so
 
 > The API endpoint is at:
 https://portal.5ginfire.eu/5ginfireportal/services/api/repo/*
-The API has an OpenAPI [^1] specification under: 
-https://portal.5ginfire.eu/5ginfireportal/services/api/swagger.json
 A complete API documentation can be found at:
 https://5ginfire.github.io/eu.5ginfire.portal.api/doc/html2-client/ 
+The API has an OpenAPI [^1] specification under: 
+https://portal.5ginfire.eu/5ginfireportal/services/api/swagger.json
 
 
 Here is a login example: 
