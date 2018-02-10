@@ -4,4 +4,16 @@
 # Welcome to 5GinFIRE wiki page
 The following pages present different topics regarding 5GinFIRE services
 
+## User Guides
+
 [The portal user guide](5-gin-fire-portal-user-guide)
+
+
+## Tutorials
+
+
+## Best practices
+
+
+## Source code
+
