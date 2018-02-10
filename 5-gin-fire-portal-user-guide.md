@@ -94,3 +94,7 @@ The only submenu of this tab is the Registered VxFs which are presented in the m
 ![Fig 18](/uploads/fig-18.png "Fig 18")
 In the second case a more refined procedure is provided by making the VxF developer able to insert some basic metadata of the uploaded VxF archive through the user interface in Figure 19.
 
+![Fig 19](/uploads/fig-19.png "Fig 19")
+The most obvious metadata are the name, version, teaser, vendor, logo, description and terms of use of VxF. For the rest of the metadata there are some predefined values available. At packaging format field the VxF developer provides the type of the VxF file. For instance the available formats could be OSM Release TWO or TOSCA. Regarding the last two metadata fields, the Category field refers to the category in which the VxF belongs to as we have also indicated in the first case, and the Supported MANO Platforms field contains a list of the supported MANO platforms like OSM TWO etc. Those platforms are declared by the services administrator role through its interface as we will see in the next section.
+Finalizing, the description of VxF developer user role we present the interfaces of edit and info button of each VxF. In the case of the edit button the interface is the same as Figure 19 but the only difference is that a descriptor metadata field is provided as well. In that field we can overview the YAML description of the chosen VxF. The interface of the info button as well as the details button of the available VxFs in the Figure 20 can be seen in the figure below:
+
