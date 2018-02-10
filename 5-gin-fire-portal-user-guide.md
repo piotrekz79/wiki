@@ -80,3 +80,8 @@ Next, we continue by describing the user interface for every authorized user rol
 ### 	VxF developer user interface description
 The first user role we are going to describe is the VxF developer. In the next figure you can see the landing page for this role:
 
+![Fig 15](/uploads/fig-15.png "Fig 15") Available experiments, VxF developer login page
+
+On the top part of the interface we can distinguish the options that are provided to the VxF developer role. When a user of this role is logged in its account the experiments option is selected by default. On the left part of the page we can see all the available categories in terms of experiments that are to be uploaded by either the experimenter or the service administrator user role. The categories mentioned previously are designated by service administrators except for the “All” category which includes all the published experiments by service administrators and the pre-existing “None” category which is created by portal installation. Finally, at the bottom of the interface we can find the published experiments belonging to the opted category.
+Similarly with the previous description in the next Figure at VxF menu option we can list all the available published VxFs uploaded by either the VxF developers or the service administrators:
+
