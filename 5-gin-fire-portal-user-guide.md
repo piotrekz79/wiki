@@ -11,3 +11,10 @@ Welcome to the 5GinFIRE Portal User Guide.
 * Services administrator: This role represents the user that are responsible for maintenance of the 5GinFIRE services
 
 Finally an anonymous user role exists who has some really simple usage scenarios (e.g. signup through the portal)
+
+## Terminology
+
+**Experiment**: In 5GinFIRE it is defined as a set of experimentation activities that will be conducted during an allocated time-slot (probably spanning for several days); the experiment may probably involve multiple 5GinFIRE test-beds; it might require the utilization of several network services, which will be indicated during the experiment definition and will be validated by the 5GinFIRE operations; these network services may be used by the experimenter during the allocated timeslot. it is a set of experimentation activities that will be conducted during an allocated time-slot (probably spanning for several days); the experiment may probably involve multiple 5GinFIRE test-beds; it might require the utilization of several network services, which will be indicated during the experiment definition and will be validated by the 5GinFIRE operations; these network services may be used by the experimenter during the allocated timeslot.
+
+**VxF**: complex constellations of virtual functions, all running on a mix of real and virtual network or computing elements. We refer to virtual functions as VxFs when we do not want to distinguish between network-centric functions and vertical-centric functions.
+
