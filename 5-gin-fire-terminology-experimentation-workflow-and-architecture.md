@@ -98,7 +98,7 @@ It can be used also by other specific Applications using information from the co
 In conclusion, the b<>com * Unifier GW * does not have any APIs to expose to the experimenters. However the b<>com * Unifier GW * simplify connection to APIs available either on its access networks either on PDNs that it provides.
 
 
-### Resources reservation 
+## Resources reservation 
 
 For the initial versions of the 5GinFIRE platform there will be not any specific automated resource reservation mechanism. We do not expect this to be a barrier since most experimentation deployments will be elastically deployed to cloud infrastructures. Nevertheless, the experiments will be validated and scheduled if there is a limited resource capability and as the work continues we will revisit the issue.
 
