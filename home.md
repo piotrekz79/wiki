@@ -1,7 +1,7 @@
-<!-- TITLE: 5GinFIRE wiki page -->
-<!-- SUBTITLE:Welcome to the 5GinFIRE wiki page -->
+<!-- TITLE: 5GinFIRE wiki -->
+<!-- SUBTITLE:Welcome to the 5GinFIRE wiki pages -->
 
-# Welcome to 5GinFIRE wiki page
+# Welcome to 5GinFIRE wiki pages
 The following pages present different topics regarding 5GinFIRE services
 
 ## User Guides
