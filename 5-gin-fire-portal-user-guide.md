@@ -45,3 +45,14 @@ o	As public in order to be publicly visible by all portal users
 
 ### Request a new experiment deployment
 
+![Portal Diagthree](/uploads/portal-diagthree.png "Portal Diagthree")
+
+During this process (see Figure ) the following occurs:
+•	An experimenter requests a new experiment deployment (which NSD, tentative dates, target infrastructure, etc.). The request is marked as UNDER_REVIEW
+•	The administrator is notified about the new request and he has the following options:
+o	Schedule the deployment for the requested dates or propose other dates. The request is marked as SCHEDULED
+o	Reject the request for some reason. The Request is marked as REJECTED
+o	Deploy the request to target VIM(s). The Request is marked as RUNNING
+o	Finalize the deployment and release resources. The Request is marked as COMPLETED
+On every change of the request-lifecycle the experimenter is notified.
+
