@@ -10,7 +10,7 @@ The following pages present different topics regarding 5GinFIRE services
 [Terminology,  Experimentation Workflow and Architecture](5-gin-fire-terminology-experimentation-workflow-and-architecture)
 [5GinFIRE Testbeds](5GinFIREtestbeds)
 [The portal Architecture and Design](portalarchitecturedesign)
-[The Portal API](portal-api)
+[The Portal API](portalarchitecturedesign/portal-api)
 [Open Source MANO (OSM)](osm)
 
 ## User Guides
