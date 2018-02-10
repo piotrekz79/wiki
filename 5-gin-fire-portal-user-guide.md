@@ -33,5 +33,15 @@ o	As Certified which means this is certified by a certain entity
 ### Uploading an Experiment Descriptor/NSD
 
 
+![Portal Diagtwo](/uploads/portal-diagtwo.png "Portal Diagtwo")
+During this process (see Figure ) the following occurs:
+•	An experimenter submits an experiment in terms of an NSD archive (he can later manage if needed some metadata)
+•	The administrator can manage the NSD (e.g. edit it)
+•	The administrator on-boards the NSD to the target MANO
+•	The administrator can optionally mark the VxF:
+o	As valid, which means this NSD can be indeed deployed to VIMs
+o	As public in order to be publicly visible by all portal users
 
+
+### Request a new experiment deployment
 
