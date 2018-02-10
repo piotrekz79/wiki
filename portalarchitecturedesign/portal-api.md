@@ -1,5 +1,5 @@
-<!-- TITLE: Portal Api -->
-<!-- SUBTITLE: A quick summary of Portal Api -->
+<!-- TITLE: Portal API -->
+<!-- SUBTITLE: A quick summary of Portal API -->
 
 # The Portal API backend
 The portal API backend is written in Java. The design described here is also reflected in the code
