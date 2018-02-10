@@ -15,6 +15,14 @@ Finally an anonymous user role exists who has some really simple usage scenarios
 ## Terminology
 Please see the used terminology at the [architecture pages](5-gin-fire-terminology-experimentation-workflow-and-architecture#terminology)
 
+
+## Architecture
+
+The portal consists of two main components: The portal web frontend and the portal API backend. The Web front end communicates with the backend via a RESTful API. 
+Moreover, the portal backend implements: An interface towards the OSM API in order to on-board VxF and NSDs to the OSM repository and get related information, and an interface towards an identity provider and a portal repository that reflects the artefacts of the OSM repository
+
+Please check the [portal Architecture and Design](portalArchitectureDesign) section
+
 ## Supported processes
 The process to upload/onboard VNFs, Experiements in terms of NSDs are as follows:
 
@@ -57,12 +65,18 @@ o	Finalize the deployment and release resources. The Request is marked as COMPLE
 On every change of the request-lifecycle the experimenter is notified.
 
 
-## Architecture
 
-The Figure  displays a detailed architecture of the portal together with the related interfaces. The portal consists of two main components: The portal web frontend and the portal API backend. The Web front end communicates with the backend via a RESTful API. 
-Moreover, the portal backend implements: An interface towards the OSM API in order to on-board VxF and NSDs to the OSM repository and get related information, and an interface towards an identity provider and a portal repository that reflects the artefacts of the OSM repository
+## Public user Web interface/Landing page  
 
-Please check the [portal Architecture and Design](portalArchitectureDesign) section
+Initially (beside authorized user roles) there are anonymous/public users who can only see the published VxFs and experiments without needing a portal account. The main interface that all kind of users have access is the landing page that can be seen in figure below:
 
+![Fig 13](/uploads/fig-13.png "Fig 13")
 
+At the menu on the top we can see experiments and VxFs tabs which redirect users accordingly. Additionally, an authorized user gets access to its account by inserting its username and password at the fields bellow the “Sign in” label. A user can sign up in order to get an authorized account by clicking on sign up text description next to sign in button and then it is redirected at the user page . After that the user inserts its details in the appropriate fields and then when is submitting an email is send for account confirmation.
+**Initially a user has a role of Experimenter/VxF developer**
+
+Next, we continue by describing the user interface for every authorized user role separately. At the start we review the landing page which is shown up when a user is logged in the portal and then we walk through all the available menus provided by the user interface.
+
+### 	VxF developer user interface description
+The first user role we are going to describe is the VxF developer. In the next figure you can see the landing page for this role:
 
