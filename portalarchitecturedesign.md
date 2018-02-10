@@ -8,7 +8,7 @@ The Figure  displays a detailed architecture of the portal together with the rel
 Moreover, the portal backend implements: An interface towards the OSM API in order to on-board VxF and NSDs to the OSM repository and get related information, and an interface towards an identity provider and a portal repository that reflects the artefacts of the OSM repository
 
 ![Portal Architecture 2](/uploads/portal-architecture-2.png "Portal Architecture 2")
-Above Figure  displays the architecture of the [portal API](portal-api). It consists of the following components:
+Above Figure  displays the architecture of the [portal API](/portalarchitecturedesign/portal-api). It consists of the following components:
 •	Portal model: contains the model of entities, their definitions and associations of the portal entities like users, VxF/experiment metadata, categories, etc.
 •	Persistence and DB: a persistence layer to keep entities permanently available  through a database system.
 •	AA: Authentication and authorization mechanism(s) to allow access to the portal API
