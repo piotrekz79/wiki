@@ -84,4 +84,11 @@ The first user role we are going to describe is the VxF developer. In the next f
 
 On the top part of the interface we can distinguish the options that are provided to the VxF developer role. When a user of this role is logged in its account the experiments option is selected by default. On the left part of the page we can see all the available categories in terms of experiments that are to be uploaded by either the experimenter or the service administrator user role. The categories mentioned previously are designated by service administrators except for the “All” category which includes all the published experiments by service administrators and the pre-existing “None” category which is created by portal installation. Finally, at the bottom of the interface we can find the published experiments belonging to the opted category.
 Similarly with the previous description in the next Figure at VxF menu option we can list all the available published VxFs uploaded by either the VxF developers or the service administrators:
+![Fig 16](/uploads/fig-16.png "Fig 16")
+
+The options of the Admin tab of the menu can be seen in Figure  below:
+![Fig 17](/uploads/fig-17.png "Fig 17")
+
+The only submenu of this tab is the Registered VxFs which are presented in the main body of the page in Figure . In this section a VxF developer can list the registered VxFs in the VxF repository and additionally at the table provided by the interface the user can see some details about each VxF. Additionally, below each field descriptor a text box is provided in order to help user to search for a specific VxF based on the corresponding search feature. Apart from this kind of search a search text box can been found below the table where a general search decoupled from VxF's features can be performed. The VxF developer can also delete, edit and review some information on the fly for each record of the table by clicking accordingly the desired button at the last column of the provided table. Finally, above the table there are two green buttons available where a user can upload a VxF archive or create a new one. In the first case the user just uploads the VxF archive on the VxF repository by choosing also the category in which the VxF belongs and by writing some terms of use for this as well. You can see the user interface of this procedure at next Figure .
+
 
