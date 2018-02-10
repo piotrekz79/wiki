@@ -15,5 +15,23 @@ Finally an anonymous user role exists who has some really simple usage scenarios
 ## Terminology
 Please see the used terminology at the [architecture pages](5-gin-fire-terminology-experimentation-workflow-and-architecture#terminology)
 
+## Supported processes
+The process to upload/onboard VNFs, Experiements in terms of NSDs are as follows:
+
+### 	Uploading a VxF
+
+![Portal Diag 1](/uploads/portal-diag-1.png "Portal Diag 1")
+During this process (see Figure ) the following occurs:
+•	A VxF developer submits a VxF archive (he can later manage if needed some metadata)
+•	The administrator can manage the VxF (e.g. edit it)
+•	The administrator On-Boards the VxF to the target MANO
+•	The administrator can optionally mark the VxF:
+o	As public in order to be publicly visible by all portal users
+o	As Certified which means this is certified by a certain entity
+
+
+### Uploading an Experiment Descriptor/NSD
+
+
 
 
