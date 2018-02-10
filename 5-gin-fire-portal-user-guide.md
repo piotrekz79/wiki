@@ -13,7 +13,7 @@ Welcome to the 5GinFIRE Portal User Guide.
 Finally an anonymous user role exists who has some really simple usage scenarios (e.g. signup through the portal)
 
 ## Terminology
-Please see the used terminology at the [archiutecture pages](5-gin-fire-terminology-experimentation-workflow-and-architecture#terminology)
+Please see the used terminology at the [architecture pages](5-gin-fire-terminology-experimentation-workflow-and-architecture#terminology)
 
 
 
