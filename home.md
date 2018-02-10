@@ -1,4 +1,5 @@
 <!-- TITLE: 5GinFIRE wiki page -->
-<!-- SUBTITLE: A quick summary of Home -->
+<!-- SUBTITLE:Welcome to 5GinFIRE wiki page -->
 
-# Welcome page
+# Welcome to 5GinFIRE wiki page
+The following pages present different topics regarding 5GinFIRE services
