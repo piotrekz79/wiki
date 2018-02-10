@@ -61,4 +61,46 @@ MANO (Management and Orchestration) is one of the core concepts of the ETSI NFV 
 The MANO platform of 5GinFIRE will receive orchestration actions from the 5GinFIRE portal (e.g., to create/delete a VNFD in/from the OSM catalog, to create/delete an NSD in/from the OSM catalog, to instantiate a NS, etc.). Through this interaction with the portal, the Network Service Orchestrator (NSO) of the OSM stack will receive appropriate information to instantiate the different network services comprising a given experimentation scenario, and the corresponding events related to the lifecycle of the services. The NSO will take care of the delivery of the services, interacting with the Resource Orchestrator (RO) and the VNF Configuration & Abstraction components of the OSM architecture. The RO will coordinate the allocation and setup of the computing, storage and network resources, which are necessary for the instantiation and interconnection of VxFs, interacting with the appropriate Virtualized Infrastructure Managers (VIM) available at the experimental infrastructures connected to it
 
 
+**Evolution of OSM and relation to 5GinFIRE**
+The short and medium term evolution of OSM aims at making new releases of the MANO software stack to be “deployment ready”, and is governed by the requirements that for each successive release are agreed by the OSM EUAG (End User Advisory Group). 5GinFIRE will put in place a continuous integration mechanism for the MANO platform, able to guarantee the availability of a state-of-the-art MANO platform as the OSM software base evolves, making it compatible with the specific requirements of an experimental facility like 5GinFIRE. The main directions identified by the OSM community for Release TWO and beyond are
+·	Support of dynamic VNF and network service definition.
+·	Service assurance features.
+·	Enhanced security with role-based access control and authentication.
+·	Support of new components via the plugin model, already present in Release ONE for incorporating new VIM components.
+·	Support of different approaches to service chaining.
+·	Support of recursive Network Services, allowing the creation of complex services from simple templates.
+·	Enhancing user experience.
+·	Modeling of VNFs and Network Services. In this particular aspect, the OSM community is committed to follow ETIS NFV results, and therefore the foreseen convergence among different data models for VNF and service descriptors.
+Interfaces of the 5GinFIRE MANO platform 
+**Portal**: this interface is based on the REST API of OSM, and enables the MANO platform to receive requests from the portal to execute orchestration actions.
+**VIMs**: interfaces towards the VIM endpoints, to request the allocation and release of computing, storage and network resources at the partners' NFV Infrastructures.
+
+### VIMs 
+Following the architectural design of the Figure above , each partner providing an experimental infrastructure to 5GinFIRE will be in charge of the deployment and maintenance of a Virtualized Infrastructure Manager (VIM) supported by the 5GinFIRE MANO platform. Being based on the current release of OSM, release TWO, our MANO platform will natively support OpenVIM (the reference VIM of OSM), OpenStack and VMware’s vCloud Director.
+This way, each VIM deployed at a partner infrastructure domain, will provide a compliant northbound API that may be used by the 5GinFIRE MANO deployment to control and manage the allocation of computing, storage and network resources at the partner NFV Infrastructure (NFVI). 
+**Interfaces of VIMs**
+**5GinFIRE MANO**: Support the interactions with the 5GinFIRE MANO platform.
+**Testbed resources**: to control and manage the computing, storage and network resources of a partner NFVI.
+
+
+
+### Exposed VxFs and APIs to the experimenters : 5G-In-A-Box
+
+Different UEs can connect from Wi-Fi and/or 4G radio to b<>com * Unifier GW * . b<>com * Unifier GW * manages authentication, sessions establishment and provides IP connectivity (IPv4 only) to:
+·	other servers hosting application(s) and/or 
+·	Internet access.
+Thanks to this IP Connectivity provided to Applications, the Application providers (e.g. OpenCall) can provide features to the connected UE using different protocols on top of this IP Connectivity.
+Examples applications are: 
+·	web server (http, ftp, … protocols), 
+·	sip phone server (tcp/sip, udp/rtp protocols for instance), 
+·	Video streaming or others. 
+It can be used also by other specific Applications using information from the connected UE (localization information, information from UE camera …) to aggregate them and/or provide contextual service to the users.
+In conclusion, the b<>com * Unifier GW * does not have any APIs to expose to the experimenters. However the b<>com * Unifier GW * simplify connection to APIs available either on its access networks either on PDNs that it provides.
+
+
+### Resources reservation 
+
+For the initial versions of the 5GinFIRE platform there will be not any specific automated resource reservation mechanism. We do not expect this to be a barrier since most experimentation deployments will be elastically deployed to cloud infrastructures. Nevertheless, the experiments will be validated and scheduled if there is a limited resource capability and as the work continues we will revisit the issue.
+
+
 
