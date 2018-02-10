@@ -7,7 +7,7 @@ The following pages present different topics regarding 5GinFIRE services
 
 ## The 5GinFIRE Architecture, Technologies, Services and Testbeds
 
-[5GinFIRE Terminology,  Experimentation Workflow and Architecture](5-gin-fire-terminology-experimentation-workflow-and-architecture)
+[Terminology,  Experimentation Workflow and Architecture](5-gin-fire-terminology-experimentation-workflow-and-architecture)
 [5GinFIRE Testbeds](5GinFIREtestbeds)
 
 ## User Guides
