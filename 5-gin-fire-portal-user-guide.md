@@ -77,7 +77,7 @@ At the menu on the top we can see experiments and VxFs tabs which redirect users
 
 Next, we continue by describing the user interface for every authorized user role separately. At the start we review the landing page which is shown up when a user is logged in the portal and then we walk through all the available menus provided by the user interface.
 
-### 	VxF developer user interface description
+## 	VxF developer user interface description
 The first user role we are going to describe is the VxF developer. In the next figure you can see the landing page for this role:
 
 ![Fig 15](/uploads/fig-15.png "Fig 15") Available experiments, VxF developer login page
