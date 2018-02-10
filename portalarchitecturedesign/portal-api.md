@@ -19,7 +19,11 @@ Here is a login example:
 
 `curl -v -H "Content-Type: application/json" -X POST --data '{"username":"admin", "password":"changeme"}' https://portal.5ginfire.eu/5ginfireportal/services/api/repo/sessions`
 
-`{"username":"admin","password":"","portalUser":{"id":1,"organization":"5GinFIRE","name":"Portal Administrator","email":"tranoris@ece.upatras.gr","username":"admin","password":"","active":true,"currentSessionID":"5ec34075-1a12-46d8-97ec-b9e1ab064666","roles":["PORTALADMIN"]}}`
+
+```json
+{"username":"admin","password":"","portalUser":{"id":1,"organization":"5GinFIRE","name":"Portal Administrator","email":"tranoris@ece.upatras.gr","username":"admin","password":"","active":true,"currentSessionID":"5ec34075-1a12-46d8-97ec-b9e1ab064666","roles":["PORTALADMIN"]}}
+```
+
 
 
 
