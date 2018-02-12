@@ -86,17 +86,17 @@ On the top part of the interface we can distinguish the options that are provide
 Similarly with the previous description in the next Figure at VxF menu option we can list all the available published VxFs uploaded by either the VxF developers or the service administrators:
 ![Fig 16](/uploads/fig-16.png "Fig 16")
 
-The options of the Admin tab of the menu can be seen in Figure  below:
+The options of the Admin tab of the menu can be seen in the figure  below:
 ![Fig 17](/uploads/fig-17.png "Fig 17")
 
 The only submenu of this tab is the Registered VxFs which are presented in the main body of the page in Figure . In this section a VxF developer can list the registered VxFs in the VxF repository and additionally at the table provided by the interface the user can see some details about each VxF. Additionally, below each field descriptor a text box is provided in order to help user to search for a specific VxF based on the corresponding search feature. Apart from this kind of search a search text box can been found below the table where a general search decoupled from VxF's features can be performed. The VxF developer can also delete, edit and review some information on the fly for each record of the table by clicking accordingly the desired button at the last column of the provided table. Finally, above the table there are two green buttons available where a user can upload a VxF archive or create a new one. In the first case the user just uploads the VxF archive on the VxF repository by choosing also the category in which the VxF belongs and by writing some terms of use for this as well. You can see the user interface of this procedure at next Figure .
 
 ![Fig 18](/uploads/fig-18.png "Fig 18")
-In the second case a more refined procedure is provided by making the VxF developer able to insert some basic metadata of the uploaded VxF archive through the user interface in Figure 19.
+In the second case a more refined procedure is provided by making the VxF developer able to insert some basic metadata of the uploaded VxF archive through the user interface in the figure below.
 
 ![Fig 19](/uploads/fig-19.png "Fig 19")
 The most obvious metadata are the name, version, teaser, vendor, logo, description and terms of use of VxF. For the rest of the metadata there are some predefined values available. At packaging format field the VxF developer provides the type of the VxF file. For instance the available formats could be OSM Release TWO or TOSCA. Regarding the last two metadata fields, the Category field refers to the category in which the VxF belongs to as we have also indicated in the first case, and the Supported MANO Platforms field contains a list of the supported MANO platforms like OSM TWO etc. Those platforms are declared by the services administrator role through its interface as we will see in the next section.
-Finalizing, the description of VxF developer user role we present the interfaces of edit and info button of each VxF. In the case of the edit button the interface is the same as Figure 19 but the only difference is that a descriptor metadata field is provided as well. In that field we can overview the YAML description of the chosen VxF. The interface of the info button as well as the details button of the available VxFs in the Figure 20 can be seen in the figure below:
+Finalizing, the description of VxF developer user role we present the interfaces of edit and info button of each VxF. In the case of the edit button the interface is the same as Figure 19 but the only difference is that a descriptor metadata field is provided as well. In that field we can overview the YAML description of the chosen VxF. The interface of the info button as well as the details button of the available VxFs can be seen in the figure below:
 ![Fig 20](/uploads/fig-20.png "Fig 20")
 As we can see here the most information have already been provided by either the VxF package or the VxF developer as we have described earlier in the previous parts but also some new fields are visible that is Organization, Date created, Last Update, UUID, Certified by and Onboarded to MANO providers. Most of those fields are self-explainable apart from perhaps the Onboarded to MANO providers field, which contains the MANO provider on which this VxF has been deployed. Finally, a VxF developer can download the stored VxF package just by clicking the green button on the top side of the page.
 
@@ -137,33 +137,33 @@ constituent VxF. At the next fields we also provide the necessary information be
 and  when  all  those  fields  are  filled  up  the  experimenter  can  submit  this  specific  deployment  by 
 clicking  the  request  deployment  button  on  the  bottom  of  the  interface.  Then  this  deployment 
 request is sent to the service administrator in order to be proceeded or to be rejected.
-In Figure 24 we can see the content of the interface when an experimenter selects the Admin tab of 
+In the following figure we can see the content of the interface when an experimenter selects the Admin tab of 
 the  menu  and  specifically  the  registered experiment  descriptors.  This  page  again  is  similar  to  the
-registered VxF page which appears in Figure 17 but the difference is that some metadata fields are 
+registered VxF page  but the difference is that some metadata fields are 
 missing and also this interface lists the available experiments instead of the available VxFs.
 
 ![Fig 24](/uploads/fig-24.png "Fig 24")
 
 By  clicking  the  first  green  button  that  is  Upload  new  Experiment  Descriptor  the  experimenter  is 
-redirected exactly to same interface as in Figure 18 but without the terms of use field and apart from 
+redirected exactly to same interface as "Upload a VxF archive" but without the terms of use field and apart from 
 that this time the experimenter uploads an experiment package file instead of a VxF. The other green 
 button follows similar logic as the corresponding button at the VxF interface but again instead of the 
 creation of a new VxF a new Experiment is defined by experimenter filling the appropriate metadata 
-fields.  The  interface  is  also  similar  to  the  VxF  interface  in  Figure  19 but  some  fields  are  missing 
+fields.  The  interface  is  also  similar  to  the "Add new VxF interface"  but  some  fields  are  missing 
 comparing  with  it  but  the  functionality  for  the  rest  of  them  remains the  same.  The  interface 
 metadata fields for a new experiment can be seen in figure below:
 
 ![Fig 25](/uploads/fig-25.png "Fig 25")
 
-Finally, in Figure 25 we can see the interface where an experimenter lands on when clicking on the 
-edit button of an experiment in Figure 24 or on the details button of an experiment in Figure 21. This 
-page is also available for the VxF developer role as we can see in Figure 15. This page has similar 
-fields with the VxF details interface in Figure 20 but some fields have been subtracted and the status 
+Finally, in the above figure we can see the interface where an experimenter lands on when clicking on the 
+edit button of an experiment in "Registered Experiment Descriptors" or on the details button of an experiment in the experiments main interface. This 
+page is also available for the VxF developer role. This page has similar 
+fields with the "VxF details" interface but some fields have been subtracted and the status 
 metadata field has been added to it.
 
 ## Services administrator user interface descriptio
 The  last  menu  we  will  describe  is  for  the  services  administrator  role.  The  landing  page  when  an 
-administrator logging in is similar with the experimenter role and can be seen in  Figure 26. The only 
+administrator logging in is similar with the experimenter role and can be seen in the figure below. The only 
 difference is the submenu of admin tab which will be analysing in the following sections. The first 
 submenu of admin tab is System Users and its functionality is similar with the previously described 
 menus which list some sort of data in table form. The interface of this submenu can be seen in figure 
@@ -173,22 +173,22 @@ below:
 
 Additionally, the information icon of a system user pops up the details defined at the create new user 
 interface which can be shown up when the user admin is clicking on the green button Create new 
-user  of  Figure  26.  The  information  interface  can  be  seen  in  Figure  27  and  the  create  new  user 
-interface in Figure 28:
+user  of  the figure above.  The  information  interface and  the  create  new  user 
+interface can  be  seen  in the figures below:
 
 ![Fig 27](/uploads/fig-27.png "Fig 27")
 
 ![Fig 28](/uploads/fig-28.png "Fig 28")
 
-In Figure 28 we see some common used information about a new user that is its name, username, 
+In the figure above we see some common used information about a new user that is its name, username, 
 password, e-mail, organization and finally its role. Each and every role of this list has been described 
 in detail in introduction section. When all those fields are filed up the new user is created when the 
 administrator is clicking on the save button on the bottom of the page.
-Next we can see in Figure 29 the full submenu of the admin tab. The three submenus after System 
+Next we can see in the following figure the full submenu of the admin tab. The three submenus after System 
 Users submenu that is Registered Experiment Descriptors, Registered VxFs and Registered Deployed 
-Experiments  have  exactly  the  same  interfaces  as  Figure  24,  Figure  17,  Figure  22 accordingly.  The 
+Experiments  have  exactly  the  same  interfaces  as in experimenters roles.  The 
 difference  for  the  administrator  role  is  when  is  clicking  on  the  edit  icon of  an  object  where  it 
-redirects it to the same pages as the corresponding in  Figure 24, Figure 17, Figure 22 but with some 
+redirects that to the same pages but with some 
 additional metadata fields. Each and every of those cases are analysed in the next sections.
 
 ![Fig 29](/uploads/fig-29.png "Fig 29")
@@ -198,7 +198,7 @@ figure:
 
 ![Fig 30](/uploads/fig-30.png "Fig 30")
 
-We note that comparing with the Figure 25 we have two extra fields published and valid and also the 
+We note that comparing with the "Add new Experiment Descriptor" interface we have two extra fields published and valid and also the 
 capability  of  making  the  selected  experiment  on-board  or  off-board  on  the  provided  by  the 
 administrator MANO platform. When the administrator checks the published checkbox the current 
 experiment becomes available to all system's users interfaces. Otherwise, only the user who created 
@@ -207,7 +207,7 @@ For the Registered VxFs submenu edit button we get as response the page in next 
 
 ![Fig 31](/uploads/fig-31.png "Fig 31")
 
-We note that comparing with the Figure 19 we have some extra fields that is published, certified and 
+We note that comparing with the "Add new VxF" we have some extra fields that is published, certified and 
 certified by and also the capability of making the selected VxF on-board or off-board on the provided 
 by the administrator MANO platform. When the administrator checks the published checkbox the 
 current VxF becomes available to all system's users interfaces. Otherwise, only the user who created 
@@ -218,7 +218,7 @@ page in next figure:
 
 ![Fig 32](/uploads/fig-32.png "Fig 32")
 
-The two extra fields in that interface comparing to Figure 23 are Status and Comments and Feedback. 
+The two extra fields in that interface comparing to "Request new deployment" interface are Status and Comments and Feedback. 
 Status field contains the five states in which a deployed experiment can be found. Under review state 
 denotes that the current deployable experiment is under reviewing by a service administrator who is 
 checking its validity. Scheduled state firstly indicates that the deployable experiment is eligible to be 
@@ -229,17 +229,17 @@ and the experimenter usually should follow the Comments and Feedback provided as
 the administrator and should re-upload the experiment to get under review again.
 System  Categories  submenu  lists  the  VxFs  and  experiments  categories  created  by  the  services 
 administrator role. The interface is similar to all other listing interfaces that have been presented 
-previously. In Figure 33 and Figure 34 we can find the categories listing interface and the creation of 
+previously. In the following figures we can find the categories listing interface and the creation of 
 a new category interface respectively.
 
 ![Fig 33](/uploads/fig-33.png "Fig 33")
 
 ![Fig 34](/uploads/fig-34.png "Fig 34")
 
-As we can note in Figure 34the only field we need to define a new category it is name.
+As we can note in the figure above the only field we need to define a new category it is name.
 The System MANO Platforms submenu includes all the available MANO platforms defined by service 
 administrators. Again, the interface is similar to all other listing interfaces we have already seen in 
-terms of functionality. In Figure 35, Figure 36 you can see the MANO platforms listing interface and 
+terms of functionality. In the following figures you can see the MANO platforms listing interface and 
 the creation of a new MANO platform respectively.
 
 ![Fig 35](/uploads/fig-35.png "Fig 35")
@@ -247,18 +247,18 @@ the creation of a new MANO platform respectively.
 ![Fig 36](/uploads/fig-36.png "Fig 36")
 
 The  only  fields  required  to  define  a  new  MANO  platform  are  its  name,  version  and  a  small 
-description, as Figure 36 indicates.
+description, as the above figure indicates.
 Through  system  MANO  providers submenu  a  services  administrator  essentially  is  able  to  connect 
 portal to a deployed MANO platform via the API URL field provided during the creation of a new 
 MANO provider. Interface which lists all those MANO providers is more or less the same with the rest 
-listing  interfaces  that  we  have  seen  before.  In  Figure  37 and  Figure  38  we  can  see  the  MANO 
+listing  interfaces  that  we  have  seen  before.  In  figures below  we  can  see  the  MANO 
 providers listing interface and the creation of a new MANO provider respectively.
 
 ![Fig 37](/uploads/fig-37.png "Fig 37")
 
 ![Fig 38](/uploads/fig-38.png "Fig 38")
 
-In  Figure  38  the  most  notable  fields  are  Supported  MANO  platform  and  API  URL  Endpoint.  The 
+In  the figure above  the  most  notable  fields  are  Supported  MANO  platform  and  API  URL  Endpoint.  The 
 former  is  associated  with  the  MANO  platform  interface  which  we  have  previously  described  and 
 includes all the available MANO platforms created by services administrators. The latter and perhaps 
 the  most  interesting contains  the  URL  to  a  deployed  MANO  platform  and  essentially  is  the  place 
@@ -268,5 +268,5 @@ deployments tab of the main menu.
 
 ![Fig 39](/uploads/fig-39.png "Fig 39")
 
-Finally there is page for managing the available target infrastructures (see Figure 39). This is useful 
+Finally there is page for managing the available target infrastructures (see the above figure). This is useful 
 when Experimenters create the Deployment Request to select target infrastructure
