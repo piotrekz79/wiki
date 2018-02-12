@@ -160,3 +160,113 @@ edit button of an experiment in Figure 24 or on the details button of an experim
 page is also available for the VxF developer role as we can see in Figure 15. This page has similar 
 fields with the VxF details interface in Figure 20 but some fields have been subtracted and the status 
 metadata field has been added to it.
+
+## Services administrator user interface descriptio
+The  last  menu  we  will  describe  is  for  the  services  administrator  role.  The  landing  page  when  an 
+administrator logging in is similar with the experimenter role and can be seen in  Figure 26. The only 
+difference is the submenu of admin tab which will be analysing in the following sections. The first 
+submenu of admin tab is System Users and its functionality is similar with the previously described 
+menus which list some sort of data in table form. The interface of this submenu can be seen in figure 
+below:
+
+![Fig 26](/uploads/fig-26.png "Fig 26")
+
+Additionally, the information icon of a system user pops up the details defined at the create new user 
+interface which can be shown up when the user admin is clicking on the green button Create new 
+user  of  Figure  26.  The  information  interface  can  be  seen  in  Figure  27  and  the  create  new  user 
+interface in Figure 28:
+
+![Fig 27](/uploads/fig-27.png "Fig 27")
+
+![Fig 28](/uploads/fig-28.png "Fig 28")
+
+In Figure 28 we see some common used information about a new user that is its name, username, 
+password, e-mail, organization and finally its role. Each and every role of this list has been described 
+in detail in introduction section. When all those fields are filed up the new user is created when the 
+administrator is clicking on the save button on the bottom of the page.
+Next we can see in Figure 29 the full submenu of the admin tab. The three submenus after System 
+Users submenu that is Registered Experiment Descriptors, Registered VxFs and Registered Deployed 
+Experiments  have  exactly  the  same  interfaces  as  Figure  24,  Figure  17,  Figure  22 accordingly.  The 
+difference  for  the  administrator  role  is  when  is  clicking  on  the  edit  icon of  an  object  where  it 
+redirects it to the same pages as the corresponding in  Figure 24, Figure 17, Figure 22 but with some 
+additional metadata fields. Each and every of those cases are analysed in the next sections.
+
+![Fig 29](/uploads/fig-29.png "Fig 29")
+
+For the Registered Experiment Descriptors submenu edit button we get as response the page in next 
+figure:
+
+![Fig 30](/uploads/fig-30.png "Fig 30")
+
+We note that comparing with the Figure 25 we have two extra fields published and valid and also the 
+capability  of  making  the  selected  experiment  on-board  or  off-board  on  the  provided  by  the 
+administrator MANO platform. When the administrator checks the published checkbox the current 
+experiment becomes available to all system's users interfaces. Otherwise, only the user who created 
+the VxF and the administrators can see it in their VxF listing submenus.
+For the Registered VxFs submenu edit button we get as response the page in next figure:
+
+![Fig 31](/uploads/fig-31.png "Fig 31")
+
+We note that comparing with the Figure 19 we have some extra fields that is published, certified and 
+certified by and also the capability of making the selected VxF on-board or off-board on the provided 
+by the administrator MANO platform. When the administrator checks the published checkbox the 
+current VxF becomes available to all system's users interfaces. Otherwise, only the user who created 
+the VxF and the administrators can see it in their VxF listing submenus. Finally, an administrator can 
+certify this VxF through the Certified and Certified by options.
+Finally,  regarding  Registered  Deployed  Experiments  submenu  edit  button  we  get  as  response  the 
+page in next figure:
+
+![Fig 32](/uploads/fig-32.png "Fig 32")
+
+The two extra fields in that interface comparing to Figure 23 are Status and Comments and Feedback. 
+Status field contains the five states in which a deployed experiment can be found. Under review state 
+denotes that the current deployable experiment is under reviewing by a service administrator who is 
+checking its validity. Scheduled state firstly indicates that the deployable experiment is eligible to be 
+deployable and secondly that it has been scheduled for a specific start date and that the end date 
+has  been  acceptable  as  well.  The  Running  and  Completed  states  are  self-explainable.  Finally,  the 
+rejected state means that a service administrator has rejected the uploaded deployable experiment 
+and the experimenter usually should follow the Comments and Feedback provided as a response by 
+the administrator and should re-upload the experiment to get under review again.
+System  Categories  submenu  lists  the  VxFs  and  experiments  categories  created  by  the  services 
+administrator role. The interface is similar to all other listing interfaces that have been presented 
+previously. In Figure 33 and Figure 34 we can find the categories listing interface and the creation of 
+a new category interface respectively.
+
+![Fig 33](/uploads/fig-33.png "Fig 33")
+
+![Fig 34](/uploads/fig-34.png "Fig 34")
+
+As we can note in Figure 34the only field we need to define a new category it is name.
+The System MANO Platforms submenu includes all the available MANO platforms defined by service 
+administrators. Again, the interface is similar to all other listing interfaces we have already seen in 
+terms of functionality. In Figure 35, Figure 36 you can see the MANO platforms listing interface and 
+the creation of a new MANO platform respectively.
+
+![Fig 35](/uploads/fig-35.png "Fig 35")
+
+![Fig 36](/uploads/fig-36.png "Fig 36")
+
+The  only  fields  required  to  define  a  new  MANO  platform  are  its  name,  version  and  a  small 
+description, as Figure 36 indicates.
+Through  system  MANO  providers submenu  a  services  administrator  essentially  is  able  to  connect 
+portal to a deployed MANO platform via the API URL field provided during the creation of a new 
+MANO provider. Interface which lists all those MANO providers is more or less the same with the rest 
+listing  interfaces  that  we  have  seen  before.  In  Figure  37 and  Figure  38  we  can  see  the  MANO 
+providers listing interface and the creation of a new MANO provider respectively.
+
+![Fig 37](/uploads/fig-37.png "Fig 37")
+
+![Fig 38](/uploads/fig-38.png "Fig 38")
+
+In  Figure  38  the  most  notable  fields  are  Supported  MANO  platform  and  API  URL  Endpoint.  The 
+former  is  associated  with  the  MANO  platform  interface  which  we  have  previously  described  and 
+includes all the available MANO platforms created by services administrators. The latter and perhaps 
+the  most  interesting contains  the  URL  to  a  deployed  MANO  platform  and  essentially  is  the  place 
+where the experiments and VxFs created by portal users are deployed. Finalizing this section, the 
+submenu  All  pending  requests  is  identical  to  the  deploy  experiments  submenu  presented  in 
+deployments tab of the main menu.
+
+![Fig 39](/uploads/fig-39.png "Fig 39")
+
+Finally there is page for managing the available target infrastructures (see Figure 39). This is useful 
+when Experimenters create the Deployment Request to select target infrastructure
