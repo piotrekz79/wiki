@@ -268,5 +268,5 @@ deployments tab of the main menu.
 
 ![Fig 39](/uploads/fig-39.png "Fig 39")
 
-Finally there is page for managing the available target infrastructures (see the above figure). This is useful 
+Finally there is page for managing the available target infrastructures (see the figure above). This is useful 
 when Experimenters create the Deployment Request to select target infrastructure
