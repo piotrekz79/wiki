@@ -11,13 +11,18 @@ Please have a look at Deliverables at https://5ginfire.eu/deliverables/ and at t
 
 YES
 
+* **Which OSM version should be considered, TWO or THREE?**
+
+***[IVAN TBC]*** We are currenlty have deployed OSM TWO but we target migrating to OSM THREE. Therefore experiments and extensions should consider OSM THREEE
+
+
 * **How is the experiment lifecycle working? Will the experimenter be allowed to access directly the OSM launchpad/APIs, or the only interaction allowed is via the 5GinFIRE portal?**
 
 Please check the wiki http://wiki.5ginfire.eu/#the-5-gin-fire-architecture-technologies-services-and-testbeds. Normally the access will be only through the portal. Still access to OSM launchpad is something to be examined
 
 * **Considering that we would like to instantiate multiple slices, are we allowed to execute them in parallel?**
 
-This depends on resources, but normally you should be able to do that
+***[IVAN TBC]***This depends on resources, but normally you should be able to do that
 
 * **Is there a multi-site federated infrastructure, or the different testbeds are seen as individual sites? In the last case, where should be specified the site for deployment?**
 
@@ -28,10 +33,11 @@ This depends on resources, but normally you should be able to do that
 
 * **Is OpenStack the VIM/NFVI used in the sites? Which version specifically?**
 
-
+***[IVAN TBC]*** YES. Openstack Mitaca 
 
 * **Are we allowed to upload specific images on the VIM/NFVI while implementing VNFs?**
 
+***[IVAN TBC]*** YES
 
 * **Will the experimenter get access (i.e. SSH) to the deployed instances? If yes, how? Via VPN or public IPs?** 
 
@@ -41,9 +47,12 @@ This depends on resources, but normally you should be able to do that
 
 * **Will you accept proposals with potential modifications to the OSM tool? If yes, which version should be considered, TWO or THREE?**
 
+YES this falls under category 2a. Currently Version THREE
+
 
 * **Will you accept proposals with potential modifications/extensions to the 5GinFIRE portal?**
 
+YES this falls under category 2a
 
 * **How are those extensions supposed to be integrated? Should we consider potential modifications to the components, or should we only use APIs (hopefully with SDKs you may provide)?** 
 
