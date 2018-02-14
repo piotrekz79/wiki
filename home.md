@@ -28,7 +28,7 @@ All our source code is available at https://github.com/5GinFIRE
 
 ## Open Calls FAQs
 
-1st Call FAQs [1stcallFAQs]
+[1st Call FAQs](1stcallFAQs)
 
 
 -----
