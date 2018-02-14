@@ -62,8 +62,8 @@ They can be either services or APIs usage, APIs extensions or modifications. Pro
 
 * **In case of extensions based on APIs, are you providing an API description which we could consider for our initial solution design? Please let us know also about any restrictions due to any RBAC mechanism you utilise.** 
 
-    * *Regarding the Portal there is an API. Please check the http://wiki.5ginfire.eu/portalarchitecturedesign/portal-api section
-    * *Regarding OSM there are the ETSI NFV APIs specified and the correspponding OSM version to support
+    * Regarding the Portal there is an API. Please check the http://wiki.5ginfire.eu/portalarchitecturedesign/portal-api section
+    * Regarding OSM there are the ETSI NFV APIs specified and the correspponding OSM version to support
 
 
 * **Currently we have only noticed that the experiment lifecycle mainly deals with category 1 types of experiment, therefore it is not clear how those potential extensions could be realised and be deployed on demand on top of your platform.**
