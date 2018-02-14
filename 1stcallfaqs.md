@@ -11,21 +11,22 @@ Please have a look at Deliverables at https://5ginfire.eu/deliverables/ and at t
 
 Please check the wiki http://wiki.5ginfire.eu/#the-5-gin-fire-architecture-technologies-services-and-testbeds. Normally the access will be only through the portal. Still access to OSM launchpad is something to be examined
 
-* **Considering that we would like to instantiate multiple slices, are we allowed to execute them in parallel? **
+* **Considering that we would like to instantiate multiple slices, are we allowed to execute them in parallel?**
 
 This depends on resources, but normally you should be able to do that
 
-* **Is there a multi-site federated infrastructure, or the different testbeds are seen as individual sites? In the last case, where should be specified the site for deployment? **
+* **Is there a multi-site federated infrastructure, or the different testbeds are seen as individual sites? In the last case, where should be specified the site for deployment?**
+
 5GinFIRE has available interconnected multiple VIMs under OSM. Any site or multi-sites can be selected for deployment 
 
-* **Is inter-VNF communication based on classical virtual networking like in OpenStack? **
+* **Is inter-VNF communication based on classical virtual networking like in OpenStack?**
 
 
 * **Is OpenStack the VIM/NFVI used in the sites? Which version specifically? **
 
 
 
-* **Are we allowed to upload specific images on the VIM/NFVI while implementing VNFs?  **
+* **Are we allowed to upload specific images on the VIM/NFVI while implementing VNFs? **
 
 
 * **Will the experimenter get access (i.e. SSH) to the deployed instances? If yes, how? Via VPN or public IPs?** 
