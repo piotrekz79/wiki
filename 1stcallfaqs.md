@@ -22,11 +22,11 @@ This depends on resources, but normally you should be able to do that
 * **Is inter-VNF communication based on classical virtual networking like in OpenStack?**
 
 
-* **Is OpenStack the VIM/NFVI used in the sites? Which version specifically? **
+* **Is OpenStack the VIM/NFVI used in the sites? Which version specifically?**
 
 
 
-* **Are we allowed to upload specific images on the VIM/NFVI while implementing VNFs? **
+* **Are we allowed to upload specific images on the VIM/NFVI while implementing VNFs?**
 
 
 * **Will the experimenter get access (i.e. SSH) to the deployed instances? If yes, how? Via VPN or public IPs?** 
@@ -35,10 +35,10 @@ This depends on resources, but normally you should be able to do that
 * **In case of VPN, are there some firewall rules?**
 
 
-* **Will you accept proposals with potential modifications to the OSM tool? If yes, which version should be considered, TWO or THREE? **
+* **Will you accept proposals with potential modifications to the OSM tool? If yes, which version should be considered, TWO or THREE?**
 
 
-* **Will you accept proposals with potential modifications/extensions to the 5GinFIRE portal? **
+* **Will you accept proposals with potential modifications/extensions to the 5GinFIRE portal?**
 
 
 * **How are those extensions supposed to be integrated? Should we consider potential modifications to the components, or should we only use APIs (hopefully with SDKs you may provide)?** 
