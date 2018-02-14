@@ -11,6 +11,9 @@ Please have a look at Deliverables at https://5ginfire.eu/deliverables/ and at t
 
 Please have a look at https://5ginfire.eu/facilities/
 
+* **Is the core network (i.e. Unified GW) provided as a functionality of the system and deployable through OSM?**
+
+***[WP4/WP5 TBC]***
 
 * **Is it a hard limitation "Before  awarding any grants to a third party, it will  be  checked whether the  third party is a legal entity with a history of at least three years of commercial operations, and has not been declared insolvent." ?**
 
@@ -74,6 +77,10 @@ They can be either services or APIs usage, APIs extensions or modifications. Pro
 * **Currently we have only noticed that the experiment lifecycle mainly deals with category 1 types of experiment, therefore it is not clear how those potential extensions could be realised and be deployed on demand on top of your platform.**
 
 The extensions can be deployed as services or they can reuse existing APIs (Portal, OSM). Proposers, though, are free to define the deployment they need
+
+* **Will some support be provided about the description files definition?**
+
+Please check this Wiki. The descriptors are standardized in format and packaging by ETSI specifications
 
 
 
