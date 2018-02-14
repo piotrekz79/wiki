@@ -6,8 +6,6 @@ To create a VNF, you need to have three things:
 - VNF Descriptor
 - Charm
 
-[TOC]
-
 ## VM Image
 
 To create the base image, follow this [article](https://docs.openstack.org/image-guide/ubuntu-image.html).
@@ -435,7 +433,7 @@ There are a few steps to package a VNF descriptor:
 2. Compute the checksums for all the files and put it in checksums.txt
 3. Create an archive of the VNF Descriptor folder
 
-#### Copy the charm
+### Copy the charm
 
 Lets copy the built charm folder:
 
@@ -443,7 +441,7 @@ Lets copy the built charm folder:
 cp -R ~/charms/builds/transcoder ~/transcoder_vnf/charms
 ~~~~
 
-#### Compute the checksums
+### Compute the checksums
 
 Lets compute the checksums and insert into checksums.txt:
 
@@ -452,7 +450,7 @@ cd ~/transcoder_vnf/charms
 find -mindepth 1 -type f -print | while read line; do md5sum $line >> checksums.txt; done
 ~~~~
 
-#### Create an archive
+### Create an archive
 
 Lets create the archive in **tar.gz** format:
 
