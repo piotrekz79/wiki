@@ -7,10 +7,13 @@
 
 Please have a look at Deliverables at https://5ginfire.eu/deliverables/ and at this wiki http://wiki.5ginfire.eu
 
-* **Is there any Testbed documentation?**
+* **Is there any Testbed/Tools documentation?**
 
 Please have a look at the following links:
-1. The 5GinFIRE orchestration service and the NFV infrastructure at 5TONIC: (https://5ginfire.eu/5tonic/)
+1. The 5GinFIRE orchestration service and the NFV infrastructure at 5TONIC testbed (https://5ginfire.eu/5tonic/)
+2. Experimenter Tools (https://5ginfire.eu/facilities-2/)
+3. IT-Av automotive testbed (https://5ginfire.eu/it-av-automotive-testbed/)
+4. Smart city safety testbed: https://5ginfire.eu/smart-city-safety/
  
 
 * **Is the core network (i.e. Unified GW) provided as a functionality of the system and deployable through OSM?**
@@ -22,13 +25,12 @@ Please have a look at the following links:
 YES
 
 * **Which OSM version should be considered, TWO or THREE?**
-
-***[WP4 TBC]*** We are currenlty have deployed OSM TWO but we target migrating to OSM THREE. Therefore experiments and extensions should consider OSM THREEE
+The 5GinFIRE MANO platform is currently based on OSM Release TWO, although the project is considering migration to Release THREE. 
 
 
 * **How is the experiment lifecycle working? Will the experimenter be allowed to access directly the OSM launchpad/APIs, or the only interaction allowed is via the 5GinFIRE portal?**
 
-Please check the wiki http://wiki.5ginfire.eu/#the-5-gin-fire-architecture-technologies-services-and-testbeds. Normally the access will be only through the portal. Still access to OSM launchpad is something to be examined
+Please check the wiki http://wiki.5ginfire.eu/#the-5-gin-fire-architecture-technologies-services-and-testbeds. Normally the access will be only through the portal.
 
 * **Considering that we would like to instantiate multiple slices, are we allowed to execute them in parallel?**
 
