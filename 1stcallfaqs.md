@@ -26,8 +26,8 @@ YES
 
 * **Which OSM version should be considered, TWO or THREE?**
 Current infrastructure is based on OSM Release TWO, and the team is working on migrating to OSM Release THREE. We foresee two possible scenarios:
-1) OSM Release TWO as production orchestrator and OSM Release THREE as an experimental one
-2) Only OSM Release THREE as production and experimental orchestrator
+1. OSM Release TWO as production orchestrator and OSM Release THREE as an experimental one.
+1. Only OSM Release THREE as production and experimental orchestrator.
 In general, we think it is advisable to assume OSM Release TWO for experiments under item (1) in the open call, as they would be migrated to OSM Release THREE as required, and OSM Release THREE for items (2a) and (2b) in the open call, as new features will be incorporated for further 5GINFIRE releases.
 
 
