@@ -56,7 +56,7 @@ Each site running an experimental infrastructure deploys a Virtualized Infrastru
 
 * **Is OpenStack the VIM/NFVI used in the sites? Which version specifically?**
 
-***[WP4 TBC]*** YES. Openstack Mitaca 
+***[WP4 TBC]*** YES. Openstack Ocata 
 
 * **Are we allowed to upload specific images on the VIM/NFVI while implementing VNFs?**
 
