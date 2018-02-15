@@ -42,11 +42,7 @@ Please check the wiki http://wiki.5ginfire.eu/#the-5-gin-fire-architecture-techn
 
 * **Is there a multi-site federated infrastructure, or the different testbeds are seen as individual sites? In the last case, where should be specified the site for deployment?**
 
-The technical solution adopted by 5GinFIRE (see Figure below) considers the utilization of a single orchestration domain, where an NFV orchestrator, implemented with Open Source MANO (OSM), manages and coordinates the creation of network services, being a network service generally defined as a composition of Virtualized Network Functions (VNFs) and/or Virtualized Vertical Functions (VVFs), generally referred to as VxFs. Each of these VxFs may be in turn deployed at any of the experimental infrastructures made available by 5GinFIRE partners. 
-
-![5 Ginfire Sites](/uploads/5-ginfire-sites.png "5 Ginfire Sites"){.align-center}
-
-At the time of writing, three of these infrastructures have been enabled for experimentation activities through the 5GinFIRE MANO platform (an additional experimental infrastructure is under development at UFU): 
+The technical solution adopted by 5GinFIRE considers the utilization of a single orchestration domain, where an NFV orchestrator, implemented with Open Source MANO (OSM), manages and coordinates the creation of network services, being a network service generally defined as a composition of Virtualized Network Functions (VNFs) and/or Virtualized Vertical Functions (VVFs), generally referred to as VxFs. Each of these VxFs may be in turn deployed at any of the experimental infrastructures made available by 5GinFIRE partners. At the time of writing, three of these infrastructures have been enabled for experimentation activities through the 5GinFIRE MANO platform (an additional experimental infrastructure is under development at UFU): 
 
 1) An infrastructure at the global 5G Telefonica Open Innovation Laboratory (5TONIC), made available by TID (founding member of 5TONIC) and UC3M (member of 5TONIC); 
 2) An infrastructure located at ITAv;
