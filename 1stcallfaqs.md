@@ -28,7 +28,7 @@ YES
 Current infrastructure is based on OSM Release TWO, and the team is working on migrating to OSM Release THREE. We foresee two possible scenarios:
 1. OSM Release TWO as production orchestrator and OSM Release THREE as an experimental one.
 1. Only OSM Release THREE as production and experimental orchestrator.
-In general, we think it is advisable to assume OSM Release TWO for experiments under item (1) in the open call, as they would be migrated to OSM Release THREE as required, and OSM Release THREE for items (2a) and (2b) in the open call, as new features will be incorporated for further 5GINFIRE releases.
+In general, we think it is advisable to assume OSM Release TWO for experiments under category (1) in the open call, as they would be migrated to OSM Release THREE as required; and OSM Release THREE for categories (2-a) and (2-b) in the open call, as new features will be incorporated for further 5GINFIRE releases.
 
 
 * **How is the experiment lifecycle working? Will the experimenter be allowed to access directly the OSM launchpad/APIs, or the only interaction allowed is via the 5GinFIRE portal?**
