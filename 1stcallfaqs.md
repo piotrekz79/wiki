@@ -11,7 +11,7 @@ Please have a look at Deliverables at https://5ginfire.eu/deliverables/ and at t
 
 Please have a look at the following links:
 - The 5GinFIRE orchestration service and the NFV infrastructure at 5TONIC: (https://5ginfire.eu/5tonic/)
-- 
+
 
 * **Is the core network (i.e. Unified GW) provided as a functionality of the system and deployable through OSM?**
 
