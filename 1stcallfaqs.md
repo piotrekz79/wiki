@@ -9,11 +9,12 @@ Please have a look at Deliverables at https://5ginfire.eu/deliverables/ and at t
 
 * **Is there any Testbed documentation?**
 
-Please have a look at https://5ginfire.eu/facilities/
+Please have a look at the following links:
+* [The 5GinFIRE orchestration service and the NFV infrastructure at 5TONIC] (https://5ginfire.eu/5tonic/)
 
 * **Is the core network (i.e. Unified GW) provided as a functionality of the system and deployable through OSM?**
 
-***[WP4/WP5 TBC]***
+***[WP5 TBC]***
 
 * **Is it a hard limitation "Before  awarding any grants to a third party, it will  be  checked whether the  third party is a legal entity with a history of at least three years of commercial operations, and has not been declared insolvent." ?**
 
