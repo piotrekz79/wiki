@@ -25,6 +25,7 @@ Please have a look at the following links:
 YES
 
 * **Which OSM version should be considered, TWO or THREE?**
+
 Current infrastructure is based on OSM Release TWO, and the team is working on migrating to OSM Release THREE. We foresee two possible scenarios:
 1. OSM Release TWO as production orchestrator and OSM Release THREE as an experimental one.
 1. Only OSM Release THREE as production and experimental orchestrator.
