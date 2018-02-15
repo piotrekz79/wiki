@@ -25,7 +25,12 @@ Please have a look at the following links:
 YES
 
 * **Which OSM version should be considered, TWO or THREE?**
-The 5GinFIRE MANO platform is currently based on OSM Release TWO, although the project is considering migration to Release THREE. 
+Current infrastructure is based on OSM Release TWO, and the team is working on migrating to OSM Release THREE. We foresee two possible scenarios:
+
+1) OSM Release TWO as production orchestrator and OSM Release THREE as an experimental one
+2) Only OSM Release THREE as production and experimental orchestrator
+
+In general, we think it is advisable to assume OSM Release TWO for experiments under item (1) in the open call, as they would be migrated to OSM Release THREE as required, and OSM Release THREE for items (2a) and (2b) in the open call, as new features will be incorporated for further 5GINFIRE releases.
 
 
 * **How is the experiment lifecycle working? Will the experimenter be allowed to access directly the OSM launchpad/APIs, or the only interaction allowed is via the 5GinFIRE portal?**
@@ -37,6 +42,8 @@ Please check the wiki http://wiki.5ginfire.eu/#the-5-gin-fire-architecture-techn
 ***[WP4/WP5 TBC]*** This depends on resources, but normally you should be able to do that
 
 * **Is there a multi-site federated infrastructure, or the different testbeds are seen as individual sites? In the last case, where should be specified the site for deployment?**
+
+
 
 ***[WP4 TBC]*** 5GinFIRE has available interconnected multiple VIMs under OSM. Any site or multi-sites can be selected for deployment 
 
