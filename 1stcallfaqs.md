@@ -10,8 +10,8 @@ Please have a look at Deliverables at https://5ginfire.eu/deliverables/ and at t
 * **Is there any Testbed/Tools documentation?**
 
 Please have a look at the following links:
-1. The 5GinFIRE orchestration service and the NFV infrastructure at 5TONIC testbed (https://5ginfire.eu/5tonic/)
-2. Experimenter Tools (https://5ginfire.eu/facilities-2/)
+1. Experimenter Tools (https://5ginfire.eu/facilities-2/)
+2. The 5GinFIRE orchestration service and the NFV infrastructure at 5TONIC testbed (https://5ginfire.eu/5tonic/)
 3. IT-Av automotive testbed (https://5ginfire.eu/it-av-automotive-testbed/)
 4. Smart city safety testbed: https://5ginfire.eu/smart-city-safety/
  
