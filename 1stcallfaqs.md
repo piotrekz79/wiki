@@ -50,8 +50,6 @@ The technical solution adopted by 5GinFIRE considers the utilization of a single
 
 Each site running an experimental infrastructure deploys a Virtualized Infrastructure Manager (VIM), compliant with the OSM software stack. The different sites providing the experimental infrastructures are interconnected, and the experimenter can request, when defining an experiment through the 5GinFIRE portal, which experimental infrastructure should support the execution of each VxF. 
 
-***[WP4 TBC]*** 5GinFIRE has available interconnected multiple VIMs under OSM. Any site or multi-sites can be selected for deployment 
-
 * **Is inter-VNF communication based on classical virtual networking like in OpenStack?**
 
 ***[WP4 TBC]***
