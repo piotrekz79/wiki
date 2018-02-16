@@ -35,7 +35,7 @@ In the following, we summarize the main NFV components and infrastructures that 
 
 Both NFVIs are available for experimentation under the terms and conditions specified [here](https://5ginfire.eu/5tonic/).
 
-##ITAv
+### ITAv
 **VIM**: based on OpenStack Ocata.
 **NFVI**:
 - 1x server computer: 24 cores, 192GB memory, 4 x 1Gbps interfaces (passthrough, DPDK and SR-IOV), 2 x 1TB SAS3 hard drives. 
