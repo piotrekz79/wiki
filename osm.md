@@ -53,5 +53,19 @@ Both NFVIs are available for experimentation under the terms and conditions spec
 -	1x MVB NEC optical switch, 1x ENS NEC optical switch.
 
 ## Adressing plan
+Enabling effective network communications among multiple sites has required a careful definition of the IP address space to be used by interconnecting entities. In this respect, the following agreements have been taken by 5GinFIRE:
+
+1)	Entities connecting to the 5GinFIRE MANO platform will use the private address space 10.154.0.0/16 for control and data plane communications.
+
+2)	5TONIC will use the private address space 10.4.0.0/16 to support control and data plane communications.
+
+The 5GinFIRE network operations center will be in charge of the allocation of IP address ranges to entities within the address space 10.154.0.0/16. The current allocation of IP addresses to sites is summarized as follows:
+
+- 5TONIC: 10.4.0.0/16.
+- ITAv:	10.154.0.0/20.
+- UNIVBRIS & BIO:	10.154.16.0/20.
+- Reserved for administrative purposes: 10.154.255.0/23
+
+Any potential issues related with the allocation of IP addresses to external sites that connect to the MANO platform will be treated on a case-by-case basis.
 
 ## Requirements to support the interconnection of external sites
