@@ -19,8 +19,7 @@ In the following, we summarize the main NFV components and infrastructures that 
 
 ### 5TONIC
 
-**NFVO**: 
-Based on OSM Release TWO (running in virtual machine using a server computer with 16 cores, 128 GB RAM, 2 TB NLSAS hard drive and a network card with 4 GbE ports and DPDK support).
+**NFVO**: based on OSM Release TWO (running in virtual machine using a server computer with 16 cores, 128 GB RAM, 2 TB NLSAS hard drive and a network card with 4 GbE ports and DPDK support).
 
 ---
 **VIM**: two instances of OpenStack Ocata, each controlling a separate NFVI (hereafter referred to as 5GinFIRE NFVI and IMDEA NFVI). 
@@ -28,7 +27,7 @@ Based on OSM Release TWO (running in virtual machine using a server computer wit
 * The first one runs in a server computer (6 cores, 32GB of memory, 2TB NLSAS and a network card with four GbE ports and DPDK support).
 * The second one runs as a virtual machine in the same server computer as the OSM stack. 
 
---
+---
 **5GinFIRE NFVI:** 
 - 3x server computers (each with 6 cores, 32GB of memory, 2TB NLSAS and a network card with four GbE ports and DPDK support)
 - Interconnected by a GbE data-plane switch.
