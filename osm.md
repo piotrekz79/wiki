@@ -68,3 +68,13 @@ The 5GinFIRE network operations center will be in charge of the allocation of IP
 Any potential issues related with the allocation of IP addresses to external sites that connect to the MANO platform will be treated on a case-by-case basis.
 
 ## Requirements to support the interconnection of external sites
+Beyond any particular requirements that may be identified when facing the interconnection of specific external sites, which will be treated on a case-by-case basis, in the following we indicate a non-exhaustive list of requirements that must be fulfilled by external entities to connect to the 5GinFIRE MANO platform:
+
+1) Utilization of a compliant VIM solution (i.e., compliant with OSM Release TWO ^2
+Obtaining an appropriate IP address space and VPN credentials, from the “5GinFIRE network operations center” 
+Configuration of VPN endpoints, to connect the site to the network overlay of the 5GinFIRE MANO platform
+Configuration of the appropriate VIM networks, 
+to enable control & data communications with the VxFs deployed at the entity’s datacenter,
+and using the allocated IP address space 
+Routing of control & data plane information across the local network segments of the external entity
+
