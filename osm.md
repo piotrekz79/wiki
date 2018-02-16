@@ -1,4 +1,4 @@
 <!-- TITLE: Open Source MANO -->
 <!-- SUBTITLE: A  summary of OSM -->
 
-# Open Source MANO
+# The 5GinFIRE MANO platform
