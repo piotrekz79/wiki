@@ -11,7 +11,7 @@ The following pages present different topics regarding 5GinFIRE services
 [5GinFIRE Testbeds](5GinFIREtestbeds)
 [The portal Architecture and Design](portalarchitecturedesign)
 [The Portal API](portalarchitecturedesign/portal-api)
-[Open Source MANO (OSM)](osm)
+[The 5GinFIRE MANO platform](osm)
 [The Unifier Gateway - 5G-In-A-Box ](unifiergateway)
 
 ## User Guides
