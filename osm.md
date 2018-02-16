@@ -25,14 +25,15 @@ In the following, we summarize the main NFV components and infrastructures that 
 - The first one runs in virtual machine over a server computer (6 cores, 32GB of memory, 2TB NLSAS and a network card with four GbE ports and DPDK support).
 - The second one runs as a virtual machine in the same server computer as the OSM stack. 
 
-**5GinFIRE NFVI:** 
+**5GinFIRE NFVI**: 
 - 3x server computers (each with 6 cores, 32GB of memory, 2TB NLSAS and a network card with four GbE ports and DPDK support)
 - Interconnected by a GbE data-plane switch.
 
-**IMDEA NFVI:** 
+**IMDEA NFVI**:
 - 2x high-profile servers (each equipped with 8 cores in a NUMA architecture, 128GB RDIMM RAM, 4TB SAS and 8 10Gbps Ethernet optical transceivers with SR-IOV capabilities).
 - Interconnected by a 24-port 10Gbps Ethernet switch.
 
+Both NFVIs are available for experimentation under the terms and conditions specified [here](https://5ginfire.eu/5tonic/).
 
 
 
