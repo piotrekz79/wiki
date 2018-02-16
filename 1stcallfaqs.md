@@ -48,10 +48,9 @@ The technical solution adopted by 5GinFIRE for the MANO stack considers the util
 2) An NFV infrastructure located at ITAv;
 3) And an NFV infrastructure made available through a collaborative agreement by UNIVBRIS and BIO.
 
-Each site running an experimental infrastructure deploys a Virtualized Infrastructure Manager (VIM), compliant with the OSM software stack. 
-The different sites providing the NFV infrastructures are interconnected, and the experimenter can request, when defining an experiment through the 5GinFIRE portal, which experimental infrastructure should support the execution of each VxF. 
+Each site running an experimental infrastructure deploys a Virtualized Infrastructure Manager (VIM), compliant with the OSM software stack. The different sites providing the NFV infrastructures are interconnected, and the experimenter can request, when defining an experiment through the 5GinFIRE portal, which experimental infrastructure should support the execution of each VxF. 
 
-** *[TBC by ITAv and UNIVBRIS to indicate details on the automotive and smart city testbeds, and how they are offered to experimenters through the platform] 
+**[TBC by ITAv and UNIVBRIS to indicate details on the automotive and smart city testbeds, and how they are offered to experimenters through the platform] 
 
 
 * **Is inter-VNF communication based on classical virtual networking like in OpenStack?**
