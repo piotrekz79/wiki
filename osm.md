@@ -14,7 +14,7 @@ The technical solution adopted by 5GinIFIRE also supports the flexible incorpora
 
 [^1]: OSM Release TWO supports multiple VIMs through a plugin model, including OpenVIM, OpenStack, VMWare vCloud Director and Amazon Web Services Elastic Compute Cloud.
 
-## Summary of NFV components and infrastructure.
+## Summary of NFV components and infrastructure
 In the following, we summarize the main NFV components and infrastructures that have been made available for the 1st Open Call for experimentation by 5GinFIRE testbed providers. 
 
 ### 5TONIC
