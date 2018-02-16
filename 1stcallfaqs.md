@@ -42,13 +42,17 @@ Please check the wiki http://wiki.5ginfire.eu/#the-5-gin-fire-architecture-techn
 
 * **Is there a multi-site federated infrastructure, or the different testbeds are seen as individual sites? In the last case, where should be specified the site for deployment?**
 
-The technical solution adopted by 5GinFIRE considers the utilization of a single orchestration domain, where an NFV orchestrator, implemented with Open Source MANO (OSM), manages and coordinates the creation of network services, being a network service generally defined as a composition of Virtualized Network Functions (VNFs) and/or Virtualized Vertical Functions (VVFs), generally referred to as VxFs. Each of these VxFs may be in turn deployed at any of the experimental infrastructures made available by 5GinFIRE partners. At the time of writing, three of these infrastructures have been enabled for experimentation activities through the 5GinFIRE MANO platform (an additional experimental infrastructure is under development at UFU): 
+The technical solution adopted by 5GinFIRE for the MANO stack considers the utilization of a single orchestration domain, where an NFV orchestrator, implemented with Open Source MANO (OSM), manages and coordinates the creation of network services, being a network service generally defined as a composition of Virtualized Network Functions (VNFs) and/or Virtualized Vertical Functions (VVFs), generally referred to as VxFs. Each of these VxFs may be in turn deployed at any of the NFV infrastructures (NFVI) made available by 5GinFIRE partners. At the time of writing, three of these infrastructures have been enabled for experimentation activities through the 5GinFIRE MANO platform (an additional experimental infrastructure is under development at UFU): 
 
-1) An infrastructure at the global 5G Telefonica Open Innovation Laboratory (5TONIC), made available by TID (founding member of 5TONIC) and UC3M (member of 5TONIC); 
-2) An infrastructure located at ITAv;
-3) And an infrastructure made available through a collaborative agreement by UNIVBRIS and BIO.
+1) An NFV infrastructure at the global 5G Telefonica Open Innovation Laboratory (5TONIC), made available by TID (founding member of 5TONIC) and UC3M (member of 5TONIC); 
+2) An NFV infrastructure located at ITAv;
+3) And an NFV infrastructure made available through a collaborative agreement by UNIVBRIS and BIO.
 
-Each site running an experimental infrastructure deploys a Virtualized Infrastructure Manager (VIM), compliant with the OSM software stack. The different sites providing the experimental infrastructures are interconnected, and the experimenter can request, when defining an experiment through the 5GinFIRE portal, which experimental infrastructure should support the execution of each VxF. 
+Each site running an experimental infrastructure deploys a Virtualized Infrastructure Manager (VIM), compliant with the OSM software stack. 
+The different sites providing the NFV infrastructures are interconnected, and the experimenter can request, when defining an experiment through the 5GinFIRE portal, which experimental infrastructure should support the execution of each VxF. 
+
+** *[TBC by ITAv and UNIVBRIS to indicate details on the automotive and smart city testbeds, and how they are offered to experimenters through the platform] 
+
 
 * **Is inter-VNF communication based on classical virtual networking like in OpenStack?**
 
