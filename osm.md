@@ -12,10 +12,26 @@ The first stable version of the 5GinFIRE MANO platform is based on OSM Release T
 
 The technical solution adopted by 5GinIFIRE also supports the flexible incorporation of other sites (e.g., coming from the Open Call process of 5GinFIRE), as long as they support a compliant VIM[^1] and they set up the appropriate inter-site connection mechanisms (see the information below).
 
-##
+[^1]: OSM Release TWO supports multiple VIMs through a plugin model, including OpenVIM, OpenStack, VMWare vCloud Director and Amazon Web Services Elastic Compute Cloud.
+
+## Summary of NFV components and infrastructure.
 In the following, we summarize the main NFV components and infrastructures that have been made available for the 1st Open Call for experimentation by 5GinFIRE testbed providers. 
 
+### 5TONIC
+NFVO: based on OSM Release TWO (running in virtual machine using a server computer with 16 cores, 128 GB RAM, 2 TB NLSAS hard drive and a network card with 4 GbE ports and DPDK support).
+VIM: two instances of OpenStack Ocata, each controlling a separate NFVI (referred to as 5GinFIRE NFVI and IMDEA NFVI in this table). 
+- The first one runs in a server computer (6 cores, 32GB of memory, 2TB NLSAS and a network card with four GbE ports and DPDK support).
+- The second one runs as a virtual machine in the same server computer as the OSM stack. 
 
-[^1]: OSM Release TWO supports multiple VIMs through a plugin model, including OpenVIM, OpenStack, VMWare vCloud Director and Amazon Web Services Elastic Compute Cloud.
+5GinFIRE NFVI: 
+- 3x server computers (each with 6 cores, 32GB of memory, 2TB NLSAS and a network card with four GbE ports and DPDK support)
+- Interconnected by a GbE data-plane switch.
+
+IMDEA NFVI: 
+- 2x high-profile servers (each equipped with 8 cores in a NUMA architecture, 128GB RDIMM RAM, 4TB SAS and 8 10Gbps Ethernet optical transceivers with SR-IOV capabilities).
+- Interconnected by a 24-port 10Gbps Ethernet switch.
+
+
+
 
 
