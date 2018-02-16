@@ -43,11 +43,11 @@ Both NFVIs are available for experimentation under the terms and conditions spec
 - 1x server computer: 16 cores, 256 GB memory, 4 x 1Gbps interfaces (passthrough), 2 x 1TB SAS2 hard drives. 
 - 1x 24-port 1Gbps switch, interconnecting the infrastructure.
 
-### UNIVBRIS&BIO
+### UNIVBRIS & BIO
 
 **VIM**: based on OpenStack Ocata.
 
 **NFVI**:
--	1 server computer: 2x8 core 16 threads CPU 2.4 GHz, 32GB RAM, Dual RAID 1 900 GB HDs.
--	1 server computer: 2x8 core 16 threads CPU 2.4 GHz, 16GB RAM, 900 GB storage.
+-	1x server computer: 2x8 core 16 threads CPU 2.4 GHz, 32GB RAM, Dual RAID 1 900 GB HDs.
+-	1x server computer: 2x8 core 16 threads CPU 2.4 GHz, 16GB RAM, 900 GB storage.
 -	1x MVB NEC optical switch, 1x ENS NEC optical switch.
