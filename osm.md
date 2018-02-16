@@ -60,9 +60,9 @@ Enabling effective network communications among multiple sites has required a ca
 
 The 5GinFIRE network operations center will be in charge of the allocation of IP address ranges to entities within the address space 10.154.0.0/16. The current allocation of IP addresses to sites is summarized as follows:
 
-- 5TONIC: 10.4.0.0/16.
-- ITAv:	10.154.0.0/20.
-- UNIVBRIS & BIO:	10.154.16.0/20.
+- **5TONIC**: 10.4.0.0/16.
+- **ITAv**:	10.154.0.0/20.
+- **UNIVBRIS & BIO**:	10.154.16.0/20.
 - Reserved for administrative purposes: 10.154.255.0/23
 
 Any potential issues related with the allocation of IP addresses to external sites that connect to the MANO platform will be treated on a case-by-case basis.
