@@ -8,9 +8,9 @@ The 5GinFIRE MANO platform is the system that enables the management and orchest
 
 The platform is based on the ETSI-hosted [Open Source MANO (OSM) project](https://osm.etsi.org/), which has been adopted by 5GinFIRE to provide the functionalities of a NFV orchestrator, supporting the management and coordination of computing, storage and network resources at the diverse experimental infrastructures, as well as the lifecycle management of network services. With this purpose, the OSM stack interacts with the Virtualized Infrastructure Managers (VIM) deployed by 5GinFIRE partners. There are currently three sites deploying the components and functionalities required to operate the 5GinFIRE MANO platform, each providing an NFV experimental infrastructure: (a) an infrastructure at the global 5G Telefonica Open Innovation Laboratory (5TONIC) [2], made available by TID (founding member of 5TONIC) and UC3M (member of 5TONIC); (b) an infrastructure located at ITAv; and (c) an infrastructure made available through a collaborative agreement by UNIVBRIS and BIO. 
 
-The first stable version of the 5GinFIRE MANO platform is based on OSM Release TWO, being the OSM stack hosted at 5TONIC (the team is currently working on the migration to OSM Release THREE). Inter-site communications among 5GinFIRE sites are enabled by an overlay network architecture based on VPNs (to simplify operations, the primary VPN server is hosted at the same site as the MANO stack, i.e. 5TONIC). This overlay network enables the establishment of the following types of data exchanges: (a) communications between the OSM stack and the VIMs; (b) communications between the OSM stack and the VxFs, to support their configuration; (c) inter-site data communications among VxFs. 
+The first stable version of the 5GinFIRE MANO platform is based on OSM Release TWO, being the OSM stack hosted at 5TONIC (the team is currently working on the migration to OSM Release THREE). Inter-site communications among 5GinFIRE sites are enabled by an overlay network architecture based on VPNs (to simplify operations, the primary VPN server is hosted at the same site as the MANO stack, i.e. 5TONIC). This overlay network provides authorized partners a secure access with certificate-based authentication to 5TONIC, enabling the establishment of the following types of data exchanges: (a) communications between the OSM stack and the VIMs; (b) communications between the OSM stack and the VxFs, to support their configuration; (c) inter-site data communications among VxFs. 
 
-The technical solution adopted by 5GinIFIRE also supports the flexible incorporation of other sites (e.g., coming from the Open Call process of 5GinFIRE), as long as they support a compliant VIM[^1] and they set up the appropriate inter-site connection mechanisms (see the information below).
+The technical solution adopted by 5GinIFIRE also supports the flexible incorporation of other sites (e.g., coming from the Open Call process of 5GinFIRE), as long as they support a compliant VIM[^1] and they set up the appropriate VPN based inter-site connection mechanisms (see the information below).
 
 [^1]: OSM Release TWO supports multiple VIMs through a plugin model, including OpenVIM, OpenStack, VMWare vCloud Director and Amazon Web Services Elastic Compute Cloud.
 
@@ -52,7 +52,7 @@ Both NFVIs are available for experimentation under the terms and conditions spec
 -	1x server computer: 2x8 core 16 threads CPU 2.4 GHz, 16GB RAM, 900 GB storage.
 -	1x MVB NEC optical switch, 1x ENS NEC optical switch.
 
-## Adressing plan
+## Addressing plan
 Enabling effective network communications among multiple sites has required a careful definition of the IP address space to be used by interconnecting entities. In this respect, the following agreements have been taken by 5GinFIRE:
 
 1)	Entities connecting to the 5GinFIRE MANO platform will use the private address space **10.154.0.0/16** for control and data plane communications.
@@ -70,11 +70,11 @@ Any potential issues related with the allocation of IP addresses to external sit
 ## Requirements to support the interconnection of external sites
 Beyond any particular requirements that may be identified when facing the interconnection of specific external sites, which will be treated on a case-by-case basis, in the following we indicate a non-exhaustive list of requirements that must be fulfilled by external entities to connect to the 5GinFIRE MANO platform:
 
-1) Utilization of a compliant VIM solution (i.e., compliant with OSM Release TWO ^2
-Obtaining an appropriate IP address space and VPN credentials, from the “5GinFIRE network operations center” 
-Configuration of VPN endpoints, to connect the site to the network overlay of the 5GinFIRE MANO platform
-Configuration of the appropriate VIM networks, 
-to enable control & data communications with the VxFs deployed at the entity’s datacenter,
-and using the allocated IP address space 
-Routing of control & data plane information across the local network segments of the external entity
+1) Utilization of a compliant VIM solution, i.e., compliant with OSM Release TWO[^2].
+2) Obtaining an appropriate IP address space, along with VPN credentials to gain a secure access to 5TONIC, from the 5GinFIRE network operations center. 
+3) Configuration of the site with the allocated IP address space.
+4) Configuration of any necessary VPN endpoints, to connect the site to the overlay network of the 5GinFIRE MANO platform. These endpoints will then support the exchange of control and data-plane information with the other NFV components of 5GinFIRE (OSM stack, VxFs, etc.).
+5) Configuration of the appropriate VIM networks to enable control and data-plane communications with the VxFs deployed at the entity’s datacenter,
+and using the allocated IP address space.
+6) Support routing of control and data plane information across the local network segments of the external entity, to support communications between the VPN endpoints and the VIMs/VxFs and vice versa.
 
