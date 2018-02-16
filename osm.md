@@ -51,3 +51,7 @@ Both NFVIs are available for experimentation under the terms and conditions spec
 -	1x server computer: 2x8 core 16 threads CPU 2.4 GHz, 32GB RAM, Dual RAID 1 900 GB HDs.
 -	1x server computer: 2x8 core 16 threads CPU 2.4 GHz, 16GB RAM, 900 GB storage.
 -	1x MVB NEC optical switch, 1x ENS NEC optical switch.
+
+## Adressing plan
+
+## Requirements to support the interconnection of external sites
