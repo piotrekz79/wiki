@@ -10,6 +10,8 @@ The platform is based on the ETSI-hosted [Open Source MANO (OSM) project](https:
 
 The first stable version of the 5GinFIRE MANO platform is based on OSM Release TWO, being the OSM stack hosted at 5TONIC (the team is currently working on the migration to OSM Release THREE). Inter-site communications among 5GinFIRE sites are enabled by an overlay network architecture based on VPNs (to simplify operations, the primary VPN server is hosted at the same site as the MANO stack, i.e. 5TONIC). This overlay network enables the establishment of the following types of data exchanges: (a) communications between the OSM stack and the VIMs; (b) communications between the OSM stack and the VxFs, to support their configuration; (c) inter-site data communications among VxFs. The following table summarizes the main NFV components and infrastructures that, for the 1st Open Call, have been made available for experimentation by 5GinFIRE testbed providers. 
 
+The technical solution adopted by 5GinIFIRE also supports the flexible incorporation of other sites (e.g., coming from the Open Call process of 5GinFIRE), as long as they support a compliant VIM[^1] and they set up the appropriate inter-site connection mechanisms (see the information below).
 
+[^1]: OSM Release TWO supports multiple VIMs through a plugin model, including OpenVIM, OpenStack, VMWare vCloud Director and Amazon Web Services Elastic Compute Cloud.
 
 
