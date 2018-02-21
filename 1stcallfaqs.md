@@ -99,6 +99,10 @@ The extensions can be deployed as services or they can reuse existing APIs (Port
 
 Please check this Wiki. The descriptors are standardized in format and packaging by ETSI specifications
 
+* **Is a successful applicant expected to attend 5GINFIRE review meetings and / or onsite visits (e.g. at the Testbed sites, for integration)? ?**
+
+Beside review meeting, we would like to invite all successful proposers to a kick-off meeting in May 2018 as well as tutorial session at EUCNC conference (to be confirmed) if appropriate. Reserving some additional resources for additional travels, e.g. to Testbed sites seems reasonable.
+
 
 
 
