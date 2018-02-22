@@ -43,6 +43,9 @@ example response :
 }
 ```
 
+In the following requests JSESSIONID cookie value is equal to the currentSessionID (and JSESSIONID given from server). 
+Must be present for authenticated requests
+
 
 
 
