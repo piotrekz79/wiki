@@ -38,7 +38,7 @@ Please check the wiki http://wiki.5ginfire.eu/#the-5-gin-fire-architecture-techn
 
 * **Considering that we would like to instantiate multiple slices, are we allowed to execute them in parallel?**
 
-***[WP4/WP5 TBC]*** This depends on resources, but normally you should be able to do that
+This depends on resources, but normally you should be able to do that
 
 * **Is there a multi-site federated infrastructure, or the different testbeds are seen as individual sites? In the last case, where should be specified the site for deployment?**
 
@@ -59,15 +59,15 @@ Each site running an experimental infrastructure deploys a Virtualized Infrastru
 
 * **Is OpenStack the VIM/NFVI used in the sites? Which version specifically?**
 
-***[WP4 TBC]*** YES. Openstack Ocata 
+ YES. Openstack Ocata 
 
 * **Are we allowed to upload specific images on the VIM/NFVI while implementing VNFs?**
 
-***[WP4 TBC]*** YES
+YES
 
 * **Will the experimenter get access (i.e. SSH) to the deployed instances? If yes, how? Via VPN or public IPs?** 
 
-***[WP4 TBC]***  Yes via SSH and VPN
+ Yes via SSH and VPN
 
 * **In case of VPN, are there some firewall rules?**
 
@@ -75,7 +75,7 @@ Each site running an experimental infrastructure deploys a Virtualized Infrastru
 
 * **Will you accept proposals with potential modifications to the OSM tool? If yes, which version should be considered, TWO or THREE?**
 
-***[WP4 TBC]*** YES this falls under category 2a. for version see answer above
+YES this falls under category 2a. for version see answer above
 
 * **Will you accept proposals with potential modifications/extensions to the 5GinFIRE portal?**
 
