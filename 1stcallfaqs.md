@@ -99,11 +99,11 @@ The extensions can be deployed as services or they can reuse existing APIs (Port
 
 Please check this Wiki. The descriptors are standardized in format and packaging by ETSI specifications
 
-* **Is a successful applicant expected to attend 5GINFIRE review meetings and / or onsite visits (e.g. at the Testbed sites, for integration)? **
+* **Is a successful applicant expected to attend 5GINFIRE review meetings and / or onsite visits (e.g. at the Testbed sites, for integration)?**
 
 Beside review meeting, we would like to invite all successful proposers to a kick-off meeting in May 2018 as well as tutorial session at EUCNC conference (to be confirmed) if appropriate. Reserving some additional resources for additional travels, e.g. to Testbed sites seems reasonable.
 
-* **IThe budget for the open-call allows the new partners to buy equipment?**
+* **The budget for the open-call allows the new partners to buy equipment?**
 
 In principle we do not specify a limit for equipment purchases.  This means that this could be done within reasonable limits. The spirit of the call is to put the money into work and not into infrastructure or other equipment.
 The main point is whether the purchase is duly justified and that the rest of the budget request is leaving sufficient room for executing the work or operation (in case of 2b).
