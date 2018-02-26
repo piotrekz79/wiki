@@ -18,7 +18,11 @@ Please have a look at the following links:
 
 * **Is the core network (i.e. Unified GW) provided as a functionality of the system and deployable through OSM?**
 
-***[WP5 TBC]***
+Yes the UGW is the core LTE network. 
+So far the VNF UGW is not deployable via OSM MANO and B-COM is still working in the descriptors.
+The PNF UGW is already deployed at Bristol site.
+
+
 
 * **Is it a hard limitation "Before  awarding any grants to a third party, it will  be  checked whether the  third party is a legal entity with a history of at least three years of commercial operations, and has not been declared insolvent." ?**
 
