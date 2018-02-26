@@ -12,6 +12,7 @@ The following pages present different topics regarding 5GinFIRE services
 [The portal Architecture and Design](portalarchitecturedesign)
 [The Portal API](portalarchitecturedesign/portal-api)
 [The 5GinFIRE MANO platform](osm)
+[Packaging for VxF/NSD](packagingvxfnsd)
 [The Unifier Gateway - 5G-In-A-Box ](unifiergateway)
 
 ## User Guides
