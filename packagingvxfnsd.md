@@ -3,7 +3,7 @@
 
 # YANG models and packaging for VxF/NSD
 
-A NFV descriptor (VNFD or NSD) must be modelled using the YANG models defined in this specification and then encoded as JSON text using the using the procedures specified in RFC 7951[^1]. 
+A NFV descriptor (VNFD or NSD) must be modelled using the YANG models defined in this specification and then encoded as JSON text using the using the procedures specified in RFC 7951 [^1]. 
 
 YANG is a data modelling language for the definition of data sent over the NETCONF network configuration protocol. The YANG data modelling language was developed by the NETMOD working group in the Internet Engineering Task Force (IETF) and was published as RFC6020 in October 2010. 
 The data modelling language can be used to model both configuration data as well as state data of network elements. Furthermore, YANG can be used to define the format of event notifications emitted by network elements and it allows data modellers to define the signature of remote procedure calls that can be invoked on network elements via the NETCONF protocol. The language, being protocol independent, can then be converted into any encoding format, e.g. XML or JSON, that the network configuration protocol supports.
@@ -27,9 +27,9 @@ Available on Github under the BSD License https://github.com/CESNET/libyang
 
 In order to be compliant with OSM, the package must strictly follow the requirements precisely defined by ETSI in the following documents: 
 •	“NFV, management and orchestration, VNF Packaging Specification” Part. 6. 
-ETSI GS NFV-IFA 011[^2]
+ETSI GS NFV-IFA 011 [^2]
 •	“NFV, Management and Orchestration; Network Service Templates Specification” Part 5. 
-ETSI GS NFV-IFA 014[^3]
+ETSI GS NFV-IFA 014 [^3]
 Here are the general and packaging requirements extracted from the above documents. 
 
 
