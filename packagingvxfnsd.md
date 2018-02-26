@@ -47,11 +47,9 @@ https://osm-download.etsi.org/ftp/osm-3.0-three/examples/
 
 ## Package pre-validation in the 5GinFire portal
 
-Currently, the 5GInFIRE portal is not automatically pre-validating a package with the basic rules defined above. The administrator will be validating each package manually. 
-An interesting feature would be to implement an automatic basic validation in the API, preventing users to submit invalid VxF/NSD package, and so, he will get instant feedback on what’s wrong. 
-The validation process would be in two steps: 
-•	First validate the package with the requirements specified by the ETSI. (Requirements needs to be transposed with code).
-•	Validate the Yang model (use available tools to validate the model as listed above). 
+Currently, the 5GInFIRE portal is not automatically pre-validating a package with the basic rules defined above. But is scheduled to be implemented.
+The administrator will be validating each package while ONBOARDING to OSM. 
+
 
 
 
