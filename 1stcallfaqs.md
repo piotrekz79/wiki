@@ -42,7 +42,7 @@ Please check the wiki http://wiki.5ginfire.eu/#the-5-gin-fire-architecture-techn
 
 * **Considering that we would like to instantiate multiple slices, are we allowed to execute them in parallel?**
 
-This depends on resources, but normally you should be able to do that
+In 5GinFIRE,*experiment* is the abstraction that is available to experimenters for deployment. The 5GinFIRE MANO platform supports the deployment of simultaneous experiments, being their isolation guaranteed through the Virtualized Infrastructure Managers (VIMs).  
 
 * **Is there a multi-site federated infrastructure, or the different testbeds are seen as individual sites? In the last case, where should be specified the site for deployment?**
 
