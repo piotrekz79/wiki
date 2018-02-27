@@ -217,7 +217,7 @@ After defining all our service primitives, we need to define which service primi
 
 The **juju** option defines which charms are used. In this case, we are going to use the **transcoder** charm that will be placed in the charm folder.
 
-The final descriptor can be found [here]().
+The final descriptor can be found [here](https://github.com/5GinFIRE/opencv_transcoder_vnf/tree/master/vnf).
 
 For more information about VNF Descriptors, read this [article](https://osm.etsi.org/wikipub/index.php/Creating_your_own_VNF_package_\(Release_TWO\)).
 
@@ -427,7 +427,7 @@ This function can only be run after configuration because only the configuration
 
 **Note:** we recommend the usage of **SystemD** to launch services inside the VDU because it's much easier to configure and debug. **SystemD** also provides interesting functions like restart in case of failure and restart scheduling.
 
-The final **transcoder.py** can be found [here]().
+The final **transcoder.py** can be found [here](https://github.com/5GinFIRE/opencv_transcoder_vnf/blob/master/charms/transcoder/reactive/transcoder.py).
 
 After all this, we need to build this charm (this process will download all the libraries needed to run it):
 
