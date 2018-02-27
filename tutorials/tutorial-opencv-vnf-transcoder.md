@@ -9,6 +9,8 @@ To create a VNF, you need to have three things:
 
 ## VM Image
 
+You can download our premade image from [here](https://atnog.av.it.pt/eduardosousa/opencv_transcoder_image.qcow2).
+
 To create the base image, follow this [article](https://docs.openstack.org/image-guide/ubuntu-image.html).
 
 After creating the base image and installing all the required software, try to shrink the VM image using:
