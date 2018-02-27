@@ -2,6 +2,7 @@
 
 This tutorial shows the process to replicate the construction of the OpenCV Transcoder VNF.
 To create a VNF, you need to have three things:
+
 - VM Image
 - VNF Descriptor
 - Charm
@@ -12,7 +13,7 @@ To create the base image, follow this [article](https://docs.openstack.org/image
 
 After creating the base image and installing all the required software, try to shrink the VM image using:
 
-~~~~
+~~~~bash
 qemu-img convert -O qcow2 -c <original_vm_image> <shrunk_vm_image>
 ~~~~
 
@@ -22,26 +23,26 @@ qemu-img convert -O qcow2 -c <original_vm_image> <shrunk_vm_image>
 
 Lets start by creating the base folder for the VNF descriptor:
 
-~~~~
+~~~~bash
 mkdir ~/transcoder_vnf
 cd ~/transcoder_vnf
 ~~~~
 
 Then, we need to create the folder structure where the VNF Descriptor files will be stored:
 
-~~~~
+~~~~bash
 mkdir charms cloud_init icons images scripts
 ~~~~
 
 After the folder structure has been created, we need to create some files:
 
-~~~~
+~~~~bash
 touch README opencv_transcoder_vnfd.yaml
 ~~~~
 
 The folder and file structure should look like this:
 
-~~~~
+~~~~bash
 .
 ├── charms/
 ├── cloud_init/
@@ -54,13 +55,13 @@ The folder and file structure should look like this:
 
 Lets start by creating the cloud-init configuration file:
 
-~~~~
+~~~~bash
 touch cloud_init/transcoder_cloud_init.cfg
 ~~~~
 
 And inside this file lets put some basic configurations.
 
-~~~~
+~~~~yaml
 #cloud-config
 password: 5ginfire
 chpasswd: { expire: False }
@@ -69,7 +70,7 @@ ssh_pwauth: True
 
 Lets insert into **opencv_transcoder_vnfd.yaml** the basic metadata of the VNF descriptor:
 
-~~~~
+~~~~yaml
 vnfd:vnfd-catalog:
     vnfd:vnfd:
      -  id: opencv_transcoder_vnf
@@ -82,6 +83,7 @@ vnfd:vnfd-catalog:
 ~~~~
 
 So lets break down what these metadata fields mean:
+
 - **id:** VNF identifier (must be unique)
 - **name:** Name of the VNF
 - **short-name:** Short name of the VNF
@@ -92,8 +94,8 @@ So lets break down what these metadata fields mean:
 
 The VNF will have two connection points. The first connection point will be used by Juju Charms to configure the VDU; the second connection will be used to access the data plane, or in simpler terms, it is the connection that allows the VDU to get the video stream and to publish the transcoded version.
 
-~~~~
-		connection-point:
+~~~~yaml
+        connection-point:
         -   name: transcoder_vnfd/cp0
             type: VPORT
         -   name: transcoder_vnfd/cp1
@@ -101,12 +103,13 @@ The VNF will have two connection points. The first connection point will be used
 ~~~~
 
 Each connection point is composed by the following fields:
+
 - **name:** Name that represents the connection point (must be unique)
 - **type:** Type of the connection point port (normally VPORT)
 
 Now we need to define the VDU (Virtualization Deployment Unit), that will run the transcoding service.
 
-~~~~
+~~~~yaml
         vdu:
         -   cloud-init-file: transcoder_cloud_init.cfg
             count: '1'
@@ -133,13 +136,16 @@ Each VDU will the above mentioned fields and we will provide a brief explanation
 - **cloud-init-file:** Name of the file that contains the cloud-init configurations for the VM (cloud-init file must be inside of the cloud-init folder)
 - **count:** Number of VDUs to create
 - **external-interface:** Mapping between the VNF connection points and interfaces provided to the VDU
+
 -- **name:** Name of the interface
 -- **virtual-interface:** Choice of interface driver type (ex.: VIRTIO, OM-MGMT)
 -- **vnfd-connection-point-ref:** Mapping between the defined interface and VNF connection point
+
 - **id:** VDU identifier (must be unique)
 - **image:** Name of the image to be used by the VDU
 - **name:** Name of the VDU
 - **vm-flavor:** Data structure that holds what computational resources the VDU needs
+
 -- **memory-mb:** Amount of RAM in MBytes
 -- **storage-gb:** Amount of disk in GBytes
 -- **vcpu-count:** Amount of vCPUs
@@ -149,8 +155,8 @@ There is one service premitive that is mandatory: config. The **config** service
 Then we can create other service primitives that we might need. In this case, we will need a service primitive that will configure and run our transcoder code inside the VDU. This service primitive shall be called **start-transcoder** and will take as parameters the IP where it should get the video stream and the port where it will output the transcoded stream.
 Lets now have a look at the VNF configuration.
 
-~~~~
-		vnf-configuration:
+~~~~yaml
+        vnf-configuration:
             config-attributes:
                 config-delay: 10
             service-primitive:
@@ -190,8 +196,10 @@ Lets now have a look at the VNF configuration.
 In the **config-attributes**, we only configure the **config-delay** so that the configuration doesn't start right after the instantiation process.
 
 Lets analyze the **config** service primitive:
+
 - **name:** Name of the service primitive (must match with the name defined in the charm)
 - **parameter:** Definition of the parameter that should be passed
+
 -- **data-type:** Type of the parameter (ex.: STRING, INTEGER)
 -- **default-value:** Default value of the parameter
 -- **name:** Name of the parameter
@@ -199,9 +207,11 @@ Lets analyze the **config** service primitive:
 In the special case of the **config** service primitive, we can see that in the **default-value** for ssh-hostname there is a strange value: **&lt;rw_mgmt_ip&gt;**. This strange value will be replaced by Juju automatically, because we can't know in advance which IP the VDU will be assigned.
 
 After defining all our service primitives, we need to define which service primitives need to be run to configure the VDU and in which order. In our case we just need to run the **config** service primitive, but lets verify **initial-config-primitive** (not all service primitives need to be in **initial-config-primitive**).
+
 - **name:** Name of the service primitive
 - **seq:** Position in the sequence
 - **parameter:** Data structure that holds the parameters and values
+
 -- **name:** Name of the parameter
 -- **value:** Value that should be passed
 
@@ -219,7 +229,7 @@ For more information about the Juju configuration, check this [article](https://
 
 To create charms, you will need to install the JuJu tools:
 
-~~~~
+~~~~bash
 sudo add-apt-repository ppa:juju/stable
 sudo apt update
 sudo apt install juju
@@ -227,7 +237,7 @@ sudo apt install juju
 
 Then you need to setup your folder structure and coding environment:
 
-~~~~
+~~~~bash
 mkdir -p ~/charms/layers
 export JUJU_REPOSITORY=~/charms
 export LAYER_PATH=$JUJU_REPOSITORY/layers
@@ -236,14 +246,14 @@ cd $LAYER_PATH
 
 Now lets create our Charm:
 
-~~~~
+~~~~bash
 charm create transcoder
 cd transcoder
 ~~~~
 
 Lets modify layers.yaml in order to provide new functionality to this charm:
 
-~~~~
+~~~~yaml
 includes:
   - layer:basic
   - layer:vnfproxy
@@ -253,7 +263,7 @@ There are two layers: **basic** and **vnfproxy**. The **basic** layer is respons
 
 A Charm is a piece of code like any other, that can be reused, so lets add some metadata about authorship and where it can run. To this, lets modify metadata.yaml:
 
-~~~~
+~~~~yaml
 name: transcoder
 summary: Transcoder charm
 maintainer: Eduardo Sousa <eduardosousa@av.it.pt>
@@ -272,7 +282,7 @@ series:
 
 Modify actions.yaml:
 
-~~~~
+~~~~yaml
 start-transcoder:
   description: Start transcoding
   params:
@@ -283,20 +293,19 @@ start-transcoder:
       description: Port on which the transcoder is outputing the result
       type: integer
   required:
-  	- stream-ip
-  	- output-port
-
+    - stream-ip
+    - output-port
 ~~~~
 
 Create a directory for actions:
 
-~~~~
+~~~~bash
 mkdir actions
 ~~~~
 
 For each action, create a script to invoke the reactive framework with the action to be performed. In this case, we only need one file because we only have one action: **start-transcoder**.
 
-~~~~
+~~~~python
 cat << 'EOF' >> actions/start-transcoder
 #!/usr/bin/env python3
 
@@ -319,20 +328,20 @@ EOF
 
 And make this file executable:
 
-~~~~
+~~~~bash
 chmod +x actions/start-transcoder
 ~~~~
 
 Now that the action is mapped, we need to create the file where the code for the actions is going to be:
 
-~~~~
+~~~~bash
 rm reactive/transcoder.py
 touch reactive/transcoder.py
 ~~~~
 
 After all this, we need to code the interaction mapped by the action, but first lets do the initial VDU configuration:
 
-~~~~
+~~~~python
 from charmhelpers.core.hookenv import (
     action_fail,
     action_get,
@@ -341,7 +350,7 @@ from charmhelpers.core.hookenv import (
     status_set,
 )
 from charms.reactive import (
-	when,
+    when,
     set_state,
     remove_state,
 )
@@ -370,7 +379,7 @@ In this configuration function we are just creating a new interface inside the V
 
 Lets now write the code that will activate the transcoding inside the VDU:
 
-~~~~
+~~~~python
 @when('transcoder.configured')
 @when('actions.start-transcoder')
 def start_transcoder():
@@ -422,13 +431,14 @@ The final **transcoder.py** can be found [here]().
 
 After all this, we need to build this charm (this process will download all the libraries needed to run it):
 
-~~~~
+~~~~bash
 charm build
 ~~~~
 
 ## Packaging the VNF Descriptor
 
 There are a few steps to package a VNF descriptor:
+
 1. Copy the built charm into the VNF Descriptor charms folder
 2. Compute the checksums for all the files and put it in checksums.txt
 3. Create an archive of the VNF Descriptor folder
@@ -437,7 +447,7 @@ There are a few steps to package a VNF descriptor:
 
 Lets copy the built charm folder:
 
-~~~~
+~~~~bash
 cp -R ~/charms/builds/transcoder ~/transcoder_vnf/charms
 ~~~~
 
@@ -445,7 +455,7 @@ cp -R ~/charms/builds/transcoder ~/transcoder_vnf/charms
 
 Lets compute the checksums and insert into checksums.txt:
 
-~~~~
+~~~~bash
 cd ~/transcoder_vnf/charms
 find * -type f -print | while read line; do md5sum $line >> checksums.txt; done
 ~~~~
@@ -454,7 +464,7 @@ find * -type f -print | while read line; do md5sum $line >> checksums.txt; done
 
 Lets create the archive in **tar.gz** format:
 
-~~~~
+~~~~bash
 cd ~
 tar -zcvf opencv_transcoder_vnf.tar.gz transcoder_vnf
 ~~~~
