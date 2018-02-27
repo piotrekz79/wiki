@@ -447,7 +447,7 @@ Lets compute the checksums and insert into checksums.txt:
 
 ~~~~
 cd ~/transcoder_vnf/charms
-find -mindepth 1 -type f -print | while read line; do md5sum $line >> checksums.txt; done
+find * -type f -print | while read line; do md5sum $line >> checksums.txt; done
 ~~~~
 
 ### Create an archive
