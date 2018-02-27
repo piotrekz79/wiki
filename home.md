@@ -22,6 +22,7 @@ The following pages present different topics regarding 5GinFIRE services
 ## Tutorials and Best practices
 
 [Tutorial: OpenCV Transcoder VNF](tutorials/tutorial-opencv-vnf-transcoder)
+[Tutorial: OpenCV Transcoder NS](tutorials/tutorial-opencv-transcoder-ns)
 
 ## Source code
 
