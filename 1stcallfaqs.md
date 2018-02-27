@@ -58,24 +58,24 @@ Each site running an experimental infrastructure deploys a Virtualized Infrastru
 
 
 * **Is inter-VNF communication based on classical virtual networking like in OpenStack?**
-
-***[WP4 TBC]***
+At this moment, all the sites that provide an experimental infrastructure are using a Virtualized Infrastructure Manager (VIM) based on OpenStack. Virtual networking for VNF communications at each site is enabled by its corresponding OpenStack VIM. 
 
 * **Is OpenStack the VIM/NFVI used in the sites? Which version specifically?**
 
- YES. Openstack Ocata 
+ Yes. The current version is Openstack Ocata. 
 
 * **Are we allowed to upload specific images on the VIM/NFVI while implementing VNFs?**
 
-YES
+Uploading VM images on the VIMs is part of the development/validation process of VNFs, so this will be allowed upon request. 
 
 * **Will the experimenter get access (i.e. SSH) to the deployed instances? If yes, how? Via VPN or public IPs?** 
 
- Yes via SSH and VPN
+The 5GinFIRE platform support the controlled access of experimenters to their reources under experimentation (i.e., VNFs). This is done through a VPN access to the platform, and via *ssh* to the VNFs.
+ 
 
 * **In case of VPN, are there some firewall rules?**
 
-***[WP4 TBC]***
+Yes, firewall rules are configured to control the access to infrastucture resources and deployed VNFs.
 
 * **Will you accept proposals with potential modifications to the OSM tool? If yes, which version should be considered, TWO or THREE?**
 
