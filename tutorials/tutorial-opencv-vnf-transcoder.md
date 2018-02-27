@@ -76,7 +76,7 @@ vnfd:vnfd-catalog:
      -  id: opencv_transcoder_vnf
         name: opencv_transcoder_vnf
         short-name: opencv_vnf
-        logo:
+        logo: 5GinFIRE.png
         vendor: 5GinFIRE
         version: '1.0'
         description: OpenCV Transcoder VNF
@@ -451,7 +451,7 @@ cp -R ~/charms/builds/transcoder ~/transcoder_vnf/charms
 Lets compute the checksums and insert into checksums.txt:
 
 ~~~~bash
-cd ~/transcoder_vnf/charms
+cd ~/transcoder_vnf
 find * -type f -print | while read line; do md5sum $line >> checksums.txt; done
 ~~~~
 
