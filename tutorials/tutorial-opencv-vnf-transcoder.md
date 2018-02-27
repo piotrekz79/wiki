@@ -3,9 +3,9 @@
 This tutorial shows the process to replicate the construction of the OpenCV Transcoder VNF.
 To create a VNF, you need to have three things:
 
-- VM Image
-- VNF Descriptor
-- Charm
++ VM Image
++ VNF Descriptor
++ Charm
 
 ## VM Image
 
@@ -84,13 +84,13 @@ vnfd:vnfd-catalog:
 
 So lets break down what these metadata fields mean:
 
-- **id:** VNF identifier (must be unique)
-- **name:** Name of the VNF
-- **short-name:** Short name of the VNF
-- **logo:** Name of the icon image file (image file must be inside of the icons folder)
-- **vendor:** Person/Organization that created the VNF
-- **version:** Version of the VNF
-- **description:** Brief description of the VNF
++ **id:** VNF identifier (must be unique)
++ **name:** Name of the VNF
++ **short-name:** Short name of the VNF
++ **logo:** Name of the icon image file (image file must be inside of the icons folder)
++ **vendor:** Person/Organization that created the VNF
++ **version:** Version of the VNF
++ **description:** Brief description of the VNF
 
 The VNF will have two connection points. The first connection point will be used by Juju Charms to configure the VDU; the second connection will be used to access the data plane, or in simpler terms, it is the connection that allows the VDU to get the video stream and to publish the transcoded version.
 
@@ -104,8 +104,8 @@ The VNF will have two connection points. The first connection point will be used
 
 Each connection point is composed by the following fields:
 
-- **name:** Name that represents the connection point (must be unique)
-- **type:** Type of the connection point port (normally VPORT)
++ **name:** Name that represents the connection point (must be unique)
++ **type:** Type of the connection point port (normally VPORT)
 
 Now we need to define the VDU (Virtualization Deployment Unit), that will run the transcoding service.
 
@@ -133,22 +133,19 @@ Now we need to define the VDU (Virtualization Deployment Unit), that will run th
 
 Each VDU will the above mentioned fields and we will provide a brief explanation for them.
 
-- **cloud-init-file:** Name of the file that contains the cloud-init configurations for the VM (cloud-init file must be inside of the cloud-init folder)
-- **count:** Number of VDUs to create
-- **external-interface:** Mapping between the VNF connection points and interfaces provided to the VDU
-
--- **name:** Name of the interface
--- **virtual-interface:** Choice of interface driver type (ex.: VIRTIO, OM-MGMT)
--- **vnfd-connection-point-ref:** Mapping between the defined interface and VNF connection point
-
-- **id:** VDU identifier (must be unique)
-- **image:** Name of the image to be used by the VDU
-- **name:** Name of the VDU
-- **vm-flavor:** Data structure that holds what computational resources the VDU needs
-
--- **memory-mb:** Amount of RAM in MBytes
--- **storage-gb:** Amount of disk in GBytes
--- **vcpu-count:** Amount of vCPUs
++ **cloud-init-file:** Name of the file that contains the cloud-init configurations for the VM (cloud-init file must be inside of the cloud-init folder)
++ **count:** Number of VDUs to create
++ **external-interface:** Mapping between the VNF connection points and interfaces provided to the VDU
+++ **name:** Name of the interface
+++ **virtual-interface:** Choice of interface driver type (ex.: VIRTIO, OM-MGMT)
+++ **vnfd-connection-point-ref:** Mapping between the defined interface and VNF connection point
++ **id:** VDU identifier (must be unique)
++ **image:** Name of the image to be used by the VDU
++ **name:** Name of the VDU
++ **vm-flavor:** Data structure that holds what computational resources the VDU needs
+++ **memory-mb:** Amount of RAM in MBytes
+++ **storage-gb:** Amount of disk in GBytes
+++ **vcpu-count:** Amount of vCPUs
 
 After defining the VNF metadata, its connection points and the needed VDUs, we need to specify the service primitives that will be provided by the Juju Charm.
 There is one service premitive that is mandatory: config. The **config** service primitive will be responsible by setting up the interfaces and the initial configurations (if need be).
@@ -197,23 +194,21 @@ In the **config-attributes**, we only configure the **config-delay** so that the
 
 Lets analyze the **config** service primitive:
 
-- **name:** Name of the service primitive (must match with the name defined in the charm)
-- **parameter:** Definition of the parameter that should be passed
-
--- **data-type:** Type of the parameter (ex.: STRING, INTEGER)
--- **default-value:** Default value of the parameter
--- **name:** Name of the parameter
++ **name:** Name of the service primitive (must match with the name defined in the charm)
++ **parameter:** Definition of the parameter that should be passed
+++ **data-type:** Type of the parameter (ex.: STRING, INTEGER)
+++ **default-value:** Default value of the parameter
+++ **name:** Name of the parameter
 
 In the special case of the **config** service primitive, we can see that in the **default-value** for ssh-hostname there is a strange value: **&lt;rw_mgmt_ip&gt;**. This strange value will be replaced by Juju automatically, because we can't know in advance which IP the VDU will be assigned.
 
 After defining all our service primitives, we need to define which service primitives need to be run to configure the VDU and in which order. In our case we just need to run the **config** service primitive, but lets verify **initial-config-primitive** (not all service primitives need to be in **initial-config-primitive**).
 
-- **name:** Name of the service primitive
-- **seq:** Position in the sequence
-- **parameter:** Data structure that holds the parameters and values
-
--- **name:** Name of the parameter
--- **value:** Value that should be passed
++ **name:** Name of the service primitive
++ **seq:** Position in the sequence
++ **parameter:** Data structure that holds the parameters and values
+++ **name:** Name of the parameter
+++ **value:** Value that should be passed
 
 The **juju** option defines which charms are used. In this case, we are going to use the **transcoder** charm that will be placed in the charm folder.
 
