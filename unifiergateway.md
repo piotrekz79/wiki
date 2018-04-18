@@ -24,6 +24,8 @@ b<>com *Unifier Gateway* is deployed in Bristol Smart City Safety Testbed as a P
 
 ![5 Ginabox](/uploads/5-ginabox.png "5 Ginabox"){.align-center}
 
+b<>com *Unifier Gateway* has deployed according to the architecture detailed in the figure just below.
+
 ![Bristol](/uploads/bristol.png "Bristol"){.align-center}
 
 ## Deployment in IT-AV AUTOMOTIVE TESTBED
