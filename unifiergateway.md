@@ -3,7 +3,7 @@
 
 # The Unifier Gateway
 ## A pre-5G Mobile Edge private connectivity enabler
-b<>com *Wireless Edge Factory* is a SDN based private network framework enabling end to end broadband, IoT and WebRTC critical communications to be carried out in
+b<>com *Unifier Gateway* is a SDN based private network framework enabling end to end broadband, IoT and WebRTC critical communications to be carried out in
 a full secure manner in small to medium size buildings or industrial sites.
 
 ## Key features
