@@ -20,6 +20,7 @@ b<>com *Unifier Gateway* is a SDN based private network framework enabling end t
 * WLAN 802.1x protocols
 * EAP-AKA, EPS-AKA SIM based  authentication mechanisms
 
-## Deployment in IT-AV AUTOMOTIVE TESTBED
-
 ## Deployment in Bristol Smart City Safety Testbed
+b<>com *Unifier Gateway* is deployed in Bristol Smart City Safety Testbed as a PNF (Physical Network Function), with a dedicated hardware to provide "5G-in-a-box" solution.
+## Deployment in IT-AV AUTOMOTIVE TESTBED
+b<>com *Unifier Gateway* is deployed in IT-AV AUTOMOTIVE TESTBED as a VNF (Virtual Network Function) hosted on a edge cloud operated by IT-Aveiro.
