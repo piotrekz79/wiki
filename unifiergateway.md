@@ -29,4 +29,6 @@ b<>com *Unifier Gateway* has deployed according to the architecture detailed in 
 ![Bristol](/uploads/bristol.png "Bristol"){.align-center}
 
 ## Deployment in IT-AV AUTOMOTIVE TESTBED
-b<>com *Unifier Gateway* is deployed in IT-AV AUTOMOTIVE TESTBED as a VNF (Virtual Network Function) hosted on a edge cloud operated by IT-Aveiro.
+b<>com *Unifier Gateway* is deployed in IT-AV AUTOMOTIVE TESTBED as a VNF (Virtual Network Function) hosted on a edge cloud operated by IT-Aveiro. It follows  the architecture detailed in the figure just below.
+
+![Itaveiro](/uploads/itaveiro.png "Itaveiro"){.align-center}
