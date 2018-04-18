@@ -24,5 +24,7 @@ b<>com *Unifier Gateway* is deployed in Bristol Smart City Safety Testbed as a P
 
 ![5 Ginabox](/uploads/5-ginabox.png "5 Ginabox"){.align-center}
 
+![Bristol](/uploads/bristol.png "Bristol"){.align-center}
+
 ## Deployment in IT-AV AUTOMOTIVE TESTBED
 b<>com *Unifier Gateway* is deployed in IT-AV AUTOMOTIVE TESTBED as a VNF (Virtual Network Function) hosted on a edge cloud operated by IT-Aveiro.
