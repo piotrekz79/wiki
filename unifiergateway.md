@@ -5,7 +5,7 @@
 ## A pre-5G Mobile Edge private connectivity enabler
 b<>com *Unifier Gateway* is a SDN based private network framework enabling end to end broadband, IoT and WebRTC critical communications to be carried out in a full secure manner in small to medium size buildings or industrial sites. 
 
-![Ugw 4](/uploads/ugw-4.png "Ugw 4"){.align-center}
+![5 Ginabox](/uploads/5-ginabox.png "5 Ginabox"){.align-center}
 
 ## Key features
 * Security: Unified SIM based WLAN/LTE authentication approach (EAP-AKA, EPS-AKA), patented and distributed SDN based firewalling solution, pre-5G slice based architecture ensuring isolation between services
