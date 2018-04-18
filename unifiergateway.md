@@ -1,5 +1,5 @@
 <!-- TITLE: The Unifier Gateway -->
-<!-- SUBTITLE: A quick summary of Unifiergateway -->
+<!-- SUBTITLE: A quick summary of Unifier Gateway -->
 
 # The Unifier Gateway
 ## A pre-5G Mobile Edge private connectivity enabler
