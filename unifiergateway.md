@@ -32,3 +32,10 @@ b<>com *Unifier Gateway* has deployed according to the architecture detailed in 
 b<>com *Unifier Gateway* is deployed in IT-AV AUTOMOTIVE TESTBED as a VNF (Virtual Network Function) hosted on a edge cloud operated by IT-Aveiro. It follows  the architecture detailed in the figure just below.
 
 ![Itaveiro](/uploads/itaveiro.png "Itaveiro"){.align-center}
+
+## Contact
+Michel Corriou (michel.corriou@b-com.com), b<>com Research Institute
+To connect with b<>com, see https://b-com.com/en/institute/connect
+
+## More details
+To find more details on b<>com and *Unifier Gateway*, see: https://b-com.com/en/bcom-wireless-edge-factory
