@@ -19,3 +19,7 @@ b<>com *Unifier Gateway* is a SDN based private network framework enabling end t
 * Preloaded with Full LTE EPC (MME, S/P-GW, HSS), 3GPP Rel10 compliant
 * WLAN 802.1x protocols
 * EAP-AKA, EPS-AKA SIM based  authentication mechanisms
+
+## Deployment in IT-AV AUTOMOTIVE TESTBED
+
+## Deployment in Bristol Smart City Safety Testbed
