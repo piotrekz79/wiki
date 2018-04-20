@@ -34,7 +34,7 @@ b<>com *Unifier Gateway* is deployed in IT-AV AUTOMOTIVE TESTBED as a VNF (Virtu
 ![Itaveiro](/uploads/itaveiro.png "Itaveiro"){.align-center}
 
 ## Contact
-Michel Corriou (michel.corriou@b-com.com), b<>com Research Institute
+Michel Corriou, b<>com Research Institute
 To connect with b<>com, see https://b-com.com/en/institute/connect
 
 ## More details
