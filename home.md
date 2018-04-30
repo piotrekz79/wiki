@@ -23,6 +23,9 @@ The following pages present different topics regarding 5GinFIRE services
 
 [Tutorial: OpenCV Transcoder VNF](tutorials/tutorial-opencv-vnf-transcoder)
 [Tutorial: OpenCV Transcoder NS](tutorials/tutorial-opencv-transcoder-ns)
+[Guide: Advanced Hardware Requirements](tutorials/guide-advanced-hardware-requirements)
+[Guide: Advanced Charm Debugging](tutorials/guide-advanced-charm-debugging)
+
 
 ## Source code
 
