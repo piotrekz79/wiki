@@ -167,7 +167,7 @@ The testbed is a physical and virtualized infrastructure that has been deployed 
 Figure 14 shows the overall  Network Function Virtualization Infrastructure  (NFVI) deployed at University of Bristol facility which is part of 5GinFIRE multi-site orchestration.  
 	 	 	
 			![Bristiol Nfvi](/uploads/bristiol-nfvi.png "Bristiol Nfvi")
-	**		Figure 14: UNIVBRIS’ Network Function Virtualization Infrastructure**
+**Figure 14: UNIVBRIS’ Network Function Virtualization Infrastructure**
 			
 The cloud environment of the UNIBRIS consists of an OpenStack Pike instance that operates on top of Ubuntu 16.04 Server operating system. The controller node is available for the project through the address 10.154.24.3 within the address range 10.154.24.0/21 for the university site.
 
