@@ -71,7 +71,18 @@ Figure 2 shows a geographical representation of the multiple access technologies
 ![Aps](/uploads/aps.png "Aps")
 **Figure 4: Wi-Fi APs in Millennium Square	** 
 
+![Melnet](/uploads/melnet.png "Melnet")
+**Figure 5: CSS Metnet**
 
-Figure 5: CSS Metnet
+This testbed has combined wireless access technologies from multiple vendors across four 5G pioneer radio bands into a dynamic and flexible architecture allowing for future reconfiguration and experimentation with innovative radio architectures and waveforms. Connectivity is provided through the following solutions.
 
+1. To provide a grounding for Nokia’s upcoming 5G NR product, Nokia have delivered and demonstrated their most advanced 4G LTE-A product, which was used in all the public demonstrators during the Layered Realities weekend. This LTE-A solution delivers a 15MHz 4x4 MIMO radio access network to our experimenters and has been tested at reliably delivering 100Mbit/s download (30Mbit/s upload) from our NFV datacentre through the Millennium Square (based on given licenced spectrum and user profile configured in the EPC).
+
+Ongoing developments include a 5G NR Massive MIMO (TDD band 42 at 3.5GHz), which will deliver even greater network throughput rates and bandwidth sharing functionality.  Figure 3 shows the split baseband radio architecture provided by Nokia to support future migration to 5G NR through software upgrades to the System Module and replacement of the remote radio head (RRH). Two RRHs are installed in Millennium Square allowing experimentation and testing of 4G technologies with a robust roadmap to 5G.
+
+2. To facilitate truly ubiquitous wireless connectivity for new and legacy devices, Wi-Fi networks can be provisioned using eight multi-vendor 2.4GHz and 5GHz access point (AP) deployments. The APs supplied by Nokia (shown top in Figure 4) integrate with the Nokia FlexiZone controller allowing for seamless handover between LTE and Wi-Fi, a key concept in 5G RAN design. 
+ 
+The APs provided by Ruckus (shown middle in Figure 4) are 802.11ac Wave 2 devices utilizing 4x4 MIMO with BeamFlex+ technology for adaptive beam steering and over 1Gbps data rate per user. All Ruckus APs are controlled via an integrated SmartZone access point controller, hosted in the cloud infrastructure detailed below. This AP controller provides a North Bound interface allowing direct access by the NetOS SDN controller. This architecture facilitates network-slicing through optical, electrical and radio technologies via on-demand SSID creation.
+
+Wi-Fi featured heavily throughout the Layered Realities weekend as a demonstration of network segmentation and as the primary radio access network for two of the public demonstrations. 
 
