@@ -86,3 +86,16 @@ The APs provided by Ruckus (shown middle in Figure 4) are 802.11ac Wave 2 device
 
 Wi-Fi featured heavily throughout the Layered Realities weekend as a demonstration of network segmentation and as the primary radio access network for two of the public demonstrations. 
 
+3.	The Layered Realities 5G showcase weekend demonstrated the proof of concept prototype for 5G NR Fixed Wireless Access solution providing high capacity link between the balcony and the marquee in the Millennium square. (see Figure 6 ). The solution encompassed an EPC emulator, the Nokia AirScale baseband on the AirFrame blade connected over CPRI interface to the antenna, which is a 16×16, 256 element unit. The Intel 5G MTP test UE was in the marquee. The system deployed 2 component carrier aggregation based on the available license, for a total of 200MHz channel bandwidth. This demonstrated throughput of 680Mbps observed within the marquee.
+
+![5 Gnr](/uploads/5-gnr.png "5 Gnr")
+**Figure 6 5GNR 28GHz Proof of Concept**
+
+4.	mmWave communications are an important part of the 5G standardisation process. To showcase this technology in the University of Bristol, Smart Internet Lab 5G testbed, commercial devices provided by CCS were deployed in the network. The CCS Metnet nodes operate at 26GHz and form a self-organising mesh network for fixed wireless access with gigabit connectivity. 
+
+Seven Metnet nodes are deployed in the testbed, connected to the Edgecore SDN switches. This architecture allows dynamic configuration of connectivity, either providing Wi-Fi backhaul over the mmWave mesh network or through the installed fibre network to the NFV cloud datacentre. With no radio planning, the CCS network is able to autonomously organise itself into a high-performance distribution and access network, demonstrating its ability to provide low-configuration last-mile access in a congested environment.
+
+The Metnet nodes are managed and configured via an element management system (EMS) allowing allocation of bandwidth to specific high demand nodes or viewing of the current mesh topology. The CCS EMS resides in the cloud infrastructure at the University of Bristol and is accessible from the testbed’s management network. 
+
+5.	The LTE-A network provided the 4G air interface using 15MHz bandwidth from BT in 2.6GHz spectrum and provided device connectivity for various demonstrations during the public demonstration. For validation we tested this network for throughput using a video on demand 5G network slice service towards a mix of 4G terminals receiving high definition video clips from the network simultaneously. This is shown in Figure 7 where one laptop with a 4G dongle and 5 x Samsung S8 handsets received HD video on demand simultaneously. Figure 7 shows different tests and capture of the information from the BTS or EPC management system.
+
