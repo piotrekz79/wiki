@@ -165,16 +165,15 @@ The testbed is a physical and virtualized infrastructure that has been deployed 
 ## Smart City Testbed Topology/ Datacenter Topology
 
 Figure 14 shows the overall  Network Function Virtualization Infrastructure  (NFVI) deployed at University of Bristol facility which is part of 5GinFIRE multi-site orchestration.  
-	 	 	
-			
-		
-**Figure 14: UNIVBRIS’ Network Function Virtualization Infrastructure**
 			
 The cloud environment of the UNIBRIS consists of an OpenStack Pike instance that operates on top of Ubuntu 16.04 Server operating system. The controller node is available for the project through the address 10.154.24.3 within the address range 10.154.24.0/21 for the university site.
 
 •	Controller, Computer and Storage node: 1 server machine Intel Xeon 2.40GHz 14 cores, 128GB RAM, 800GB HD
 •	Storage node: 1 server machine Intel Xeon 2.40GHz 14 cores, 128GB RAM, 800GB HD
 •	One switch: Corsa DP2100 with 32 10Gb Ports 
+
+![Bristolnfvi](/uploads/bristolnfvi.png "Bristolnfvi")
+**Figure 14: UNIVBRIS’ Network Function Virtualization Infrastructure**
 
 Currently, the provider and provider2 networks are configured in Openstack and are isolated from each other. The network provider has the address 10.154.28.0/24 and the network provider2 has the address 10.154.29.0/24 that will be used as data and management network.
 In the UNIBRIS site is also available the 5G Unifier Gateway at 10.154.24.5 address.
