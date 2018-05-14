@@ -107,3 +107,21 @@ The Metnet nodes are managed and configured via an element management system (EM
 ![Massivomimo](/uploads/massivomimo.png "Massivomimo")
 **Figure 8: Massive MIMO test network at the Smart Internet Lab**
 
+![Lifi](/uploads/lifi.png "Lifi")
+**Figure 9: LiFi client dongle**
+
+7.	To showcase the 5G principle of access-agnosticism with novel access modes, the pureLiFi AP has been integrated with the core and distribution network of the testbed. Inside the public foyer of the We The Curious museum, an exhibit has been revealed to the public demonstrating the behaviour of a network stream encoded in visible light, and the effects of blocking it with curtains. 
+ 
+The architecture of a LiFi network is similar to Wi-Fi whereby access points communicate with clients within visible range. For LiFi, an AP resembles a ceiling light (and its secondary purpose is lighting) whilst a client is embedded within a USB dongle, creating a network bridge for any USB host (Figure 9). 
+
+Multiple LiFi APs are controlled via an EMS residing in the University of Bristol cloud infrastructure. This entity controls all APs within the network including those based in We The Curious and the University of Bristol.
+
+## 	Network Connectivity
+The University of Bristol’s testbed has been futureproofed by delivering a wholly-uncontended, privately managed fibre network in the Millennium Square public space. The testbed’s optical-connectivity asset is comprised of a hub-and-spoke network of 96F single-mode fibre cables installed at each radio test tower, terminated at a central distribution node inside the We The Curious museum.
+
+
+
+Being wholly owned and managed by the Smart Internet Lab, this optical connectivity asset can expand to support dozens of optical applications per radio test tower, each delivering up to 40Gbit/s uncontested throughput rates with current transceivers. This futureproofing means the testbed will be ready for whatever bandwidth and latency requirements may need to be tested and experimented upon for years to come.
+
+Multiple urban testbed locations within Bristol is possible through the city-wide single-mode optical fibre network. This allows the island to quickly scale-out with potential deployments to include additional locations, such as the SS Great Britain and M-Shed tourist hubs. The entire datapath network within the island is switched via a distribution network of Edgecore 4610P and 5610-52X SDN switches to provide full network slicing and segmentation via a centralized NetOS SDN controller. This test network is further connected to 5G Exchange in Slough Vitus datacentre managed by 5GUK test and trial programme for national and international test network connectivity beyond one city.
+
