@@ -138,3 +138,12 @@ Nokia’s LTE-A solution and planned 5G NR extensions, include a MEC platform th
 
 Lastly, Nokia’s competitor to the OSM NFV setup Cloudband is finalizing its deployment inside our testbed network. Cloudband is an ETSI MANO compatible NFV solution based on Openstack-orchestrated KVM virtualization, and Nokia Nuage SDN networking of VNFs. The finalized deployment of this platform will open to research some of Nokia’s most advanced network virtualization technologies such as distributed.
 
+# Smart City Safety Use Case
+
+Given the critical importance of security in cities, innovations advances in wireless communication system are increasingly improving the safety of city inhabitants. New services such as audio and video monitoring of public areas and automated municipality rule infraction detection allow a quicker response to threats and anomalies prevent reoccurrence. Based on this context UNIVBRIS has deploying a smart city safety use case, as a proof of concept, to identify suspicious activities in the city. The basic components of this use case are listed below and they are connected together to the Internet through a WiFi Interface.
+
+* Bike rider helmet
+* Raspberry PI
+* 360 degree camera e audio
+
+
