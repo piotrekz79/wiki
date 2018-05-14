@@ -104,3 +104,6 @@ The Metnet nodes are managed and configured via an element management system (EM
 
 6.	In collaboration with National Instruments (NI) and University of Bristol’s Communication Systems and Networks (CSN) research group, the future 5G air interface technology Massive MIMO has been integrated with the 5G testbed. This system comprises a 128 antenna base station and 12 client devices. Operating in the pioneer band of 3.51GHz TDD, simultaneous transmission to all clients in 20MHz bandwidth yields over 80bits/second/hertz spectral efficiency (see Figure 8). 
 
+![Massivomimo](/uploads/massivomimo.png "Massivomimo")
+**Figure 8: Massive MIMO test network at the Smart Internet Lab**
+
