@@ -146,4 +146,18 @@ Given the critical importance of security in cities, innovations advances in wir
 * Raspberry PI
 * 360 degree camera e audio
 
+![Smart City Arch](/uploads/smart-city-arch.png "Smart City Arch")
+**Figure 12: High level smart city safety architecture**
+
+Figure 12 shows a high level architecture of the smart city safety use case. The bike rider carries his helmet, which has attached the Raspberry PI and the 360-degree camera. Along of his path video and audio is capturing and send via WiFi to the Mobile Edge Computing (MEC) or Cloud to be processed. Once the audio and video has been processed and any suspicious activity has been detected a notification is generated and sent to the different security agents.
+
+## Smart City Safety Architecture
+
+Many of today’s municipalities are becoming test beds for the smart city experimentation where technological capabilities are addressing daily needs from parking, water treatment to city security. University of Bristol is working to provide through 5GinFIRE platform a smart city safety use case which has been deployed according to the architecture shown in Figure 13. Figure 13 shows the main building blocks that make the smart city safety use case a reality. Note that only open-source frameworks (OpenStack, OpenDayLigh, etc) are being used to deploy the use case.
+
+
+**Figure 13: The main building blocks of UNIVBRIS Testbed Architecture**
+
+The testbed is a physical and virtualized infrastructure that has been deployed as part of 5GinFIRE overall architecture. One of the main challenges in the design of VNF architecture is how to cope with multi-site orchestration and end-to-end VNF connectivity. This testbed has been deployed to operate cross-domain between ITAv and UC3M testbed. The UNIVBRIS testbed deployment will also provide VxF for FIRE testbed, providing a unique testbed that is able to assess the proposed VNF in a variety of different domains, providing excellent testing sites for heterogeneous experimentations. In particular the testbed purpose is:
+•	to provide computational resources or/and slicing for hosting, deploying, instantiating and supporting VxF’s life cycle serving as a platform for conducting rigorous, transparent and replicable testing of NFV ecosystem.
 
