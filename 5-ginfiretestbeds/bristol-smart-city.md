@@ -68,8 +68,8 @@ Figure 2 shows a geographical representation of the multiple access technologies
 **Figure 3: Nokia AirScale RRH & Antenna	**
 
 
-
-Figure 4: Wi-Fi APs in Millennium Square	 
+![Aps](/uploads/aps.png "Aps")
+**Figure 4: Wi-Fi APs in Millennium Square	** 
 
 
 Figure 5: CSS Metnet
