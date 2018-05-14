@@ -64,10 +64,14 @@ Figure 2 shows a geographical representation of the multiple access technologies
 **Figure 2: Location of the Access Points at Millennium Square and We the Curious science museum.**
 
 
+![Nokia Rrh](/uploads/nokia-rrh.png "Nokia Rrh")
+**Figure 3: Nokia AirScale RRH & Antenna	**
 
 
-Figure 3: Nokia AirScale RRH & Antenna	 
+
 Figure 4: Wi-Fi APs in Millennium Square	 
+
+
 Figure 5: CSS Metnet
 
 
