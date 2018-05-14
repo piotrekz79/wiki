@@ -119,7 +119,8 @@ Multiple LiFi APs are controlled via an EMS residing in the University of Bristo
 ## 	Network Connectivity
 The University of Bristol’s testbed has been futureproofed by delivering a wholly-uncontended, privately managed fibre network in the Millennium Square public space. The testbed’s optical-connectivity asset is comprised of a hub-and-spoke network of 96F single-mode fibre cables installed at each radio test tower, terminated at a central distribution node inside the We The Curious museum.
 
-
+![Opticalspoke](/uploads/opticalspoke.png "Opticalspoke")
+**Figure 10: Termination of single optical spoke in distribution node**
 
 Being wholly owned and managed by the Smart Internet Lab, this optical connectivity asset can expand to support dozens of optical applications per radio test tower, each delivering up to 40Gbit/s uncontested throughput rates with current transceivers. This futureproofing means the testbed will be ready for whatever bandwidth and latency requirements may need to be tested and experimented upon for years to come.
 
