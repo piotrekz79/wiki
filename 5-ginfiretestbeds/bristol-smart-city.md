@@ -99,3 +99,8 @@ The Metnet nodes are managed and configured via an element management system (EM
 
 5.	The LTE-A network provided the 4G air interface using 15MHz bandwidth from BT in 2.6GHz spectrum and provided device connectivity for various demonstrations during the public demonstration. For validation we tested this network for throughput using a video on demand 5G network slice service towards a mix of 4G terminals receiving high definition video clips from the network simultaneously. This is shown in Figure 7 where one laptop with a 4G dongle and 5 x Samsung S8 handsets received HD video on demand simultaneously. Figure 7 shows different tests and capture of the information from the BTS or EPC management system.
 
+![Lta](/uploads/lta.png "Lta")
+**Figure 7: LTE-A service test validation**
+
+6.	In collaboration with National Instruments (NI) and University of Bristol’s Communication Systems and Networks (CSN) research group, the future 5G air interface technology Massive MIMO has been integrated with the 5G testbed. This system comprises a 128 antenna base station and 12 client devices. Operating in the pioneer band of 3.51GHz TDD, simultaneous transmission to all clients in 20MHz bandwidth yields over 80bits/second/hertz spectral efficiency (see Figure 8). 
+
