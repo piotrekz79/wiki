@@ -116,7 +116,7 @@ The architecture of a LiFi network is similar to Wi-Fi whereby access points com
 
 Multiple LiFi APs are controlled via an EMS residing in the University of Bristol cloud infrastructure. This entity controls all APs within the network including those based in We The Curious and the University of Bristol.
 
-## 	Network Connectivity
+### 	Network Connectivity
 The University of Bristol’s testbed has been futureproofed by delivering a wholly-uncontended, privately managed fibre network in the Millennium Square public space. The testbed’s optical-connectivity asset is comprised of a hub-and-spoke network of 96F single-mode fibre cables installed at each radio test tower, terminated at a central distribution node inside the We The Curious museum.
 
 ![Opticalspoke](/uploads/opticalspoke.png "Opticalspoke")
@@ -129,7 +129,7 @@ Multiple urban testbed locations within Bristol is possible through the city-wid
 ![Bristolisland](/uploads/bristolisland.png "Bristolisland")
 **Figure 11: Bristol’s Island Control and Management Network**
 
-## Cloud and NFV Hosting
+### Cloud and NFV Hosting
 A primary consideration when selecting a cloud environment for NFV hosting and orchestration was to deliver a heterogeneous datacentre of multi-vendor assets. To this end the University of Bristol has implemented both an Opensource MANO (OSM) datacentre, a Nokia MEC platform and Nokia Cloudband solution. 
 The OSM datacentre employs an Openstack Pike Virtualized Infrastructure Manager (VIM) for orchestration, hosting and storage of VNFs as either KVM virtual machines, or LXC containers. To integrate a network service’s VNF, Openstack Neutron provider networks, Open Daylight and NetOS SDN controllers are used. Zeetta Networks’ NetOS has allowed the testbed to extend VNFs to terminations such as Physical Network Function endpoints (e.g. Wi-Fi SSIDs). This NFV cloud solution was used in the March Layered Realities public demonstration to host network functions enjoyed by the public. This NFV cloud is built upon industry standard and popular technologies such as KVM virtualization. The Openstack cloud environment adopted by our Opensource MANO solution made use of SR-IOV passthrough techniques to give direct access to time-slices of valuable hardware (e.g. network interface cards). The VNFs were configured during instantiation using Cloud-Init scripts.
 
