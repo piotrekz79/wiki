@@ -35,6 +35,12 @@ All our source code is available at https://github.com/5GinFIRE
 
 [1st Call FAQs](1stcallFAQs)
 
+## Support
+[Contact](https://5ginfire.eu/contact/)
+[Platform Issues - Bugzilla] (https://portal.5ginfire.eu/bugzilla)
+[5GinFIRE Slack channel] Contact us to invite you at (https://5ginfire.slack.com/)
+
+
 
 -----
 ![Eu Flag](/uploads/eu-flag.png "Eu Flag")
