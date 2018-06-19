@@ -39,7 +39,7 @@ This command will show all the running chams inside the VCA. This command is imp
 After issuing an action to be performed by OSM, there might be a need to check it status if the UI doesn't update. To do this, the following command can be run:
 
 ~~~~bash
-juju status-output-show --name <action-name>
+juju show-action-status --name <action-name>
 ~~~~
 
 It shows every action with that action, plus the ID, timestamp and result.
