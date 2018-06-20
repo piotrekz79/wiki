@@ -13,7 +13,7 @@ There is also the solution called Unifier Gateway http://wiki.5ginfire.eu/unifie
 
 Currently this can be done through Open Calls or by expressing your interest to Contact https://5ginfire.eu/contact/
 
-## 2. Deploy your VNFs
+## 2. Describe and upload your VNFs
 
 Your VNF is described in terms of a Virtual Network Function Descriptor. Please see: http://wiki.5ginfire.eu/packagingvxfnsd
 
@@ -74,19 +74,23 @@ If your NSD is valid, it will be onboarded to OSM.
 **At this stage your NSD is available to be deployed as an experiment**
 
 
+## 4. Make a deployment request
 
-## 4. Request VPN Credentials
+When everything is in place, through the portal make a Deployment request for your experiment. 
+See Request New Deployment : http://wiki.5ginfire.eu/5-gin-fire-portal-user-guide#experimenter-user-interface-description
 
-Report at 5GinFIRE Operations: https://portal.5ginfire.eu/bugzilla/enter_bug.cgi?product=5GinFIRE%20Operations that you want VPN credentials
+###  Accessing deployed experiment: Request VPN Credentials
 
-## 5. Make a deployment request
+Report at 5GinFIRE Operations: https://portal.5ginfire.eu/bugzilla/enter_bug.cgi?product=5GinFIRE%20Operations that you want VPN credentials. 
 
 ## Support
 
 ### Experiment Support
+
 We use Bugzilla for reporting issues regarding your experiment. Please see: https://portal.5ginfire.eu/bugzilla/describecomponents.cgi?product=Experiments 
 Prerequisite:  You need to open an account in Bugzilla. If your experiment is accepted there will be a separate component for your experiment.
 
 ### Generic Operations support
+
 For generic support issues please report at 5GinFIRE Operations: https://portal.5ginfire.eu/bugzilla/enter_bug.cgi?product=5GinFIRE%20Operations
 5GinFIRE Slack channel - Contact us to invite you at https://5ginfire.slack.com/
