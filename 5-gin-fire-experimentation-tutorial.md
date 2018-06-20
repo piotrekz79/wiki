@@ -5,20 +5,25 @@ The following is a list of steps that experimenters can follow to deploy experim
 The whole experimentation process is described in http://wiki.5ginfire.eu/5-gin-fire-terminology-experimentation-workflow-and-architecture
 
 ## 1. Select your target testbed(s)
+
 Select your target testbeds to deploy ypour experiment. Please consult the link http://wiki.5ginfire.eu/5GinFIREtestbeds
 There is also the solution called Unifier Gateway http://wiki.5ginfire.eu/unifiergateway
 
 ### Apply for experiment
+
 Currently this can be done through Open Calls or by expressing your interest to Contact https://5ginfire.eu/contact/
 
+## 2. Deploy your VNFs
 
-## 2. Select or Create your VNFs
-Either you browse the puvlic VNF catalog at https://portal.5ginfire.eu/#!/vxf_marketplace or you create your own VNFs.
+Your VNF is described in terms of a Virtual Network Function Descriptor. Please see: http://wiki.5ginfire.eu/packagingvxfnsd
+
+### Select or Create your VNFs
+
+Either you browse the public VNF catalog at https://portal.5ginfire.eu/#!/vxf_marketplace or you create your own VNFs.
 For creating VNFs compliant with OSM TWO see our tutorials in main page: http://wiki.5ginfire.eu/
 
-## 3. Deploy your VNFs
-
 ### Portal uploading
+
 When you have prepared your VNFs you need to upload them to the portal. You need first to open an account to the portal. https://portal.5ginfire.eu 
 By default when you open an account you will have the roles of "EXPERIMENTER" and "VXF_DEVELOPER".
 Please check the portal user guide: http://wiki.5ginfire.eu/5-gin-fire-portal-user-guide
@@ -38,17 +43,43 @@ If your VNF is valid, it will be onboarded to OSM.
 
 **At this stage your VNF is available to be included in experiments described as NSDs**
 
-## 4.  Select or Create your NSDs
+## 3.  Describe and upload your NSD Experiment
+
+### Select or Create your NSDs
+
+Your experiment is described in terms of a Network Service Descriptor. Please see: http://wiki.5ginfire.eu/packagingvxfnsd
+
+Either you browse the public NSD catalog at https://portal.5ginfire.eu/#!/experiments_marketplace or you create your own NSD.
+For creating NSD compliant with OSM TWO see our tutorials in main page: http://wiki.5ginfire.eu/
+
+### Portal uploading
+
+When you have prepared your NSD you need to upload them to the portal. You need first to open an account to the portal. https://portal.5ginfire.eu 
+By default when you open an account you will have the roles of "EXPERIMENTER" and "VXF_DEVELOPER".
+Please check the portal user guide: http://wiki.5ginfire.eu/5-gin-fire-portal-user-guide
+For NSD uploading: http://wiki.5ginfire.eu/5-gin-fire-portal-user-guide#experimenter-user-interface-description
+
+### NSD  validation 
+
+After you have submitted your NSD it will be validated by the 5GinFIRE operations.
+You will be notified if your NSD is valid in terms of:
+- NSD Packaging for target OSM version (Currently TWO but we are moving to FOUR)
+- Onboarding capability
+- Deployment capability
+
+### NSD onboarding
+
+If your NSD is valid, it will be onboarded to OSM. 
+
+**At this stage your NSD is available to be deployed as an experiment**
 
 
-NSD  validation 
-NSD onboarding
 
-## 5. Request VPN Credentials
+## 4. Request VPN Credentials
 
 Report at 5GinFIRE Operations: https://portal.5ginfire.eu/bugzilla/enter_bug.cgi?product=5GinFIRE%20Operations that you want VPN credentials
 
-## 6. Make a deployment request
+## 5. Make a deployment request
 
 ## Support
 
