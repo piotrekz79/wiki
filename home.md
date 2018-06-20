@@ -21,6 +21,7 @@ The following pages present different topics regarding 5GinFIRE services
 
 ## Tutorials and Best practices
 
+[Experimenting with 5GinFIRE infrastructure ](5-gin-fire-experimentation-tutorial)
 [Tutorial: OpenCV Transcoder VNF](tutorials/tutorial-opencv-vnf-transcoder)
 [Tutorial: OpenCV Transcoder NS](tutorials/tutorial-opencv-transcoder-ns)
 [Guide: Advanced Hardware Requirements](tutorials/guide-advanced-hardware-requirements)
