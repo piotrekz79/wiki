@@ -18,7 +18,7 @@ System x3550 M3 rack servers, interconnected using a set of Pica8 and NoviFlow O
 
 External access to the facility as well as communication with other 5GinFIRE facilities will be established using VPN gateway. Moreover, high-bandwidth data transmissions with other  5GinFIRE facilities will be available thanks to the GÉANT networking services.
 
-![Overview of eHealth5G infrastructure](/uploads/overview-ehealth-infrastructure.png "Overview of eHealth5G infrastructure")
+![Ehealth Overview](/uploads/ehealth/ehealth-overview.png "eHealth overview")
 **Figure 1: Overview of eHealth5G infrastructure**
 
 NFV infrastructure hardware details:
