@@ -26,6 +26,7 @@ The following pages present different topics regarding 5GinFIRE services
 [Tutorial Creating a NSD: The OpenCV Transcoder NS Example](tutorials/tutorial-opencv-transcoder-ns)
 [Guide: Advanced Hardware Requirements](tutorials/guide-advanced-hardware-requirements)
 [Guide: Advanced Charm Debugging](tutorials/guide-advanced-charm-debugging)
+[Guide: External Access to VxFs for experimenters](tutorials/guide-external-access-experimenters)
 
 
 ## Source code
