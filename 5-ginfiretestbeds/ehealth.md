@@ -34,7 +34,25 @@ The goal of eHealth EVI is to enable the 5GinFIRE experimenters to execute a var
 
 Most of the eHealth devices are part of PSNC’s dedicated living lab space, so the sensors can be used by actual end users if a given experiment demands that. PSNC collaborates with a number of organizations and institutions within the city of Poznań, including hospitals as well as NGOs and municipal offices, which may be able to intermediate in contacting end users appropriate for the needs of a specific experiment.
 
-**The operating room lab** contains cutting-edge endoscope and macroscopic camera, which are sources of medical video streams. This video can be delivered to processing nodes defined by the experimenter in both compressed or uncompressed form. Additionally, the operating room lab contains a H.323/SIP videoconferencing node, so the scenarios may include live audio-video interaction, e.g. for remote medical consultations. Table 1 shows the description of two equipment available  in the operating room lab.
+**The operating room lab** contains cutting-edge endoscope and macroscopic camera, which are sources of medical video streams. This video can be delivered to processing nodes defined by the experimenter in both compressed or uncompressed form. Additionally, the operating room lab contains a H.323/SIP videoconferencing node, so the scenarios may include live audio-video interaction, e.g. for remote medical consultations:
+
+* Storz Vitom Full HD – macroscopic surgical camera being part of high definition imaging systems for research and surgical imaging applications used for microsurgery and microdissection.
+* Storz 3D endoscope ‑ contains two Full HD cameras at the tip of the endoscope, representing the left and right eye, processes to a three-dimensional view.
+
+**The physiological parameters sensor lab** includes a set of hi-tech devices that can be used by a medical professional or patient supervised by a medical professional to gather data about the patient’s physiological parameters. This equipment includes a stomatological camera, portable ECG monitor, electronic stethoscope, mobile ultrasound tool, digital podoscope and a baropodometric platform.
+
+* VistaCam iX ‑ a dental camera with interchangeable heads for: intraoral images, magnifying images 120x, visualizing caries and plaque, as well as light hardening
+* Bittium Faros 360 ‑ a lightweight, portable 3-channel ECG for cardiac monitoring.
+* Littmann 3200 ‑ an electronic stethoscope with the ability to listen remotely.
+* GE Vscan – a handheld, pocket-sized ultrasound tool that provides real-time black-and-white anatomic and color-coded blood flow images at the touch of a button.
+* Podoscan 2D FootCAD ‑ an advanced digital podoscope for digital analysis of footprints and plantar loads.
+* FreeMed ‑ a digital baropodometric platform for static, dynamic and stabilometric analysis.
+
+**The wellbeing sensor lab & living-lab** includes devices meant for acquiring data about the environment of a patient. Those will include various wearable sensors as well as integrated and miniature indoor sensors, activity monitoring devices and cameras.
+
+* CubeSensor – small, connected devices that help maintain a healthy and productive indoor environment by monitoring temperature, humidity, air quality, light, noise, pressure, and movement.
+* Wearable sensors ‑ health sensors integrated into various wearable accessories (garments, hats, wrist bands, eyeglasses, wristwatches, smartphones).
+* Mother Sen.se – a family of small smart sensors that can be affixed to almost anything in order to detect and analyze the specific movements of every activity,  as well as measure temperature and detect the presence of people or objects at a defined location.
 
 ## Experimentation
 Experimentation activities will be supported in the eHealth5G EVI through the 5GinFIRE portal. The experimenters will be able to:
