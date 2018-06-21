@@ -30,6 +30,11 @@ NFV infrastructure hardware details:
 * 2x Adva Optical FSP 3000R7 equipped with high-speed multimedia SDI cards (10TCC-PCN-3GSDI+10G) allowing for multiplexing and real-time transport of digital SD and HD video content in native optical OTN format (technology essential for support any high-resolution video streams like UHDTV 4k/8k, requiring up to 50Gbps bitrate or for any video 3D technology which is to be used in modern telemedicine solutions)
 
 ## eHealth equipment
+The goal of eHealth EVI is to enable the 5GinFIRE experimenters to execute a various eHealth experimental scenarios within the eHealth EVI, and for this reason, PSNC is providing a broad set of eHealth devices. Most of eHealth devices can be operated only by humans and are not network connected (doesn’t contain LTE or WiFi modules inside) thus medical/sensor data must be manually downloaded from the devices and enabled for 5GinFIRE using some mobile or stationary nodes being part of the labs.
+
+Most of the eHealth devices are part of PSNC’s dedicated living lab space, so the sensors can be used by actual end users if a given experiment demands that. PSNC collaborates with a number of organizations and institutions within the city of Poznań, including hospitals as well as NGOs and municipal offices, which may be able to intermediate in contacting end users appropriate for the needs of a specific experiment.
+
+**The operating room lab** contains cutting-edge endoscope and macroscopic camera, which are sources of medical video streams. This video can be delivered to processing nodes defined by the experimenter in both compressed or uncompressed form. Additionally, the operating room lab contains a H.323/SIP videoconferencing node, so the scenarios may include live audio-video interaction, e.g. for remote medical consultations. Table 1 shows the description of two equipment available  in the operating room lab.
 
 ## Experimentation
 Experimentation activities will be supported in the eHealth5G EVI through the 5GinFIRE portal. The experimenters will be able to:
