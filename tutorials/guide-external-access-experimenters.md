@@ -31,6 +31,6 @@ Once connected, you can establish an SSH connection to the gateway (or jump mach
  
 Finally, from the jump machine you will be able to SSH your own VxFs, with your own credentials. Command will be “ssh [dest-IP]”, where [dest-IP] will be one of those assigned to your VxFs in the 5GinFIRE management network
 
-
+![SSH to VxF](/uploads/external-access-for-experimenters/vxfssh.png "SSH to VxF")
 
 
