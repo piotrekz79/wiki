@@ -83,6 +83,10 @@ See Request New Deployment : http://wiki.5ginfire.eu/5-gin-fire-portal-user-guid
 
 Report at 5GinFIRE Operations: https://portal.5ginfire.eu/bugzilla/enter_bug.cgi?product=5GinFIRE%20Operations that you want VPN credentials. 
 
+###  Accessing deployed experiment: OpenVPN operations
+
+Once you have your own credentials and OpenVPN config file, please follow instructions as included in http://wiki.5ginfire.eu/tutorials/guide-external-access-experimenters.
+
 ## Support
 
 ### Experiment Support
