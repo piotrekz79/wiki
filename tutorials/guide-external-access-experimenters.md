@@ -14,7 +14,11 @@ As a response to the Bugzilla ticket, you will receive an OpenVPN Config File (f
 ![OpenVPN Config File location](/uploads/external-access-for-experimenters/openvpnconfigfile.png "OpenVPN Config File location")
 
 Run “OpenVPN GUI” application (via Windows desktop icon, or “ProgramFiles/OpenVPN/bin/openvpn-gui”), click on the up arrow (for hidden icons) in the Windows notification area (step 1 in figure), and then right-click on the OpenVPN GUI hidden icon (step 2). Finally, click “connect”
- 
+
+![Run OpenVPN](/uploads/external-access-for-experimenters/openvpnrun.png "Run OpenVPN")
+
+
+
 Insert your VPN credentials and click OK
  
 Once connected, you can establish an SSH connection to the gateway (or jump machine): 10.4.255.10, using its credentials
