@@ -15,9 +15,9 @@ As a response to the Bugzilla ticket, you will receive an OpenVPN Config File (f
 
 Run “OpenVPN GUI” application (via Windows desktop icon, or “ProgramFiles/OpenVPN/bin/openvpn-gui”), click on the up arrow (for hidden icons) in the Windows notification area (step 1 in figure), and then right-click on the OpenVPN GUI hidden icon (step 2). Finally, click “connect”
 
-![Run OpenVPN](/uploads/external-access-for-experimenters/openvpnrun.png "Run OpenVPN")                 ![OpenVPN Connect](/uploads/external-access-for-experimenters/openvpnconnect.png "OpenVPN Connect")
+![Run OpenVPN](/uploads/external-access-for-experimenters/openvpnrun.png "Run OpenVPN")
 
-
+![OpenVPN Connect](/uploads/external-access-for-experimenters/openvpnconnect.png "OpenVPN Connect")
 
 Insert your VPN credentials and click OK
  
