@@ -18,5 +18,8 @@ Given the critical importance of security in cities, innovations advances in wir
 **See more at:** http://wiki.5ginfire.eu/5-ginfiretestbeds/bristol-smart-city
 
 
+## eHealth Testbed
+eHealth5G facility (located in Poznan Supercomputing and Networking Center, Poznan, Poland) is a new testbed created thanks to accepted 5GinFIRE open call infrastructure project and will be available for experimenters from December 2018. eHealth5G facility extends the current 5GinFIRE architecture with a new eHealth Experimental Vertical Instance (eHealth EVI) providing 5GinFIRE experimenters with the possibility of performing experiments in the area of eHealth and telemedicine in a remotely accessible testbed designed for testing technical and usability aspects of services running on top of 5G NFV infrastructure composed of small Edge Cloud, being very closed to eHealth devices, and Core Cloud accessible via MPLS/Optical Service Provider network. The eHealth Vertical Industry infrastructure located in PSNC consists of cutting-edge eHealth equipment enabling eHealth cloud applications, products or services implementation and testing for hospitals, clinics, medical universities, medical or sports professionals.
+**See more at:** http://wiki.5ginfire.eu/5-ginfiretestbeds/ehealth
 
 
