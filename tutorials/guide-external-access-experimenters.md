@@ -24,6 +24,8 @@ Insert your VPN credentials and click OK
 ![OpenVPN Credentials](/uploads/external-access-for-experimenters/openvpncredentials.png "OpenVPN Credentials")
 
 Once connected, you can establish an SSH connection to the gateway (or jump machine): 10.4.255.10, using its credentials
+
+![SSH to Jump Machine](/uploads/external-access-for-experimenters/jumpmachinessh.png "SSH to Jump Machine")
  
 Finally, from the jump machine you will be able to SSH your own VxFs, with your own credentials. Command will be “ssh [dest-IP]”, where [dest-IP] will be one of those assigned to your VxFs in the 5GinFIRE management network
 
