@@ -30,3 +30,20 @@ NFV infrastructure hardware details:
 * 2x Adva Optical FSP 3000R7 equipped with high-speed multimedia SDI cards (10TCC-PCN-3GSDI+10G) allowing for multiplexing and real-time transport of digital SD and HD video content in native optical OTN format (technology essential for support any high-resolution video streams like UHDTV 4k/8k, requiring up to 50Gbps bitrate or for any video 3D technology which is to be used in modern telemedicine solutions)
 
 ## eHealth equipment
+
+## Experimentation
+Experimentation activities will be supported in the eHealth5G EVI through the 5GinFIRE portal. The experimenters will be able to:
+* reserve eHealth device(s) for ensuring device availability and proper human staff support,
+* reserve laboratory to conduct on-site experimentation with own hardware devices,
+* create and deploy, from the 5GinFIRE portal, virtual functions at the eHealth5G Edge and Core Cloud, which will process data ingest from eHealth devices,
+* deploy virtual machines at the eHealth5G Edge or Core Cloud infrastructure,
+* monitor performance metrics of VxF execution and connectivity/traffic monitoring,
+* request high-speed network connection (up to 1Gbps) to other 5GinFIRE facility allowing for combining resources and functionalities of different 5GinFIRE facilities,
+* accessing experiment results stored in the Cloud.
+When the eHealth5G vertical resources will be successfully reserved, the experimenters will also be able to access them physically in PSNC premises in Poznan on specified dates, or PSNC could arrange one or more people who will use the sensors, follow experimenters’ instructions and whose health and wellbeing information will be sent for further processing in the Cloud.
+
+## Contact
+**Damian Parniewicz** (damianp@man.poznan.pl)
+
+Poznań Supercomputing and Networking Center (PSNC), Poznan (Poland)
+Polish Optical Internet Research Center building, ul. Jana Pawła II 10, 61-139 Poznan
