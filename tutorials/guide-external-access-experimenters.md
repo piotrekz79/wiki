@@ -9,15 +9,15 @@ Prior step to this guide is to request the VPN credentials via the ticketing too
 
 ![OpenVPN client download](/uploads/external-access-for-experimenters/openvpn-download.png "OpenVPN client download")
 
-2. As a response to the Bugzilla ticket, you will receive an OpenVPN Config File (filename.ovpn) and the appropriate VPN credentials. Copy the file into the "ProgramFiles/OpenVPN/config" directory
+1. As a response to the Bugzilla ticket, you will receive an OpenVPN Config File (filename.ovpn) and the appropriate VPN credentials. Copy the file into the "ProgramFiles/OpenVPN/config" directory
 
-3. Run “OpenVPN GUI” application (via Windows desktop icon, or “ProgramFiles/OpenVPN/bin/openvpn-gui”), click on the up arrow (for hidden icons) in the Windows notification area (step 1 in figure), and then right-click on the OpenVPN GUI hidden icon (step 2). Finally, click “connect”
-
-4. Insert your VPN credentials and click OK
-
-5. Once connected, you can establish an SSH connection to the gateway (or jump machine): 10.4.255.10, using its credentials
-
-6. Finally, from the jump machine you will be able to SSH your own VxFs, with your own credentials. Command will be “ssh <dest-IP>”, where <dest-IP> will be one of those assigned to your VxFs in the 5GinFIRE management network
+1. Run “OpenVPN GUI” application (via Windows desktop icon, or “ProgramFiles/OpenVPN/bin/openvpn-gui”), click on the up arrow (for hidden icons) in the Windows notification area (step 1 in figure), and then right-click on the OpenVPN GUI hidden icon (step 2). Finally, click “connect”
+ 
+1. Insert your VPN credentials and click OK
+ 
+1. Once connected, you can establish an SSH connection to the gateway (or jump machine): 10.4.255.10, using its credentials
+ 
+1. Finally, from the jump machine you will be able to SSH your own VxFs, with your own credentials. Command will be “ssh <dest-IP>”, where <dest-IP> will be one of those assigned to your VxFs in the 5GinFIRE management network
 
 
 
