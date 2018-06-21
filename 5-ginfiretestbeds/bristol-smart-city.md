@@ -54,8 +54,8 @@ The University of Bristol Smart Internet Lab 5G testbed is a multi-site solution
 ### Wireless Access Technologies
 Figure 1 presents the high-level architecture of the University of Bristol testbed. The design of this architecture may be described in a number of distinct technical areas:
 
-![Overview of eHealth5G infrastructure](/uploads/overview-ehealth-infrastructure.png "Overview of eHealth5G infrastructure")
-**Figure 1: Overview of eHealth5G infrastructure**
+![Control And Physical Plane Diagrams](/uploads/control-and-physical-plane-diagrams.png "Control And Physical Plane Diagrams")
+**Figure 1: University of Bristol top level system architecture**
 
 Figure 2 shows a geographical representation of the multiple access technologies deployed within Millennium Square and We The Curious, a science museum in the centre of Bristol. Connectivity terminates via fibre optic at distinct points in the square with onward links through the use of fixed wireless access mmWave radios. To allow for future expansion, termination locations have been over engineered with enough installed fibre and power capacity to allow the next generation of 5G connectivity. Space and power for mobile edge computing (MEC) has been provisioned at key locations around Millennium Square to allow the deployment of virtual network functions (VNF) and low latency real-time application processing close to the end user.
 
