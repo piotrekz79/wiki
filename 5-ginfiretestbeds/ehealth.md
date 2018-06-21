@@ -18,8 +18,8 @@ System x3550 M3 rack servers, interconnected using a set of Pica8 and NoviFlow O
 
 External access to the facility as well as communication with other 5GinFIRE facilities will be established using VPN gateway. Moreover, high-bandwidth data transmissions with other  5GinFIRE facilities will be available thanks to the GÉANT networking services.
 
-![Control And Physical Plane Diagrams](/uploads/control-and-physical-plane-diagrams.png "Control And Physical Plane Diagrams")
-**Figure 1: University of Bristol top level system architecture**
+![Overview of eHealth5G infrastructure](/uploads/overview-ehealth-infrastructure.png "Overview of eHealth5G infrastructure")
+**Figure 1: Overview of eHealth5G infrastructure**
 
 NFV infrastructure hardware details:
 * 2x HP ProLiant DL380 Gen 9 compatible with Intel DPDK
