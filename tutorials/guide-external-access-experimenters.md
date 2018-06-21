@@ -7,7 +7,7 @@ Prior step to this guide is to request the VPN credentials via the ticketing too
 ## Windows OS
 Download and install [OpenVPN client](https://openvpn.net/index.php/download/community-downloads.html) for Windows
 
-![OpenVPN client download](/uploads/external-access-for-experimenters/openvpndownload.jpg "OpenVPN client download")
+![OpenVPN client download](/uploads/external-access-for-experimenters/openvpndownload.png "OpenVPN client download")
 
 As a response to the Bugzilla ticket, you will receive an OpenVPN Config File (filename.ovpn) and the appropriate VPN credentials. Copy the file into the "ProgramFiles/OpenVPN/config" directory
 
