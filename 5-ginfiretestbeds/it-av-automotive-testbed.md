@@ -14,8 +14,7 @@ Each vehicle is equipped with an OBU with multiple wireless interfaces, which en
 ![Obu](/uploads/automotive/obu.png "Obu"){.align-center}
 Figure 2 - On-Board Unit (OBU).
 
-The OBU includes the following elements:
-* Single-Board Computer (SBC);
+The OBU includes the following elements: * Single-Board Computer (SBC);
 * Dedicated Short Range Communication (DSRC) wireless interface (IEEE 802.11p);
 * WiFi interface (IEEE 802.11a/b/g/n);
 * 4G Interface;
