@@ -23,6 +23,8 @@ NITOS testbed is one of the largest single-site open experimental facilities in 
 # Experimentation
 NITOS is providing the testbed resources based on the Metal as a Service paradigm. In the context of 5GInFIRE, the end users will be able to instantiate VNFs from the 5TONIC orchestrator, on top of the physical infrastructure of NITOS, and send their traffic over different wireless networks. The deployed VNFs are using a wireless virtual link to other VNFs, as connected through the OSM User Interface. 
 
+![Vnfs Over Nitos](/uploads/nitos/vnfs-over-nitos.png "Vnfs Over Nitos")
+
 
 
 The process for experimentation is the following:
