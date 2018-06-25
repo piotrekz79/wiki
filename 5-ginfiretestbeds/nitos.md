@@ -16,3 +16,26 @@ NITOS testbed is one of the largest single-site open experimental facilities in 
 * The nodes are interconnected with each other via 5 OpenFlow hardware switches, sliced using the FlowVisor framework. 
 * A Cloud Computing testbed, consisting of 96 Cores, 286 GB RAM and 10 TBs of hardware storage. For the provisioning of the cloud, OpenStack is used.
 * Multiple WSN clusters, supporting the IEEE 802.15.4, 802.11 and LoRaWAN protocols, gathering measurements such as temperature, luminosity, air quality, radiation emission, etc. 
+
+![Nitos 2](/uploads/nitos/nitos-2.png "Nitos 2")
+
+
+# Experimentation
+NITOS is providing the testbed resources based on the Metal as a Service paradigm. In the context of 5GInFIRE, the end users will be able to instantiate VNFs from the 5TONIC orchestrator, on top of the physical infrastructure of NITOS, and send their traffic over different wireless networks. The deployed VNFs are using a wireless virtual link to other VNFs, as connected through the OSM User Interface. 
+
+
+
+The process for experimentation is the following:
+* Reserve NITOS node and equipment related to wireless experimentation
+* Create and deploy from the portal and orchestrator VNFs attached to different wireless technologies
+* Deploy VNFs that can intercommunicate with VNFs located at other sites of 5GInFIRE
+* Get access on the VNFs and host machine while running their experiment
+* Collect measurements related to their experiment for further analysis
+
+All the resources of the testbed are remotely accessible and programmable, based on the guidelines for the different types of equipment, as shown here: http://nitlab.inf.uth.gr/doc
+
+
+# Contact
+Nikos Makris (nimakris@uth.gr)
+Christos Zarafetas (hrzarafe@uth.gr)
+Thanasis Korakis (korakis@uth.gr)
