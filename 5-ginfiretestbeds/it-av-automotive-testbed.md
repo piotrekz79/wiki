@@ -5,7 +5,8 @@
 
 ## Architecture
 
-![Vanet](/uploads/automotive/vanet.jpg "Vanet")
+![Vanet](/uploads/automotive/vanet.jpg "Vanet"){.align-center}
+
 ## 
 
 ## 5GinFIRE and IT-Av Testbed Datacenter
