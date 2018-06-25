@@ -26,17 +26,18 @@ The OBUs are running a tailored Linux distribution based on Buildroot. The kerne
 
 ## Architecture
 
-The automotive EVI environment available in IT-Aveiro, Portugal, is represented in Figure 3. From the vehicular network perspective, it consists on several On-Board Units (OBUs), placed in vehicles, as well as Roadside Units (RSUs). An OBU can connect with other OBUs through IEEE 802.11p/WAVE links, and with RSUs via IEEE 802.11p/WAVE, IEEE 802.11g/WiFi or cellular links supported by the C-RAN concept working under the 4G/LTE specifications, frequency band 7.
+The automotive EVI environment available in IT-Av, Portugal, is represented in Figure 3. From the vehicular network perspective, it consists on several On-Board Units (OBUs), placed in vehicles, as well as Roadside Units (RSUs). An OBU can connect with other OBUs through IEEE 802.11p/WAVE links, and with RSUs via IEEE 802.11p/WAVE, IEEE 802.11g/WiFi or cellular links supported by the C-RAN concept working under the 4G/LTE specifications, frequency band 7.
 
 ![It Av Testbed V 2](/uploads/automotive/it-av-testbed-v-2.png "It Av Testbed V 2"){.align-center}
-Figure # - IT-Av 5G automotive testbed system architecture.
+Figure 3 - IT-Av 5G automotive testbed system architecture.
+
+RSUs are connected to the IT-Av datacenter through Ethernet links. The C-RAN Remote Radio Head (RRH) is connected to the Base Band Unit (BBU) using optical fiber link, and from there to the Unifier Gateway (UGW) in charge to manage authentication, UEs sessions and end to end connectivity, which is available as a set of Virtual Network Functions (VNFs) deployed in the IT-Av infrastructure datacenter on an openstack instance. The IT-Av datacenter includes, among other components, the Virtualized Infrastructure Manager (VIM), directly connected to the multi-site orchestration managed by OSM MANO deployed in 5TONIC at UC3M, and the Network Function Virtualization Infrastructure (NFVI).
+
+OBUs have access to the vehicular information such as velocity, GPS, and heading. This information can be used by the embedded in-Car Node Processor (in our case, a RaspberryPi) to take local decisions, but also be advertised to the other vehicles. Each vehicle has also access to information from the street and surroundings through embedded car video cameras and sensors (crossing roads and traffic lights, cars in the street, adverse conditions in the way, etc.) that will be transmitted using IEEE 802.11g/WiFi to the OBUs. Vehicles may use this information to support a variety of use cases, e.g., assisted driving, autonomous driving, collision avoidance, accident detection, emergency messages dissemination, On-Board Diagnosis (OBD) for car self-repairing (when integrated with the OBU), etc..
+
 
 ## 
 
-
-
-RSUs are connected to the IT-Aveiro datacenter through Ethernet links. The C-RAN Remote Radio Head (RRH) is connected to the Base Band Unit (BBU) using optical fiber link, and from there to the Unifier Gateway (UGW) in charge to manage authentication, UEs sessions and end to end connectivity, which is available as a set of Virtual Network Functions (VNFs)  deployed in the IT-Aveiro infrastructure datacenter on an openstack instance. The IT-Aveiro datacenter includes, among other components, the Virtualized Infrastructure Manager (VIM), directly connected to the multi-site orchestration managed by OSM MANO deployed in 5TONIC at UC3M, and the Network Function Virtualization Infrastructure (NFVI).
-OBUs have access to the vehicular information such as velocity, GPS, and heading. This information can be used by the embedded in-Car Node Processor (in our case, a RaspberryPi) to take local decisions, but also be advertised to the other vehicles. Each vehicle has also access to information from the street and surroundings through embedded car video cameras and sensors (crossing roads and traffic lights, cars in the street, adverse conditions in the way, etc.) that will be transmitted using IEEE 802.11g/WiFi to the OBUs. Vehicles may use this information to support a variety of use cases, e.g., assisted driving, autonomous driving, collision avoidance, accident detection, emergency messages dissemination, On-Board Diagnosis (OBD) for car self-repairing (when integrated with the OBU), etc.
 
 
 ## 5GinFIRE and IT-Av Testbed Datacenter
@@ -49,7 +50,7 @@ NFVI:
 
 
 # Use Case: Assisted Driving with VNF Video Transcoder
-To demonstrate the potential of the 5GinFIRE automotive testbed located in IT-Aveiro, and to validate the workflow for new experimenters to deploy new VNFs, a VNF video transcoding camera-based car overtaking scenario was evaluated. In this scenario, illustrated in the Figure X, each vehicle contains an OBU that provides the communication between vehicles and between each vehicle and the infrastructure. The OBU is also connected to an Android device, which can be a smartphone or a tablet, through WiFi, providing visual information for the driver. The vehicle contains a video camera on its front side. This information will be used by the driver to take decisions on driving, more specifically in overtaking situations. Regarding to the communication interfaces, each OBU is able to communicate with the infrastructure (RSUs) using the IEEE 802.11p/WAVE or IEEE 802.11g/WiFi, or using the 4G LTE cellular technology (C-RAN). The VNF video transcoding was available on site and deployed at the edge of the infrastructure. 
+To demonstrate the potential of the 5GinFIRE automotive testbed located in IT-Av, and to validate the workflow for new experimenters to deploy new VNFs, a VNF video transcoding camera-based car overtaking scenario was evaluated. In this scenario, illustrated in the Figure X, each vehicle contains an OBU that provides the communication between vehicles and between each vehicle and the infrastructure. The OBU is also connected to an Android device, which can be a smartphone or a tablet, through WiFi, providing visual information for the driver. The vehicle contains a video camera on its front side. This information will be used by the driver to take decisions on driving, more specifically in overtaking situations. Regarding to the communication interfaces, each OBU is able to communicate with the infrastructure (RSUs) using the IEEE 802.11p/WAVE or IEEE 802.11g/WiFi, or using the 4G LTE cellular technology (C-RAN). The VNF video transcoding was available on site and deployed at the edge of the infrastructure. 
 
 ![Cars 5 Ginfire](/uploads/automotive/cars-5-ginfire.png "Cars 5 Ginfire"){.align-center} 
 Figure X - 5GinFIRE assisted driving use case architecture.
