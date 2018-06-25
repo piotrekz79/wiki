@@ -1,7 +1,12 @@
-<!-- TITLE: It Av Automotive Testbed -->
+<!-- TITLE: IT-Av Automotive Testbed -->
 <!-- SUBTITLE: A quick summary of IT-Av Automotive Testbed -->
 
 # Testbed Introduction
+
+## Architecture
+
+## 5GinFIRE and IT-Av Testbed Datacenter
+
 # Assisted Driving Use Case
 ## Assisted Driving Architecture
 
