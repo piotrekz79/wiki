@@ -38,10 +38,10 @@ OBUs have access to the vehicular information such as velocity, GPS, and heading
 V2X communications may work directly between vehicles (IEEE 802.11p/WAVE) or using a cellular infrastructure (4G/5G) through a VNF Unified Gateway (provided by the b<>com partner). For the IT-Av automotive testbed both V2V and V2I are possible, enabling different experimentation forms.
 
 Summarizing, the avaliable hardware for experimentation is the following:
-* 10 x RSUs/OBUs Single-Board Computer (SBC), Dedicated Short Range Communication (DSRC) wireless interface (IEEE 802.11p), WiFi interface (IEEE 802.11a/b/g/n), 4G Interface, GPS receiver, Antennas for each technology (round antenna is for WiFi and rectangular antenna is for IEEE 802.11p, and higher gains antennas in the RSUs);
-* 5 x ESP8266 devices to emulate the traffic signals through Wi-fi client and server based approach, and 1 x GoPro Hero 4 for video streaming;
-* 5 x In-Car Node Processor: 3 ARM RaspberryPi V3 model B, and 2 x node processor x86 with 8 GB RAM and 8 core i7 processors;
-* 1 x small cell C-RAN using Band 7 (2.6GHz) for testing purposes (testing license is required “ANACOM/PT”), 2 x Sim Cards 4G/LTE UICC Open Card for subscribers provisioning and 2 x 4G dongles, 1 x OAI EPC running on Xeon-based virtual machine (6 vCPU; RAM 10Gb; Disk 250GB).
+* 10x RSUs/OBUs Single-Board Computer (SBC), Dedicated Short Range Communication (DSRC) wireless interface (IEEE 802.11p), WiFi interface (IEEE 802.11b/g/n), 4G Interface, GPS receiver, Antennas for each technology (round antenna is for WiFi and rectangular antenna is for IEEE 802.11p, and higher gains antennas in the RSUs);
+* 5x ESP8266 devices to emulate the traffic signals through WiFi client and server based approach;
+* 5x In-Car Node Processor: 3 ARM RaspberryPi V3 model B, RPi cameras for video streaming and 2x node processor x86 with 8 GB RAM and 8 core i7 processors;
+* 1x small cell C-RAN using Band 7 (2.6GHz) for testing purposes (testing license is required “ANACOM/PT”), 2x Sim Cards 4G/LTE UICC Open Card for subscribers provisioning and 2x 4G dongles, 1x OAI EPC running on Xeon-based virtual machine (6 vCPU; RAM 10Gb; Disk 250GB).
 
 
 ## 5GinFIRE and IT-Av Testbed Datacenter
