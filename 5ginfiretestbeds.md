@@ -23,3 +23,6 @@ eHealth5G facility (located in Poznan Supercomputing and Networking Center, Pozn
 **See more at:** http://wiki.5ginfire.eu/5-ginfiretestbeds/ehealth
 
 
+## NITOS testbed
+NITOS is a highly heterogeneous testbed, located in the premises of University of Thessaly in Volos, Greece. The facility is an addition to the 5GInFIRE testbed offering, accepted as a 1st Open Call infrastructure project. Through the integration of the NITOS testbed, 5GinFIRE users will have the opportunity to take advantage of several highly programmable cutting-edge resources for wireless networking (such as mmWave, SDR, LTE networks and WiFi), bundled with Software Defined Networking and Cloud Computing resources. The incorporation of this new equipment will allow the evaluation of several vertical applications for 5G over the 5GinFIRE infrastructure, including cloud based Virtual/Augmented Reality applications, wireless eHealth critical applications, wireless home entertainment, and Smart City experimentation.
+**See more at:** http://wiki.5ginfire.eu/5-ginfiretestbeds/nitos
