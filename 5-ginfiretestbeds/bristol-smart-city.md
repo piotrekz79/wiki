@@ -85,66 +85,6 @@ Finally, University of Bristol 5G testbed will deliver an automated and programm
 ## Testbed architecture 
 The University of Bristol Smart Internet Lab 5G testbed is a multi-site solution connected through a city-wide single mode fibre ring with several active switching nodes. The core network is located at the High-Performance Network (HPN) research group laboratory at the University of Bristol with access technologies located in Millennium Square for outdoor coverage and We The Curious science museum for indoor coverage.
 
-### Wireless Access Technologies
-
-Figure 2 shows a geographical representation of the multiple access technologies deployed within Millennium Square and We The Curious, a science museum in the centre of Bristol. Connectivity terminates via fibre optic at distinct points in the square with onward links through the use of fixed wireless access mmWave radios. To allow for future expansion, termination locations have been over engineered with enough installed fibre and power capacity to allow the next generation of 5G connectivity. Space and power for mobile edge computing (MEC) has been provisioned at key locations around Millennium Square to allow the deployment of virtual network functions (VNF) and low latency real-time application processing close to the end user.
-
-
-![Millennium Square](/uploads/millennium-square.png "Millennium Square")
-**Figure 2: Location of the Access Points at Millennium Square and We the Curious science museum.**
-
-
-![Nokia Rrh](/uploads/nokia-rrh.png "Nokia Rrh")
-**Figure 3: Nokia AirScale RRH & Antenna	**
-
-
-![Aps](/uploads/aps.png "Aps")
-**Figure 4: Wi-Fi APs in Millennium Square	** 
-
-![Melnet](/uploads/melnet.png "Melnet")
-**Figure 5: CSS Metnet**
-
-This testbed has combined wireless access technologies from multiple vendors across four 5G pioneer radio bands into a dynamic and flexible architecture allowing for future reconfiguration and experimentation with innovative radio architectures and waveforms. Connectivity is provided through the following solutions.
-
-1. To provide a grounding for Nokia’s upcoming 5G NR product, Nokia have delivered and demonstrated their most advanced 4G LTE-A product, which was used in all the public demonstrators during the Layered Realities weekend. This LTE-A solution delivers a 15MHz 4x4 MIMO radio access network to our experimenters and has been tested at reliably delivering 100Mbit/s download (30Mbit/s upload) from our NFV datacentre through the Millennium Square (based on given licenced spectrum and user profile configured in the EPC).
-
-Ongoing developments include a 5G NR Massive MIMO (TDD band 42 at 3.5GHz), which will deliver even greater network throughput rates and bandwidth sharing functionality.  Figure 3 shows the split baseband radio architecture provided by Nokia to support future migration to 5G NR through software upgrades to the System Module and replacement of the remote radio head (RRH). Two RRHs are installed in Millennium Square allowing experimentation and testing of 4G technologies with a robust roadmap to 5G.
-
-2. To facilitate truly ubiquitous wireless connectivity for new and legacy devices, Wi-Fi networks can be provisioned using eight multi-vendor 2.4GHz and 5GHz access point (AP) deployments. The APs supplied by Nokia (shown top in Figure 4) integrate with the Nokia FlexiZone controller allowing for seamless handover between LTE and Wi-Fi, a key concept in 5G RAN design. 
- 
-The APs provided by Ruckus (shown middle in Figure 4) are 802.11ac Wave 2 devices utilizing 4x4 MIMO with BeamFlex+ technology for adaptive beam steering and over 1Gbps data rate per user. All Ruckus APs are controlled via an integrated SmartZone access point controller, hosted in the cloud infrastructure detailed below. This AP controller provides a North Bound interface allowing direct access by the NetOS SDN controller. This architecture facilitates network-slicing through optical, electrical and radio technologies via on-demand SSID creation.
-
-Wi-Fi featured heavily throughout the Layered Realities weekend as a demonstration of network segmentation and as the primary radio access network for two of the public demonstrations. 
-
-3.	The Layered Realities 5G showcase weekend demonstrated the proof of concept prototype for 5G NR Fixed Wireless Access solution providing high capacity link between the balcony and the marquee in the Millennium square. (see Figure 6 ). The solution encompassed an EPC emulator, the Nokia AirScale baseband on the AirFrame blade connected over CPRI interface to the antenna, which is a 16×16, 256 element unit. The Intel 5G MTP test UE was in the marquee. The system deployed 2 component carrier aggregation based on the available license, for a total of 200MHz channel bandwidth. This demonstrated throughput of 680Mbps observed within the marquee.
-
-![5 Gnr](/uploads/5-gnr.png "5 Gnr")
-**Figure 6 5GNR 28GHz Proof of Concept**
-
-4.	mmWave communications are an important part of the 5G standardisation process. To showcase this technology in the University of Bristol, Smart Internet Lab 5G testbed, commercial devices provided by CCS were deployed in the network. The CCS Metnet nodes operate at 26GHz and form a self-organising mesh network for fixed wireless access with gigabit connectivity. 
-
-Seven Metnet nodes are deployed in the testbed, connected to the Edgecore SDN switches. This architecture allows dynamic configuration of connectivity, either providing Wi-Fi backhaul over the mmWave mesh network or through the installed fibre network to the NFV cloud datacentre. With no radio planning, the CCS network is able to autonomously organise itself into a high-performance distribution and access network, demonstrating its ability to provide low-configuration last-mile access in a congested environment.
-
-The Metnet nodes are managed and configured via an element management system (EMS) allowing allocation of bandwidth to specific high demand nodes or viewing of the current mesh topology. The CCS EMS resides in the cloud infrastructure at the University of Bristol and is accessible from the testbed’s management network. 
-
-5.	The LTE-A network provided the 4G air interface using 15MHz bandwidth from BT in 2.6GHz spectrum and provided device connectivity for various demonstrations during the public demonstration. For validation we tested this network for throughput using a video on demand 5G network slice service towards a mix of 4G terminals receiving high definition video clips from the network simultaneously. This is shown in Figure 7 where one laptop with a 4G dongle and 5 x Samsung S8 handsets received HD video on demand simultaneously. Figure 7 shows different tests and capture of the information from the BTS or EPC management system.
-
-![Lta](/uploads/lta.png "Lta")
-**Figure 7: LTE-A service test validation**
-
-6.	In collaboration with National Instruments (NI) and University of Bristol’s Communication Systems and Networks (CSN) research group, the future 5G air interface technology Massive MIMO has been integrated with the 5G testbed. This system comprises a 128 antenna base station and 12 client devices. Operating in the pioneer band of 3.51GHz TDD, simultaneous transmission to all clients in 20MHz bandwidth yields over 80bits/second/hertz spectral efficiency (see Figure 8). 
-
-![Massivomimo](/uploads/massivomimo.png "Massivomimo")
-**Figure 8: Massive MIMO test network at the Smart Internet Lab**
-
-![Lifi](/uploads/lifi.png "Lifi")
-**Figure 9: LiFi client dongle**
-
-7.	To showcase the 5G principle of access-agnosticism with novel access modes, the pureLiFi AP has been integrated with the core and distribution network of the testbed. Inside the public foyer of the We The Curious museum, an exhibit has been revealed to the public demonstrating the behaviour of a network stream encoded in visible light, and the effects of blocking it with curtains. 
- 
-The architecture of a LiFi network is similar to Wi-Fi whereby access points communicate with clients within visible range. For LiFi, an AP resembles a ceiling light (and its secondary purpose is lighting) whilst a client is embedded within a USB dongle, creating a network bridge for any USB host (Figure 9). 
-
-Multiple LiFi APs are controlled via an EMS residing in the University of Bristol cloud infrastructure. This entity controls all APs within the network including those based in We The Curious and the University of Bristol.
 
 ### 	Network Connectivity
 The University of Bristol’s testbed has been futureproofed by delivering a wholly-uncontended, privately managed fibre network in the Millennium Square public space. The testbed’s optical-connectivity asset is comprised of a hub-and-spoke network of 96F single-mode fibre cables installed at each radio test tower, terminated at a central distribution node inside the We The Curious museum.
