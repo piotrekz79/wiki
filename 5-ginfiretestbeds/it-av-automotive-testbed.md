@@ -3,11 +3,23 @@
 
 # Testbed Description
 ## Introduction
+
+The vehicular network characterizing the automotive EVI environment available in IT-Aveiro, Portugal, consists on On-Board Units (OBUs) in the vehicles and roadside units (RSUs) connected to the Internet through an Ethernet interface. As shown in the Figure 1, the vehicles connect among each other via standard IEEE 802.11p/WAVE links, and are connected to the RSUs and the Internet through IEEE 802.11p/WAVE, IEEE 802.11g/WiFi or cellular links.
+
 ![Vanet](/uploads/automotive/vanet.jpg "Vanet"){.align-center}
+Figure 1 - Vehicular network architecture.
+
+Each vehicle is equipped with an OBU with multiple wireless interfaces, which enable the vehicles to communicate both with other vehicles and with RSUs that are integrated in the infrastructure. OBUs and RSUs have a similar hardware, except for the antennas, which have higher gains in the RSUs. An example of an OBU is depicted in Figure 2.
+
+
 
 ## Architecture
 
+The automotive EVI environment available in IT-Aveiro, Portugal, is represented in Figure 2. From the vehicular network perspective, it consists on several On-Board Units (OBUs), placed in vehicles, as well as Roadside Units (RSUs). An OBU can connect with other OBUs through IEEE 802.11p/WAVE links, and with RSUs via IEEE 802.11p/WAVE, IEEE 802.11g/WiFi or cellular links supported by the C-RAN concept working under the 4G/LTE specifications, frequency band 7.
+
 ![It Av Testbed V 2](/uploads/automotive/it-av-testbed-v-2.png "It Av Testbed V 2"){.align-center}
+Figure 2 - IT-Av 5G automotive testbed system architecture.
+
 ## 
 
 ![Obu](/uploads/automotive/obu.png "Obu"){.align-center}
