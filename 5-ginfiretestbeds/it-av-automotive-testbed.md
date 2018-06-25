@@ -17,7 +17,7 @@ Figure 2 - On-Board Unit (OBU).
 The OBU includes the following elements: 
 * Single-Board Computer (SBC);
 * Dedicated Short Range Communication (DSRC) wireless interface (IEEE 802.11p);
-* WiFi interface (IEEE 802.11a/b/g/n);
+* WiFi interface (IEEE 802.11b/g/n);
 * 4G Interface;
 * GPS receiver;
 * Antennas for each technology (round antenna is for WiFi and rectangular antenna is for IEEE 802.11p).
