@@ -7,7 +7,7 @@
 
 ## 5GinFIRE and IT-Av Testbed Datacenter
 
-# Assisted Driving Use Case
+# Use Case: Assisted Driving with Video Transcoder
 ## Assisted Driving Architecture
 
 # Experimentation
