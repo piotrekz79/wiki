@@ -51,17 +51,12 @@ Summarizing, the avaliable hardware for experimentation is the following:
 
 Figure X shows the overall Network Function Virtualization Infrastructure (NFVI) deployed at IT-Av datacenter as part of 5GinFIRE multi-site orchestration.
 
-The cloud environment of the IT-Av consists of an OpenStack *Queens* instance that operates on top of Ubuntu 16.04 Server operating system. The controller node is available for the project through the address 10.154.24.3 within the address range 10.154.24.0/21 for the university site.
+The cloud environment of the IT-Av consists of an OpenStack **Queens** instance that operates on top of **Ubuntu 16.04 Server** operating system. The controller node is available for the project using the management and control plane, accessible through **10.154.0.0/21**, while the IP addresses in the range **10.154.8.0/21** are reserved for data traffic. 
 
-• Controller, Computer and Storage node: 1 server machine Intel Xeon 2.40GHz 14 cores, 128GB RAM, 800GB HD
-• Storage node: 1 server machine Intel Xeon 2.40GHz 14 cores, 128GB RAM, 800GB HD
-• One switch: Corsa DP2100 with 32 10Gb Ports
-VIM: based on OpenStack Ocata.
-NFVI:
-1x server computer: 24 cores, 192GB memory, 4 x 1Gbps interfaces (passthrough, DPDK and SR-IOV), 2 x 1TB SAS3 hard drives. 
-1x server computer: 16 cores, 256 GB memory, 4 x 1Gbps interfaces (passthrough), 2 x 1TB SAS2 hard drives. 
-1x 24-port 1Gbps switch, interconnecting the infrastructure.
-
+The NFV components and infrastructure avaliable in the IT-Av testbed is the following:
+* 1x server computer: 24 cores, 192GB memory, 4 x 1Gbps interfaces (passthrough, DPDK and SR-IOV), 2 x 1TB SAS3 hard drives;
+* 1x server computer: 16 cores, 256 GB memory, 4 x 1Gbps interfaces (passthrough), 2 x 1TB SAS2 hard drives;
+* 1x 24-port 1Gbps switch, interconnecting the infrastructure.
 
 # Use Case: Assisted Driving with VNF Video Transcoder
 To demonstrate the potential of the 5GinFIRE automotive testbed located in IT-Av, and to validate the workflow for new experimenters to deploy new VNFs, a VNF video transcoding camera-based car overtaking scenario was evaluated. In this scenario, illustrated in the Figure 6, each vehicle contains an OBU that provides the communication between vehicles and between each vehicle and the infrastructure. The OBU is also connected to an Android device, which can be a smartphone or a tablet, through WiFi, providing visual information for the driver. The vehicle contains a video camera on its front side. This information will be used by the driver to take decisions on driving, more specifically in overtaking situations. Regarding to the communication interfaces, each OBU is able to communicate with the infrastructure (RSUs) using the IEEE 802.11p/WAVE or IEEE 802.11g/WiFi, or using the 4G LTE cellular technology (C-RAN). The VNF video transcoding was available on site and deployed at the edge of the infrastructure. 
