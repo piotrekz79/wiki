@@ -64,12 +64,9 @@ The available equipment is controlled using a rich software stack (showed in Fig
 •	one SDN controller responsible for providing connectivity:
     o	NetOS (proprietary, based on the Open Daylight opensource)
 		
-		
-		
-		
-		
-		
-	**	Figure 3: Software used for management and orchestration of the testbed resources**
+			
+		![Bristolisland](/uploads/bristolisland.png "Bristolisland")
+	**	Figure 2: Software used for management and orchestration of the testbed resources**
 	
 ## Testbed architecture 
 The University of Bristol Smart Internet Lab 5G testbed is a multi-site solution connected through a city-wide single mode fibre ring with several active switching nodes. The core network is located at the High-Performance Network (HPN) research group laboratory at the University of Bristol with access technologies located in Millennium Square for outdoor coverage and We The Curious science museum for indoor coverage.
