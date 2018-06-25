@@ -21,6 +21,7 @@ The OBU includes the following elements:
 * 4G Interface;
 * GPS receiver;
 * Antennas for each technology (round antenna is for WiFi and rectangular antenna is for IEEE 802.11p).
+
 The OBUs are running a tailored Linux distribution based on Buildroot. The kernel was customized to include new features such as clock synchronization, as required by IEEE 802.11p. The driver was further extended to meet the requirements of IEEE 802.11p/WAVE. The RSUs have the same hardware as the OBUs, except for the cellular interface (which they do not require) and the Ethernet interface (required to connect to a switch from the fiber infrastructure).
 
 ## Architecture
