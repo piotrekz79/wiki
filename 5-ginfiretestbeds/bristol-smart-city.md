@@ -81,32 +81,6 @@ The high performance and edge computing capabilities will power resource-intensi
 
 Finally, University of Bristol 5G testbed will deliver an automated and programmable environment, that will be used by any projects southbound interface to create fully integrated orchestration for both application components and network services.
 	
-	
-## Testbed architecture 
-The University of Bristol Smart Internet Lab 5G testbed is a multi-site solution connected through a city-wide single mode fibre ring with several active switching nodes. The core network is located at the High-Performance Network (HPN) research group laboratory at the University of Bristol with access technologies located in Millennium Square for outdoor coverage and We The Curious science museum for indoor coverage.
-
-
-### 	Network Connectivity
-The University of Bristol’s testbed has been futureproofed by delivering a wholly-uncontended, privately managed fibre network in the Millennium Square public space. The testbed’s optical-connectivity asset is comprised of a hub-and-spoke network of 96F single-mode fibre cables installed at each radio test tower, terminated at a central distribution node inside the We The Curious museum.
-
-![Opticalspoke](/uploads/opticalspoke.png "Opticalspoke")
-**Figure 10: Termination of single optical spoke in distribution node**
-
-Being wholly owned and managed by the Smart Internet Lab, this optical connectivity asset can expand to support dozens of optical applications per radio test tower, each delivering up to 40Gbit/s uncontested throughput rates with current transceivers. This futureproofing means the testbed will be ready for whatever bandwidth and latency requirements may need to be tested and experimented upon for years to come.
-
-Multiple urban testbed locations within Bristol is possible through the city-wide single-mode optical fibre network. This allows the island to quickly scale-out with potential deployments to include additional locations, such as the SS Great Britain and M-Shed tourist hubs. The entire datapath network within the island is switched via a distribution network of Edgecore 4610P and 5610-52X SDN switches to provide full network slicing and segmentation via a centralized NetOS SDN controller. This test network is further connected to 5G Exchange in Slough Vitus datacentre managed by 5GUK test and trial programme for national and international test network connectivity beyond one city.
-
-![Bristolisland](/uploads/bristolisland.png "Bristolisland")
-**Figure 11: Bristol’s Island Control and Management Network**
-
-### Cloud and NFV Hosting
-A primary consideration when selecting a cloud environment for NFV hosting and orchestration was to deliver a heterogeneous datacentre of multi-vendor assets. To this end the University of Bristol has implemented both an Opensource MANO (OSM) datacentre, a Nokia MEC platform and Nokia Cloudband solution. 
-The OSM datacentre employs an Openstack Pike Virtualized Infrastructure Manager (VIM) for orchestration, hosting and storage of VNFs as either KVM virtual machines, or LXC containers. To integrate a network service’s VNF, Openstack Neutron provider networks, Open Daylight and NetOS SDN controllers are used. Zeetta Networks’ NetOS has allowed the testbed to extend VNFs to terminations such as Physical Network Function endpoints (e.g. Wi-Fi SSIDs). This NFV cloud solution was used in the March Layered Realities public demonstration to host network functions enjoyed by the public. This NFV cloud is built upon industry standard and popular technologies such as KVM virtualization. The Openstack cloud environment adopted by our Opensource MANO solution made use of SR-IOV passthrough techniques to give direct access to time-slices of valuable hardware (e.g. network interface cards). The VNFs were configured during instantiation using Cloud-Init scripts.
-
-
-Nokia’s LTE-A solution and planned 5G NR extensions, include a MEC platform that allows the deployment and integration of virtualized cloud applications directly within the Evolved Packet Core of the network. This allows the direct connection of novel network applications at the S1 interface of the LTE-A network, eliminating almost all network-path latency from the user’s application experience. The Nokia MEC is based on established industry standard virtualization technologies already familiar to researchers and enterprises. We expect the uptake of this MEC to be as quick as the familiarization of our OSM cloud.
-
-Lastly, Nokia’s competitor to the OSM NFV setup Cloudband is finalizing its deployment inside our testbed network. Cloudband is an ETSI MANO compatible NFV solution based on Openstack-orchestrated KVM virtualization, and Nokia Nuage SDN networking of VNFs. The finalized deployment of this platform will open to research some of Nokia’s most advanced network virtualization technologies such as distributed.
 
 # Smart City Safety Use Case
 
