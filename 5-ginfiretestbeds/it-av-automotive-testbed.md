@@ -29,7 +29,7 @@ The OBUs are running a tailored Linux distribution based on Buildroot. The kerne
 The automotive EVI environment available in IT-Av, Portugal, is represented in Figure 3. From the vehicular network perspective, it consists on several On-Board Units (OBUs), placed in vehicles, as well as Roadside Units (RSUs). An OBU can connect with other OBUs through IEEE 802.11p/WAVE links, and with RSUs via IEEE 802.11p/WAVE, IEEE 802.11g/WiFi or cellular links supported by the C-RAN concept working under the 4G/LTE specifications, frequency band 7.
 
 ![It Av Testbed V 2](/uploads/automotive/it-av-testbed-v-2.png "It Av Testbed V 2"){.align-center}
-Figure 3 - IT-Av 5G automotive testbed system architecture.
+Figure 3 - IT-Av 5G automotive testbed infrastrucutre.
 
 RSUs are connected to the IT-Av datacenter through Ethernet links. The C-RAN Remote Radio Head (RRH) is connected to the Base Band Unit (BBU) using optical fiber link, and from there to the Unifier Gateway (UGW) in charge to manage authentication, UEs sessions and end to end connectivity, which is available as a set of Virtual Network Functions (VNFs) deployed in the IT-Av infrastructure datacenter on an openstack instance. The IT-Av datacenter includes, among other components, the Virtualized Infrastructure Manager (VIM), directly connected to the multi-site orchestration managed by OSM MANO deployed in 5TONIC at UC3M, and the Network Function Virtualization Infrastructure (NFVI).
 
