@@ -12,7 +12,7 @@ In order to explore and validate the deployment of 5G in an architecture that co
 
 The University of Bristol’s 5G testbed is a multi-site network connected through a 10km fibre with several active switching nodes, that are depicted in Figure 2. The core network is located at the High-Performance Network (HPN) laboratory at the University of Bristol and an extra edge computing node is available in another central location, known as Watershed. As shown in Figure 1, the access technologies are located in two different areas in the city centre: Millennium Square for outdoor coverage and “We The Curious” science museum for indoor coverage.
 
-
+![Figure 1](/uploads/figure-1.png "Figure 1")
 **Figure 1: Distribution of the testbed access technologies**
 
 ## 	University of Bristol, Smart Internet Lab’s 5G Test Network Capability
