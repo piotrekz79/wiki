@@ -16,39 +16,53 @@ The University of Bristol’s 5G testbed is a multi-site network connected throu
 **Figure 1: Distribution of the testbed access technologies**
 
 ## 	University of Bristol, Smart Internet Lab’s 5G Test Network Capability
-The University of Bristol testbed showcases and facilitates research on the following technology capabilities.
-•	Multi-vendor SDN enabled packet switched network
-	o	Corsa switch (Corsa DP2100)
-	o	Edgecore switch (Edgecore AS4610 series) 
+
+A summary of the testbed constituent equipment and capabilities is:
+
+•	Multi-vendor software-defined networking (SDN) enabled packet switched network
+     o	Corsa switch (Corsa DP2100)
+     o	Edgecore switch (Edgecore AS4610 series & AS5712-54X)
+		 
 •	SDN enabled optical (Fibre) switched network
-	o	Polatis Series 6000 Optical Circuit Switch
+     o	Polatis Series 6000 Optical Circuit Switch
+		 
 •	Multi-vendor Wi-Fi
-	o	SDN enabled Ruckus Wi-Fi (T710 and R720)
-	o	Nokia Wi-Fi (AC400)
+     o	SDN enabled Ruckus Wi-Fi (T710 and R720)
+     o	Nokia Wi-Fi (AC400)
+		 
 •	Nokia 4G and 5G NR
-	o	4G EPC & LTE-A (Dual FDD in licensed bands for 1800MHz and 2600MHz; with 15MHz T&D licence)
-	o	5G Core & 5G NR Massive MiMO (TDD band 42 at 3.5GHz; with 20MHz T&D licence) 
-	o	28Ghz fixed-wireless access demonstrator for two-weeks exhibition only
-•	Self-organising multipoint-to-multipoint wireless mesh network 
-	o	CCS MetNet. A 26GHz with 112MHz T&D licence providing 1.2Gbps throughput
-•	Massive MIMO NR radio demonstrator
-	o	National Instruments (NI) Massive MIMO demonstrator 128 antenna base station
-	o	12 client UE devices (TDD band 42 at 3.5GHz with 20MHz bandwidth) 
-•	LiFi Access point 
-	o	pureLiFi LiFi access points supporting 43Mbps
+     o	4G EPC & LTE-A (Dual FDD licensed bands for 1800MHz and 2600MHz; with 15MHz of T&D licence in 2600MHz band)
+     o	5G Core & 5G NR Massive MIMO (TDD band 42 at 3.5GHz; with 20MHz T&D licence)
+		 
+•	Self-organising multipoint-to-multipoint wireless mesh network
+     o	CCS MetNet a 26GHz with 112MHz T&D licence providing 1.2Gbps throughput
+		 
+•	LiFi Access point
+     o	pureLiFi LiFi access points supporting 43Mbps
+		 
 •	Cloud and NFV hosting
-	o	Nokia Multi-access Edge Computing and Nokia Cloudband for network slicing and virtualisation
-	o	Opensource MANO (OSM) datacentre release THREE
-	o	Openstack Pike VIM datacenter for MEC VNF hosting, built upon
-	o	11x Dell PowerEdge T630 compute servers with GPU support; 700+ vCPU cores, 1TB+ RAM and 100TB of HDD storage.
-•	Inter-island Interconnectivity 
-	o	10Gbit/s Ethernet VPLS NetPath+ from JISC to each exchange Island
-	o	Dedicated secure hosting of the 5G UK Exchange in Virtus Datacentre
-	o	Corsa DP2200 SDN Switch provided inter-island connectivity via OpenFlow 1.3
+     o	Nokia Multi-access Edge Computing (MEC)
+     o	Datacentre for Application/VNF hosting, built upon
+		 
+•	11x Dell PowerEdge T630 compute servers 700+ vCPU cores, 1TB+ RAM and 100TB of HDD storage.
+
 •	Advanced fibre optics FPGA convergence of all network technologies enabling considerable flexibility, scalability and programmability of the front/back-haul, to provide experimentation with -
-	o	Elastic Bandwidth-Variable Transponders
-	o	Programmable Optical White-box
-	o	Bandwidth-Variable Wavelength Selective Switches (BV-WSS)
+     o	Elastic Bandwidth-Variable Transponders
+     o	Programmable Optical White-box
+     o	Bandwidth-Variable Wavelength Selective Switches (BV-WSS)
+
+The available equipment is controlled using a rich software stack (showed in Figure 3) that is composed by:
+      
+•	Two different NFV orchestration and management solutions:
+    o	Open Source MANO release THREE (opensource)
+    o	NOKIA CloudBand (proprietary based on a version of OSM and OpenStack, providing network slicing and virtualisation in rapid service creation) Available July 2018
+		
+•	Two cloud/edge computing solutions:
+    o	Openstack Pike (opensource)
+    o	Nokia MEC (proprietary)
+		
+•	one SDN controller responsible for providing connectivity:
+    o	NetOS (proprietary, based on the Open Daylight opensource)
 	
 ## Testbed architecture 
 The University of Bristol Smart Internet Lab 5G testbed is a multi-site solution connected through a city-wide single mode fibre ring with several active switching nodes. The core network is located at the High-Performance Network (HPN) research group laboratory at the University of Bristol with access technologies located in Millennium Square for outdoor coverage and We The Curious science museum for indoor coverage.
