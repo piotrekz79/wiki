@@ -65,7 +65,7 @@ The available equipment is controlled using a rich software stack (showed in Fig
     o	NetOS (proprietary, based on the Open Daylight opensource)
 		
 			
-![Control And Physical Plane Diagrams](/uploads/control-and-physical-plane-diagrams.png "Control And Physical Plane Diagrams")
+![Bristolisland](/uploads/bristolisland.png "Bristolisland")
 	**	Figure 2: Software used for management and orchestration of the testbed resources**
 	
 ## Testbed architecture 
