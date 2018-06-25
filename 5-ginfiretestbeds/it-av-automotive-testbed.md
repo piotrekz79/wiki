@@ -3,10 +3,11 @@
 
 # Testbed Introduction
 
-## Architecture
-
 ![Vanet](/uploads/automotive/vanet.jpg "Vanet"){.align-center}
 
+## Architecture
+
+![It Av Testbed V 2](/uploads/automotive/it-av-testbed-v-2.png "It Av Testbed V 2"){.align-center}
 ## 
 
 ## 5GinFIRE and IT-Av Testbed Datacenter
