@@ -10,6 +10,7 @@
 ![It Av Testbed V 2](/uploads/automotive/it-av-testbed-v-2.png "It Av Testbed V 2"){.align-center}
 ## 
 
+![Obu](/uploads/automotive/obu.png "Obu"){.align-center}
 
 ## 5GinFIRE and IT-Av Testbed Datacenter
 
