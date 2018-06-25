@@ -66,7 +66,7 @@ The available equipment is controlled using a rich software stack (showed in Fig
 		
 			
 ![Bristolisland](/uploads/bristolisland.png "Bristolisland")
-**		Figure 2: Software used for management and orchestration of the testbed resources**
+**Figure 2: Software used for management and orchestration of the testbed resources**
 	
 		
 Within any of our projects, the aforementioned structure will be used to support different verticals demonstrators, such as entertainment, finance, manufacturing and automotive testing.
