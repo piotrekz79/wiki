@@ -68,9 +68,7 @@ The available equipment is controlled using a rich software stack (showed in Fig
 ![Bristolisland](/uploads/bristolisland.png "Bristolisland")
 	**	Figure 2: Software used for management and orchestration of the testbed resources**
 	
-	
-	
-	
+		
 Within any of our projects, the aforementioned structure will be used to support different verticals demonstrators, such as entertainment, finance, manufacturing and automotive testing.
 
 The diverse range of access technologies are interconnected in sharing the same underlying system while being used by 5GinFIRE framework to provide connectivity for the demonstrators, showcasing seamless integration between heterogeneous network components, an important concept in 5G. Additionally, the alternative and innovative technologies available, such as pureLiFi for fixed access, can be used to demonstrate the principle of access-agnosticism, also important for the 5G vision.
@@ -82,18 +80,12 @@ The SDN capabilities expressed by the NetOS controller, will facilitate network 
 The high performance and edge computing capabilities will power resource-intensive applications developed by demonstrators. In these applications, hardware acceleration and GPU-processing will be used to deliver enhanced performance and enable low-latency/real-time user interaction.
 
 Finally, University of Bristol 5G testbed will deliver an automated and programmable environment, that will be used by any projects southbound interface to create fully integrated orchestration for both application components and network services.
-
-	
 	
 	
 ## Testbed architecture 
 The University of Bristol Smart Internet Lab 5G testbed is a multi-site solution connected through a city-wide single mode fibre ring with several active switching nodes. The core network is located at the High-Performance Network (HPN) research group laboratory at the University of Bristol with access technologies located in Millennium Square for outdoor coverage and We The Curious science museum for indoor coverage.
 
 ### Wireless Access Technologies
-Figure 1 presents the high-level architecture of the University of Bristol testbed. The design of this architecture may be described in a number of distinct technical areas:
-
-
-**Figure 1: University of Bristol top level system architecture**
 
 Figure 2 shows a geographical representation of the multiple access technologies deployed within Millennium Square and We The Curious, a science museum in the centre of Bristol. Connectivity terminates via fibre optic at distinct points in the square with onward links through the use of fixed wireless access mmWave radios. To allow for future expansion, termination locations have been over engineered with enough installed fibre and power capacity to allow the next generation of 5G connectivity. Space and power for mobile edge computing (MEC) has been provisioned at key locations around Millennium Square to allow the deployment of virtual network functions (VNF) and low latency real-time application processing close to the end user.
 
