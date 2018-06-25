@@ -35,9 +35,13 @@ RSUs are connected to the IT-Av datacenter through Ethernet links. The C-RAN Rem
 
 OBUs have access to the vehicular information such as velocity, GPS, and heading. This information can be used by the embedded in-Car Node Processor (in our case, a RaspberryPi) to take local decisions, but also be advertised to the other vehicles. Each vehicle has also access to information from the street and surroundings through embedded car video cameras and sensors (crossing roads and traffic lights, cars in the street, adverse conditions in the way, etc.) that will be transmitted using IEEE 802.11g/WiFi to the OBUs. Vehicles may use this information to support a variety of use cases, e.g., assisted driving, autonomous driving, collision avoidance, accident detection, emergency messages dissemination, On-Board Diagnosis (OBD) for car self-repairing (when integrated with the OBU), etc..
 
+V2X communications may work directly between vehicles (IEEE 802.11p/WAVE) or using a cellular infrastructure (4G/5G) through a VNF Unified Gateway (provided by the b<>com partner). For the IT-Av automotive testbed both V2V and V2I are possible, enabling different experimentation forms.
 
-## 
-
+Summarizing, the avaliable hardware for experimentation is the following:
+* 10 x RSUs/OBUs Single-Board Computer (SBC), Dedicated Short Range Communication (DSRC) wireless interface (IEEE 802.11p), WiFi interface (IEEE 802.11a/b/g/n), 4G Interface, GPS receiver, Antennas for each technology (round antenna is for WiFi and rectangular antenna is for IEEE 802.11p, and higher gains antennas in the RSUs);
+* 5 x ESP8266 devices to emulate the traffic signals through Wi-fi client and server based approach, and 1 x GoPro Hero 4 for video streaming;
+* 5 x In-Car Node Processor: 3 ARM RaspberryPi V3 model B, and 2 x node processor x86 with 8 GB RAM and 8 core i7 processors;
+* 1 x small cell C-RAN using Band 7 (2.6GHz) for testing purposes (testing license is required “ANACOM/PT”), 2 x Sim Cards 4G/LTE UICC Open Card for subscribers provisioning and 2 x 4G dongles, 1 x OAI EPC running on Xeon-based virtual machine (6 vCPU; RAM 10Gb; Disk 250GB).
 
 
 ## 5GinFIRE and IT-Av Testbed Datacenter
