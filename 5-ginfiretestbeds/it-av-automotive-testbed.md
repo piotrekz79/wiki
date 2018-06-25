@@ -10,3 +10,6 @@ Experimenters will have access to real OBUs, RSUs, In-Car Node Processors, ESP82
 
 Possible VNFs to be included and tested comprise Li-Fi communication between cars, car crash detection and emergency info dissemination, On-Board Diagnosis for self-repairing, collision avoidance (with machine learning techniques) and others.
 # Contact
+Susana Sargento (susana@ua.pt) and Miguel Luís (nmal@av.it.pt)
+Instituto de Telecomunicações, Aveiro, Portugal (IT-Av)
+Campus Universitário de Santiago, 3810-193 AVEIRO – PORTUGAL
