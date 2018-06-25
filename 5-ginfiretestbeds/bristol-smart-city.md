@@ -7,11 +7,13 @@ This test network enables network slicing as a service, as required by various s
 
 The University of Bristol’s Smart Internet Lab 5G Testbed comprises multiple levels of research ready SDN switches connecting diverse layers of access technologies, to high performance cloud compute resources via an innovate exchange and orchestration mechanism. The focus for this test network is to enable experimentation in network service virtualisation and innovative network function testing with access agnostic connectivity to end users.
 
-Permanently installed in Millennium Square and the Smart Internet Lab are five heterogeneous, 5G ready wireless access technologies connected via dedicated, high capacity optical fibres, Edgecore and Corsa SDN switches and mmWave radio. A dedicated out of band management network provides flexibility of configuration and control of all active devices in the network. Control of network architecture is made available to NetOS, an intelligent SDN controller.
 
-The cloud infrastructure at the Smart Internet Lab is built on OpenStack with a virtualised Evolved Packet Core (EPC) from Nokia. This allows virtual network functions to be deployed as a mobile edge computing service close to the edge of the network providing performance enhancements to the user.
+In order to explore and validate the deployment of 5G in an architecture that combines existing technologies and innovations, University of Bristol have deployed a rich testbed comprised of several networking and computing technologies, interconnecting a significant area in the Bristol city centre. This testbed aims to provide a managed platform for the development and testing of new solutions delivering reliable and high-capacity services to several applications and vertical sectors. 
 
-Connectivity to additional 5G testbeds is provided through the 5G UK Exchange, a novel architecture for orchestration of virtual network functions and SDN configuration. This exchange resides in a neutral datacentre with 10Gbit connectivity through JANET to connected partners. The purpose of the 5G UK Exchange allows researchers to dynamically provision both virtual and physical network functions in each testbed from a catalogue of available services. This will allow end-to-end 5G research to take place across the globe.
+The University of Bristol’s 5G testbed is a multi-site network connected through a 10km fibre with several active switching nodes, that are depicted in Figure 2. The core network is located at the High-Performance Network (HPN) laboratory at the University of Bristol and an extra edge computing node is available in another central location, known as Watershed. As shown in Figure 1, the access technologies are located in two different areas in the city centre: Millennium Square for outdoor coverage and “We The Curious” science museum for indoor coverage.
+
+
+**Figure 1: Distribution of the testbed access technologies**
 
 ## 	University of Bristol, Smart Internet Lab’s 5G Test Network Capability
 The University of Bristol testbed showcases and facilitates research on the following technology capabilities.
