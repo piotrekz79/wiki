@@ -49,6 +49,13 @@ Summarizing, the avaliable hardware for experimentation is the following:
 
 ## 5GinFIRE and IT-Av Testbed Datacenter
 
+Figure X shows the overall Network Function Virtualization Infrastructure (NFVI) deployed at IT-Av datacenter as part of 5GinFIRE multi-site orchestration.
+
+The cloud environment of the IT-Av consists of an OpenStack *Queens* instance that operates on top of Ubuntu 16.04 Server operating system. The controller node is available for the project through the address 10.154.24.3 within the address range 10.154.24.0/21 for the university site.
+
+• Controller, Computer and Storage node: 1 server machine Intel Xeon 2.40GHz 14 cores, 128GB RAM, 800GB HD
+• Storage node: 1 server machine Intel Xeon 2.40GHz 14 cores, 128GB RAM, 800GB HD
+• One switch: Corsa DP2100 with 32 10Gb Ports
 VIM: based on OpenStack Ocata.
 NFVI:
 1x server computer: 24 cores, 192GB memory, 4 x 1Gbps interfaces (passthrough, DPDK and SR-IOV), 2 x 1TB SAS3 hard drives. 
