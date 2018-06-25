@@ -1,4 +1,4 @@
-<!-- TITLE: Nitos -->
-<!-- SUBTITLE: A quick summary of Nitos -->
+<!-- TITLE: NITOS -->
+<!-- SUBTITLE: Network Implementation Testbed Using Open Source platforms -->
 
 # Header
