@@ -1,8 +1,8 @@
 <!-- TITLE: IT-Av Automotive Environment -->
 <!-- SUBTITLE: A quick summary of IT-Av Automotive Environment -->
 
-# Testbed Introduction
-
+# Testbed Description
+## Introduction
 ![Vanet](/uploads/automotive/vanet.jpg "Vanet"){.align-center}
 
 ## Architecture
