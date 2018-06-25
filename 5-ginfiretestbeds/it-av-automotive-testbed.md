@@ -21,7 +21,7 @@ NFVI:
 1x 24-port 1Gbps switch, interconnecting the infrastructure.
 
 
-# Use Case: Assisted Driving with Video Transcoder
+# Use Case: Assisted Driving with VNF Video Transcoder
 To demonstrate the potential of the 5GinFIRE automotive testbed located in IT-Aveiro, and to validate the workflow for new experimenters to deploy new VNFs, a VNF video transcoding camera-based car overtaking scenario was evaluated. In this scenario, illustrated in the Figure X, each vehicle contains an OBU that provides the communication between vehicles and between each vehicle and the infrastructure. The OBU is also connected to an Android device, which can be a smartphone or a tablet, through WiFi, providing visual information for the driver. The vehicle contains a video camera on its front side. This information will be used by the driver to take decisions on driving, more specifically in overtaking situations. Regarding to the communication interfaces, each OBU is able to communicate with the infrastructure (RSUs) using the IEEE 802.11p/WAVE or IEEE 802.11g/WiFi, or using the 4G LTE cellular technology (C-RAN). The VNF video transcoding was available on site and deployed at the edge of the infrastructure. 
 
 ![Cars 5 Ginfire](/uploads/automotive/cars-5-ginfire.png "Cars 5 Ginfire"){.align-center} 
