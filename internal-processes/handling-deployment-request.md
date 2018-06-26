@@ -11,7 +11,8 @@ The Experimenter is added also in the CC list of the issue.
 
 1.1) At this stage we can change the Assignee to the Mentor of the experiment.
 For me is an open question if we like this or we assign it by default to another component (e.g. a new component called Deployments?)
-**Note: ** A suggestion is to manage the Deployment Request only through the portal. The portal automatically notifies and creates issues in Bugzilla. However, due to restrictions, Bugzilla could be used for more fine-grained control until the portal has all the features.
+**Note: Changing Assignee is currently done only through Bugzilla** A suggestion is to manage the Deployment Request only through the portal. The portal automatically notifies and creates issues in Bugzilla. However, due to restrictions, Bugzilla could be used for more fine-grained control until the portal has all the features.
+
 
 ## The Mentor drives discussions
 
