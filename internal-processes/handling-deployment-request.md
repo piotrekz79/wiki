@@ -4,7 +4,7 @@
 # Internal Process: Handling Deployment Request
 ## An experimenter creates a Deployment request through the portal
 
-1) An experimenter creates a Deployment request through the portal. This triggers an automated New Issue in Bugzilla, Under 5GinFIRE Operations, Operations Support. By default the responsible Assignee is myself. But you also get notified via the tickets@ mailing list.
+1) An experimenter creates a Deployment request through the portal. This triggers an automated New Issue in Bugzilla, Under 5GinFIRE Operations, Operations Support. By default the responsible Assignee is Christos (The component owner). But you also get notified via the tickets@ mailing list.
 The Experimenter is added also in the CC list of the issue.
 
 ### Change the Assignee to the Mentor of the experiment
