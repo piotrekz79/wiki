@@ -19,6 +19,12 @@ The following pages present different topics regarding 5GinFIRE services
 
 [Handling a deployment request](internal-processes/handling-deployment-request)
 
+## Tutorials and Best practices
+
+[Experimenting with 5GinFIRE infrastructure ](5-gin-fire-experimentation-tutorial)
+[Tutorial Creating a VNF: The OpenCV Transcoder VNF Example](tutorials/tutorial-opencv-vnf-transcoder)
+[Tutorial Creating a NSD: The OpenCV Transcoder NS Example](tutorials/tutorial-opencv-transcoder-ns)
+
 ## User Guides
 
 [The portal user guide](5-gin-fire-portal-user-guide)
@@ -26,11 +32,6 @@ The following pages present different topics regarding 5GinFIRE services
 [Guide: Advanced Charm Debugging](tutorials/guide-advanced-charm-debugging)
 [Guide: External Access to VxFs for Experimenters](tutorials/guide-external-access-experimenters)
 
-## Tutorials and Best practices
-
-[Experimenting with 5GinFIRE infrastructure ](5-gin-fire-experimentation-tutorial)
-[Tutorial Creating a VNF: The OpenCV Transcoder VNF Example](tutorials/tutorial-opencv-vnf-transcoder)
-[Tutorial Creating a NSD: The OpenCV Transcoder NS Example](tutorials/tutorial-opencv-transcoder-ns)
 
 ## Source code
 
