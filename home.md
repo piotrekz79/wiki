@@ -5,6 +5,12 @@
 # Welcome to 5GinFIRE wiki pages
 The following pages present different topics regarding 5GinFIRE services
 
+## Tutorials and Best practices
+
+[Experimenting with 5GinFIRE infrastructure ](5-gin-fire-experimentation-tutorial)
+[Tutorial Creating a VNF: The OpenCV Transcoder VNF Example](tutorials/tutorial-opencv-vnf-transcoder)
+[Tutorial Creating a NSD: The OpenCV Transcoder NS Example](tutorials/tutorial-opencv-transcoder-ns)
+
 ## The 5GinFIRE Architecture, Technologies, Services and Testbeds
 
 [Terminology,  Experimentation Workflow and Architecture](5-gin-fire-terminology-experimentation-workflow-and-architecture)
@@ -19,11 +25,6 @@ The following pages present different topics regarding 5GinFIRE services
 
 [Handling a deployment request](internal-processes/handling-deployment-request)
 
-## Tutorials and Best practices
-
-[Experimenting with 5GinFIRE infrastructure ](5-gin-fire-experimentation-tutorial)
-[Tutorial Creating a VNF: The OpenCV Transcoder VNF Example](tutorials/tutorial-opencv-vnf-transcoder)
-[Tutorial Creating a NSD: The OpenCV Transcoder NS Example](tutorials/tutorial-opencv-transcoder-ns)
 
 ## User Guides
 
