@@ -51,11 +51,13 @@ Summarizing, the avaliable hardware for experimentation is the following:
 
 Figure X shows the overall Network Function Virtualization Infrastructure (NFVI) deployed at IT-Av datacenter as part of 5GinFIRE multi-site orchestration.
 
-The cloud environment of the IT-Av consists of an OpenStack **Queens** instance that operates on top of **Ubuntu 16.04 Server** operating system. The controller node is available for the project using the management and control plane, accessible through **10.154.0.0/21**, while the IP addresses in the range **10.154.8.0/21** are reserved for data traffic. 
+The cloud environment of the IT-Av consists of an OpenStack **Ocata** instance that operates on top of **Ubuntu 16.04 Server** operating system. The controller node is available for the project at **10.154.0.10**. This cloud environment has two networks: **provider** and **provider2**. The **provider** network is the management/control plane, which has the **10.154.0.0/21** subnet range. The **provider2** netowrk is the data plane, which has the **10.154.8.0/21** subnet range. 
 
-The NFV components and infrastructure avaliable in the IT-Av testbed is the following:
-* 1x server computer: 24 cores, 192GB memory, 4 x 1Gbps interfaces (passthrough, DPDK and SR-IOV), 2 x 1TB SAS3 hard drives;
-* 1x server computer: 16 cores, 256 GB memory, 4 x 1Gbps interfaces (passthrough), 2 x 1TB SAS2 hard drives;
+The NFVI is composed by three compute nodes with the following resources:
+* 72 vCPUs;
+* 704 GB of memory;
+* 2 TB of storage;
+* NIC Passthrough, DPDK and SR-IOV capabilities;
 * 1x 24-port 1Gbps switch, interconnecting the infrastructure.
 
 # Use Case: Assisted Driving with VNF Video Transcoder
