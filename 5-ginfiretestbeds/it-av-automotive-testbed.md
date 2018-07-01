@@ -49,7 +49,10 @@ Summarizing, the avaliable hardware for experimentation is the following:
 
 ## 5GinFIRE and IT-Av Testbed Datacenter
 
-Figure X shows the overall Network Function Virtualization Infrastructure (NFVI) deployed at IT-Av datacenter as part of 5GinFIRE multi-site orchestration.
+![ITAvNFVI](/uploads/itav_nfvi_arch.png "ITAvNFVI"){.align-center}
+Figure 5 - IT-Av NFVI architecture.
+
+Figure 5 shows the overall Network Function Virtualization Infrastructure (NFVI) deployed at IT-Av datacenter as part of 5GinFIRE multi-site orchestration.
 
 The cloud environment of the IT-Av consists of an OpenStack **Ocata** instance that operates on top of **Ubuntu 16.04 Server** operating system. The controller node is available for the project at **10.154.0.10**. This cloud environment has two networks: **provider** and **provider2**. The **provider** network is the management/control plane, which has the **10.154.0.0/21** subnet range. The **provider2** netowrk is the data plane, which has the **10.154.8.0/21** subnet range. 
 
