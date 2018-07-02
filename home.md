@@ -23,6 +23,8 @@ The following pages present different topics regarding 5GinFIRE services
 
 ### Internal Processes
 
+[VNF Validation](internal-processes/vnf-validation)
+[NSD Validation](internal-processes/nsd-validation)
 [Handling a deployment request](internal-processes/handling-deployment-request)
 
 
