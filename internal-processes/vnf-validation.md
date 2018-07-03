@@ -15,7 +15,7 @@ In nominal situation the VNF will get a status ONBOARDED.
 **Exception:** if there is no way to onboard it due to errors, the 5TONIC team needs to manually identify why this is not possible
 
 ## OSM verification
-The 5TONIC/UC3M/OSM team will try to check the VNF (* this could also involve the Mentor fo the experiment*)
+The 5TONIC/UC3M/OSM team will try to check the VNF (* this could also involve the Mentor for the experiment*)
 If the team claims that the VNF is valid or invalid, changes the issue in Bugzilla accordingly, so that portal administrators and VNF creator are notified.
 
 ## VNF is VALID
