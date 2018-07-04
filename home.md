@@ -20,6 +20,7 @@ The following pages present different topics regarding 5GinFIRE services
 [The 5GinFIRE MANO platform](osm)
 [Packaging for VxF/NSD](packagingvxfnsd)
 [The Unifier Gateway - 5G-In-A-Box ](unifiergateway)
+[The 5GinFIRE "mirror platform"](guide/5ginifire-mirror-platform)
 
 ### Internal Processes
 
