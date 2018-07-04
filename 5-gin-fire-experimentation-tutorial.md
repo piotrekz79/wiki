@@ -56,7 +56,7 @@ For creating NSD compliant with OSM TWO see our tutorials in main page: http://w
 
 ### Portal uploading
 
-**Prerequisite:** *The VNF developer verifies that the NSD can be onboarded to 5GinFIRE "mirror platform". If so, the developer can proceed with submitting the NSD. *
+**Prerequisite:** *The VNF developer verifies that the NSD can be onboarded to [The 5GinFIRE "mirror platform"](guide/5ginfire-mirror-platform). If so, the developer can proceed with submitting the NSD. *
 
 When you have prepared your NSD you need to upload them to the portal. You need first to open an account to the portal. https://portal.5ginfire.eu 
 By default when you open an account you will have the roles of "EXPERIMENTER" and "VXF_DEVELOPER".
