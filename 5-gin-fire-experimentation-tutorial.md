@@ -22,9 +22,11 @@ Your VNF is described in terms of a Virtual Network Function Descriptor. Please 
 Either you browse the public VNF catalog at https://portal.5ginfire.eu/#!/vxf_marketplace or you create your own VNFs.
 For creating VNFs compliant with OSM TWO see our tutorials in main page: http://wiki.5ginfire.eu/
 
-### Portal uploading
+### Pre validation 
 
-**Prerequisite:** *The VNF developer verifies that the VNF can be onboarded to [The 5GinFIRE "mirror platform"](guide/5ginfire-mirror-platform). If so, the developer can proceed with submitting the VNF. Otherwsie, the developer should fix any error regarding the NFV packages or descriptors, until on-boarding is successful. VNF developers can request support from 5GinFIRE partners to address any issues regarding VNFs, e.g., through the mailing list, bugzilla, or the slack channel. The request will be visible to all partners working on infrastructures and services, such that anyone can provide support to the questions.*
+The VNF developer verifies that the VNF can be onboarded to [The 5GinFIRE "mirror platform"](guide/5ginfire-mirror-platform). If so, the developer can proceed with submitting the VNF. Otherwsie, the developer should fix any error regarding the VNF packages or descriptors, until on-boarding is successful. VNF developers can request support from 5GinFIRE partners to address any issues regarding VNFs, e.g., through the mailing list, bugzilla, or the slack channel. The request will be visible to all partners working on infrastructures and services, such that anyone can provide support to the questions.
+
+### Portal uploading
 
 When you have prepared your VNFs you need to upload them to the portal. You need first to open an account to the portal. https://portal.5ginfire.eu 
 By default when you open an account you will have the roles of "EXPERIMENTER" and "VXF_DEVELOPER".
@@ -54,9 +56,11 @@ Your experiment is described in terms of a Network Service Descriptor. Please se
 Either you browse the public NSD catalog at https://portal.5ginfire.eu/#!/experiments_marketplace or you create your own NSD.
 For creating NSD compliant with OSM TWO see our tutorials in main page: http://wiki.5ginfire.eu/
 
-### Portal uploading
+### Pre validation 
 
-**Prerequisite:** *The VNF developer verifies that the NSD can be onboarded to [The 5GinFIRE "mirror platform"](guide/5ginfire-mirror-platform). If so, the developer can proceed with submitting the NSD. *
+The NSD developer verifies that the NSD can be onboarded to [The 5GinFIRE "mirror platform"](guide/5ginfire-mirror-platform). If so, the developer can proceed with submitting the NSD. Otherwsie, the developer should fix any error regarding the NSD packages or descriptors, until on-boarding is successful. NSD developers can request support from 5GinFIRE partners to address any issues regarding NSD, e.g., through the mailing list, bugzilla, or the slack channel. The request will be visible to all partners working on infrastructures and services, such that anyone can provide support to the questions.
+
+### Portal uploading
 
 When you have prepared your NSD you need to upload them to the portal. You need first to open an account to the portal. https://portal.5ginfire.eu 
 By default when you open an account you will have the roles of "EXPERIMENTER" and "VXF_DEVELOPER".
