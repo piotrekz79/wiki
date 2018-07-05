@@ -82,7 +82,7 @@ Each component has a defined model internally in HCS. For example, PORTAL:
         "name": "PORTAL",
         "locationName": "Patras,GR",
         "mode": "ACTIVE",
-        "apikey": "53f7118f-66bf-4351-a409-22e37f89b36a",
+        "apikey": "8756118f-66bf-4351-9874-22e37f89b36a",
         "checkURL": "https://5ginfire.portal.eu",
         "type": "SERVICE",
         "latitude": "38.220220",
@@ -95,5 +95,12 @@ Each component has a defined model internally in HCS. For example, PORTAL:
 				
 ## Join the 5GinFIRE HCS and apikey
 
-Admins of HCS will create the component and give a Unique apikey
+Admins of HCS will create the component and give a Unique apikey. Will also agree the mode, the Bugzilla product, component, etc
+
+
+## Source code
+
+You can download or contribute to https://github.com/5GinFIRE/eu.5ginfire.healthcheck
+
+
 
