@@ -14,7 +14,7 @@ If the HCS fails to learn the status of a **Component** within a defined  **Thre
 
 We have defined the following Component Types:
 * 	SERVICE : a generic service, e.g. PORTAL,OSM
-* 	PROCESS: an automated process that is succesful or not. E.g. PING_PING_INSTANTIATION_TEST executed by jenkins every night
+* 	PROCESS: an automated process that is successful or not. E.g. PING_PING_INSTANTIATION_TEST executed by jenkins every night
 * 	VIM: a facility,e.g. BRISTOL
 * 	CONNECTIVITY: a connection between components. eg PORTAL-OSM, OSM-ITAV, OSM-BRISTOL, etc
 
@@ -32,7 +32,7 @@ mode: ACTIVE,
 checkURL": https://5ginfire.portal.eu
 failoverThreshold: 600
 
-In this example the HCS will check regularly the URL https://5ginfire.portal.eu. If it fails to get a 200 OK will try again in a few minutes. If within 10 minutes (600 seconds) fails to get a 200OK then the service will be marked as DOWN. An Issue will be raised automatically.
+In this example the HCS will check regularly the URL https://5ginfire.portal.eu. If it fails to get a 200 OK will try again in a few minutes. If within 10 minutes (600 seconds) fails to get a 200 OK then the service will be marked as DOWN. An Issue will be raised automatically.
 
 
 ### PASSIVE mode
@@ -47,11 +47,17 @@ The component reports that is alive through a GET request to the HCS. The URL fo
 *componentname* is a Unique name of the component, e.g. PORTAL, OSM, BRISTOL
 *apikey* is a unique string for each component. (apikeys will be given by the HCS admins)
 
-Example, BRISTOL reports that is alive (e.g. in a cron with a script):
+Again if the service will not report its status within *failoverThreshold*  the service will be marked as DOWN. An Issue will be raised automatically for this component
+
+For example we have defined that failoverThreshold for BRISTOL VIM is 10 minutes. 
+Then BRISTOL needs to report that is alive every e.g. 5 minutes (e.g. in a cron with a script):
 
 ```text
 wget   ://HCSURL/hc/services/api/admin/components/BRISTOL/8756118f-66bf-1234-a409-22e37f89b36a
 ```
+
+If BRISTOL will fail to send the above request within 10 minutes an issue will be raised in Bugzilla for BRISTOL and will marked as down.
+
 
 Example, OSM reports that can connect to ITAV VIM. OSM will issue (e.g. in a cron with a script):
 ```text
@@ -59,7 +65,7 @@ wget   ://HCSURL/hc/services/api/admin/components/OSM-ITAV/1234568f-9876-1234-a4
 ```
 
 
-### Component status
+## Component status
 
 A Component can be in the following states:	
 * UP: is alive
@@ -68,4 +74,26 @@ A Component can be in the following states:
 * FAIL: used in PROCESS type. The process failed test within threshold
 				
 
+## Component description model
+
+Each component has a defined model internally in HCS. For example, PORTAL:
+
+        "longitude": "21.234456",
+        "name": "PORTAL",
+        "locationName": "Patras,GR",
+        "mode": "ACTIVE",
+        "apikey": "53f7118f-66bf-4351-a409-22e37f89b36a",
+        "checkURL": "https://5ginfire.portal.eu",
+        "type": "SERVICE",
+        "latitude": "38.220220",
+        "onIssueNotificationProduct": "Platform",
+        "onIssueNotificationComponent": "Portal",
+        "description": "Portal Component",
+        "failoverThreshold": 10
+				
+				
+				
+## Join the 5GinFIRE HCS and apikey
+
+Admins of HCS will create the component and give a Unique apikey
 
