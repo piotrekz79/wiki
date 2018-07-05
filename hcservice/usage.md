@@ -3,7 +3,7 @@
 
 # Introduction and Usage of the 5GinFIRE Healthcheck service (HCS)
 
-The Healthcheck Service (HCS) is a simple service that displays the status of various services, components and processes of the 5GinFIRE infrastructure.
+The Healthcheck Service (HCS) is a simple service that displays the status of various services, VIMs, connectivity, components and processes of the 5GinFIRE infrastructure.
 
 ## How it works
 
