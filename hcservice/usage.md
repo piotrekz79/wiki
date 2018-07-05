@@ -38,7 +38,12 @@ In this example the HCS will check regularly the URL https://5ginfire.portal.eu.
 
 The PASSIVE mode can be used by components that cannot accept connections from the HCS but have internet connection (e.g. a VIM). 
 The component reports that is alive through a GET request to the HCS. The URL format is:
+
+```text
 hcserviceurl/admin/components/{*componentname*}/{*apikey*}
+```
+
+
 componentname is a Unique name of the component, e.g. PORTAL, OSM, BRISTOL
 
 
