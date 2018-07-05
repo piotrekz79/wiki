@@ -10,6 +10,14 @@ The Healthcheck Service (HCS) is a simple service that displays the status of va
 **Components** are polled (**ACTIVE** mode) or report their status (**PASSIVE** mode). 
 If the HCS fails to learn the status of a **Component** within a defined  **Threshold** then the component is marked as FAIL/DOWN.
 
+## Components
+
+We have defined the following Component Types:
+* 	SERVICE : a generic service, e.g. PORTAL,OSM
+* 	PROCESS: an automated process that is succesful or not. E.g. PING_PING_INSTANTIATION_TEST executed by jenkins every night
+* 	VIM: a facility,e.g. BRISTOL
+* 	CONNECTIVITY: a connection between components. eg PORTAL-OSM, OSM-ITAV, OSM-BRISTOL, etc
+
 ## Modes
 There are two modes ACTIVE and PASSIVE.
 
@@ -29,8 +37,9 @@ In this example the HCS will check regularly the URL https://5ginfire.portal.eu.
 ### PASSIVE mode
 
 The PASSIVE mode can be used by components that cannot accept connections from the HCS but have internet connection (e.g. a VIM). 
-The component reports that is alive through a GET request to the HCS 
-
+The component reports that is alive through a GET request to the HCS. The URL format is:
+hcserviceurl/admin/components/{*componentname*}/{*apikey*}
+componentname is a Unique name of the component, e.g. PORTAL, OSM, BRISTOL
 
 
 ### Component status
