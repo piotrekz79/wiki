@@ -93,12 +93,12 @@ Each component has a defined model internally in HCS. For example, PORTAL:
 				
 				
 				
-## Join the 5GinFIRE HCS and apikey
+# Join the 5GinFIRE HCS and apikey
 
 Admins of HCS will create the component and give a Unique apikey. Will also agree the mode, the Bugzilla product, component, etc
 
 
-## Source code
+# Source code
 
 You can download or contribute to https://github.com/5GinFIRE/eu.5ginfire.healthcheck
 
