@@ -21,7 +21,7 @@ The following pages present different topics regarding 5GinFIRE services
 [Packaging for VxF/NSD](packagingvxfnsd)
 [The Unifier Gateway - 5G-In-A-Box ](unifiergateway)
 [The 5GinFIRE "mirror platform"](guide/5ginfire-mirror-platform)
-[The 5GinFIRE Healthcheck service (HCS)] (hcservice/usage)
+[The 5GinFIRE Healthcheck service (HCS)](hcservice/usage)
 
 ### Internal Processes
 
