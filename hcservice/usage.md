@@ -48,7 +48,7 @@ The component reports that is alive through a GET request to the HCS. The URL fo
 *componentname* is a Unique name of the component, e.g. PORTAL, OSM, BRISTOL
 *apikey* is a unique string for each component. (apikeys will be given by the HCS admins)
 
-Again if the service will not report its status within *failoverThreshold*  the service will be marked as DOWN. An Issue will be raised automatically for this component.
+Again if the service will not report its status within *failoverThreshold*  the service will be marked as DOWN. An Issue will be raised automatically for this component via Bugzilla to respective owners of the Component
 
 **Example 1: VIM is alive**
 For example we have defined that failoverThreshold for BRISTOL VIM is 10 minutes. 
