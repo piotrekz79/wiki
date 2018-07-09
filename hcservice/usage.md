@@ -48,21 +48,22 @@ The component reports that is alive through a GET request to the HCS. The URL fo
 *componentname* is a Unique name of the component, e.g. PORTAL, OSM, BRISTOL
 *apikey* is a unique string for each component. (apikeys will be given by the HCS admins)
 
-Again if the service will not report its status within *failoverThreshold*  the service will be marked as DOWN. An Issue will be raised automatically for this component via Bugzilla to respective owners of the Component
+Again if the service will not report its status within *failoverThreshold*  the service will be marked as DOWN. An Issue will be raised automatically for this component via Bugzilla to respective owners of the Component if previously was UP.
 
 **Example 1: VIM is alive**
-For example we have defined that failoverThreshold for BRISTOL VIM is 10 minutes. 
-Then BRISTOL needs to report that is alive every e.g. 5 minutes (e.g. in a cron with a script):
+We have defined that failoverThreshold for BRISTOL VIM is 10 minutes. 
+Then BRISTOL needs to report that it is alive every e.g. 5 minutes ( for example in a cron with a script ):
 
 ```text
 wget   http://status.5ginfire.eu/hc/services/api/admin/components/BRISTOL/8756118f-66bf-1234-a409-22e37f89c0c0
 ```
 
-If BRISTOL will fail to send the above request within 10 minutes an issue will be raised in Bugzilla for BRISTOL and will marked as down.
+If BRISTOL fails to send the above request within 10 minutes an issue will be raised in Bugzilla for BRISTOL and will marked as down, if previously was UP.
 
 **Example 2: PORTAL-OSM link is alive**
-Example, Portal reports that can connect to OSM. Portal has a VPN connection with OSM at 5TONIC.
-If PING is succesful from Portal to OSM then we will report that the PORTAL-OSM link is UP.
+Portal needs to report that the link to OSM host machine is alive (note: not the OSM service). 
+Portal has a VPN connection with OSM at 5TONIC.
+If PING is succesful from Portal to OSM host machine then we will report that the PORTAL-OSM link is UP.
 We create a file : pingOSMlink.sh
 
 ```text
@@ -92,27 +93,34 @@ A Component can be in the following states:
 
 ## Component description model
 
-Each component has a defined model internally in HCS. For example, PORTAL:
+Each component has a defined model internally in HCS. For example, PORTAL Web:
+
 
         "longitude": "21.234456",
         "name": "PORTAL",
         "locationName": "Patras,GR",
         "mode": "ACTIVE",
-        "apikey": "8756118f-66bf-4351-9874-22e37f89b36a",
+        "apikey": "*******",
         "checkURL": "https://5ginfire.portal.eu",
         "type": "SERVICE",
         "latitude": "38.220220",
         "onIssueNotificationProduct": "Platform",
         "onIssueNotificationComponent": "Portal",
         "description": "Portal Component",
-        "failoverThreshold": 10
+        "failoverThreshold": 600
 				
-				
-				
-# Joining the 5GinFIRE HCS and apikey
 
-Admins of HCS will create the component and give a Unique apikey. Will also agree the mode, the Bugzilla product, component, etc
+onIssueNotificationProduct: On ERROR the Product to report in Bugzilla
+onIssueNotificationComponent On ERROR the Component to report in Bugzilla
+failoverThreshold: In seconds
+checkURL: The URL to call if MODE=ACTIVE
 
+
+# Registering to the 5GinFIRE HCS,  providing Name and APIKEY
+
+Admins of HCS will create the component and give a Unique Name and APIKEY. Will also agree the mode, the Bugzilla product, component, etc.
+If you would like to include your component in HCS please raise an issue in Bugzilla, 5GinFIRE Operations/Operations Support (https://portal.5ginfire.eu/bugzilla/enter_bug.cgi?product=5GinFIRE%20Operations),  
+We will provide you with an APIKEY
 
 # Source code
 
