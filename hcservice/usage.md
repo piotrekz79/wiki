@@ -3,7 +3,8 @@
 
 # Introduction and Usage of the 5GinFIRE Healthcheck service (HCS)
 
-The Healthcheck Service (HCS) is a simple service that displays the status of various services, VIMs, connectivity, components and processes of the 5GinFIRE infrastructure.
+The Healthcheck Service (HCS) is a simple service that displays the status of various services, VIMs, connectivity, components and processes of the 5GinFIRE infrastructure. 
+It is deployed at http://status.5ginfire.eu/
 
 ## How it works
 
@@ -29,7 +30,7 @@ A constraint here is that **the HCS must have a connectivity with the target com
 Example the HCS will poll the PORTAL component. 
 Component name = PORTAL
 mode: ACTIVE,
-checkURL": https://5ginfire.portal.eu
+checkURL": https://portal.5ginfire.eu/index.html
 failoverThreshold: 600
 
 In this example the HCS will check regularly the URL https://5ginfire.portal.eu. If it fails to get a 200 OK will try again in a few minutes. If within 10 minutes (600 seconds) fails to get a 200 OK then the service will be marked as DOWN. An Issue will be raised automatically.
@@ -47,21 +48,36 @@ The component reports that is alive through a GET request to the HCS. The URL fo
 *componentname* is a Unique name of the component, e.g. PORTAL, OSM, BRISTOL
 *apikey* is a unique string for each component. (apikeys will be given by the HCS admins)
 
-Again if the service will not report its status within *failoverThreshold*  the service will be marked as DOWN. An Issue will be raised automatically for this component
+Again if the service will not report its status within *failoverThreshold*  the service will be marked as DOWN. An Issue will be raised automatically for this component.
 
+**Example 1: VIM is alive**
 For example we have defined that failoverThreshold for BRISTOL VIM is 10 minutes. 
 Then BRISTOL needs to report that is alive every e.g. 5 minutes (e.g. in a cron with a script):
 
 ```text
-wget   ://HCSURL/hc/services/api/admin/components/BRISTOL/8756118f-66bf-1234-a409-22e37f89b36a
+wget   http://status.5ginfire.eu/hc/services/api/admin/components/BRISTOL/8756118f-66bf-1234-a409-22e37f89c0c0
 ```
 
 If BRISTOL will fail to send the above request within 10 minutes an issue will be raised in Bugzilla for BRISTOL and will marked as down.
 
+**Example 2: PORTAL-OSM link is alive**
+Example, Portal reports that can connect to OSM. Portal has a VPN connection with OSM at 5TONIC.
+If PING is succesful from Portal to OSM then we will report that the PORTAL-OSM link is UP.
+We create a file : pingOSMlink.sh
 
-Example, OSM reports that can connect to ITAV VIM. OSM will issue (e.g. in a cron with a script):
 ```text
-wget   ://HCSURL/hc/services/api/admin/components/OSM-ITAV/1234568f-9876-1234-a409-5a6e8a89b36a
+ping -c1 10.4.16.15
+  if [ $? -eq 0 ]
+  then
+    wget http://status.5ginfire.eu/hcs/services/api/admin/components/PORTAL-OSM/12345678-1234-1234-e830-22e37fa6a000
+    exit 0
+  fi
+```
+
+then in crontab, to check every minute:
+
+```text
+*/1 * * * * /home/ubuntu/pingOSMlink.sh
 ```
 
 
@@ -93,7 +109,7 @@ Each component has a defined model internally in HCS. For example, PORTAL:
 				
 				
 				
-# Join the 5GinFIRE HCS and apikey
+# Joining the 5GinFIRE HCS and apikey
 
 Admins of HCS will create the component and give a Unique apikey. Will also agree the mode, the Bugzilla product, component, etc
 
