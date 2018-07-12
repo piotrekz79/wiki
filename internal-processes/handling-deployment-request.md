@@ -7,7 +7,7 @@
 1) An experimenter creates a Deployment request through the portal. 
 2) This triggers an automated New Issue in Bugzilla, Under 5GinFIRE Operations, Operations Support. 
 3) By default the responsible Assignee is The component owner of **5GinFIRE Operations->Operations Support** (https://portal.5ginfire.eu/bugzilla/buglist.cgi?component=Operations%20Support&list_id=159&product=5GinFIRE%20Operations&resolution=---). 
-4) 5GinFIRE team is also get notified via the tickets@ mailing list.
+4) 5GinFIRE team is also get notified via the tickets@ mailing list.R
 5) The Experimenter is added also in the CC list of the issue.
 
 ### Change the Assignee to the Mentor of the experiment
@@ -28,13 +28,14 @@ if it goes in portal= SCHEDULED in Bugzilla will go IN_PROGRESS. If goes in port
 
 ## The Mentor gives green or red light
 
-1) After discussions with ((Mentor+5TONIC + Internal with VIM owners )) The Mentor gives green (ACCEPT) or red light (REJECT) to admins, to change the status (e.g. SCHEDULED or REJECTED) and the scheduled deployment dates, or simply reject that.
+1) After discussions with ((Mentor+5TONIC + Internal with VIM owners )) The Mentor gives green (ACCEPT) or red light (REJECT) to admins, to change the status (e.g. SCHEDULED) and the scheduled deployment dates, or simply reject that (REJECTED).
 2) The Mentor could optionally change Assignee (e.g. an admin) or we can discuss to introduce a new Component (e.g. DeploymentCalendar)
 
 ##  Deployment Status
 
-1) If it goes to portal=SCHEDULED then the guys responsible for OSM should be aware for the date of orchestration,deployment and tear down
-2) When it is orchestrated the experiment goes to RUNNING
-3) When it is tear down the experiment goes to COMPLETED
+1) If the Experiment Deployment Request has SCHEDULED status then the OSM team should be aware for the date of orchestration,deployment and tear down
+2) When it is orchestrated the Experiment Deployment Requestgoes to RUNNING
+3) When it is tear down the Experiment Deployment Requestgoes to COMPLETED
+
 
 At any stage The portal has a Feedback text form to write text that also is copied to the experimenter and the ticket
