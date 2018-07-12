@@ -18,5 +18,5 @@ In nominal situation the NSD will get a status ONBOARDED.
 The 5TONIC/UC3M/OSM team will try to check the NSD (* this could also involve the Mentor of the experiment*)
 If the team claims that the NSD is valid or invalid, changes the issue in Bugzilla accordingly, so that portal administrators and NSD creator are notified.
 
-## DVNF is VALID
+## NSD is VALID
 If everything is ok, the NSD should be available for usage in experiments.
