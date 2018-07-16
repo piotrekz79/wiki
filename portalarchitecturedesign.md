@@ -3,9 +3,20 @@
 
 # Portal architecture and design
 
-![Portal Architecture](/uploads/portal-architecture.png "Portal Architecture")
-The Figure  displays a detailed architecture of the portal together with the related interfaces. The portal consists of two main components: The portal web frontend and the portal API backend. The Web front end communicates with the backend via a RESTful API. 
-Moreover, the portal backend implements: An interface towards the OSM API in order to on-board VxF and NSDs to the OSM repository and get related information, and an interface towards an identity provider and a portal repository that reflects the artefacts of the OSM repository
+![Portal Architecture](/uploads/portal/portal-architecture.png "Portal Architecture")
+The architecture in Figure supports: i) automation and multiple services, ii) the evolution of components as well as iii) to transform the portal into a BSS/OSS system as defined in the ETSI reference architecture. 
+
+These are the services that the portal service needs to interact with:
+-	The Continuous Integration service that will perform the validation of submitted VNFs and NSDs
+-	OSM: There is a continuous evolution of OSM, which has a roadmap to provide new versions of OSM almost every 6 months. This evolution involves the North Bound API that the portal consumes which usually changes. The portal needs to support various version of OSM to ease the process between testing and production. 
+-	Issue management system - Bugzilla: the portal needs to notify the 5GinFIRE operations automatically via the issue management system for various events, such as reporting 
+-	VNF Images repositories: These repositories contain the VNF images that need to be deployed in target VIMs 
+-	Policies/Rule engine: This service should keep various rules, such as which VNFs are allowed to be placed on target testbeds, roles permissions, etc
+-	Infrastructure health status services, central logging and alerting: the portal reports its health status as well as some information logging or generate alerts
+-	VIM monitoring information: VIMS might report information to the portal about their status
+-	OAuth 2.0 mechanisms: to support authentication from 3rd parties
+-	The FIRE Aggregation Manager service: to support access of FIRE users to 5GinFIRE testbed
+
 
 ![Portal Architecture 2](/uploads/portal-architecture-2.png "Portal Architecture 2")
 Above Figure  displays the architecture of the [portal API](/portalarchitecturedesign/portal-api). It consists of the following components:
