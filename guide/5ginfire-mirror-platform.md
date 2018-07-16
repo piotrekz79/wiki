@@ -28,7 +28,6 @@ After obtaining VPN credentials and connecting to the VPN (a tutorial to connect
 
 ![Osmloginwindow](/uploads/mirror-site/osmloginwindow.png "Osmloginwindow"){.align-left}
 
-
 ## Onboarding a NS/VxF
 The process to onboard a VNF is detailed in the [ETSI OSM Wiki](https://osm.etsi.org/wikipub/index.php/OSM_Release_TWO#Deploying_your_first_Network_Service). You just need to click on the *import* button of the *catalog* tab, select *VNFD* and indicate the VNF package file.
 
@@ -37,4 +36,21 @@ The process to onboard a VNF is detailed in the [ETSI OSM Wiki](https://osm.etsi
 A similar approach can be followed to import a NS package, selectgin *NSD* instead of VNFD.
 
 ## Accessing the logs
+If the onboarding fails, you can access the OSM logs to get more information about the error. To do that, access via *ssh* to the mirror platform, i.e., using the IP address *10.4.48.15*. The login and password for the *ssh* are the following:
 
+- Login: 5ginfire
+- Password: 5ginfire
+
+After connecting to the machine...
+
+OSM Release TWO includes  Service Orchestrator (SO), a Resource Orchestrator (RO) and NFV Configuration and Abstraction (VCA) module. Each of these components is execTo get information on the specific failure produced by the onboarding attemp, you will need to access the SO and the RO logs.
+
+The SO logs are available at the SO-ub contained, at the followinf location:
+
+``/var/log/rift/rift.log``
+
+The RO logs can be found at the RO container, in the file :
+
+``lxc file pull RO/var/log/osm/openmano.log .``
+
+``lxc file pull RO/var/log/osm/openmano.log .``
