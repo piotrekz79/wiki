@@ -41,7 +41,7 @@ If the onboarding fails, you can access the OSM logs to get more information abo
 - Login: 5ginfire
 - Password: 5ginfire
 
-``ssh 5ginfire@10.4.48.15``
+``> ssh 5ginfire@10.4.48.15``
 
 OSM Release TWO includes three main components: a Service Orchestrator (SO), a Resource Orchestrator (RO), and NFV Configuration and Abstraction (VCA) module. Each of these components is executed of a Linux container.
 
