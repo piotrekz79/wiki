@@ -22,10 +22,11 @@ To access the mirror platform, you need to connect to the 5GinFIRE VPN. You can 
 ## Using the mirror platform
 After obtaining VPN credentials and connecting to the VPN (a tutorial to connect to the 5GinFIRE VPN can be found [here](http://wiki.5ginfire.eu/tutorials/guide-external-access-experimenters)), you can access the Graphical User Interface of the mirror platform through this link:
 
-- https://10.4.48.15:8443 (use of Chrome web browser is recommended)
+- https://10.4.48.15:8443 (use of *Chrome*  is recommended)
 	- User: *admin*
 	- Password: *admin*
 
+![Osmloginwindow](/uploads/mirror-site/osmloginwindow.png "Osmloginwindow"){.align-right}
 
 ## Accessing the logs
 
