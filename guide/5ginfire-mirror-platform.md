@@ -45,6 +45,9 @@ If the onboarding fails, you can access the OSM logs to get more information abo
 
 OSM Release TWO includes three main components: a Service Orchestrator (SO), a Resource Orchestrator (RO), and NFV Configuration and Abstraction (VCA) module. Each of these components is executed of a Linux container.
 
+![Screen Shot 2018 07 16 At 17 17 55](/uploads/mirror-site/screen-shot-2018-07-16-at-17-17-55.png "Screen Shot 2018 07 16 At 17 17 55")
+
+
 To get information on the specific failure produced by the onboarding attempt, you will need to access the SO and the RO logs.
 
 The SO logs are available at the SO-ub container, at the following location: */var/log/rift/rift.log*. The file can be obtained from the container using the following command:
