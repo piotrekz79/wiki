@@ -49,9 +49,9 @@ To get information on the specific failure produced by the onboarding attempt, y
 
 The SO logs are available at the SO-ub container, at the following location: */var/log/rift/rift.log*. The file can be obtained from the container using the following command:
 
-``lxc file pull SO-ub/var/log/rift/rift.log``
+``> lxc file pull SO-ub/var/log/rift/rift.log``
 
 The RO logs can be found at the RO container, in the file */var/log/osm/openmano.log*. You can get this file from the OSM machines with the following command:
 
-``lxc file pull RO/var/log/osm/openmano.log .``
+``> lxc file pull RO/var/log/osm/openmano.log .``
 
