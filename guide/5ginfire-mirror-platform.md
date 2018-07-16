@@ -26,7 +26,7 @@ After obtaining VPN credentials and connecting to the VPN (a tutorial to connect
 	- User: *admin*
 	- Password: *admin*
 
-![Osmloginwindow](/uploads/mirror-site/osmloginwindow.png "Osmloginwindow"){.align-right}
+![Osmloginwindow](/uploads/mirror-site/osmloginwindow.png "Osmloginwindow"){.align-center}
 
 ## Accessing the logs
 
