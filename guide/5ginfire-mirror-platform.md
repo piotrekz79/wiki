@@ -43,7 +43,9 @@ If the onboarding fails, you can access the OSM logs to get more information abo
 
 ``> ssh 5ginfire@10.4.48.15``
 
-OSM Release TWO includes three main components: a Service Orchestrator (SO), a Resource Orchestrator (RO), and NFV Configuration and Abstraction (VCA) module. Each of these components is executed of a Linux container.
+OSM Release TWO includes three main components: a Service Orchestrator (SO), a Resource Orchestrator (RO), and NFV Configuration and Abstraction (VCA) module. Each of these components is executed in a Linux container. You can see the information regarding these containers with the following command:
+
+``lxc list``
 
 ![Screen Shot 2018 07 16 At 17 17 55](/uploads/mirror-site/screen-shot-2018-07-16-at-17-17-55.png "Screen Shot 2018 07 16 At 17 17 55")
 
