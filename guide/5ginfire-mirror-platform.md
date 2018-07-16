@@ -19,7 +19,7 @@ Please, when using the mirror platform, take into account the following consider
 
 To access the mirror platform, you need to connect to the 5GinFIRE VPN. You can request VPN credentials to access the 5GinFIRE network infrastructure by creating a ticket to [5GinFIRE Operations] (https://portal.5ginfire.eu/bugzilla/enter_bug.cgi?product=5GinFIRE).
 
-## Using the mirror platform
+## Accesing the mirror platform
 After obtaining VPN credentials and connecting to the VPN (a tutorial to connect to the 5GinFIRE VPN can be found [here](http://wiki.5ginfire.eu/tutorials/guide-external-access-experimenters)), you can access the Graphical User Interface of the mirror platform through this link:
 
 - https://10.4.48.15:8443 (use of *Chrome*  is recommended)
@@ -27,6 +27,14 @@ After obtaining VPN credentials and connecting to the VPN (a tutorial to connect
 	- Password: *admin*
 
 ![Osmloginwindow](/uploads/mirror-site/osmloginwindow.png "Osmloginwindow"){.align-center}
+
+
+## Onboarding a NS/VxF
+The process to onboard a VNF is detailed in the [ETSI OSM Wiki](https://osm.etsi.org/wikipub/index.php/OSM_Release_TWO#Deploying_your_first_Network_Service). You just need to click on the *import* button of the *catalog* tab, select *VNFD* and indicate the VNF package file.
+
+![Onboardingvnf](/uploads/mirror-site/onboardingvnf.png "Onboardingvnf")
+
+A similar approach can be followed to import a NS package, selectgin *NSD* instead of VNFD.
 
 ## Accessing the logs
 
