@@ -17,9 +17,18 @@ These are the services that the portal service needs to interact with:
 -	OAuth 2.0 mechanisms: to support authentication from 3rd parties
 -	The FIRE Aggregation Manager service: to support access of FIRE users to 5GinFIRE testbed
 
+Having the above needed interfacing, the portal service consists of the following components:
+•	Portal model: contains the model of entities, their definitions and associations of the portal entities like users, VxF/NSD experiment metadata, categories, etc.
+•	Persistence and DB: a persistence layer based on OpenJPA [1] to keep entities permanently available through the database system based on MySQL .
+•	User identity: This is based on Openstack Keystone  service [2]
+•	AA: Authentication and authorization mechanism(s) to allow access to the portal API based on Apache SHIRO [3]
+•	Webservice REST API: implementation of the portal API server based on Apache CXF [4]
+•	OSM models and clients: implementation of a client and its model that communicates with OSM via the Northbound API, in order to on-board VxF and NSDs to the OSM repository and get related information, instantiate NSDs, etc. Each supported OSM version (e.g. TWO, THREE, FOUR) as well as future version might have multiple client connectors to support backward connectivity and future migration from testing to production systems
+•	OAuth 2.0 Client API AA: implementation of a client that can communicate with service(s) to authenticate/authorize users via OAuth 2.0
+•	A messaging/routing service bus: This is used to route messages to various services and is based on Apache Camel
 
-![Portal Architecture 2](/uploads/portal-architecture-2.png "Portal Architecture 2")
-Above Figure  displays the architecture of the [portal API](/portalarchitecturedesign/portal-api). It consists of the following components:
+![Portal Architecture 2](/uploads/portal/portal-architecture-2.png "Portal Architecture 2")
+The above Figure  displays the architecture of the [portal API](/portalarchitecturedesign/portal-api). It consists of the following components:
 •	Portal model: contains the model of entities, their definitions and associations of the portal entities like users, VxF/experiment metadata, categories, etc.
 •	Persistence and DB: a persistence layer to keep entities permanently available  through a database system.
 •	AA: Authentication and authorization mechanism(s) to allow access to the portal API
