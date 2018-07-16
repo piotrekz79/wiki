@@ -2,7 +2,7 @@
 <!-- SUBTITLE: The 5Ginfire Mirror Platform -->
 
 # The 5GinFIRE Mirror Platform
-To enable experimenters and developers to carry out a first validation of their Network Services (NS) and Virtualized Network & Vertical Functions (VxFs), 5GinFIRE provides a replica of the MANO platform currently in production status. This replica, referred to as the mirror platform in this page, provides platform users with access to an OSM installation that supports the following functionalities:
+To enable experimenters and developers to carry out a first validation of their Network Services (NS) and Virtualized Network & Vertical Functions (VxFs), 5GinFIRE provides a functional replica of the MANO platform currently in production state. This replica, referred to as the **mirror platform** in this page, provides platform users with access to an OSM installation that supports the following functionalities:
 
 1) Onboarding of VxFs.
 2) Onbloarding of NSes.
