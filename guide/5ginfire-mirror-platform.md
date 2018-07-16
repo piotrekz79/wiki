@@ -26,13 +26,13 @@ After obtaining VPN credentials and connecting to the VPN (a tutorial to connect
 	- User: *admin*
 	- Password: *admin*
 
-![Osmloginwindow](/uploads/mirror-site/osmloginwindow.png "Osmloginwindow"){.align-center}
+![Osmloginwindow](/uploads/mirror-site/osmloginwindow.png "Osmloginwindow"){.align-left}
 
 
 ## Onboarding a NS/VxF
 The process to onboard a VNF is detailed in the [ETSI OSM Wiki](https://osm.etsi.org/wikipub/index.php/OSM_Release_TWO#Deploying_your_first_Network_Service). You just need to click on the *import* button of the *catalog* tab, select *VNFD* and indicate the VNF package file.
 
-![Onboardingvnf](/uploads/mirror-site/onboardingvnf.png "Onboardingvnf")
+![Onboardingvnf](/uploads/mirror-site/onboardingvnf.png "Onboardingvnf"){.align-left}
 
 A similar approach can be followed to import a NS package, selectgin *NSD* instead of VNFD.
 
