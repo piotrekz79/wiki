@@ -13,13 +13,19 @@ This way, the mirror platfom allows platform users to verify if a NS or VxF can 
 Please, when using the mirror platform, take into account the following considerations:
 
 1) The mirror platform does not attach any VIM tenant, hence it cannot be used to test the deployment of a NS. Future versions of the mirror platform will consider the provision of functionalities related to the deployment of NSes, using a [VIM emulator solution](https://osm.etsi.org/wikipub/index.php/VIM_emulator).
-
 2) The mirror platform may be restarted with certain periodicity, and data may be deleted for maintance purposes. Users are encouraged to not consider this as a stable platform to keep copies their of NS/VxFs.
 
 ## Preliminary steps
 
 To access the mirror platform, you need to connect to the 5GinFIRE VPN. You can request VPN credentials to access the 5GinFIRE network infrastructure by creating a ticket to [5GinFIRE Operations] (https://portal.5ginfire.eu/bugzilla/enter_bug.cgi?product=5GinFIRE).
 
-## Accessing the mirror platform
+## Using the mirror platform
+After obtaining VPN credentials and connecting to the VPN (a tutorial to connect to the 5GinFIRE VPN can be found [here](http://wiki.5ginfire.eu/tutorials/guide-external-access-experimenters)), you can access the Graphical User Interface of the mirror platform through this link:
 
+- https://10.4.48.15:8443 (use of Chrome web browser is recommended)
+- User: *admin*
+- Password: *admin*
+
+
+## Accessing the logs
 
