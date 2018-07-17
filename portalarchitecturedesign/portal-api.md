@@ -27,7 +27,36 @@ response:
 
 
 ```json
-[{"id":1,"name":"None","appscount":0,"vxFscount":0,"productsCount":0},{"id":2,"name":"Networking","appscount":1,"vxFscount":15,"productsCount":16},{"id":3,"name":"Automotive","appscount":2,"vxFscount":3,"productsCount":5},{"id":4,"name":"Media","appscount":0,"vxFscount":6,"productsCount":6}]
+[
+  {
+    "id": 1,
+    "name": "None",
+    "appscount": 0,
+    "vxFscount": 0,
+    "productsCount": 0
+  },
+  {
+    "id": 2,
+    "name": "Networking",
+    "appscount": 1,
+    "vxFscount": 15,
+    "productsCount": 16
+  },
+  {
+    "id": 3,
+    "name": "Automotive",
+    "appscount": 2,
+    "vxFscount": 3,
+    "productsCount": 5
+  },
+  {
+    "id": 4,
+    "name": "Media",
+    "appscount": 0,
+    "vxFscount": 6,
+    "productsCount": 6
+  }
+]
 ```
 
 
