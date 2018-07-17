@@ -14,6 +14,13 @@ https://5ginfire.github.io/eu.5ginfire.portal.api/doc/html2-client/
 The API has an OpenAPI [^1] specification under: 
 https://portal.5ginfire.eu/5ginfireportal/services/api/swagger.json
 
+Here is an authorized request with X-APIKEY example: 
+
+
+```sh
+curl -v -H "X-APIKEY:ec6a5be8-66bf-4351-e830-"  https://portal.5ginfire.eu/5ginfireportal/services/api/repo/admin/vxfs
+```
+X-APIKEY is generated when you create an account.
 
 Here is a login example: 
 
