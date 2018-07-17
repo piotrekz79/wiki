@@ -14,6 +14,16 @@ https://5ginfire.github.io/eu.5ginfire.portal.api/doc/html2-client/
 The API has an OpenAPI [^1] specification under: 
 https://portal.5ginfire.eu/5ginfireportal/services/api/swagger.json
 
+
+There are requests that are public. For example, get all Categories:
+
+`curl -v  https://portal.5ginfire.eu/5ginfireportal/services/api/repo/categories`
+
+response:
+
+`[{"id":1,"name":"None","appscount":0,"vxFscount":0,"productsCount":0},{"id":2,"name":"Networking","appscount":1,"vxFscount":15,"productsCount":16},{"id":3,"name":"Automotive","appscount":2,"vxFscount":3,"productsCount":5},{"id":4,"name":"Media","appscount":0,"vxFscount":6,"productsCount":6}]`
+
+
 Here is an authorized request with X-APIKEY example: 
 
 
