@@ -6,6 +6,9 @@ Iris - the reconfigurable radio testbed at Trinity College Dublin provides virtu
 A high-level overview of WINS_5G testbed architecture is depicted in Fig. 1. The physical layer, at the bottom, represent the tangible resources including servers, switches, USRPSs, and so forth, at the Iris testbed. The virtualisation layer in the middle is supported by virtualisation technologies including OpenStack to support cloud computing, OpenFlow to slice the network, and HyDRA to virtualise the radio. The vertical resource layer at the top, supported by the Open Source Network Function Virtualization (NFV) Management and Orchestration (MANO) (OSM) software stack, will interact with the physical and virtualisation layers to instantiate EVIs. These technologies interact with the FUTEBOL EU project Container Orchestration and Provisioning Architecture (COPA) virtual machine instances, Ubuntu Containers (LXC), and GNU Radio images, exposing the functionality of physical resources to applications and across different 5G verticals.
 
 
+![Fig 1 Functional Layers](/uploads/fig-2-functional-layers.png "Fig 2 Functional Layers")
+
+
 # Experimentation
 
 
