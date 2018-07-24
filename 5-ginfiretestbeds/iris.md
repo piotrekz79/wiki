@@ -10,5 +10,4 @@ A high-level overview of WINS_5G testbed architecture is depicted in Fig. 1. The
 
 
 # Contact
-
-wireless.testbed@connectcentre.ie
+Diarmuid Collins (wireless.testbed@connectcentre.ie)
