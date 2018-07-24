@@ -51,6 +51,7 @@ URLLC must support low-latency transmissions of small payloads with very high re
 WINS_5G will provide examples of radios for eMBB, mMTC, and  URLLC that can be used by Open Call experimenters. However, although these examples are fully capable of performing communication between nodes, it is not capable of coping with the stringent requirements of very high data peak rates for eMBB, the massive number of devices for mMTC, or latencies under 1 ms for URLLC. Table 1 gives an overview of the capabilities of each radio technology that will be provided by WINS 5G.
 
 
+## 4.2 Radio Technology purpose and Capabilities
 ### eMBB
 Number of devices: 1 BS to 1 user
 Throughput: 1-2 MBps
