@@ -74,7 +74,7 @@ Throughput: less than 100 kBps
 Latency: No guarantee
 
 
-## 4.2 Enabling eMBB, mMTC, and URLLC at the Iris Testbed
+## 4.3 Enabling eMBB, mMTC, and URLLC at the Iris Testbed
 Iris provides the HyDRA radio virtualization layer to enable the vastly different requirements of eMBB, mMTC and URLCC EVIs. More precisely, HyDRA enables the creation of multiple independent virtual RF front-ends on top of a single physical RF front-end. Virtual RF front-ends can then be assigned to a EVI. Radio resources can be assigned to each virtual RF-front by using the RRMF (presented above). For example, a large channel bandwidth must be used by the base station to achieve the very high peak data rates required by eMBB; thus, the vRF front-end assigned to the eMBB slice can use the set_bandwidth RRMF to increase the bandwidth used. The large channel bandwidth in combination with tailored radio access technology for the baseband processing can enable advanced eMBB experiments at the Iris testbed.
 # Contact
 Diarmuid Collins (wireless.testbed@connectcentre.ie)
