@@ -8,6 +8,8 @@ A high-level overview of WINS_5G testbed architecture is depicted in Fig. 1. The
 
 ![Fig 1 Functional Layers](/uploads/fig-2-functional-layers.png "Fig 1 Functional Layers")
 
+Figure 1: Iris Testbed Functional Layers
+
 
 Logically, the WINS_5G testbed can be thought of as consisting of five functional layers, as illustrated in Fig. 1. These include:
 * Functional Elements: The bottom layer represents the physical resources, such as servers, switches, N210 USRPs, etc. These elements are sliced by the hypervisor layer.
