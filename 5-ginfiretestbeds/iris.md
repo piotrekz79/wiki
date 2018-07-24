@@ -46,7 +46,7 @@ Iris - the reconfigurable radio testbed at Trinity College Dublin, pairs underly
 # Overview of EVIs enabled for 5GINFIRE
 These projects and packages will support the instantiation of many different EVI for enhanced Mobile BroadBand (eMBB), and massive Machine Type Communications (mMTC), and Ultra-Reliable Low Latency Communication (URLLC) across the Iris radio testbed. We briefly describe these EVIs and the opportunities enabled by 5GINFIRE in the next subsections.
 
-## 4.1 eMBB, mMTC, and URLLC requirements
+## eMBB, mMTC, and URLLC requirements
 eMBB must support stable connections with very high peak data rates, as well as moderate rates for cell-edge users. Indeed, eMBB communication is characterized by large payloads and by a device activation pattern that remains stable over an extended time interval. The objective of the eMBB service is to maximize the data rate, while guaranteeing a moderate reliability, with packet error rate (PER) on the order of 10-3 [3].
 mMTC must support a massive number of IoT devices, which are only sporadically active and send small data payloads. mMTC devices are active intermittently and use a fixed, typically low, transmission rate in the uplink. At a given time, data traffic arrives only to an unknown (random) subset of the huge set of mMTC devices connected to a given base station [2].
 
@@ -55,7 +55,7 @@ URLLC must support low-latency transmissions of small payloads with very high re
 Iris will provide examples of radios for eMBB, mMTC, and  URLLC that can be used by Open Call experimenters. However, although these examples are fully capable of performing communication between nodes, it is not capable of coping with the stringent requirements of very high data peak rates for eMBB, the massive number of devices for mMTC, or latencies under 1 ms for URLLC. The next section  gives an overview of the capabilities of each radio technology that will be provided Iris.
 
 
-## 4.2 Radio Technology purpose and Capabilities
+## Radio Technology purpose and Capabilities
 ### eMBB
 Number of devices: 1 BS to 1 user
 Throughput: 1-2 MBps
@@ -74,7 +74,7 @@ Throughput: less than 100 kBps
 Latency: No guarantee
 
 
-## 4.3 Enabling eMBB, mMTC, and URLLC at the Iris Testbed
+## Enabling eMBB, mMTC, and URLLC at the Iris Testbed
 Iris provides the HyDRA radio virtualization layer to enable the vastly different requirements of eMBB, mMTC and URLCC EVIs. More precisely, HyDRA enables the creation of multiple independent virtual RF front-ends on top of a single physical RF front-end. Virtual RF front-ends can then be assigned to a EVI. Radio resources can be assigned to each virtual RF-front by using the RRMF (presented above). For example, a large channel bandwidth must be used by the base station to achieve the very high peak data rates required by eMBB; thus, the vRF front-end assigned to the eMBB slice can use the set_bandwidth RRMF to increase the bandwidth used. The large channel bandwidth in combination with tailored radio access technology for the baseband processing can enable advanced eMBB experiments at the Iris testbed.
 # Contact
 Diarmuid Collins (wireless.testbed@connectcentre.ie)
