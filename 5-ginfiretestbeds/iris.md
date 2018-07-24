@@ -9,7 +9,7 @@ A high-level overview of WINS_5G testbed architecture is depicted in Fig. 1. The
 ![Fig 1 Functional Layers](/uploads/fig-2-functional-layers.png "Fig 1 Functional Layers")
 
 
-Logically, the WINS_5G testbed can be thought of as consisting of five functional layers, as illustrated in Fig. 2. These include:
+Logically, the WINS_5G testbed can be thought of as consisting of five functional layers, as illustrated in Fig. 1. These include:
 * Functional Elements: The bottom layer represents the physical resources, such as servers, switches, N210 USRPs, etc. These elements are sliced by the hypervisor layer.
 * Virtualisation Layer: To expose the functionality of physical equipment for applications, WINS_5G employs a variety of hypervisor tools and technologies. This layer provides support for open source cloud virtualisation technologies (OpenStack), SDN techniques (OpenFlow, and Open vSwitch), and Software-Defined Radio (SDR) elements (GNU Radio with HyDRA).
 * NFV Layer: OSM supports the deployment of EVIs across the Virtualisation and Functional Layer elements, by supporting the creation of virtual machine instances and instantiation of communication between virtual machines in physical rack servers. These elements provide a fully functional orchestrator for EVIs at Iris.
