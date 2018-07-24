@@ -39,8 +39,36 @@ Iris - the reconfigurable radio testbed at Trinity College Dublin, pairs underly
 
 
 
-# Experimentation Use Case
+# Overview of EVIs enabled for 5GINFIRE
+These projects and packages will support the instantiation of many different EVI for enhanced Mobile BroadBand (eMBB), and massive Machine Type Communications (mMTC), and Ultra-Reliable Low Latency Communication (URLLC) across the Iris radio testbed. We briefly describe these EVIs and the opportunities enabled by WINS_5G in the next subsections.
 
+## 4.1 eMBB, mMTC, and URLLC requirements
+eMBB must support stable connections with very high peak data rates, as well as moderate rates for cell-edge users. Indeed, eMBB communication is characterized by large payloads and by a device activation pattern that remains stable over an extended time interval. The objective of the eMBB service is to maximize the data rate, while guaranteeing a moderate reliability, with packet error rate (PER) on the order of 10-3 [3].
+mMTC must support a massive number of IoT devices, which are only sporadically active and send small data payloads. mMTC devices are active intermittently and use a fixed, typically low, transmission rate in the uplink. At a given time, data traffic arrives only to an unknown (random) subset of the huge set of mMTC devices connected to a given base station [2].
+
+URLLC must support low-latency transmissions of small payloads with very high reliability from a limited set of terminals, which are active according to patterns typically specified by outside events, such as alarms. URLLC transmissions are also intermittent, but the set of potential URLLC transmitters is much smaller than the set of potential mMTC transmitters. The rate of a URLLC transmission is relatively low, and the main requirement is ensuring a high reliability level, with a PER typically lower than 10−5[2].
+
+WINS_5G will provide examples of radios for eMBB, mMTC, and  URLLC that can be used by Open Call experimenters. However, although these examples are fully capable of performing communication between nodes, it is not capable of coping with the stringent requirements of very high data peak rates for eMBB, the massive number of devices for mMTC, or latencies under 1 ms for URLLC. Table 1 gives an overview of the capabilities of each radio technology that will be provided by WINS 5G.
+
+
+
+## 4.2 Radio Technology purpose Capabilities
+### eMBB
+Number of devices: 1 BS to 1 user
+Throughput: 1-2 MBps
+Latency: No guarantee
+
+
+### mMTC
+Number of devices: 1 BS to 1 user
+Throughput: 1-2MBps
+Latency: No guarantee
+
+
+### URLLC
+Number of devices: 1 BS to few users
+Throughput: less than 100 kBps
+Latency: No guarantee
 
 # Contact
 Diarmuid Collins (wireless.testbed@connectcentre.ie)
