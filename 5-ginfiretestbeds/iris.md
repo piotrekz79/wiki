@@ -80,5 +80,6 @@ Iris provides the HyDRA radio virtualization layer to enable the vastly differen
 Diarmuid Collins (wireless.testbed@connectcentre.ie)
 
 # References
-[1]Kist, M., Hypersvisor for Software Defined Radios (HyDRA), 2018, GitHub repository,
-https://github.com/maiconkist/gr-hydra
+[1]Kist, M., Hypersvisor for Software Defined Radios (HyDRA), 2018, GitHub repository, https://github.com/maiconkist/gr-hydra
+
+[2]Popovski, P., Trillingsgaard, K.F., Simeone, O. and Durisi, G., 2018. 5G Wireless Network Slicing for eMBB, URLLC, and mMTC: A Communication-Theoretic View. arXiv preprint arXiv:1804.05057.
