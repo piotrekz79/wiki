@@ -58,22 +58,25 @@ URLLC must support low-latency transmissions of small payloads with very high re
 
 
 ## Radio Technology purpose and Capabilities
-### eMBB
-Number of devices: 1 BS to 1 user
-Throughput: 1-2 MBps
-Latency: No guarantee
+### Radio Technology: eMBB
+Capabilities:
+* Number of devices: 1 BS to 1 user
+* Throughput: 1-2 MBps
+* Latency: No guarantee
 
 
-### mMTC
-Number of devices: 1 BS to 1 user
-Throughput: 1-2MBps
-Latency: No guarantee
+### Radio Technology: mMTC
+Capabilities:
+* Number of devices: 1 BS to 1 user
+* Throughput: 1-2MBps
+* Latency: No guarantee
+ 
 
-
-### URLLC
-Number of devices: 1 BS to few users
-Throughput: less than 100 kBps
-Latency: No guarantee
+### Radio Technology: URLLC
+Capabilities:
+* Number of devices: 1 BS to few users
+* Throughput: less than 100 kBps
+* Latency: No guarantee
 
 
 ## Enabling eMBB, mMTC, and URLLC at the Iris Testbed
