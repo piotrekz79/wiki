@@ -81,6 +81,41 @@ Capabilities:
 
 ## Enabling eMBB, mMTC, and URLLC at the Iris Testbed
 Iris provides the HyDRA radio virtualization layer to enable the vastly different requirements of eMBB, mMTC and URLCC EVIs. More precisely, HyDRA enables the creation of multiple independent virtual RF front-ends on top of a single physical RF front-end. Virtual RF front-ends can then be assigned to a EVI. Radio resources can be assigned to each virtual RF-front by using the RRMF (presented above). For example, a large channel bandwidth must be used by the base station to achieve the very high peak data rates required by eMBB; thus, the vRF front-end assigned to the eMBB slice can use the set_bandwidth RRMF to increase the bandwidth used. The large channel bandwidth in combination with tailored radio access technology for the baseband processing can enable advanced eMBB experiments at the Iris testbed.
+
+## Radio resource management functions (RRMF)
+These functions will facilitate EVIs to assess the available physical radio resources and request the creation of new vRF front-ends. The list of new RRMF is as shown below.
+
+### RRMF: get_free_spectrum
+Scope: Global
+Description: Returns a list of tuples in the form (CF, BW) of all portions of radio spectrum available to use by HyDRA. Note: this portions can be in use by external radio access technologies.
+
+### RRMF: create_virtual_radio
+Scope: Global
+Description: Creates a new vRF front-end and virtual network interface. This slices the physical USRP with a new vRF front-end. The virtual network interface is used to provide HyDRA-AS functionalities.
+
+### RRMF: set_bandwidth
+Scope: vRF front-end
+Description: Sets the bandwidth of the vRF front-end to the informed value. The new value can be rejected by HyDRA-AS..
+
+### RRMF: get_bandwidth
+Scope: vRF front-end
+Description: Obtain the bandwidth of the vRF front-end.
+
+### RRMF: set_frequency
+Scope: vRF front-end
+Description: Sets the center frequency of the vRF front-end to the informed value. The new value can be rejected by HyDRA-AS.
+
+### RRMF: get_frequency
+Scope: vRF front-end
+Description: Obtain the center frequency of the vRF front-end.
+
+### RRMF: set_gain
+Scope: vRF front-end
+Description: Sets the gain of the vRF front-end to the informed value. The new value can be rejected by HyDRA-AS.
+
+### RRMF: get_gain
+Scope: vRF front-end
+Description: Obtain the gain of the vRF front-end.
 # Contact
 Diarmuid Collins (wireless.testbed@connectcentre.ie)
 
