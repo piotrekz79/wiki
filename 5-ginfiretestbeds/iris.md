@@ -48,6 +48,7 @@ These projects and packages will support the instantiation of many different EVI
 
 ## eMBB, mMTC, and URLLC requirements
 eMBB must support stable connections with very high peak data rates, as well as moderate rates for cell-edge users. Indeed, eMBB communication is characterized by large payloads and by a device activation pattern that remains stable over an extended time interval. The objective of the eMBB service is to maximize the data rate, while guaranteeing a moderate reliability, with packet error rate (PER) on the order of 10-3 [2].
+
 mMTC must support a massive number of IoT devices, which are only sporadically active and send small data payloads. mMTC devices are active intermittently and use a fixed, typically low, transmission rate in the uplink. At a given time, data traffic arrives only to an unknown (random) subset of the huge set of mMTC devices connected to a given base station [2].
 
 URLLC must support low-latency transmissions of small payloads with very high reliability from a limited set of terminals, which are active according to patterns typically specified by outside events, such as alarms. URLLC transmissions are also intermittent, but the set of potential URLLC transmitters is much smaller than the set of potential mMTC transmitters. The rate of a URLLC transmission is relatively low, and the main requirement is ensuring a high reliability level, with a PER typically lower than 10−5[2].
