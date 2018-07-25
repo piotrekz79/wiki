@@ -53,6 +53,7 @@ mMTC must support a massive number of IoT devices, which are only sporadically a
 
 URLLC must support low-latency transmissions of small payloads with very high reliability from a limited set of terminals, which are active according to patterns typically specified by outside events, such as alarms. URLLC transmissions are also intermittent, but the set of potential URLLC transmitters is much smaller than the set of potential mMTC transmitters. The rate of a URLLC transmission is relatively low, and the main requirement is ensuring a high reliability level, with a PER typically lower than 10−5[2].
 
+### Note Important 
 ***Iris will provide examples of radios for eMBB, mMTC, and  URLLC that can be used by Open Call experimenters. However, although these examples are fully capable of performing communication between nodes, it is not capable of coping with the stringent requirements of very high data peak rates for eMBB, the massive number of devices for mMTC, or latencies under 1 ms for URLLC. The next section  gives an overview of the capabilities of each radio technology that will be provided Iris.***
 
 
