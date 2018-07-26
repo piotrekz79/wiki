@@ -100,6 +100,18 @@ Finalizing, the description of VxF developer user role we present the interfaces
 ![Fig 20](/uploads/fig-20.png "Fig 20")
 As we can see here the most information have already been provided by either the VxF package or the VxF developer as we have described earlier in the previous parts but also some new fields are visible that is Organization, Date created, Last Update, UUID, Certified by and Onboarded to MANO providers. Most of those fields are self-explainable apart from perhaps the Onboarded to MANO providers field, which contains the MANO provider on which this VxF has been deployed. Finally, a VxF developer can download the stored VxF package just by clicking the green button on the top side of the page.
 
+
+### VxF Images
+
+There is a separate window for managing VxF images: https://portal.5ginfire.eu/#!/vfimages
+When you upload a VxF, the portal checks the descriptor and the referenced image in the VDU. 
+If the image name is not register in the portal then the portal automatically creates an image record. Currently you can see only your user images and any marked as "published"
+The experimenter/developer can either upload the image to the portal, or just enter the URL of the image.
+The image will be donwoladed by the VIM owners at a later stage via a Bugzilla notification.
+
+![Portal Registered Images](/uploads/portal/portal-registered-images.png "Portal Registered Images")
+
+
 ## Experimenter user interface description
 
 The second user role we are going to describe is the experimenter. In the next figure you can see the 
