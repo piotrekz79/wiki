@@ -101,7 +101,7 @@ Finalizing, the description of VxF developer user role we present the interfaces
 As we can see here the most information have already been provided by either the VxF package or the VxF developer as we have described earlier in the previous parts but also some new fields are visible that is Organization, Date created, Last Update, UUID, Certified by and Onboarded to MANO providers. Most of those fields are self-explainable apart from perhaps the Onboarded to MANO providers field, which contains the MANO provider on which this VxF has been deployed. Finally, a VxF developer can download the stored VxF package just by clicking the green button on the top side of the page.
 
 
-### VxF Images
+## VxF Images
 
 There is a separate window for managing VxF images: https://portal.5ginfire.eu/#!/vfimages
 When you upload a VxF, the portal checks the descriptor and the referenced image in the VDU. 
