@@ -59,6 +59,9 @@ response:
 ]
 ```
 
+
+
+
 ## Authorization via X-APIKEY Header
 
 You can get your APIKEY by the portal:
