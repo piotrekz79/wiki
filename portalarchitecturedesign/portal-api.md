@@ -59,7 +59,10 @@ response:
 ]
 ```
 
+## Authorization via X-APIKEY Header
 
+You can get your APIKEY by the portal:
+![Userinfo](/uploads/portal/userinfo.png "Userinfo")
 
 Here is an authorized request with X-APIKEY example: 
 
@@ -69,7 +72,10 @@ curl -v -H "X-APIKEY:ec6a5be8-66bf-4351-e830-"  https://portal.5ginfire.eu/5ginf
 ```
 X-APIKEY is generated when you create an account.
 
-Here is a login example: 
+
+## Authorization via JSESSIONID cookie 
+
+Here is an authorized request with cookie example: 
 
 
 ```sh
