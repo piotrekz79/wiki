@@ -103,7 +103,7 @@ As we can see here the most information have already been provided by either the
 
 ## VxF Images
 
-There is a separate window for managing VxF images: https://portal.5ginfire.eu/#!/vfimages
+There is a separate window for managing VxF images after login to the portal menu Admin->Registered Images : https://portal.5ginfire.eu/#!/vfimages
 When you upload a VxF, the portal checks the descriptor and the referenced image in the VDU. 
 If the image name is not register in the portal then the portal automatically creates an image record. Currently you can see only your user images and any marked as "published"
 The experimenter/developer can either upload the image to the portal, or just enter the URL of the image.
