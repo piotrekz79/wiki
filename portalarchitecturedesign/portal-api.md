@@ -59,7 +59,7 @@ response:
 ]
 ```
 
-
+next are ways to get authorized requests. You need to have an account in the 5GinFIRE portal
 
 
 ## Authorization via X-APIKEY Header
