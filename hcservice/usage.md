@@ -71,7 +71,7 @@ We create a file : pingOSMlink.sh
 ping -c1 10.4.16.15
   if [ $? -eq 0 ]
   then
-    wget http://status.5ginfire.eu/hcs/services/api/admin/components/PORTAL-OSM/12345678-1234-1234-e830-22e37fa6a000
+    curl http://status.5ginfire.eu/hcs/services/api/admin/components/PORTAL-OSM/12345678-1234-1234-e830-22e37fa6a000
     exit 0
   fi
 ```
