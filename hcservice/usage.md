@@ -56,7 +56,7 @@ We have defined that failoverThreshold for BRISTOL VIM is 10 minutes.
 Then BRISTOL needs to report that it is alive every e.g. 5 minutes ( for example in a cron with a script ):
 
 ```text
-wget   http://status.5ginfire.eu/hcs/services/api/admin/components/BRISTOL/8756118f-66bf-1234-a409-22e37f89c0c0
+curl http://status.5ginfire.eu/hcs/services/api/admin/components/BRISTOL/8756118f-66bf-1234-a409-22e37f89c0c0
 ```
 
 If BRISTOL fails to send the above request within 10 minutes an issue will be raised in Bugzilla for BRISTOL and will marked as down, if previously was UP.
