@@ -16,7 +16,7 @@ When using the mirror platform, take into account the following considerations:
 2) The mirror platform may be restarted with certain periodicity, and data may be deleted for maintenance purposes. Users are encouraged to not consider this as a stable platform to keep copies of their NS/VxFs.
 
 ## Preliminary steps
-To access the mirror platform, you need to connect to the 5GinFIRE VPN. You can request VPN credentials to access the 5GinFIRE network infrastructure by creating a ticket to [5GinFIRE Operations] (https://portal.5ginfire.eu/bugzilla/enter_bug.cgi?product=5GinFIRE).
+To access the mirror platform, you need to connect to the 5GinFIRE VPN. You can request VPN credentials to access the 5GinFIRE network infrastructure by creating a ticket to [5GinFIRE Operations] (https://portal.5ginfire.eu/bugzilla/).
 
 ## Accessing the mirror platform
 After obtaining VPN credentials and connecting to the VPN (a tutorial to connect to the 5GinFIRE VPN can be found [here](http://wiki.5ginfire.eu/tutorials/guide-external-access-experimenters)), you can access the Graphical User Interface (GUI) of the mirror platform through this link:
