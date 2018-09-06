@@ -15,6 +15,13 @@
 1) At this stage we  change the Assignee to the **Mentor** of the experiment by checking the "Experiment Name" field in the Bugzilla ticket.
 2) The ticket status is changed to IN PROGRESS
 
+Currently the **Mentors** of the experiments are the following
+• SURROGATES (using Aveiro testbed) – Mentors: Miguel Luis <nmal@av.it.pt>
+• CAVICO (using Aveiro testbed) – Mentors: Miguel Luis <nmal@av.it.pt>
+• SFCLola (multisite experiment) – Mentors: Diogo Gomes <dgomes@av.it.pt>
+• RobotView5G (using Bristol testbed) – Mentors: Aloizio Pereira da Silva <aloizio.eisenmann.dasilva@bristol.ac.uk>
+• VRU-Safe (using Aveiro testbed) – Mentors: Miguel Luis <nmal@av.it.pt>
+
 **Note: Changing Assignee is currently done only through Bugzilla** A suggestion is to manage the Deployment Request only through the portal. The portal automatically notifies and creates issues in Bugzilla. However, due to restrictions, Bugzilla could be used for more fine-grained control until the portal has all the features.
 
 
