@@ -11,8 +11,8 @@ This first step triggers that at least the portal has correctly parsed the descr
 ## NSD Onboard by portal administrator
 The NSD is then onboarded by the portal administrator to the 5GinFIRE OSM component at 5TONIC. 
 The issue changes assignee to a person in 5TONIC/UC3M/OSM team (Ivan?)
-In nominal situation the NSD will get a status ONBOARDED.
-**Exception:** if there is no way to onboard it due to errors, the 5TONIC team needs to manually identify why this is not possible
+In nominal situation the NSD will get a status ONBOARDED. The Bugzilla ticket status is changed to RESOLVED-FIXED and the NSD is marked as Valid (in order for the NSD to appear in the list for Deployment Requests).
+**Exception:** if there is no way to onboard it due to errors, the ticket status is changed to VERIFIED the NSD should be marked as NOT-VALID and the 5TONIC team needs to manually identify why this is not possible
 
 ## OSM verification
 The 5TONIC/UC3M/OSM team will try to check the NSD (* this could also involve the Mentor of the experiment*)
