@@ -13,6 +13,7 @@
 ### Change the Assignee to the Mentor of the experiment
 
 1) At this stage we  change the Assignee to the **Mentor** of the experiment.
+2) The ticket status is changed to IN PROGRESS
 
 **Note: Changing Assignee is currently done only through Bugzilla** A suggestion is to manage the Deployment Request only through the portal. The portal automatically notifies and creates issues in Bugzilla. However, due to restrictions, Bugzilla could be used for more fine-grained control until the portal has all the features.
 
