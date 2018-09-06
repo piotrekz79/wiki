@@ -28,3 +28,6 @@ If the team claims that the VNF is invalid, changes the issue in Bugzilla accord
 
 ## VNF is VALID
 If everything is ok, the VNF is presented as Certified in the portal.should be available for usage in NSDs.
+
+## VNF is Published
+After VNF owner's permission the VNF can be published for the VNF to be usable from other users besides the VNF owner.
