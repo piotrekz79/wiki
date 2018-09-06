@@ -18,9 +18,9 @@ The issue changes assignee to a person in 5TONIC/UC3M/OSM team (Ivan?)
 In nominal situation the VNF will get a status ONBOARDED.
 In case the VNF is ONBOARDED SUCCESSFULLY the status of the Bugzilla ticket status should be RESOLVED-FIXED.
 **Exception:** if there is no way to onboard it due to errors, 
-* the Bugzilla ticket status is changed to CONFIRMED, 
-* the VNF is marked as NOT-CERTIFIED 
-* and the 5TONIC team needs to manually identify why this is not possible.
+- the Bugzilla ticket status is changed to CONFIRMED, 
+- the VNF is marked as NOT-CERTIFIED 
+- and the 5TONIC team needs to manually identify why this is not possible.
 
 ## OSM verification
 The 5TONIC/UC3M/OSM team will try to check the VNF (* this could also involve the Mentor for the experiment*)
