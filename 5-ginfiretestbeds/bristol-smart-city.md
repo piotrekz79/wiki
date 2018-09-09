@@ -69,19 +69,21 @@ The available equipment is controlled using a rich software stack (showed in Fig
 ![Bristolisland](/uploads/bristolisland.png "Bristolisland")
 **Figure 2: Software used for management and orchestration of the testbed resources**
 	
-		
+	
 Within any of our projects, the aforementioned structure will be used to support different verticals demonstrators, such as entertainment, finance, manufacturing and automotive testing.
 
-The diverse range of access technologies are interconnected in sharing the same underlying system while being used by 5GinFIRE framework to provide connectivity for the demonstrators, showcasing seamless integration between heterogeneous network components, an important concept in 5G. Additionally, the alternative and innovative technologies available, such as pureLiFi for fixed access, can be used to demonstrate the principle of access-agnosticism, also important for the 5G vision.
+The diverse range of access technologies are interconnected in sharing the same underlying system while being used by 5GinFIRE ecosystem to provide connectivity for the demonstrators, showcasing seamless integration between heterogeneous network components, an important concept in 5G. Additionally, the alternative and innovative technologies available, such as pureLiFi for fixed access, can be used to demonstrate the principle of access-agnosticism, also important for the 5G vision.
 
-The state of the art radio access technologies deployed in Millennium Square deliver high-bandwidth, high-bitrate and high-reliability connections to the user equipment, therefore enabling the usage of the network-intensive distributed applications developed by demonstrators. In particular, the availability of LTE-Advanced (LTE-A) and future installations of 5G access points (Nokia 5G NR) will be especially important in demonstrating applications that require mobility while keeping user experience continuity.
+The state of the art radio access technologies deployed in Millennium Square will deliver high-bandwidth, high-bitrate and high-reliability connections to the user equipment, therefore enabling the usage of the network-intensive distributed applications developed by 5GinFIRE demonstrators. In particular, the availability of LTE-Advanced (LTE-A) and future installations of 5G access points (Nokia 5G NR) will be especially important in 5GinFIRE to demonstrate applications that require mobility while keeping user experience continuity.
 
-The SDN capabilities expressed by the NetOS controller, will facilitate network slicing through optical, electrical and radio technologies via on-demand SSID creation, demonstrating another key concept in the 5G architecture that will be explored by projects to provide a multi-tenant environment, where the multiple demonstrators, or even final users, can coexist independently with different connectivity specifications.
+The SDN capabilities expressed by the NetOS controller, will facilitate network slicing through optical, electrical and radio technologies via on-demand SSID creation, demonstrating another key concept in the 5G architecture that will be explored by 5GinFIRE to provide a multi-tenant environment, where the multiple demonstrators, or even final users, can coexist independently with different connectivity specifications.
 
-The high performance and edge computing capabilities will power resource-intensive applications developed by demonstrators. In these applications, hardware acceleration and GPU-processing will be used to deliver enhanced performance and enable low-latency/real-time user interaction.
-
-Finally, University of Bristol 5G testbed will deliver an automated and programmable environment, that will be used by any projects southbound interface to create fully integrated orchestration for both application components and network services.
+The high performance and edge computing capabilities will power resource-intensive applications developed by 5GinFIRE demonstrators. In these applications, hardware acceleration and GPU-processing will be used to deliver enhanced performance and enable low-latency/real-time user interaction.
+Finally, University of Bristol 5G testbed will deliver an automated and programmable environment, that will be used by 5GinFIRE southbound interface to create fully integrated orchestration for both application components and network services.
 	
+	
+	
+		
 
 # Smart City Safety Use Case
 
