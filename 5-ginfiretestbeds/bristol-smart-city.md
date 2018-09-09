@@ -55,6 +55,7 @@ The available equipment is controlled using a rich software stack (showed in Fig
 					o	Open Source MANO release THREE (opensource)
 					o	NOKIA CloudBand (proprietary based on a version of OSM and OpenStack, providing network slicing and virtualisation in 
 					rapid service creation) Available July 2018
+					
 		• two cloud/edge computing solutions:
 				o Openstack Pike (opensource)
 				o Nokia MEC (proprietary)
@@ -65,10 +66,6 @@ The available equipment is controlled using a rich software stack (showed in Fig
 		• A content distribution 
 				o InterDigital solution is shown for the optimisation of the content delivery
 				This solution is only available for the 5G Smart Tourism project
-					
-		•	two cloud/edge computing solutions 
-					o	Openstack Pike (opensource)
-					o	Nokia MEC (proprietary)
 						
 	
 			
