@@ -51,6 +51,7 @@ A summary of the testbed constituent equipment and capabilities is:
 		
 		
 The available equipment is controlled using a rich software stack (showed in Figure 2) that is composed by:
+
 		•	two different NFV orchestration and management solutions:
 					o	Open Source MANO release THREE (opensource)
 					o	NOKIA CloudBand (proprietary based on a version of OSM and OpenStack, providing network slicing and virtualisation in 
