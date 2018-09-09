@@ -3,12 +3,7 @@
 
 # Smart Internet Lab, University of Bristol
 ## Testbed introduction
-This test network enables network slicing as a service, as required by various stakeholders as the Network Operation use case. Using 5G network concepts we deliver several services based on different network slices operating concurrently. In one slice, we deliver services for the Enhanced Mobile Broadband use case; while in another network slice, we deliver high and/or low throughputs, demanding Ultra Low Latency Reliable Services as in the Critical Communications use case. Also, several virtual networks can be grouped for different business demands and serve many devices forming the Massive Internet of Things use case.
-
-The University of Bristol’s Smart Internet Lab 5G Testbed comprises multiple levels of research ready SDN switches connecting diverse layers of access technologies, to high performance cloud compute resources via an innovate exchange and orchestration mechanism. The focus for this test network is to enable experimentation in network service virtualisation and innovative network function testing with access agnostic connectivity to end users.
-
-
-In order to explore and validate the deployment of 5G in an architecture that combines existing technologies and innovations, University of Bristol have deployed a rich testbed comprised of several networking and computing technologies, interconnecting a significant area in the Bristol city centre. This testbed aims to provide a managed platform for the development and testing of new solutions delivering reliable and high-capacity services to several applications and vertical sectors. 
+In order to explore and validate the deployment of 5G in an architecture that combines existing technologies and innovations, University of Bristol have deployed a rich testbed comprised of several networking and computing technologies, interconnecting a significant area in the Bristol city centre. This testbed aims to provide a managed platform for the development and testing of new solutions delivering reliable and high-capacity services to several applications and vertical sectors here referred to as 5GinFIRE.
 
 The University of Bristol’s 5G testbed is a multi-site network connected through a 10km fibre with several active switching nodes, that are depicted in Figure 2. The core network is located at the High-Performance Network (HPN) laboratory at the University of Bristol and an extra edge computing node is available in another central location, known as Watershed. As shown in Figure 1, the access technologies are located in two different areas in the city centre: Millennium Square for outdoor coverage and “We The Curious” science museum for indoor coverage.
 
@@ -20,49 +15,44 @@ The University of Bristol’s 5G testbed is a multi-site network connected throu
 A summary of the testbed constituent equipment and capabilities is:
 
 •	Multi-vendor software-defined networking (SDN) enabled packet switched network
-     o	Corsa switch (Corsa DP2100)
-     o	Edgecore switch (Edgecore AS4610 series & AS5712-54X)
-		 
+		o	Corsa switch (Corsa DP2100)
+		o	Edgecore switch (Edgecore AS4610 series & AS5712-54X)		
 •	SDN enabled optical (Fibre) switched network
-     o	Polatis Series 6000 Optical Circuit Switch
-		 
+		o	Polatis Series 6000 Optical Circuit Switch
 •	Multi-vendor Wi-Fi
-     o	SDN enabled Ruckus Wi-Fi (T710 and R720)
-     o	Nokia Wi-Fi (AC400)
-		 
+		o	SDN enabled Ruckus Wi-Fi (T710 and R720)
+		o	Nokia Wi-Fi (AC400)
 •	Nokia 4G and 5G NR
-     o	4G EPC & LTE-A (Dual FDD licensed bands for 1800MHz and 2600MHz; with 15MHz of T&D licence in 2600MHz band)
-     o	5G Core & 5G NR Massive MIMO (TDD band 42 at 3.5GHz; with 20MHz T&D licence)
-		 
+		o	4G EPC & LTE-A (Dual FDD licensed bands for 1800MHz and 2600MHz; with 15MHz of T&D licence in 2600MHz band)
+		o	5G Core & 5G NR Massive MIMO (TDD band 42 at 3.5GHz; with 20MHz T&D licence)
+			The project expected availability after November 2018
+			Handset availability is beyond January 2019
 •	Self-organising multipoint-to-multipoint wireless mesh network
-     o	CCS MetNet a 26GHz with 112MHz T&D licence providing 1.2Gbps throughput
-		 
+		o	CCS MetNet a 26GHz with 112MHz T&D licence providing 1.2Gbps throughput
 •	LiFi Access point
-     o	pureLiFi LiFi access points supporting 43Mbps
-		 
+		o	pureLiFi LiFi access points supporting 43Mbps
 •	Cloud and NFV hosting
-     o	Nokia Multi-access Edge Computing (MEC)
-     o	Datacentre for Application/VNF hosting, built upon
-		 
+		o	Nokia Multi-access Edge Computing (MEC)
+		o	Datacentre for Application/VNF hosting, built upon
 •	11x Dell PowerEdge T630 compute servers 700+ vCPU cores, 1TB+ RAM and 100TB of HDD storage.
-
 •	Advanced fibre optics FPGA convergence of all network technologies enabling considerable flexibility, scalability and programmability of the front/back-haul, to provide experimentation with -
-     o	Elastic Bandwidth-Variable Transponders
-     o	Programmable Optical White-box
-     o	Bandwidth-Variable Wavelength Selective Switches (BV-WSS)
-
+		o	Elastic Bandwidth-Variable Transponders
+		o	Programmable Optical White-box
+		o	Bandwidth-Variable Wavelength Selective Switches (BV-WSS)
+		
 The available equipment is controlled using a rich software stack (showed in Figure 2) that is composed by:
-      
-•	Two different NFV orchestration and management solutions:
-    o	Open Source MANO release THREE (opensource)
-    o	NOKIA CloudBand (proprietary based on a version of OSM and OpenStack, providing network slicing and virtualisation in rapid service creation) Available July 2018
-		
-•	Two cloud/edge computing solutions:
-    o	Openstack Pike (opensource)
-    o	Nokia MEC (proprietary)
-		
-•	one SDN controller responsible for providing connectivity:
-    o	NetOS (proprietary, based on the Open Daylight opensource)
+		•	two different NFV orchestration and management solutions:
+					o	Open Source MANO release THREE (opensource)
+					o	NOKIA CloudBand (proprietary based on a version of OSM and OpenStack, providing network slicing and virtualisation in 
+					rapid service creation) Available July 2018
+		•	two cloud/edge computing solutions:
+					o	Openstack Pike (opensource)
+					o	Nokia MEC (proprietary)
+		•	one SDN controller responsible for providing connectivity:
+					o	NetOS (proprietary, based on the Open Daylight opensource)
+		•	A content distribution 
+					o	InterDigital solution is shown for the optimisation of the content delivery
+						This solution is only available for the 5G Smart Tourism project
 		
 			
 ![Bristolisland](/uploads/bristolisland.png "Bristolisland")
