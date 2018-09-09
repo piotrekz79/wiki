@@ -48,16 +48,13 @@ A summary of the testbed constituent equipment and capabilities is:
 		o	Programmable Optical White-box
 		o	Bandwidth-Variable Wavelength Selective Switches (BV-WSS)
 		
+		
+		
 The available equipment is controlled using a rich software stack (showed in Figure 2) that is composed by:
 		•	two different NFV orchestration and management solutions:
 					o	Open Source MANO release THREE (opensource)
 					o	NOKIA CloudBand (proprietary based on a version of OSM and OpenStack, providing network slicing and virtualisation in 
 					rapid service creation) Available July 2018
-					
-		•	two cloud/edge computing solutions 
-					o	Openstack Pike (opensource)
-					o	Nokia MEC (proprietary)
-						
 		• two cloud/edge computing solutions:
 				o Openstack Pike (opensource)
 				o Nokia MEC (proprietary)
@@ -68,7 +65,12 @@ The available equipment is controlled using a rich software stack (showed in Fig
 		• A content distribution 
 				o InterDigital solution is shown for the optimisation of the content delivery
 				This solution is only available for the 5G Smart Tourism project
-		
+					
+		•	two cloud/edge computing solutions 
+					o	Openstack Pike (opensource)
+					o	Nokia MEC (proprietary)
+						
+	
 			
 ![Bristolisland](/uploads/bristolisland.png "Bristolisland")
 **Figure 2: Software used for management and orchestration of the testbed resources**
