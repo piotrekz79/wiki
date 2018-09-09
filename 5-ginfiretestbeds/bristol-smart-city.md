@@ -54,7 +54,10 @@ The available equipment is controlled using a rich software stack (showed in Fig
 					o	NOKIA CloudBand (proprietary based on a version of OSM and OpenStack, providing network slicing and virtualisation in 
 					rapid service creation) Available July 2018
 					
-					
+		•	two cloud/edge computing solutions 
+					o	Openstack Pike (opensource)
+					o	Nokia MEC (proprietary)
+						
 		• two cloud/edge computing solutions:
 				o Openstack Pike (opensource)
 				o Nokia MEC (proprietary)
