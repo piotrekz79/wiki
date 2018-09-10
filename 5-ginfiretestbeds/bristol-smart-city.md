@@ -10,6 +10,9 @@ The University of Bristol’s 5G testbed is a multi-site network connected throu
 ![Figure 1](/uploads/figure-1.png "Figure 1")
 **Figure 1: Distribution of the testbed access technologies**
 
+![Figure 2](/uploads/bristol-arc.png "Bristol Arc")
+**Figure 1:  University of Bristol top level system architecture**
+
 ## 	University of Bristol, Smart Internet Lab’s 5G Test Network Capability
 
 A summary of the testbed constituent equipment and capabilities is:
@@ -71,7 +74,7 @@ This solution is only available for the 5G Smart Tourism project
 	
 			
 ![Bristolisland](/uploads/bristolisland.png "Bristolisland")
-**Figure 2: Software used for management and orchestration of the testbed resources**
+**Figure 3: Software used for management and orchestration of the testbed resources**
 	
 	
 Within any of our projects, the aforementioned structure will be used to support different verticals demonstrators, such as entertainment, finance, manufacturing and automotive testing.
