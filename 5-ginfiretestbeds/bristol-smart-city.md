@@ -126,7 +126,7 @@ The cloud environment of the UNIBRIS consists of an OpenStack Pike instance that
 •	Storage node: 1 server machine Intel Xeon 2.40GHz 14 cores, 128GB RAM, 800GB HD
 •	One switch: Corsa DP2100 with 32 10Gb Ports 
 
-![Bristol Infra](/uploads/bristol-infra.png "Bristol Infra")
+![5 Ginfire Infra](/uploads/5-ginfire-infra.png "5 Ginfire Infra")
 **Figure 14: UNIVBRIS’ Network Function Virtualization Infrastructure**
 
 Currently, the provider and provider2 networks are configured in Openstack and are isolated from each other. The network provider has the address 10.154.28.0/24 and the network provider2 has the address 10.154.29.0/24 that will be used as data and management network.
