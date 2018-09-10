@@ -13,8 +13,8 @@ The global 5G Telefonica Open Innovation Laboratory (5TONIC) has been establishe
 The vehicular network which serves the base automotive use case consists of On-Board Units (OBUs) in the vehicles and roadside units (RSUs) connected to the Internet through an Ethernet interface. The vehicles connect among each other via standard IEEE 802.11p/ WAVE links, and are connected to the RSUs and the Internet through IEEE 802.11p/ WAVE, IEEE 802.11g/ WiFi or cellular links.
 **See more at:** http://wiki.5ginfire.eu/5-ginfiretestbeds/it-av-automotive-testbed
 
-## Bristol Smart City Safety Testbed
-Given the critical importance of security in cities, innovations advances in wireless communication system are increasingly improving the safety of city inhabitants. New services such as audio and video monitoring of public areas and automated municipality rule infraction detection allow a quicker response to threats and anomalies prevent reoccurrence. Based on this context UNIVBRIS has deploying a smart city safety use case, as a proof of concept, to identify suspicious activities in the city. The basic components of this use case are listed below and they are connected together to the Internet through a WiFi Interface.
+## Bristol Smart City Testbed
+Given the critical importance of security in cities, innovations advances in wireless communication system are increasingly improving the safety of city inhabitants. New services such as audio and video monitoring of public areas and automated municipality rule infraction detection allow a quicker response to threats and anomalies prevent reoccurrence. Based on this context UNIVBRIS has deploying a smart city safety use case, as a proof of concept, to identify suspicious activities in the city and demonstrate the capabilities of Bristol Smart City Testbed . The basic components of this use case are listed below and they are connected together to the Internet through a WiFi Interface.
 **See more at:** http://wiki.5ginfire.eu/5-ginfiretestbeds/bristol-smart-city
 
 
