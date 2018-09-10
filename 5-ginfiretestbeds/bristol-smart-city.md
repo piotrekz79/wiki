@@ -72,8 +72,7 @@ o InterDigital solution is shown for the optimisation of the content delivery
 This solution is only available for the 5G Smart Tourism project
 
 	
-			
-![Bristolisland](/uploads/bristolisland.png "Bristolisland")
+![Controldiagrama](/uploads/controldiagrama.png "Controldiagrama")
 **Figure 3: Software used for management and orchestration of the testbed resources**
 	
 	
