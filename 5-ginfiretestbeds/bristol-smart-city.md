@@ -143,7 +143,7 @@ In the context of NVF experimentation, an experimenter in the testbed follow the
 •	Data collection for analysis can also be programmed using the descriptor
 
 
-# Conclusions and recommendations for future work
+# Conclusions 
 
 The University of Bristol Smart Internet Lab has successfully procured, deployed and commissioned an extensive 5G test network within the heart of a growing Smart City, further boosting the already vibrant and innovative tech sector within Bristol and the surrounding the region. Although facilitating a wide range of 5G ready research capabilities from mmWave and Wi-Fi radio access networks to software defined networking and cloud computing architectures,this testbed is primarily focussed on delivering an access agnostic fixed-mobile convergence through network function virtualisation, network slicing and end-to-end service orchestration.
 
