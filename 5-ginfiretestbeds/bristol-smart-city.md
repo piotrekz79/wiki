@@ -151,27 +151,6 @@ The key to the success of 5G resides in the seamless interoperation of heterogen
 
 The rapid deployment of this testbed by the Smart Internet Lab across two cutting edge research groups has transformed our processes for both internal and external stakeholder management. From the intricacies of procurement and project management all the way to cyber security, artistic direction and fibre installation, this project has redefined and streamlined our methodologies, paving the way for future projects and collaboration. 
 
-The following points summarise this project from the University of Bristol’s perspective:
-
-•	Provisioning of cloud datacentre for edge computing and NFV hosting 
-•	Creation of MANO end-to-end orchestration platform for multi-island interoperation
-•	Installation of high capacity fibre connectivity for future testbed expansion
-•	Deployment of five wireless access technologies for public experimentation in an urban environment
-•	Platform management and support of 5G experimentation and research in service innovations
-
-Throughout this project several items of future work have been highlighted, these recommendations are detailed below:
-
-•	Further engineering and effort to expand 5GExchange functionalities
-•	Expand the current network to cover more locations within Bristol and surrounding locations
-•	Upgrade the virtual EPC core network software to 5G core once the 3GPP specifications are frozen
-•	Work with network experimenters in delivery of the network slices
-•	Work towards a large-scale city deployment
-•	Explore links with other test networks for experimentation via the 5GExchange in Slough
-•	Security and management of the network
-•	Integration of external networks and internet for experimentation
-•	Research in 5G NR handset prototype or commercial equipment acquisition
-•	Explore other virtualisation methods (e.g. different VIMs)
-
 
 # Contact
 
