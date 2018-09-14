@@ -1,7 +1,7 @@
-<!-- TITLE: 1st 5GinFIRE Open Call FAQs -->
+<!-- TITLE: 5GinFIRE Open Call FAQs -->
 <!-- SUBTITLE: FAQs -->
 
-# 1st 5GinFIRE Open Call FAQs
+# 5GinFIRE Open Call FAQs
 
 * **Is there any Available documentation?**
 
@@ -11,11 +11,8 @@ Please have a look at Deliverables at https://5ginfire.eu/deliverables/ and at t
 
 Please have a look at the following links:
 1. Experimenter Tools (https://5ginfire.eu/facilities-2/)
-2. The 5GinFIRE orchestration service and the NFV infrastructure at 5TONIC testbed (https://5ginfire.eu/5tonic/)
-3. IT-Av automotive testbed (https://5ginfire.eu/it-av-automotive-testbed/)
-4. Smart city safety testbed: https://5ginfire.eu/smart-city-safety/
+2. The testbeds (http://wiki.5ginfire.eu/5GinFIREtestbeds)
  
-
 * **Is the core network (i.e. Unified GW) provided as a functionality of the system and deployable through OSM?**
 
 Yes the UGW is the core LTE network. 
@@ -28,12 +25,12 @@ The PNF UGW is already deployed at Bristol site.
 
 YES
 
-* **Which OSM version should be considered, TWO or THREE?**
+* **Which OSM version should be considered, TWO or THREE or FOUR?**
 
-Current infrastructure is based on OSM Release TWO, and the team is working on migrating to OSM Release THREE. We foresee two possible scenarios:
-1. OSM Release TWO as production orchestrator and OSM Release THREE as an experimental one.
-1. Only OSM Release THREE as production and experimental orchestrator.
-In general, we think it is advisable to assume OSM Release TWO for experiments under category (1) in the open call, as they would be migrated to OSM Release THREE as required; and OSM Release THREE for categories (2-a) and (2-b) in the open call, as new features will be incorporated for further 5GINFIRE releases.
+Current infrastructure is based on OSM Release TWO, and the team is working on migrating to OSM Release FOUR. We foresee two possible scenarios:
+1. OSM Release TWO as production orchestrator and OSM Release FOUR as an experimental one.
+1. Only OSM Release FOUR as production and experimental orchestrator.
+In general, we think it is advisable to assume OSM Release TWO/FOUR for experiments under category (1) in the open call, as they would be migrated to OSM Release FOUR as required; and OSM Release FOUR for categories (2-a) and (2-b) in the open call, as new features will be incorporated for further 5GINFIRE releases.
 
 
 * **How is the experiment lifecycle working? Will the experimenter be allowed to access directly the OSM launchpad/APIs, or the only interaction allowed is via the 5GinFIRE portal?**
@@ -53,8 +50,6 @@ The technical solution adopted by 5GinFIRE for the MANO stack considers the util
 3) And an NFV infrastructure made available through a collaborative agreement by UNIVBRIS and BIO.
 
 Each site running an experimental infrastructure deploys a Virtualized Infrastructure Manager (VIM), compliant with the OSM software stack. The different sites providing the NFV infrastructures are interconnected, and the experimenter can request, when defining an experiment through the 5GinFIRE portal, which experimental infrastructure should support the execution of each VxF. 
-
-**[TBC by ITAv and UNIVBRIS to indicate details on the automotive and smart city testbeds, and how they are offered to experimenters through the platform] **
 
 
 * **Is inter-VNF communication based on classical virtual networking like in OpenStack?**
