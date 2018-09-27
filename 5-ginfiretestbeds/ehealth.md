@@ -12,20 +12,18 @@ The eHealth Vertical Industry infrastructure that PSNC makes accessible to exper
 1. The physiological parameter sensors laboratory contains hi-tech devices used by a medical professional or patient supervised by a medical professional to gather data about the patient’s physiological parameters.
 1. The patient wellbeing sensor lab & living-lab are low prices devices for the private usage as wearables and indoor elements.
 
-The eHealth laboratories will be connected via access networks with the PSNC R&D testbed emulating a modern Communication Service Provider (CSP) network attached to Edge and Core Clouds (see Figure 14). The network infrastructure backbone is based on ADVA FSP 3000R7 DWDM optical systems (with 10G/100G client-side interfaces) for both Metro and Core networks. On top of the optical layer, layer 2/3 services are provided by Juniper MX480 nodes controlled by a Juniper NorthStar SDN WAN controller. Edge and Core NFV/Cloud computing is provided by the PSNC SDN laboratory composed of HP Proliant DL380 and IBM
+The eHealth laboratories will be connected via access networks with the PSNC R&D testbed emulating a modern Communication Service Provider (CSP) network attached to Edge and Core Clouds (see Figure 14). The network infrastructure backbone is based on ADVA FSP 3000R7 DWDM optical systems (with 10G/100G client-side interfaces) for both Metro and Core networks. On top of the optical layer, layer 2/3 services are provided by Juniper MX480 nodes controlled by a Juniper NorthStar SDN WAN controller. Edge and Core NFV/Cloud computing is provided by the PSNC SDN laboratory composed of HP Proliant DL380 and IBM System x3550 M3 rack servers, interconnected using a set of Pica8 and NoviFlow switches, and controlled by two OpenStack instances enabled for the 5GinFIRE OSM.
 
-System x3550 M3 rack servers, interconnected using a set of Pica8 and NoviFlow OpenFlow switches, and controlled by two OpenStack instances enabled for the 5GinFIRE OSM.
-
-External access to the facility as well as communication with other 5GinFIRE facilities will be established using VPN gateway. Moreover, high-bandwidth data transmissions with other  5GinFIRE facilities will be available thanks to the GÉANT networking services.
+External access to the facility as well as communication with other 5GinFIRE facilities will be established using VPN gateway. Moreover, high-bandwidth data transmissions with other 5GinFIRE facilities can be available on demand by utilizing the GÉANT network connectivity services.
 
 ![Ehealth Overview](/uploads/ehealth/ehealth-overview.png "eHealth overview")
 **Figure 1: Overview of eHealth5G infrastructure**
 
 NFV infrastructure hardware details:
-* 2x HP ProLiant DL380 Gen 9 compatible with Intel DPDK
-* 4x IBM System x3550 M3
-* 4x Pica8 P-5101 with OpenFlow 1.3/1.4
-* 2x NoviSwitch 2128 ‑ Carrier-grade OpenFlow 1.3 switch based on EZchip NP-5 with experimental extensions (DPI, metadata injection, VXLAN, security
+* 1x HP ProLiant DL380 Gen 9 compatible with Intel DPDK
+* 2x IBM System x3550 M3
+* 2x Pica8 P-5101 with OpenFlow 1.3/1.4 (currently configured statically)
+* 1x NoviSwitch 2128 (currently configured statically) ‑ Carrier-grade OpenFlow 1.3 switch based on EZchip NP-5 with experimental extensions (DPI, metadata injection, VXLAN, security)
 * 2x Juniper MX480 (universal service provider edge router) offering IP routing/Ethernet switching, MPLS, L2/L3 VPNs (VPLS, EVPN, MPLSoGRE, VXLAN) equipped with MS-DPC cards for advanced network traffic processing and analyzing (e.g.: traffic sampling, packet inspection)
 * 2x Adva Optical FSP 3000R7 equipped with high-speed multimedia SDI cards (10TCC-PCN-3GSDI+10G) allowing for multiplexing and real-time transport of digital SD and HD video content in native optical OTN format (technology essential for support any high-resolution video streams like UHDTV 4k/8k, requiring up to 50Gbps bitrate or for any video 3D technology which is to be used in modern telemedicine solutions)
 
