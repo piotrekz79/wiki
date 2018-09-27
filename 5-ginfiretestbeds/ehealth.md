@@ -22,6 +22,7 @@ The eHealth laboratories will be connected via access networks with the PSNC R&D
 The eHealth5G facility provides two independend OpenStack-based Cloud sites:
 * Core Cloud with two Compute Nodes
 * Edge Cloud composed of one Compute Node 
+
 Both Clouds can be extended with more Compute Nodes if required by the particular experimenter.
 
 Compute Nodes are controlled by OpenStack in order to deploy VMs related to any EVI experimentation. Compute Nodes are connected to statically configured switches. Communication Service Provider network is also statically configured and provides L3 routing services for interconnecting EVI infrastructure, Edge Cloud and Core Cloud. The EVI infrastructure with eHealth equipment is available in two location in Poznan city (first in the main PSNC premise called CBPIO and located on Jana Pawla II street  and second in a building on Zwierzyniecka street). Access to both location is available with usage of Poznan metropolitan network called POZMAN.
