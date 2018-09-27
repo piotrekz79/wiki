@@ -54,9 +54,7 @@ IP addressing overview:
 ## eHealth equipment
 The goal of eHealth EVI is to enable the 5GinFIRE experimenters to execute a various eHealth experimental scenarios within the eHealth EVI, and for this reason, PSNC is providing a broad set of eHealth devices. Most of eHealth devices can be operated only by humans and are not network connected (doesn’t contain LTE or WiFi modules inside) thus medical/sensor data must be manually downloaded from the devices and enabled for 5GinFIRE using some mobile or stationary nodes being part of the labs.
 
-Most of the eHealth devices are part of PSNC’s dedicated living lab space, so the sensors can be used by actual end users if a given experiment demands that. PSNC collaborates with a number of organizations and institutions within the city of Poznań, including hospitals as well as NGOs and municipal offices, which may be able to intermediate in contacting end users appropriate for the needs of a specific experiment.
-
-The experimenter could bring its own medical devices to our living lab space and PSNC will help to interconnect with eHealth5G EVI infrastructure.
+Most of the eHealth devices are part of PSNC’s dedicated living lab space, so the sensors can be used by actual end users if a given experiment demands that. The experimenter could bring its own medical devices to our living lab space and PSNC will help to interconnect with eHealth5G EVI infrastructure.
 
 ![Ehealth5G Evi](/uploads/ehealth/ehealth-5-g-evi.png "eHealth EVI site")
 **Figure 3: eHealth EVI equipement provided for experimenters**
