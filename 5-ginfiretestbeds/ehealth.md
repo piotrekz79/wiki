@@ -58,7 +58,7 @@ Most of the eHealth devices are part of PSNC’s dedicated living lab space, so 
 The experimenter could bring its own medical devices to our living lab space and PSNC will help to interconnect with eHealth5G EVI infrastructure.
 
 ![Ehealth5G Evi](/uploads/ehealth/ehealth-5-g-evi.png "eHealth EVI site")
-**Figure 3: eHealth EVI equipement provided for experimenters **
+**Figure 3: eHealth EVI equipement provided for experimenters**
 
 **The operating room lab** contains cutting-edge endoscope and macroscopic camera, which are sources of medical video streams. This video can be delivered to processing nodes defined by the experimenter in both compressed or uncompressed form. Additionally, the operating room lab contains a H.323/SIP videoconferencing node, so the scenarios may include live audio-video interaction, e.g. for remote medical consultations:
 
