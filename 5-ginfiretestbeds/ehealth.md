@@ -14,12 +14,22 @@ The eHealth Vertical Industry infrastructure that PSNC makes accessible to exper
 
 The eHealth laboratories will be connected via access networks with the PSNC R&D testbed emulating a modern Communication Service Provider (CSP) network attached to Edge and Core Clouds (see Figure 14). The network infrastructure backbone is based on ADVA FSP 3000R7 DWDM optical systems (with 10G/100G client-side interfaces) for both Metro and Core networks. On top of the optical layer, layer 2/3 services are provided by Juniper MX480 nodes which will controlled by a Juniper NorthStar SDN WAN controller (not installed yet). Edge and Core NFV/Cloud computing is provided by the PSNC SDN laboratory composed of HP Proliant DL380 and IBM System x3550 M3 rack servers, interconnected using a set of Pica8 and NoviFlow switches, and controlled by two OpenStack instances enabled for the 5GinFIRE OSM.
 
-External access to the facility as well as communication with other 5GinFIRE facilities will be established using two VPN gateway. First OpenVPN gateway provides access to eHealth5G Core Cloud, whearas the second OpenVPN gateway provides access to eHealth5G Edge Core Cloud and eHealth EVI. Moreover, high-bandwidth data transmissions with other 5GinFIRE facilities can be available on demand by utilizing the GÉANT network connectivity services.
-
 ![Ehealth Overview](/uploads/ehealth/ehealth-overview.png "eHealth overview")
 **Figure 1: Overview of eHealth5G infrastructure**
 
 ## Infrastructure
+
+The eHealth5G facility provides two independend OpenStack-based Cloud sites:
+* Core Cloud with two Compute Nodes
+* Edge Cloud composed of one Compute Node 
+Both Clouds can be extended with more Compute Nodes if required by the particular experimenter.
+
+Compute Nodes are controlled by OpenStack in order to deploy VMs related to any EVI experimentation. Compute Nodes are connected to statically configured switches. Communication Service Provider network is also statically configured and provides L3 routing services for interconnecting EVI infrastructure, Edge Cloud and Core Cloud. The EVI infrastructure with eHealth equipment is available in two location in Poznan city (first in the main PSNC premise called CBPIO and located on Jana Pawla II street  and second in a building on Zwierzyniecka street). Access to both location is available with usage of Poznan metropolitan network called POZMAN.
+
+External access to the facility as well as communication with other 5GinFIRE facilities will be established using two VPN gateway. First OpenVPN gateway provides access to eHealth5G Core Cloud, whearas the second OpenVPN gateway provides access to eHealth5G Edge Core Cloud and eHealth EVI. Moreover, high-bandwidth data transmissions with other 5GinFIRE facilities can be available on demand by utilizing the GÉANT network connectivity services.
+
+![Ehealth5G Data Plane](/uploads/ehealth/ehealth-5-g-data-plane.png "eHealth5G infrastructure connectivity")
+**Figure 2: eHealth5G infrastructure connectivity**
 
 NFV infrastructure hardware details:
 * 1x HP ProLiant DL380 Gen 9 compatible with Intel DPDK
@@ -29,8 +39,16 @@ NFV infrastructure hardware details:
 * 2x Juniper MX480 (universal service provider edge router) offering IP routing/Ethernet switching, MPLS, L2/L3 VPNs (VPLS, EVPN, MPLSoGRE, VXLAN) equipped with MS-DPC cards for advanced network traffic processing and analyzing (e.g.: traffic sampling, packet inspection)
 * 2x Adva Optical FSP 3000R7 equipped with high-speed multimedia SDI cards (10TCC-PCN-3GSDI+10G) allowing for multiplexing and real-time transport of digital SD and HD video content in native optical OTN format (technology essential for support any high-resolution video streams like UHDTV 4k/8k, requiring up to 50Gbps bitrate or for any video 3D technology which is to be used in modern telemedicine solutions)
 
-![Ehealth5G Data Plane](/uploads/ehealth/ehealth-5-g-data-plane.png "eHealth5G infrastructure connectivity")
-**Figure 2: eHealth5G infrastructure connectivity**
+eHealth5G is utilizing various subnetworks. Some of them are assigned for our Core Cloud, other for Edge Cloud and there are also two subnetwork assigned for eHealth EVI equipment. There are control subnetwork allowing to login to VMs via VPN whereas others are used to send experment data traffic.
+
+IP addressing overview:
+* 10.154.82.0/23 - IP addresses used to access VMs deployed in eHealth5G Core Cloud via Core Cloud VPN
+* 10.154.84.0/23 - IP addresses used for data plane interfaces of VMs deployed in eHealth5G Core Cloud
+* 10.154.90.0/23 - IP addresses used to access VMs deployed in eHealth5G Edge Cloud via Edge Cloud VPN
+* 10.154.92.0/23 - IP addresses used for data plane interfaces of VMs deployed in eHealth5G Edge Cloud
+* 10.154.90.0/23 - IP addresses used for eHealth EVI equipment (also accessible via Edge Cloud VPN)
+* 10.154.92.0/23 - IP addresses used for  eHealth EVI equipment (currently not used)
+
 
 ## eHealth equipment
 The goal of eHealth EVI is to enable the 5GinFIRE experimenters to execute a various eHealth experimental scenarios within the eHealth EVI, and for this reason, PSNC is providing a broad set of eHealth devices. Most of eHealth devices can be operated only by humans and are not network connected (doesn’t contain LTE or WiFi modules inside) thus medical/sensor data must be manually downloaded from the devices and enabled for 5GinFIRE using some mobile or stationary nodes being part of the labs.
