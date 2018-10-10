@@ -20,6 +20,7 @@ qemu-img convert -O qcow2 -c <original_vm_image> <shrunk_vm_image>
 ~~~~
 
 **Note:** Shrinking the VM image may corrupt the image, so you should test using both images.
+**Note2:** Please, remember to include interfaces in the management plane of 5GinFIRE to those VMs you will want external access to.
 
 ## VNF Descriptor
 
