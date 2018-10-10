@@ -22,6 +22,8 @@ Your VNF is described in terms of a Virtual Network Function Descriptor. Please 
 Either you browse the public VNF catalog at https://portal.5ginfire.eu/#!/vxf_marketplace or you create your own VNFs.
 For creating VNFs compliant with OSM TWO see our tutorials in main page: http://wiki.5ginfire.eu/
 
+IMPORTANT TIP: in 5GinFIRE, management and data planes are decoupled. Therefore, if you wish to be able to remotely access your VNFs while executing experiments, you need to incorporate an interface in the managament plane to your VMs. The process described in http://wiki.5ginfire.eu/tutorials/guide-external-access-experimenters makes use of such interfaces.
+
 ### Pre validation 
 
 The VNF developer verifies that the VNF can be onboarded to [The 5GinFIRE "mirror platform"](guide/5ginfire-mirror-platform). If so, the developer can proceed with submitting the VNF. Otherwise, the developer should fix any error regarding the VNF packages or descriptors, until on-boarding is successful. VNF developers can request support from 5GinFIRE partners to address any issues regarding VNFs, e.g., through the mailing list, bugzilla, or the slack channel. The request will be visible to all partners working on infrastructures and services, such that anyone can provide support to the questions.
