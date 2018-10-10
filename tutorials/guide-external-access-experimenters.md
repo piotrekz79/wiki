@@ -4,6 +4,8 @@
 # Guide: External Access to VxFs for Experimenters
 Prior step to this guide is to request the VPN credentials via the ticketing tool, as stated in [5GinFIRE Experimentation Tutorial](http://wiki.5ginfire.eu/5-gin-fire-experimentation-tutorial)
 
+Also, you need to have created your VNFs with specific interfaces destined to connect to the 5GinFIRE management plane. In 5GinFIRE, this management plane is decoupled from the data plane, and therefore demands additional interfaces.
+
 ## Windows OS
 Download and install [OpenVPN client](https://openvpn.net/index.php/download/community-downloads.html) for Windows
 
