@@ -19,7 +19,7 @@ The eHealth laboratories will be connected via access networks with the PSNC R&D
 
 ## Infrastructure
 
-The eHealth5G facility provides two independend OpenStack-based Cloud sites:
+The eHealth5G facility provides two independent OpenStack-based Cloud sites:
 * Core Cloud with two Compute Nodes
 * Edge Cloud composed of one Compute Node 
 
