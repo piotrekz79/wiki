@@ -27,7 +27,7 @@ Both Clouds can be extended with more Compute Nodes if required by the particula
 
 Compute Nodes are controlled by OpenStack in order to deploy VMs related to any EVI experimentation. Compute Nodes are connected to statically configured switches. Communication Service Provider network is also statically configured and provides L3 routing services for interconnecting EVI infrastructure, Edge Cloud and Core Cloud. The EVI infrastructure with eHealth equipment is available in two location in Poznan city (first in the main PSNC premise called CBPIO and located on Jana Pawla II street  and second in a building on Zwierzyniecka street). Access to both location is available with usage of Poznan metropolitan network called POZMAN.
 
-External access to the facility as well as communication with other 5GinFIRE facilities will be established using two VPN gateway. First OpenVPN gateway provides access to eHealth5G Core Cloud, whearas the second OpenVPN gateway provides access to eHealth5G Edge Core Cloud and eHealth EVI. Moreover, high-bandwidth data transmissions with other 5GinFIRE facilities can be available on demand by utilizing the GÉANT network connectivity services.
+External access to the facility as well as communication with other 5GinFIRE facilities will be established using two VPN gateway. First OpenVPN gateway provides access to eHealth5G Core Cloud, wheareas the second OpenVPN gateway provides access to eHealth5G Edge Core Cloud and eHealth EVI. Moreover, high-bandwidth data transmissions with other 5GinFIRE facilities can be available on demand by utilizing the GÉANT network connectivity services.
 
 ![Ehealth5G Data Plane](/uploads/ehealth/ehealth-5-g-data-plane.png "eHealth5G infrastructure connectivity")
 **Figure 2: eHealth5G infrastructure connectivity**
@@ -40,7 +40,7 @@ NFV infrastructure hardware details:
 * 2x Juniper MX480 (universal service provider edge router) offering IP routing/Ethernet switching, MPLS, L2/L3 VPNs (VPLS, EVPN, MPLSoGRE, VXLAN) equipped with MS-DPC cards for advanced network traffic processing and analyzing (e.g.: traffic sampling, packet inspection)
 * 2x Adva Optical FSP 3000R7 equipped with high-speed multimedia SDI cards (10TCC-PCN-3GSDI+10G) allowing for multiplexing and real-time transport of digital SD and HD video content in native optical OTN format (technology essential for support any high-resolution video streams like UHDTV 4k/8k, requiring up to 50Gbps bitrate or for any video 3D technology which is to be used in modern telemedicine solutions)
 
-eHealth5G is utilizing various subnetworks. Some of them are assigned for our Core Cloud, other for Edge Cloud and there are also two subnetwork assigned for eHealth EVI equipment. There are control subnetwork allowing to login to VMs via VPN whereas others are used to send experment data traffic.
+eHealth5G is utilizing various subnetworks. Some of them are assigned for our Core Cloud, other for Edge Cloud and there are also two subnetwork assigned for eHealth EVI equipment. There are control subnetwork allowing to login to VMs via VPN whereas others are used to send experiment data traffic.
 
 IP addressing overview:
 * 10.154.82.0/23 - IP addresses used to access VMs deployed in eHealth5G Core Cloud via Core Cloud VPN
