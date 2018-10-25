@@ -80,7 +80,7 @@ Most of the eHealth devices are part of PSNC’s dedicated living lab space, so 
 * Mother Sen.se – a family of small smart sensors that can be affixed to almost anything in order to detect and analyze the specific movements of every activity,  as well as measure temperature and detect the presence of people or objects at a defined location.
 
 ## Experimentation
-Experimentation activities will be supported in the eHealth5G EVI through the 5GinFIRE portal. The experimenters will be able to:
+Experimentation activities is supported in the eHealth5G EVI through the 5GinFIRE portal. The experimenters is able to:
 * reserve eHealth device(s) for ensuring device availability and proper human staff support,
 * reserve laboratory to conduct on-site experimentation with own hardware devices,
 * create and deploy, from the 5GinFIRE portal, virtual functions at the eHealth5G Edge and Core Cloud, which will process data ingest from eHealth devices,
@@ -89,7 +89,7 @@ Experimentation activities will be supported in the eHealth5G EVI through the 5G
 * request high-speed network connection (up to 1Gbps) to other 5GinFIRE facility allowing for combining resources and functionalities of different 5GinFIRE facilities,
 * accessing experiment results stored in the Cloud.
 
-When the eHealth5G vertical resources will be successfully reserved, the experimenters will also be able to access them physically in PSNC premises in Poznan on specified dates, or PSNC could arrange one or more people who will use the sensors, follow experimenters’ instructions and whose health and wellbeing information will be sent for further processing in the Cloud.
+When the eHealth5G vertical resources are successfully reserved, the experimenters are able to access them physically in PSNC premises in Poznan on specified dates, or PSNC could arrange one or more people who will use the sensors, follow experimenters’ instructions and whose health and wellbeing information will be sent for further processing in the Cloud.
 
 ## Contact
 **Damian Parniewicz** (damianp@man.poznan.pl)
