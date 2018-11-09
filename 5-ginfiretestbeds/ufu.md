@@ -10,7 +10,6 @@ UFU Future Internet Testbed is a unique infrastructure in Brasil that was built 
 ​
 ​
 # Contact
-​
 Prof. Flávio de Oliveira Silva (flavio@ufu.br)
 Faculty of Computing (FACOM)
 Federal University of Uberlândia (UFU)
