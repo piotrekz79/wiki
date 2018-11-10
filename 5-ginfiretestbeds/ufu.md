@@ -10,7 +10,7 @@ Figure 1 presents the infrastrucuture deployed at UFU. The Network Function Virt
 * NICs: 4 * 1 GbE with SR-IOV capabilities, 8 * 1GbE with Passthrough capabilities
 * Interconnected by a switch with 48x 1GbE
 
-![Ufu Infra 5 Ginfire](/uploads/ufu/ufu-infra-5-ginfire.jpg "Ufu Infra 5 Ginfire"){.align-center}
+![Ufu Infra 5 Ginfire](/uploads/ufu/ufu-infra-5-ginfire.jpg "Ufu Infra 5 Ginfire"){.align-center}{
 Figure 1 - 5GINFIRE Infrastructure Deployed at UFU
 ​
 The Virtual Infrasctructure Manage (VIM) is OpenStack (Pike release). The Management and Orquestration (MANO) plataform is OSM, deployed at 5TONIC.
