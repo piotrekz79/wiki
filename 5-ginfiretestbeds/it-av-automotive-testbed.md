@@ -4,12 +4,12 @@
 # Testbed Description
 ## Introduction
 
-The vehicular network characterizing the automotive EVI environment available in IT-Aveiro, Portugal, consists on On-Board Units (OBUs) in the vehicles and roadside units (RSUs) connected to the Internet through an Ethernet interface. As shown in the Figure 1, the vehicles connect among each other via standard IEEE 802.11p/WAVE links, and are connected to the RSUs and the Internet through IEEE 802.11p/WAVE, IEEE 802.11g/WiFi or cellular links.
+The vehicular network characterizing the automotive EVI environment available in IT-Aveiro, Portugal, consists on On-Board Units (OBUs) in the vehicles and roadside units (RSUs) connected to the Internet through an Ethernet interface. As shown in Figure 1, the vehicles connect among each other via standard IEEE 802.11p/WAVE links, and are connected to the RSUs and the Internet through IEEE 802.11p/WAVE, IEEE 802.11g (WiFi) or cellular links.
 
 ![Vanet](/uploads/automotive/vanet.jpg "Vanet"){.align-center}
 Figure 1 - Vehicular network architecture.
 
-Each vehicle is equipped with an OBU with multiple wireless interfaces, which enable the vehicles to communicate both with other vehicles and with RSUs that are integrated in the infrastructure. OBUs and RSUs, illustrated in Figure 2, have a similar hardware, except for the antennas, which have higher gains in the RSUs.
+Each vehicle is equipped with an OBU with multiple wireless interfaces, enabling the communication with other vehicles and with RSUs that are integrated in the infrastructure. OBUs and RSUs, illustrated in Figure 2, have a similar hardware, except for the antennas, which have higher gains in the RSUs.
 
 ![Obu](/uploads/automotive/obu.png "Obu"){.align-center}
 Figure 2 - On-Board Unit (OBU).
@@ -20,20 +20,20 @@ The OBU includes the following elements:
 * WiFi interface (IEEE 802.11b/g/n);
 * 4G Interface;
 * GPS receiver;
-* Antennas for each technology (round antenna is for WiFi and rectangular antenna is for IEEE 802.11p).
+* Antennas for each technology.
 
 The OBUs are running a tailored Linux distribution based on Buildroot. The kernel was customized to include new features such as clock synchronization, as required by IEEE 802.11p. The driver was further extended to meet the requirements of IEEE 802.11p/WAVE. The RSUs have the same hardware as the OBUs, except for the cellular interface (which they do not require) and the Ethernet interface (required to connect to a switch from the fiber infrastructure).
 
 ## Architecture
 
-The automotive EVI environment available in IT-Av, Portugal, is represented in Figure 3. From the vehicular network perspective, it consists on several On-Board Units (OBUs), placed in vehicles, as well as Roadside Units (RSUs). An OBU can connect with other OBUs through IEEE 802.11p/WAVE links, and with RSUs via IEEE 802.11p/WAVE, IEEE 802.11g/WiFi or cellular links supported by the C-RAN concept working under the 4G/LTE specifications, frequency band 7.
+The automotive EVI environment available in IT-Av, Portugal, is represented in Figure 3. From the vehicular network perspective, it consists on several On-Board Units (OBUs), placed in vehicles, as well as Roadside Units (RSUs). An OBU can connect with other OBUs through IEEE 802.11p links, and with RSUs via IEEE 802.11p, IEEE 802.11g/WiFi or cellular links supported by the C-RAN concept working under the 4G/LTE specifications, frequency band 7.
 
 ![It Av Testbed V 2](/uploads/automotive/it-av-testbed-v-2.png "It Av Testbed V 2"){.align-center}
 Figure 3 - IT-Av 5G automotive testbed infrastrucutre.
 
 RSUs are connected to the IT-Av datacenter through Ethernet links. The C-RAN Remote Radio Head (RRH) is connected to the Base Band Unit (BBU) using optical fiber link, and from there to the Unifier Gateway (UGW) in charge to manage authentication, UEs sessions and end to end connectivity, which is available as a set of Virtual Network Functions (VNFs) deployed in the IT-Av infrastructure datacenter on an openstack instance. The IT-Av datacenter includes, among other components, the Virtualized Infrastructure Manager (VIM), directly connected to the multi-site orchestration managed by OSM MANO deployed in 5TONIC at UC3M, and the Network Function Virtualization Infrastructure (NFVI).
 
-OBUs have access to the vehicular information such as velocity, GPS, and heading. This information can be used by the embedded in-Car Node Processor (in our case, a RaspberryPi) to take local decisions, but also be advertised to the other vehicles. Each vehicle has also access to information from the street and surroundings through embedded car video cameras and sensors (crossing roads and traffic lights, cars in the street, adverse conditions in the way, etc.) that will be transmitted using IEEE 802.11g/WiFi to the OBUs. Vehicles may use this information to support a variety of use cases, e.g., assisted driving, autonomous driving, collision avoidance, accident detection, emergency messages dissemination, On-Board Diagnosis (OBD) for car self-repairing (when integrated with the OBU), etc.. Figure 4 illustrates the IT-Av 5G automotive EVI architecture.
+OBUs have access to the vehicular information such as velocity, GPS, and heading. This information can be used by the embedded in-Car Node Processor (e.g a Raspberry Pi) to take local decisions, but also be advertised to the other vehicles. Each vehicle can also have access to information from the street and surroundings through embedded car video cameras and sensors (crossing roads and traffic lightstra, etc.) that will be transmitted using IEEE 802.11g/WiFi to the OBUs. Vehicles may use this information to support a variety of use cases, e.g., assisted driving, autonomous driving, collision avoidance, accident detection, emergency messages dissemination, On-Board Diagnosis (OBD) for car self-repairing (when integrated with the OBU), etc.. Figure 4 illustrates the IT-Av 5G automotive EVI architecture.
 
 ![It Av Automotive Architecure](/uploads/automotive/it-av-automotive-architecure.png "It Av Automotive Architecure"){.align-center}
 Figure 4 - IT-Av 5G automotive EVI architecture.
