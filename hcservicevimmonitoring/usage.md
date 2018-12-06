@@ -50,8 +50,8 @@ Openstack provides some usage metrics for a tenant via the following example:
 
 
 ```text
-localadmin@controller:~$ source admin-rc
-localadmin@controller:~$ openstack limits show --absolute
+user@controller:~$ source admin-rc
+user@controller:~$ openstack limits show --absolute
 +--------------------------+--------+
 | Name                     |  Value |
 +--------------------------+--------+
