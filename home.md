@@ -33,7 +33,7 @@ The following pages present different topics regarding 5GinFIRE services
 
 [The 5GinFIRE Healthcheck service (HCS)](hcservice/usage)
 [The 5GinFIRE Central Logging service](hcservice_centrallog/usage)
-[The 5GinFIRE VIM resources monitoring ](hcservice_VIMmonitoring/usage)
+[The 5GinFIRE VIM resources monitoring](hcservice_VIMmonitoring/usage)
 
 
 ## User Guides
