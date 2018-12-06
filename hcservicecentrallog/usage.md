@@ -16,7 +16,7 @@ The service allows all registered Components to POST a logging message through t
 Components POST a logging message towards the [5GinFIRE Healthcheck service (HCS)](hcservice/usage)  to the url:
 
 ```text
-http://status.5ginfire.eu/hcs/services/api/admin/components/{apikey}/log"
+http://status.5ginfire.eu/hcs/services/api/admin/components/{apikey}/log
 ```
 
 *apikey* is a unique string for each component. (apikeys for a Component will be given by the HCS admins, see  [5GinFIRE Healthcheck service (HCS)](hcservice/usage))
