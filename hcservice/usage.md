@@ -125,7 +125,9 @@ We will provide you with an APIKEY
 
 
 # HCS Historical data
-All activity of components is stored in an elasticsearch cluster for up-time analysis, component reliability and historical data
+All activity of components is stored in an elasticsearch cluster for up-time analysis, component reliability and historical data, as the next figures display:
+
+![Hcs Elastic Architecture](/uploads/hcs/hcs-elastic-architecture.png "Hcs Elastic Architecture")
 
 ![Hcs Monitoring Reliability](/uploads/hcs/hcs-monitoring-reliability.png "Hcs Monitoring Reliability")
 ![Hcs Monitoring Uptime](/uploads/hcs/hcs-monitoring-uptime.png "Hcs Monitoring Uptime")
