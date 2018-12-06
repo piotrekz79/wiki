@@ -2,10 +2,13 @@
 <!-- SUBTITLE: The 5GinFIRE VIM resources monitoring -->
 
 # The 5GinFIRE VIM resources monitoring
+The 5GinFIRE VIM resources monitoring service is a simple service that collects various resource information from VIM components of the 5GinFIRE infrastructure. It enables to retrieve historical data and usage. 
+VIM components POST a monitoring message towards the [5GinFIRE Healthcheck service (HCS)](hcservice/usage)
 
 ![Hcs Elastic Architecture](/uploads/hcs/hcs-elastic-architecture.png "Hcs Elastic Architecture")
 
-The 5GinFIRE VIM resources monitoring service is a simple service that collects various resource information from VIM components of the 5GinFIRE infrastructure. It enables to retrieve historical data and usage. 
+Results can be visualized through Kibana:
+
 ![Hcs Vim Kibana](/uploads/hcs/hcs-vim-kibana.png "Hcs Vim Kibana")
 
 
@@ -42,7 +45,7 @@ with payload a JSON like the following:
 ## Example implementation for Openstack as VIM
 
 
-The following apply only to Openstack as VIM. However it can be adjusted for other VIMs.
+The following applies only to Openstack as VIM. However it can be adjusted for other VIMs.
 Openstack provides some usage metrics for a tenant via the following example:
 
 
