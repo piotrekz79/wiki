@@ -123,8 +123,14 @@ Admins of HCS will create the component and give a Unique Name and APIKEY. Will 
 If you would like to include your component in HCS please raise an issue in Bugzilla, 5GinFIRE Operations/Operations Support (https://portal.5ginfire.eu/bugzilla/enter_bug.cgi?product=5GinFIRE%20Operations),  
 We will provide you with an APIKEY
 
-# Source code
 
+# HCS Historical data
+All activity of components is stored in an elasticsearch cluster for up-time analysis, component reliability and historical data
+
+![Hcs Monitoring Reliability](/uploads/hcs/hcs-monitoring-reliability.png "Hcs Monitoring Reliability")
+![Hcs Monitoring Uptime](/uploads/hcs/hcs-monitoring-uptime.png "Hcs Monitoring Uptime")
+
+# Source code
 You can download or contribute to https://github.com/5GinFIRE/eu.5ginfire.healthcheck
 
 
