@@ -21,16 +21,29 @@ http://status.5ginfire.eu/hcs/services/api/admin/components/{apikey}/simplemon
 
 with payload a JSON like the following:
 ```text
-{"totalSnapshotsUsed": 1, "maxTotalCores": 120, "maxTotalBackups": 10, "totalServerGroupsUsed": 0, "maxPersonalitySize": 10240, "totalInstancesUsed": 14, "totalBackupsUsed": 0, "maxTotalVolumeGigabytes": 5000, "maxServerMeta": 128, "maxTotalBackupGigabytes": 1000, "totalRAMUsed": 83968, "maxTotalVolumes": 50, "totalSecurityGroupsUsed": 1, "totalFloatingIpsUsed": 0, "maxPersonality": 5, "maxImageMeta": 128, "totalCoresUsed": 38, "totalVolumesUsed": 12, "maxServerGroups": 10, "maxSecurityGroups": 10, "maxTotalFloatingIps": 10, "maxTotalInstances": 50, "totalBackupGigabytesUsed": 0, "maxTotalSnapshots": 50, "maxSecurityGroupRules": 20, "maxTotalKeypairs": 100, "maxServerGroupMembers": 10, "maxTotalRAMSize": 256200, "totalGigabytesUsed": 662}
+{
+  "maxTotalCores": 120,
+  "totalInstancesUsed": 14,
+  "maxTotalVolumeGigabytes": 5000,
+  "maxTotalBackupGigabytes": 1000,
+  "totalRAMUsed": 83968,
+  "maxTotalVolumes": 50,
+  "totalCoresUsed": 38,
+  "totalVolumesUsed": 12,
+  "maxServerGroupMembers": 10,
+  "maxTotalRAMSize": 256200,
+  "totalGigabytesUsed": 662,
+	...
+	...
+}
 ```
 
 
 ## Example implementation for Openstack as VIM
 
 
-
 The following apply only to Openstack as VIM. However it can be adjusted for other VIMs.
-Openstack provides some usage metrics for a tenant via the follwoing example:
+Openstack provides some usage metrics for a tenant via the following example:
 
 
 ```text
@@ -72,6 +85,50 @@ localadmin@controller:~$ openstack limits show --absolute
 ```
 
 Note: admin-rc file contains some tenant information for example:  OS_USER_DOMAIN_NAME, OS_PROJECT_NAME, OS_USERNAME, OS_PASSWORD, etc. as used for the openstack command
+
+
+Create a python file called for example **VIMStatusParser.py**:
+
+```python
+#!/usr/bin/python
+import json
+import sys
+
+lines= sys.stdin
+json_dict = dict()
+
+for line in sys.stdin:
+  items = line.split("|")
+  # Get the second and fourth element
+  if len(items)>3 and("Value" not in items[2]) :
+     val = items[2].strip()
+     json_dict[ items[1].strip() ] = int(val)
+
+print(json.dumps(json_dict))
+
+```
+
+
+Create a file called **sendVIMStats.sh** :
+
+
+```batchfile
+#!/bin/bash
+cd "$(dirname "$0")"
+
+source admin-rc
+openstack limits show --absolute | python VIMStatusParser.py | curl -XPOST 'http://status.5ginfire.eu/hcs/services/api/admin/components/53f7118f-xxxx-xxxx-xxxxx-xxxxxxxxxx/simplemon' -H 'Content-Type: application/json' -d @-
+```
+
+
+Finally schedule the script to post monitoring results every hour in crontab like the following example:
+
+```batchfile
+0 * * * * /home/user/sendVIMStats.sh
+```
+
+
+
 
 
 
