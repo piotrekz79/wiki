@@ -4,7 +4,7 @@
 ## Introduction
 UFU Future Internet Testbed is a unique infrastructure in Brasil that was built the by participation in the projects OFELIA (http://www.fp7-ofelia.eu/), FIWARE (www.fiware.org) and also the association with the FIBRE project (http://fibre-ict.eu). The infrastructure is located in the Federal University of Uberlândia (UFU) at the Campus Santa Mônica in Uberlândia, MG, Brasil. At UFU it is possible to run different 5G related applications on different verticals, but considering the particular resources available on edge, there are several possibilities for the Smart City vertical integrating applications and 5G oriented networks.
 ​
-# Infraestructure
+# Infrastructure
 Figure 1 presents the infrastrucuture deployed at UFU. The Network Function Virtualization Infrastructure (NFVI) is composed by:
 * 3x server computers (Total: 56 cores, 160 GB RAM, 4 TB Storage)
 * NICs: 4 * 1 GbE with SR-IOV capabilities, 8 * 1GbE with Passthrough capabilities
