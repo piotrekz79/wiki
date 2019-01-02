@@ -17,7 +17,6 @@ In nominal situation the NSD will get a status ONBOARDED. The Bugzilla ticket st
 **Exception:** if there is no way to onboard it due to errors, the ticket status is changed to VERIFIED the NSD should be marked as NOT-VALID and the 5TONIC team needs to manually identify why this is not possible
 
 ### OSM4
-
 #### VLD setup
 The experimenter should name the Management and Data VLDs in the yaml file appropriately for automatic network definition during automatic instantiation of the NS.
 	-The VLD which will be used for the **Management plane** should have a name ending in **"_mgmt"**.
