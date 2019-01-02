@@ -12,12 +12,19 @@ This first step triggers that at least the portal has correctly parsed the descr
 ## VNF Validation
 The VNF submition triggers a Validation mechanism and a related message appears to the Bugzilla ticket. If the submitted VNF passes successfully the Validation, the VNF is marked as Certified, the ticket status is changed to RESOLVED-FIXED automatically in the portal and the VNF resubmittion is not further allowed.
 
-## VNF Onboard by portal administrator
+## VNF Onboarding
+### OSM2
+Once the VNF is Certified the Onboarding is completed by portal administrator
 The VNF which is marked as Certified is onboarded by the portal administrator to the 5GinFIRE OSM component at 5TONIC. 
 The issue changes assignee to a person in 5TONIC/UC3M/OSM team (Ivan?)
 In nominal situation the VNF will get a status ONBOARDED.
 In case the VNF is ONBOARDED SUCCESSFULLY the VNFD is marked as Certified and the status of the Bugzilla ticket status should be RESOLVED-FIXED.
 **Exception:** if there is no way to onboard it due to errors, the Bugzilla ticket status is changed to CONFIRMED, the VNF is marked as NOT-CERTIFIED and the 5TONIC team needs to manually identify why this is not possible.
+
+### OSM4
+The VNF is automatically onboarded to the 5GinFIRE OSM component at 5TONIC. 
+In case the VNF is ONBOARDED SUCCESSFULLY the VNFD is marked as Certified and the status of the Bugzilla ticket status should be RESOLVED-FIXED.
+**Exception:** if there is no way to onboard it due to errors, the Bugzilla ticket status is changed to RESOLVED/INVALID, the VNF is marked as NOT-CERTIFIED 
 
 ## OSM verification
 The 5TONIC/UC3M/OSM team will try to check the VNF (* this could also involve the Mentor for the experiment*)
