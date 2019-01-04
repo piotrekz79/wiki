@@ -122,7 +122,7 @@ Each element in this list is composed by the following fields:
 ++ **vnfd-id-ref**: VNFD identifier defined in the constituent-vnfd
 ++ **vnfd-connection-point-ref**: Connection point defined in the VNFD
 
-VLD setup
+### VLD setup
 The experimenter should name the Management and Data VLDs in the yaml file appropriately for automatic network definition during automatic instantiation of the NS.
 -The VLD which will be used for the Management plane should have a name ending in "*_mgmt*",  additionally to the mgmt-network field.
 -The VLD which will be used for the Data plane should have a name ending in "*_data*", additionally to the mgmt-network field.
