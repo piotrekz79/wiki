@@ -124,8 +124,8 @@ Each element in this list is composed by the following fields:
 
 VLD setup
 The experimenter should name the Management and Data VLDs in the yaml file appropriately for automatic network definition during automatic instantiation of the NS.
--The VLD which will be used for the Management plane should have a name ending in "_mgmt".
--The VLD which will be used for the Data plane should have a name ending in "_data".
+-The VLD which will be used for the Management plane should have a name ending in "*_mgmt*",  additionally to the mgmt-network field.
+-The VLD which will be used for the Data plane should have a name ending in "*_data*", additionally to the mgmt-network field.
 
 ## Packaging the Network Service
 
