@@ -15,12 +15,12 @@ Results can be visualized through Kibana:
 ## How it works
 
 
-VIM components POST a monitoring message towards the [5GinFIRE Healthcheck service (HCS)](hcservice/usage)  to the url:
+VIM components POST a monitoring message towards the [5GinFIRE Healthcheck service (HCS)](http://wiki.5ginfire.eu/hcservice/usage)  to the url:
 
 ```text
 http://status.5ginfire.eu/hcs/services/api/admin/components/{apikey}/simplemon
 ```
-*apikey* is a unique string for each component. (apikeys for a Component will be given by the HCS admins, see  [5GinFIRE Healthcheck service (HCS)](hcservice/usage))
+*apikey* is a unique string for each component. (apikeys for a Component will be given by the HCS admins, see  [5GinFIRE Healthcheck service (HCS)](http://wiki.5ginfire.eu/hcservice/usage))
 
 with payload a JSON like the following:
 ```text
