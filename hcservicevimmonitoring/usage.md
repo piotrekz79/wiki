@@ -3,7 +3,7 @@
 
 # The 5GinFIRE VIM resources monitoring
 The 5GinFIRE VIM resources monitoring service is a simple service that collects various resource information from VIM components of the 5GinFIRE infrastructure. It enables to retrieve historical data and usage. 
-VIM components POST a monitoring message towards the [5GinFIRE Healthcheck service (HCS)](hcservice/usage)
+VIM components POST a monitoring message towards the [5GinFIRE Healthcheck service (HCS)](http://wiki.5ginfire.eu/hcservice/usage)
 
 ![Hcs Elastic Architecture](/uploads/hcs/hcs-elastic-architecture.png "Hcs Elastic Architecture")
 
