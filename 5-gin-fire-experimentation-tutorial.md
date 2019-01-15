@@ -87,7 +87,23 @@ If your NSD is valid, it will be onboarded to OSM.
 ## 4. Make a deployment request
 
 When everything is in place, through the portal make a Deployment request for your experiment. 
+**The experimenter MUST select the appropriate Mentor for the Deployment Request from the available list. Usually your Mentor is assigned by 5GinFIRE and is usually a testbed owner.**
 See Request New Deployment : http://wiki.5ginfire.eu/5-gin-fire-portal-user-guide#experimenter-user-interface-description
+
+When you make the request this triggers an automated New Issue in Bugzilla, Under 5GinFIRE Operations, Operations Support.
+* 5GinFIRE team is also get notified via the tickets@ mailing list.
+* The Experimenter is added also in the CC list of the issue.
+* The Mentor logs into the portal and inspects the Deployment Details
+
+###  Automated Deployment
+
+If your Mentor accepts your experiment then it is marked as **SCHEDULED** or can be **REJECTED**
+The experiment will be automatically deployed at the  date/time as defined by the Mentor and will be terminated at the end date.
+The portal administrators, the Mentor and the experimenter are notified for the Deployment Status change through the Bugzilla ticket update and the related email message.
+
+-If the instantiation FAILS the status of the Deployment changes to **REJECTED**. The related Bugzilla ticket is changed and the users are notified through email.
+-If the instantiation is SUCCESSFUL the status of the Deployment changes to **RUNNING**. The related Bugzilla ticket is changed and the users are notified through email.
+-The Deployment is automatically TERMINATED at the required Termination Date. The status of the Deployment changes to **COMPLETED**. The related Bugzilla ticket is changed and the users are notified through email.
 
 ###  Accessing deployed experiment: Request VPN Credentials
 
