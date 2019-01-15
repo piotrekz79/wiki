@@ -23,9 +23,9 @@ Currently the **Mentors** of the **2nd call of experiment**s are the following:
 * Sec5G – Mentor: **XXX **
 
 Currently the **Mentors** of the **1st call of experiments** are the following:
-• SURROGATES (using Aveiro testbed) – Mentor: **Miguel Luis **
-• CAVICO (using Aveiro testbed) – Mentor: **Miguel Luis **
-• SFCLola (multisite experiment) – Mentor: **Diogo Gomes **
-• RobotView5G (using Bristol testbed) – Mentor: **Aloizio Pereira da Silva**
-• VRU-Safe (using Aveiro testbed) – Mentor: **Miguel Luis **
+* SURROGATES (using Aveiro testbed) – Mentor: **Miguel Luis **
+* CAVICO (using Aveiro testbed) – Mentor: **Miguel Luis **
+* SFCLola (multisite experiment) – Mentor: **Diogo Gomes **
+* RobotView5G (using Bristol testbed) – Mentor: **Aloizio Pereira da Silva**
+* VRU-Safe (using Aveiro testbed) – Mentor: **Miguel Luis **
 
