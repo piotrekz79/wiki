@@ -4,8 +4,8 @@
 # 5GinFIRE Mentors
 Here is a list of 5GinFIRE Mentors. 
 
-** Bristol Smart City Testbed - University of Bristol**: Aloizio Eisenmann 
-** IT-Aveiro Automotive testbed**: Miguel Luís
+**Bristol Smart City Testbed - University of Bristol**: Aloizio Eisenmann 
+**IT-Aveiro Automotive testbed**: Miguel Luís
 **IT Aveiro**: Diogo Gomes 
 **5TONIC**: 
 **eHealth Testbed**:
