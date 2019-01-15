@@ -8,7 +8,7 @@ Here is a list of 5GinFIRE Mentors.
 **IT-Aveiro Automotive testbed**: Miguel Luís
 **IT Aveiro**: Diogo Gomes 
 **5TONIC**: 
-**eHealth Testbed**:
+**eHealth Testbed - PSNC**: Damian Parniewicz
 **NITOS testbed - University of Thessaly**: Nikos Makris
  **Iris Testbed** :
 **UFU Future Internet Testbed - Federal University of Uberlandia**: FlavioSilva
