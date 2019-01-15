@@ -142,18 +142,22 @@ next figure is shown up:
 
 ![Fig 23](/uploads/portal/fig-23.png "Fig 23")
 
-In this figure we can see all the necessary fields to define a new deployment. At the experiment drop 
-down menu we can select the desirable experiment from those provided to be deployed by a service 
-administrator. The experimenter can select also the target infrastructure for all or for each individual 
-constituent VxF. At the next fields we also provide the necessary information be indicated by them 
-and  when  all  those  fields  are  filled  up  the  experimenter  can  submit  this  specific  deployment  by 
-clicking  the  request  deployment  button  on  the  bottom  of  the  interface.  Then  this  deployment 
-request is sent to the service administrator in order to be proceeded or to be rejected.
-In the following figure we can see the content of the interface when an experimenter selects the Admin tab of 
-the  menu  and  specifically  the  registered experiment  descriptors.  This  page  again  is  similar  to  the
-registered VxF page  but the difference is that some metadata fields are 
-missing and also this interface lists the available experiments instead of the available VxFs.
+In this figure we can see all the necessary fields to define a new deployment. At the experiment drop down menu we can select the desirable experiment from those provided to be deployed by a service administrator. The experimenter can select also the target infrastructure for all or for each individual constituent VxF. At the next fields we also provide the necessary information be indicated by them and  when  all  those  fields  are  filled  up  the  experimenter  can  submit  this  specific  deployment  by  clicking  the  request  deployment  button  on  the  bottom  of  the  interface.  Then  this  deployment request is sent to the service administrator in order to be proceeded or to be rejected.In the following figure we can see the content of the interface when an experimenter selects the Admin tab of  the  menu  and  specifically  the  registered experiment  descriptors.  This  page  again  is  similar  to  the registered VxF page  but the difference is that some metadata fields are missing and also this interface lists the available experiments instead of the available VxFs.
+**The experimenter MUST select the appropriate Mentor for the Deployment Request from the available list. Usually your Mentor is assigned by 5GinFIRE and is usually a testbed owner.**
+When you make the request this triggers an automated New Issue in Bugzilla, Under 5GinFIRE Operations, Operations Support.
 
+   5GinFIRE team is also get notified via the tickets@ mailing list.
+   The Experimenter is added also in the CC list of the issue.
+   The Mentor logs into the portal and inspects the Deployment Details
+		
+If your Mentor accepts your experiment then it is marked as SCHEDULED or can be REJECTED
+The experiment will be automatically deployed at the date/time as defined by the Mentor and will be terminated at the end date.
+The portal administrators, the Mentor and the experimenter are notified for the Deployment Status change through the Bugzilla ticket update and the related email message.
+
+-If the instantiation FAILS the status of the Deployment changes to REJECTED. The related Bugzilla ticket is changed and the users are notified through email.
+-If the instantiation is SUCCESSFUL the status of the Deployment changes to RUNNING. The related Bugzilla ticket is changed and the users are notified through email.
+-The Deployment is automatically TERMINATED at the required Termination Date. The status of the Deployment changes to COMPLETED. The related Bugzilla ticket is changed and the users are notified through email.
+		
 ![Fig 24](/uploads/fig-24.png "Fig 24")
 
 By  clicking  the  first  green  button  that  is  Upload  new  Experiment  Descriptor  the  experimenter  is 
