@@ -140,7 +140,7 @@ each  deployment  and  is  managed  by  the  services  administrator  role.  The
 described later on in services administrator role section. By pressing the green button the layout in 
 next figure is shown up:
 
-![Fig 23](/uploads/fig-23.png "Fig 23")
+![Fig 23](/uploads/portal/fig-23.png "Fig 23")
 
 In this figure we can see all the necessary fields to define a new deployment. At the experiment drop 
 down menu we can select the desirable experiment from those provided to be deployed by a service 
