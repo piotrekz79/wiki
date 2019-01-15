@@ -87,7 +87,7 @@ If your NSD is valid, it will be onboarded to OSM.
 ## 4. Make a deployment request
 
 When everything is in place, through the portal make a Deployment request for your experiment. 
-**The experimenter MUST select the appropriate Mentor for the Deployment Request from the available list. Usually your Mentor is assigned by 5GinFIRE and is usually a testbed owner.**
+**The experimenter MUST select the appropriate Mentor (http://wiki.5ginfire.eu/internal-process/mentors) for the Deployment Request from the available list. Usually your Mentor is assigned by 5GinFIRE and is usually a testbed owner.**
 See Request New Deployment : http://wiki.5ginfire.eu/5-gin-fire-portal-user-guide#experimenter-user-interface-description
 
 When you make the request this triggers an automated New Issue in Bugzilla, Under 5GinFIRE Operations, Operations Support.
