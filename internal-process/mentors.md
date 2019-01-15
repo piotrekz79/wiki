@@ -16,7 +16,11 @@ Here is a list of 5GinFIRE Mentors.
 
 # 5GinFIRE Mentors per Experiment
 Currently the **Mentors** of the **2nd call of experiment**s are the following:
-
+* 5G-CAGE – Mentor: **XXX **
+* TelMed5G – Mentor: **XXX **
+* DIRECTOR 5G – Mentor: **XXX **
+* FB5G – Mentor: **XXX **
+* Sec5G – Mentor: **XXX **
 
 Currently the **Mentors** of the **1st call of experiments** are the following:
 • SURROGATES (using Aveiro testbed) – Mentor: **Miguel Luis **
