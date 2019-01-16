@@ -7,10 +7,10 @@ Here is a list of 5GinFIRE Mentors.
 **Bristol Smart City Testbed - University of Bristol**: Aloizio Eisenmann 
 **IT-Aveiro Automotive testbed**: Miguel Luís
 **IT Aveiro**: Diogo Gomes 
-**5TONIC**: 
+**5TONIC**: Ivan Vidal
 **eHealth Testbed - PSNC**: Damian Parniewicz
 **NITOS testbed - University of Thessaly**: Nikos Makris
- **Iris Testbed** :
+ **Iris Testbed** : Diarmuid Collins
 **UFU Future Internet Testbed - Federal University of Uberlandia**: FlavioSilva
 **University of Patras**: Ioannis Chatzis
 
