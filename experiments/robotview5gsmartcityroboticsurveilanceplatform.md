@@ -13,8 +13,7 @@ NETICTECH is developing the Wireless Robotic Surveillance Platform â€œRobotViewâ
 
 ![Robotview Pic 2](/uploads/robot-view-5-g/robotview-pic-2.jpg "Robotview Pic 2")
 
-**General architecture of the RobotView platform
-**
+**General architecture of the RobotView platform**
 The heart of the RobotView platform is the Adaptive Video Processor (AVP). The AVP is capable of changing the encoding and transmission parameters of the video. The Controller of the AVP receives QoE-related information, the status of the network link, availability of local resources for video encoding and user input from the Security Application. Based on this data it decides which encoding and transmission profiles the AVP should use to enhance the QoE, and thus the usability of the surveillance video, in the changing conditions of wireless networks. In our current implementation, the central Security Application is providing QoE video analysis capacities, however taking advantage of the 5G technology we want to distribute the QoE video analysis to the edge nodes. We have tested this within our experiment.
 
 The system is in the testing stage now and in the experiment we have focused on testing our encoding and transmission parameters in order to tune them for usage in various video-monitoring scenarios. For our experiment we have used the Smart City Safety testbed and took advantage of the Raspberry Pi computers. In the experiment our goals was to deploy our no-reference QoE analysis tool as a VNF, so we could utilize the capacities of edge computing and perform QoE analysis close to the video source. 
