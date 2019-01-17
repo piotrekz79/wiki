@@ -39,6 +39,8 @@ The following pages present different topics regarding 5GinFIRE services
 
 ## Representative Experiments by Experimenters
 [5GINFIRE RobotView5G Using the QoE VNF](experiments/RobotView5G)
+[5G Smart City Robotic Surveillance Platform - RobotView5G](experiments/RobotView5G_Smart_City_Robotic_Surveilance_Platform)
+
 
 ## Representative Experiments by TestBed Providers
 
