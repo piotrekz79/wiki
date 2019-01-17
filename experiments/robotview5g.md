@@ -31,6 +31,7 @@ Slicing effect relates to distinct horizontal stripes of within the video. It ca
 	password: 5ginfire
 
 # Running an experiment
+The VNF machine already contains the compiled software. If there is a need to recompile the code, there are scripts provided for that as well:
 1.	On the VNF machine’s shell, move to the running scripts’ directory:
 cd /home/ubuntu/qoe-tool/application/scripts
 2.	In order to run a measurement of 30s period of a single video file, call
