@@ -5,7 +5,7 @@
 
 ![Robotview Robot Pic](/uploads/robot-view-5-g/robotview-robot-pic.jpg "Robotview Robot Pic")
 
-Organization
+### Organization
 Cybernetic Technologies NETICTECH S.A. - http://netictech.com/ 
 Experiment description
 NETICTECH is developing the Wireless Robotic Surveillance Platform “RobotView”, enabling real-time video surveillance using WiFi and mobile networks from remote controlled robots, drones and other video-monitoring devices. The platform is designed for police, security and rescue forces to enable surveillance and operation in places hazardous to humans. In times of heightened security risks, RobotView can save the lives of officers by allowing them to send a robot or drone and remotely watch the video from the installed cameras in real-time. RobotView is not bound to a specific solution, it is a vendor-agnostic system, allowing to transmit video coming from cameras installed on robots, drones or vehicles using wireless networks. The system has adaptation mechanism to react to changing network parameters and maintain the needed video quality. This is done using automatic video quality analysis tools that, based on no-reference QoE measurement algorithms, provide a set of QoE parameters in real-time. The system is in the testing stage now and in the experiment we wanted to test our encoding and transmission parameters in  order to tune them for usage in various video-monitoring scenarios. Figure 1 shows the general architecture of the RobotView platform. 
