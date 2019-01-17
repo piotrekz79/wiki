@@ -10,16 +10,16 @@ Two instances of the QoE tool graphical user interface, showing difference of qu
 
 ### QoE parameters
 Measurements of the quality of experience has been done using a no reference software module. The module calculated values of some low level video metrics. These were presented individually, but also an aggregated value of objective QoE has been measured, based on these individual metrics.
-Spatial activity
+**Spatial activity**
 This metric resembles the amount of spatial details in the image. Too strong compression would result in diminished value of this parameter.
-Temporal activity
+**Temporal activity**
 This metric corresponds with an amount of temporal activity in the video. The higher the values, the bigger the change from frame to frame.
-Blockiness
+**Blockiness**
 This value detects distortions characteristic to video compression algorithms operating on (macro)blocks. When such an algorithm is allocated too little bandwidth, the produced video characterizes with blocking artefacts this metric is intended to detect. The lower the value, the stronger the effect.
-Blockloss
+**Blockloss**
 This parameter indicates the amount of outdated content present in the picture in the form of distinct blocks. These can appear when data loss is present.
-Noise
+**Noise**
 This metric detects noise, randomly modifying single pixels. Such noise is characteristic to digital video cameras working in dark conditions.
-Slicing
+**Slicing**
 Slicing effect relates to distinct horizontal stripes of within the video. It can appear when parts of the video are encoded by separate threads, especially in low bit rate or packet loss situations. This metric detects such impairments.
 
