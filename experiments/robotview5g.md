@@ -1,4 +1,8 @@
-<!-- TITLE: Robotview 5 G -->
-<!-- SUBTITLE: A quick summary of Robotview 5 G -->
+<!-- TITLE: Robotview 5G -->
+<!-- SUBTITLE: Using the RobotView5G QoE VNF -->
 ![5 Ginfire Logo 3](/uploads/5-ginfire-logo-3.png "5 Ginfire Logo 3")
-# Header
+# Description of the QoE VNF
+In the experiment for the QoE assessment, we have used a special tool with No-Reference QoE algorithms. No-Reference (NR) metrics evaluate the quality of digital images without access to non-distorted reference images or any features representing the reference images. Instead of making comparisons, No-Reference techniques try to identify or predict impairments such as blockiness or jerkiness by analysing the characteristics of the underlying network transport and/or by analysing the video itself. The advantage of NR models is their applicability on the client side. Moreover, this technique can be used in real-time. Most of the existing NR models are of the distortion-specific kind and assume that the assessed image is afflicted by a particular kind of distortion. Other approaches use natural scene statistics or employ learning-based classification methods.
+The QoE tool can be used as a separate processing module that can provide QoE metrics to video streams provided over the network. We have created a separate QoE tool VNF and added it to the 5GinFIRE catalogue, enabling other experimenters to gather QoE data of videos in real-time. The QoE tool VNF can be run on MEC nodes and can receive video using various streaming protocols (RTP, RTSP, …). The QoE tool VNF performs real-time video analysis and writes the results to a log file. The QoE tool has the possibility to be run with a user interface however for the VNF version we have prepared it in the headless mode.
+![Robotview Pic 1](/uploads/robot-view-5-g/robotview-pic-1.jpg "Robotview Pic 1")
+Two instances of the QoE tool graphical user interface, showing difference of quality, as indicated by the measured parameters' values.
