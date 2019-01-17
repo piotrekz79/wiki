@@ -54,3 +54,18 @@ An exemplary call to run a single experiment is as follows:
 The application has been tested with RTSP H.264 video streams. An exemplary call to serve such a stream, from an H.264 video file, with command-line vlc application, is as follows:
 cvlc "video-file-name.mkv" :sout=#rtp{sdp=rtsp://:8554/} :sout-all :sout-keep
 
+# Compiling the code
+The VNF machine already contains the compiled software. If there is a need to recompile the code, there are scripts provided for that as well:
+1.	On the VNF machine’s shell, move to the compiling scripts’ directory:
+cd /home/ubuntu/qoe-tool
+2.	Install the required packages:
+./0-as-sudoer-install-required-packages.sh
+3.	Download nlohman json to nlohmann-json/ as described in the README.txt file.
+4.	Extract ffmpeg sources:
+cd ffmpeg-src && tar xf ffmpeg-snapshot.tar.bz2 && cd ..
+5.	Compile nlohman json and ffmpeg:
+./1-compile-required-packages.sh
+6.	Install nlohman json and ffmpeg:
+./2-as-sudoer-install-required-packages.sh
+Compile the main application:
+./3-compile-qoe-application.sh
