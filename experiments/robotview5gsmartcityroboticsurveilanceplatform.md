@@ -5,14 +5,16 @@
 
 ![Robotview Robot Pic](/uploads/robot-view-5-g/robotview-robot-pic.jpg "Robotview Robot Pic")
 
-### Organization
+**Organization**
 Cybernetic Technologies NETICTECH S.A. - http://netictech.com/ 
-Experiment description
+
+**Experiment description**
 NETICTECH is developing the Wireless Robotic Surveillance Platform “RobotView”, enabling real-time video surveillance using WiFi and mobile networks from remote controlled robots, drones and other video-monitoring devices. The platform is designed for police, security and rescue forces to enable surveillance and operation in places hazardous to humans. In times of heightened security risks, RobotView can save the lives of officers by allowing them to send a robot or drone and remotely watch the video from the installed cameras in real-time. RobotView is not bound to a specific solution, it is a vendor-agnostic system, allowing to transmit video coming from cameras installed on robots, drones or vehicles using wireless networks. The system has adaptation mechanism to react to changing network parameters and maintain the needed video quality. This is done using automatic video quality analysis tools that, based on no-reference QoE measurement algorithms, provide a set of QoE parameters in real-time. The system is in the testing stage now and in the experiment we wanted to test our encoding and transmission parameters in  order to tune them for usage in various video-monitoring scenarios. Figure 1 shows the general architecture of the RobotView platform. 
 
 ![Robotview Pic 2](/uploads/robot-view-5-g/robotview-pic-2.jpg "Robotview Pic 2")
-General architecture of the RobotView platform
 
+**General architecture of the RobotView platform
+**
 The heart of the RobotView platform is the Adaptive Video Processor (AVP). The AVP is capable of changing the encoding and transmission parameters of the video. The Controller of the AVP receives QoE-related information, the status of the network link, availability of local resources for video encoding and user input from the Security Application. Based on this data it decides which encoding and transmission profiles the AVP should use to enhance the QoE, and thus the usability of the surveillance video, in the changing conditions of wireless networks. In our current implementation, the central Security Application is providing QoE video analysis capacities, however taking advantage of the 5G technology we want to distribute the QoE video analysis to the edge nodes. We have tested this within our experiment.
 
 The system is in the testing stage now and in the experiment we have focused on testing our encoding and transmission parameters in order to tune them for usage in various video-monitoring scenarios. For our experiment we have used the Smart City Safety testbed and took advantage of the Raspberry Pi computers. In the experiment our goals was to deploy our no-reference QoE analysis tool as a VNF, so we could utilize the capacities of edge computing and perform QoE analysis close to the video source. 
