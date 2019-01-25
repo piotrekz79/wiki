@@ -4,53 +4,26 @@
 # The 5GinFIRE MANO platform
 The 5GinFIRE MANO platform is the system that enables the management and orchestration of network services (NS), potentially composed of multiple VxFs, across the NFV experimental infrastructures provided by 5GinFIRE partners. To fulfill this objective, the platform offers a northbound interface to the 5GinFIRE portal, enabling the operations that are needed to support the execution of experiments (e.g., onboarding a NS and a VxF). A simplified overview of the 5GinFIRE MANO platform is depicted in the figure below.
 
-![Mano Platformv 2](/uploads/mano-platformv-2.png "Mano Platformv 2")
+![Mano Platformv 2](/uploads/5-tonic/mano-platformv-2.png "Mano Platformv 2")
 
-The platform is based on the ETSI-hosted [Open Source MANO (OSM) project](https://osm.etsi.org/), which has been adopted by 5GinFIRE to provide the functionalities of a NFV orchestrator, supporting the management and coordination of computing, storage and network resources at the diverse experimental infrastructures, as well as the lifecycle management of network services. With this purpose, the OSM stack interacts with the Virtualized Infrastructure Managers (VIM) deployed by 5GinFIRE partners. There are currently three sites deploying the components and functionalities required to operate the 5GinFIRE MANO platform, each providing an NFV experimental infrastructure: (a) an infrastructure at the global 5G Telefonica Open Innovation Laboratory (5TONIC) [2], made available by TID (founding member of 5TONIC) and UC3M (member of 5TONIC); (b) an infrastructure located at ITAv; and (c) an infrastructure made available through a collaborative agreement by UNIVBRIS and BIO. Additionally, there is an experimental infrastructure under development at UFU.
+The platform is based on the ETSI-hosted [Open Source MANO (OSM) project](https://osm.etsi.org/), which has been adopted by 5GinFIRE to provide the functionalities of a NFV orchestrator, supporting the management and coordination of computing, storage and network resources at the diverse experimental infrastructures, as well as the lifecycle management of network services. With this purpose, the OSM stack interacts with the Virtualized Infrastructure Managers (VIMs) deployed by 5GinFIRE partners. 
 
-The first stable version of the 5GinFIRE MANO platform is based on OSM Release TWO, being the OSM stack hosted at 5TONIC (the team is currently working on the migration to OSM Release THREE). Inter-site communications among 5GinFIRE sites are enabled by an overlay network architecture based on VPNs (to simplify operations, the primary VPN server is hosted at the same site as the MANO stack, i.e. 5TONIC). This overlay network provides authorized partners a secure access with certificate-based authentication to 5TONIC, enabling the establishment of the following types of data exchanges: (a) communications between the OSM stack and the VIMs; (b) communications between the OSM stack and the VxFs, to support their configuration; (c) inter-site data communications among VxFs. 
+The MANO platform supports multi-site experimentation activities across different vertical domains:
+
+1)	An infrastructure at the global 5G Telefonica Open Innovation Laboratory (5TONIC), made available by TID and UC3M, to support experimentation with NFV functions and services.
+2)	An experimentation facility located at ITAv, providing access to an automotive testbed in the city of Aveiro (Portugal).
+3)	An infrastructure made available by UNIVBRIS, supporting experimentation activities over a smart city environment in the city of Bristol (UK).
+4)	An experimentation facility at UFU, located at Uberlândia (Brazil), enabling trialling with 5G applications with a particular consideration on the edge network resources.
+5)	An infrastructure provided by the NITOS testbed, i.e., 5GVINO, hosted by the University of Thessaly (Greece), which provides access to programmable resources for wireless networking, SDN and cloud computing facilities.
+6)	An eHealth experimental vertical facility, eHealth5G, hosted by the Poznan Supercomputing and Networking Center (Poland); this facility supports experimentation in the area of telemedicine and eHealth, offering access to: realistic eHealth equipment; a small Edge Cloud, close to eHealth devices; and a core cloud accessible via MPLS/Optical service provider network.
+7)	A reconfigurable radio testbed at Trinity College Dublin (Ireland), Iris, supporting radio hardware, cloud-RAN, NFV, and SDN technologies. This testbed has been extended and made available for experimentation activities in 5GinFIRE. We refer to this testbed extension as WINS_5G.
+
+The current version of the 5GinFIRE MANO platform is based on OSM Release FOUR, being the OSM stack hosted at 5TONIC. Inter-site communications among 5GinFIRE sites are enabled by an overlay network architecture based on VPNs (to simplify operations, the primary VPN server is hosted at the same site as the MANO stack, i.e. 5TONIC). This overlay network provides authorized partners a secure access with certificate-based authentication to 5TONIC, enabling the establishment of the following types of data exchanges: (a) communications between the OSM stack and the VIMs; (b) communications between the OSM stack and the VxFs, to support their configuration; (c) inter-site data communications among VxFs. 
 
 The technical solution adopted by 5GinIFIRE also supports the flexible incorporation of other sites (e.g., coming from the Open Call process of 5GinFIRE), as long as they support a compliant VIM[^1] and they set up the appropriate VPN based inter-site connection mechanisms (see the information below).
 
-[^1]: OSM Release TWO supports multiple VIMs through a plugin model, including OpenVIM, OpenStack, VMWare vCloud Director and Amazon Web Services Elastic Compute Cloud.
+[^1]: OSM Release FOUR supports multiple types of VIMs through a plugin model, including OpenVIM, OpenStack, VMWare vCloud Director, and Amazon Web Services Elastic Compute Cloud.
 
-## Summary of NFV components and infrastructure
-In the following, we summarize the main NFV components and infrastructures that have been made available for the 1st Open Call for experimentation by 5GinFIRE testbed providers. 
-
-### 5TONIC
-
-**NFVO**: based on OSM Release TWO (running in a virtual machine using a server computer with 16 cores, 128 GB RAM, 2 TB NLSAS hard drive and a network card with 4 GbE ports and DPDK support).
-
-**VIM**: two instances of OpenStack Ocata, each controlling a separate NFVI (hereafter referred to as 5GinFIRE NFVI and IMDEA NFVI). 
-- The first one runs in virtual machine over a server computer (6 cores, 32GB of memory, 2TB NLSAS and a network card with four GbE ports and DPDK support).
-- The second one runs as a virtual machine in the same server computer as the OSM stack. 
-
-**5GinFIRE NFVI**: 
-- 3x server computers (each with 6 cores, 32GB of memory, 2TB NLSAS and a network card with four GbE ports and DPDK support)
-- Interconnected by a GbE data-plane switch.
-
-**IMDEA NFVI**:
-- 2x high-profile servers (each equipped with 8 cores in a NUMA architecture, 128GB RDIMM RAM, 4TB SAS and 8 10Gbps Ethernet optical transceivers with SR-IOV capabilities).
-- Interconnected by a 24-port 10Gbps Ethernet switch.
-
-Both NFVIs are available for experimentation under the terms and conditions specified [here](https://5ginfire.eu/5tonic/).
-
-### ITAv
-**VIM**: based on OpenStack Ocata.
-
-**NFVI**:
-- 1x server computer: 24 cores, 192GB memory, 4 x 1Gbps interfaces (passthrough, DPDK and SR-IOV), 2 x 1TB SAS3 hard drives. 
-- 1x server computer: 16 cores, 256 GB memory, 4 x 1Gbps interfaces (passthrough), 2 x 1TB SAS2 hard drives. 
-- 1x 24-port 1Gbps switch, interconnecting the infrastructure.
-
-### UNIVBRIS & BIO
-
-**VIM**: based on OpenStack Ocata.
-
-**NFVI**:
--	1x server computer: 2x8 core 16 threads CPU 2.4 GHz, 32GB RAM, Dual RAID 1 900 GB HDs.
--	1x server computer: 2x8 core 16 threads CPU 2.4 GHz, 16GB RAM, 900 GB storage.
--	1x MVB NEC optical switch, 1x ENS NEC optical switch.
 
 ## Addressing plan
 Enabling effective network communications among multiple sites has required a careful definition of the IP address space to be used by interconnecting entities. In this respect, the following agreements have been taken by 5GinFIRE:
