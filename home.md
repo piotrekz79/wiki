@@ -53,6 +53,7 @@ The following pages present different topics regarding 5GinFIRE services
 ### 2. [5TONIC]
 ### 3. [5G-Automotive]
 ### 4. [eHealth5G]
+[eHealth5G](experiments/testbeds/eHealth5G)
 ### 5. [5G-VINO]
 ### 6. [WINS-5G]
 ### 7. [UFU Future Internet]
