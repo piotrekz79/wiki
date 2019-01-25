@@ -28,26 +28,32 @@ The technical solution adopted by 5GinIFIRE also supports the flexible incorpora
 ## Addressing plan
 Enabling effective network communications among multiple sites has required a careful definition of the IP address space to be used by interconnecting entities. In this respect, the following agreements have been taken by 5GinFIRE:
 
-1)	Entities connecting to the 5GinFIRE MANO platform will use the private address space **10.154.0.0/16** for control and data plane communications.
-2)	5TONIC will use the private address space **10.4.0.0/16** to support control and data plane communications.
+1)	5G infrastructure providers will use the private address space 10.154.0.0/16 for control and data plane communications.
+2)To simplify routing configurations inside 5TONIC, this specific location will use the private address space 10.4.0.0/16 to support control and data plane communications.
 
-The 5GinFIRE network operations center will be in charge of the allocation of IP address ranges to entities within the address space 10.154.0.0/16. The current allocation of IP addresses to sites is summarized as follows:
+The 5GinFIRE network operations centre is in charge of the allocation of IP address ranges to entities within the address space 10.154.0.0/16. The current allocation is shown in the table below.
 
 - **5TONIC**: 10.4.0.0/16.
 - **ITAv**:	10.154.0.0/20.
-- **UNIVBRIS & BIO**:	10.154.16.0/20.
-- **Reserved for administrative purposes:** 10.154.255.0/23
+- **UNIVBRIS**:	10.154.16.0/20.
+- **UFU**:	10.154.32.0/20.
+- **WINS_5G**:	10.154.48.0/20.
+- **5GVINO**:	10.154.64.0/20.
+- **eHealth5G**:	10.154.80.0/20.
 
-Any potential issues related with the allocation of IP addresses to external sites that connect to the MANO platform will be treated on a case-by-case basis.
+In addition, the VPN service at 5TONIC has been configured to use subnetworks 10.154.255.0/24 and 10.154.254.0/24, being the latter the address range that has been allocated to VPN endpoints connecting to the infrastructure.
+
+Any potential issues related with the allocation of IP addresses to external sites that connect to the MANO platform will be treated on a case-by-case basis. 
 
 ## Requirements to support the interconnection of external sites
 Beyond any particular requirements that may be identified when facing the interconnection of specific external sites, which will be treated on a case-by-case basis, in the following we indicate a non-exhaustive list of requirements that must be fulfilled by external entities to connect to the 5GinFIRE MANO platform:
 
-1) Utilization of a compliant VIM solution, i.e., compliant with OSM Release TWO[^2].
-2) Obtaining an appropriate IP address space, along with VPN credentials to gain a secure access to 5TONIC, from the 5GinFIRE network operations center. 
-3) Configuration of the site with the allocated IP address space.
-4) Configuration of any necessary VPN endpoints, to connect the site to the overlay network of the 5GinFIRE MANO platform. These endpoints will then support the exchange of control and data-plane information with the other NFV components of 5GinFIRE (OSM stack, VxFs, etc.).
-5) Configuration of the appropriate VIM networks to enable control and data-plane communications with the VxFs deployed at the entity’s datacenter,
-and using the allocated IP address space.
-6) Support routing of control and data plane information across the local network segments of the external entity, to support communications between the VPN endpoints and the VIMs/VxFs and vice versa.
+1)	Utilization of a VIM solution compliant with the 5GiFIRE MANO platform.
+2)	Utilization of an appropriate IP address space, not conflicting with the address space assigned to the 5GinFIRE infrastructure providers so far. Interconnecting entities must use a range of IP addresses within the network prefix 10.154.0.0/16. This range will be determined by the 5GinFIRE network operations centre, according to existing allocations and the entity’s needs.
+3)	Obtaining VPN credentials to connect the entity’s infrastructure to the network overlay architecture of the 5GinFIRE MANO platform. 
+4)	Configuration of the site with the allocated IP address space. Deployment of address translation functions in case that this is needed.
+5)	Installation and configuration of the VPN endpoints that are necessary at the external site.
+6)	Configuration of appropriate VIM networks, to enable the exchange of control and data-plane information originated and terminated at the VxFs deployed at the entity’s datacentre.
+7)	Set up of the appropriate mechanisms to support the delivery of control and data-plane information across the local network segments of the external entity (i.e. from the VPN endpoints towards the VIM/SDN controller and VxFs, and vice versa).
+
 
