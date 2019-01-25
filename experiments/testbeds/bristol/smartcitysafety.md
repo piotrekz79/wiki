@@ -35,4 +35,4 @@ The VNF video transcoder is based on OpenCV and it is publicly available at 5Gin
 
 **2. VNF Audio transcoder**
 
-This VNF enables  Speech recognition based on Google Cloud Speech API and Sphinx. It also available at 5GinFIRE VxF repository.
+This VNF enables  Speech recognition based on Google Cloud Speech API and Sphinx. It allows to convert audio to text and identify some suspicious words. It also available at 5GinFIRE VxF repository. 
