@@ -49,7 +49,7 @@ The following pages present different topics regarding 5GinFIRE services
 
 ## Representative Experiments by TestBed Providers
 ### 1. [Bristol Smart City]
-[Smart City Safety]()
+[Smart City Safety](experiments/testbeds/bristol/SmartCitySafety)
 ### 2. [5TONIC]
 ### 3. [5G-Automotive]
 ### 4. [eHealth5G]
