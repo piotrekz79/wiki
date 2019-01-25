@@ -17,4 +17,4 @@ The architecture is composed of four building-blocks.
 
 **3. Smart City Safety Demo:** this block consists of four basic elements: a 360 camera model Ricoh Tetha V; a Raspberry PI (Raspi) 3 Model B, running Raspbian Jessi with a 28000mA battery, a microphone SAMSON SAGOMICARR USB Mic, and a bike helmet.  The Raspi, the MIC and  the 360 camera are attached on the bike helmet and they communicate with each other via WiFi 2.4GHz. The Raspi communicates with the NFVI via WiFi Access Point (AP) 5GHz. 
 
-**4. 5GinFIRE Multi-site:** this block is part of the 5GinFIRE ecosystem that includes multi-site orchestration. The facilities are located in Universidad Carlos III de Madrid (UC3M), Instituto de Telecomunicacao de Aveiro (ITAv) and University of Bristol (UNIVBRIS), 5G-VINO (Greece), WINS-5G (Doublin), eHealth5G (Poland).
+**4. 5GinFIRE Multi-site:** this block is part of the 5GinFIRE ecosystem that includes multi-site orchestration. The facilities are located in Universidad Carlos III de Madrid (UC3M), Instituto de Telecomunicacao de Aveiro (ITAv) and University of Bristol (UNIVBRIS), 5G-VINO (Greece), WINS-5G (Dublin), eHealth5G (Poland).
