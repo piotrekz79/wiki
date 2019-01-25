@@ -8,7 +8,7 @@ The 5GinFIRE MANO platform is the system that enables the management and orchest
 
 The platform is based on the ETSI-hosted [Open Source MANO (OSM) project](https://osm.etsi.org/), which has been adopted by 5GinFIRE to provide the functionalities of a NFV orchestrator, supporting the management and coordination of computing, storage and network resources at the diverse experimental infrastructures, as well as the lifecycle management of network services. With this purpose, the OSM stack interacts with the Virtualized Infrastructure Managers (VIMs) deployed by 5GinFIRE partners. 
 
-The MANO platform supports multi-site experimentation activities across different vertical domains:
+The MANO platform supports multi-site experimentation activities across different vertical domains (a more comprehensive description of the available infrastructures can be found [here](http://wiki.5ginfire.eu/5GinFIREtestbeds)):
 
 1)	An infrastructure at the global 5G Telefonica Open Innovation Laboratory (5TONIC), made available by TID and UC3M, to support experimentation with NFV functions and services.
 2)	An experimentation facility located at ITAv, providing access to an automotive testbed in the city of Aveiro (Portugal).
