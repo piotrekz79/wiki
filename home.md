@@ -44,6 +44,7 @@ The following pages present different topics regarding 5GinFIRE services
 ### 2. SURROGATE
 ### 3. CAVICO
 ### 4. VRU-Safe
+[5GinFIRE VRU-safe](experiments/VRUsafe)
 ### 5. SFCLola
 
 ## Representative Experiments by TestBed Providers
