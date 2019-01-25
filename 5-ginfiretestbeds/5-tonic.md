@@ -18,7 +18,7 @@ An additional and independent instance of OpenStack Ocata is deployed in a separ
 
 In both VIM instances, the OpenStack networking service was installed to support layer-3 services, and the ML2 plug-in of OpenStack was configured to use Linux bridges. The terms and conditions that govern the utilization the aforementioned NFV infrastructures are detailed in the [5GinFIRE website](http://5GINFIRE-5g.eu/).
 
-Finally, the experimentation infrastructure offered to 5GinFIRE includes some server computers (not shown in the figure) to support complementary functionalities, e.g., hosting client applications, deploying a network management system, and performing access-control functionalities. Regarding the latter, a physical jump machine serves to control the access of the 5GinFIRE experimenters to the NFV infrastructures (more information can be found [here](http://wiki.5ginfire.eu/5-gin-fire-experimentation-tutorial).
+Finally, the experimentation infrastructure offered to 5GinFIRE includes some server computers (not shown in the figure) to support complementary functionalities, e.g., hosting client applications, deploying a network management system, and performing access-control functionalities. Regarding the latter, a physical jump machine serves to control the access of the 5GinFIRE experimenters to the NFV infrastructures (more information can be found [here](http://wiki.5ginfire.eu/5-gin-fire-experimentation-tutorial)).
 
 
 ## Experimentation
