@@ -2,8 +2,9 @@
 <!-- SUBTITLE:  Hybrid Communications to Foster 5G Vehicular Services -->
 
 # SURROGATES - Hybrid Communications to Foster 5G Vehicular Services
+![Surr](/uploads/surrogates/surr.png "Surr")
 **Organization**
-University of Murcia http://www.um.es
+University of Murcia - http://www.um.es
 ## Experiment description
 In vehicular scenarios, on-board units (OBU) have evolved from specific purpose units designed for telematic services such as fleet management or road tolling, to generic networked nodes capable of interconnecting other in-vehicle devices, acting as mobile routers. Although virtualization of network and computing nodes is a reality in cloud deployments, it is expanding to the edge of the access network in scenarios involving multi-access edge computing. This scenario presents a good frame to offload data analytics tasks from OBUs, which should focus on actions of higher priority such as maintaining vehicle connectivity, managing communication flows or applying security measures to data traffic.
 
