@@ -1,9 +1,9 @@
-<!-- TITLE: Tutorial Vnf implementation -->
-<!-- SUBTITLE: VNF implementation tutorial based on experience of an Open Call 1 participant -->
+<!-- TITLE: Tutorial VNF/NSD implementation -->
+<!-- SUBTITLE: VNF/NSD implementation tutorial based on experience of an Open Call participant -->
 
-# VNF implementation tutorial based on experience of an Open Call participant
+# VNF/NSD implementation tutorial based on experience of an Open Call participant
 
-This is a tutorial for creation of a Virtual Network Function instance. It is based on experience of an Open Call 1 participant, Netictech, performing an experiment RobotView5G. Its purpose is to provide  additional  support  to  future  open  call  participants  in  order  for  them  to  ease  the development and deployment of their VNF machines within 5GinFIRE infrastructure. 
+This is a tutorial for creation of a Virtual Network Function  instance and the use it in an NSD. It is based on experience of an Open Call 1 participant, Netictech, performing an experiment RobotView5G. Its purpose is to provide  additional  support  to  future  open  call  participants  in  order  for  them  to  ease  the development and deployment of their VNF machines within 5GinFIRE infrastructure. 
 
 
 ## Terminology 
