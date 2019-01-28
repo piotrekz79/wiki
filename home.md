@@ -24,19 +24,13 @@ The following pages present different topics regarding 5GinFIRE services
 [The Unifier Gateway - 5G-In-A-Box ](unifiergateway)
 [The 5GinFIRE "mirror platform"](guide/5ginfire-mirror-platform)
 
+## User Guides
 
-### Internal Processes
+[The portal user guide](5-gin-fire-portal-user-guide)
+[Guide: Advanced Hardware Requirements](tutorials/guide-advanced-hardware-requirements)
+[Guide: Advanced Charm Debugging](tutorials/guide-advanced-charm-debugging)
+[Guide: External Access to VxFs for Experimenters](tutorials/guide-external-access-experimenters)
 
-[VNF Validation](internal-processes/vnf-validation)
-[NSD Validation](internal-processes/nsd-validation)
-[Handling a deployment request](internal-processes/handling-deployment-request)
-[5GinFIRE Mentors](internal-process/mentors)
-
-### 5GinFIRE Infrastructure Monitoring
-
-[The 5GinFIRE Healthcheck service (HCS)](hcservice/usage)
-[The 5GinFIRE Central Logging service](hcservice_centrallog/usage)
-[The 5GinFIRE VIM resources monitoring](hcservice_VIMmonitoring/usage)
 
 
 ## Representative Experiments by Experimenters
@@ -62,13 +56,20 @@ The following pages present different topics regarding 5GinFIRE services
 ### 6. WINS-5G
 ### 7.  UFU Future Internet
 
-## User Guides
 
-[The portal user guide](5-gin-fire-portal-user-guide)
-[Guide: Advanced Hardware Requirements](tutorials/guide-advanced-hardware-requirements)
-[Guide: Advanced Charm Debugging](tutorials/guide-advanced-charm-debugging)
-[Guide: External Access to VxFs for Experimenters](tutorials/guide-external-access-experimenters)
 
+### 5GinFIRE Infrastructure Monitoring
+
+[The 5GinFIRE Healthcheck service (HCS)](hcservice/usage)
+[The 5GinFIRE Central Logging service](hcservice_centrallog/usage)
+[The 5GinFIRE VIM resources monitoring](hcservice_VIMmonitoring/usage)
+
+### Internal Processes
+
+[VNF Validation](internal-processes/vnf-validation)
+[NSD Validation](internal-processes/nsd-validation)
+[Handling a deployment request](internal-processes/handling-deployment-request)
+[5GinFIRE Mentors](internal-process/mentors)
 
 ## Source code
 
@@ -76,7 +77,7 @@ All our source code is available at https://github.com/5GinFIRE
 
 ## Open Calls FAQs
 
-[1st Call FAQs](1stcallFAQs)
+[Open Call FAQs](1stcallFAQs)
 
 ## Support
 * Contact [https://5ginfire.eu/contact/](https://5ginfire.eu/contact/)
