@@ -502,3 +502,70 @@ The next step is to build the VNFD package, as described in the 5GinFIRE OpenCV 
 After the package has been built, the VNFD is ready to be uploaded to a portal  in order for it to be onboarded. The necessary steps are described in the portal manual 
 
 
+##   NSD 
+After the VNFD is created, a VxF developer is ready to start creation of a Network Service Descriptor (NSD, or, Experiment Descriptor). Like in the case of VNFD, the easiest course of action is not to start clean, bo to work on files from an example provided by the 5GinFIRE consortium. In our case, we used OpenCV Transcoder VNF. 
+
+###  Editing the file 
+The meaning of fields in the file and further info can be checked in the 5GinFIRE OpenCV Transcoder NSD Tutorial
+Let’s modify the main NSD file: 
+ 
+
+```text
+$ mv my-vnf-image/ns/opencv_transcoder_nsd.yaml my-vnf-image/ns/my-nsd.yaml 
+$ meld 5ginfire-transcoder-vnf-original-image/ns/opencv_transcoder_nsd.yaml my-vnf-image/ns/my-nsd.yaml 
+```
+
+In our case, the file is called qoe-nsd.yaml and its content is as follows: 
+
+
+```yaml
+nsd:nsd-catalog: 
+  nsd: 
+  -   id: "robotview5g_qoe_ns" 
+     name: "robotview5g_qoe_ns" 
+     short-name: "robotview5g_qoe_ns" 
+     description: "NSD for QoS and NR QoE estimation tool created in RobotView5G project within 5GinFIRE" 
+     vendor: "Netictech" 
+     logo: "RobotView5G-QoE-NSD.png" 
+     version: "1.0" 
+     constituent-vnfd: 
+     -   member-vnf-index: 1 
+         vnfd-id-ref: "robotview5g_qoe_vnf" 
+         start-by-default: "true" 
+     vld: 
+     -   id: "robotview5g_qoe_mgmt_vl" 
+         name: "robotview5g_qoe_mgmt_vl" 
+         short-name: "robotview5g_qoe_mgmt_vl" 
+         vendor: "Netictech" 
+         description: "Management Network for QoS and NR QoE estimation tool created in RobotView5G" 
+         version: "1.0" 
+         type: "ELAN" 
+         mgmt-network: "true" 
+         vnfd-connection-point-ref: 
+         - member-vnf-index-ref: 1 
+            vnfd-id-ref: "robotview5g_qoe_vnf" 
+            vnfd-connection-point-ref: "qoe_vnfd/cp_charm" 
+     -   id: "robotview5g_qoe_data_vl" 
+         name: "robotview5g_qoe_data_vl" 
+         short-name: "robotview5g_qoe_data_vl" 
+         vendor: "Netictech" 
+         description: "Data Network for QoS and NR QoE estimation tool created in RobotView5G" 
+         version: "1.0" 
+         type: "ELAN" 
+         mgmt-network: "false" 
+         vnfd-connection-point-ref: 
+         - member-vnf-index-ref: 1 
+            vnfd-id-ref: "robotview5g_qoe_vnf" 
+            vnfd-connection-point-ref: "qoe_vnfd/cp_net" 
+
+```
+
+
+### Building a package 
+The next step is to build the NSD package, as described in the 5GinFIRE OpenCV Transcoder NSD Tutorial
+
+### Uploading to a portal 
+After the package has been built, the NSD (Experiment Descriptor) is ready to be uploaded to a portal  in order for it to be onboarded. The necessary steps are described in the portal manual
+
+### Deployment 
+After the VNF is ready, VNFD and NSD/Experiment Descriptor are onboarded, an experimenter is ready to schedule an experiment. The process is described in the portal user guide
