@@ -268,3 +268,237 @@ Page 17 of (26)
 
 ```
 
+###  The actions file 
+Let’s modify the actions.yaml file: 
+ 
+
+```text
+$ meld my-vnf-image/charms/layers/my-charm/actions.yaml 5ginfire-transcoder-vnf-original-image/charms/transcoder/actions.yaml 
+```
+
+ 
+In our case, the file content is as follows: 
+
+
+```yaml
+## 
+# Copyright 2016 Canonical Ltd. 
+# All rights reserved. 
+# 
+# Licensed under the Apache License, Version 2.0 (the "License"); you may 
+# not use this file except in compliance with the License. You may obtain 
+# a copy of the License at # 
+#       http://www.apache.org/licenses/LICENSE-2.0 
+# 
+# Unless required by applicable law or agreed to in writing, software 
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT 
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the 
+
+# License for the specific language governing permissions and limitations 
+# under the License. 
+## 
+ 
+"run": 
+  "description": "Run an arbitrary command" 
+  "params": 
+  "command": 
+   "description": "The command to execute." 
+   "type": "string" 
+   "default": "" 
+  "required": 
+  - "command" 
+"generate-ssh-key": 
+  "description": "Generate a new SSH keypair for this unit. 
+This will replace any\ 
+  \ existing previously generated keypair." 
+"verify-ssh-credentials": 
+  "description": "Verify that this unit can authenticate with 
+server specified by\ 
+  \ ssh-hostname and ssh-username." 
+"get-ssh-public-key": 
+  "description": "Get the public SSH key for this unit." 
+"start": 
+  "description": "Start the service on the VNF." 
+"stop": 
+  "description": "Stop the service on the VNF." 
+"restart": 
+  "description": "Restart the service on the VNF." 
+ 
+"reboot": 
+  "description": "Reboot the VNF virtual machine." 
+"upgrade": 
+  "description": "Upgrade the software on the VNF." 
+"start-qoe": 
+  "description": "Start QoE and QoS measurments" 
+  "params": 
+  "rtsp-url": 
+   "description": "RTSP URL to fetch the stream from." 
+   "type": "string" 
+  "video-width": 
+   "description": "Width of video in pixels." 
+   "type": "integer" 
+  "video-height": 
+   "description": "Height of video in pixels." 
+   "type": "integer" 
+  "status-report-ip": 
+   "description": "IP address to report current status to." 
+   "type": "string" 
+  "status-report-port": 
+   "description": "Network port to report current status to." 
+   "type": "integer" 
+  "experiment-name": 
+   "description": "Experiment name, suffixed to results file names." 
+   "type": "string" 
+  "extra-initial-delay": 
+   "description": "Extra initial delay in seconds." 
+   "type": "integer" 
+  "required": 
+  - "rtsp-url" 
+  - "video-width" 
+  - "video-height" 
+  - "status-report-ip" 
+  - "status-report-port" 
+  - "experiment-name" 
+  - "extra-initial-delay" 
+
+```
+
+Looking  at  the  content  of  the  file  above,  a  single  new  action,  start-qoe,  has  been  introduced,  replacing the start-transcoder action from an exemplary charm. 
+
+### The actions 
+
+Under actions/ subdirectory there are several files representing actions to invoke the reactive framework with. In our case, a single action, start-qoe, has been added, replacing the start-transcoder action: 
+
+
+```yaml
+$ mv my-vnf-image/charms/layers/my-charm/actions/start-transcoder my-vnf-image/charms/layers/my-charm/actions/start-qoe 
+$ meld 5ginfire-transcoder-vnf-original-image/charms/transcoder/actions/start-transcoder my-vnf-image/charms/layers/my-charm/actions/start-qoe 
+
+```
+
+In our case, the file is called start-qoe and its content is as follows: 
+
+
+```python
+#!/usr/bin/env python3 
+import sys 
+sys.path.append('lib') 
+ 
+from charms.reactive import main 
+from charms.reactive import set_state 
+from charmhelpers.core.hookenv import action_fail 
+
+""" 
+`set_state` only works here because it's flushed to disk inside 
+the `main()` 
+loop. remove_state will need to be called inside the action 
+method. 
+""" 
+set_state('actions.start-qoe') 
+ 
+try: 
+  main() 
+except Exception as e: 
+  action_fail(repr(e)) 
+
+```
+
+
+
+###   Implementation of called actions under reactive/ 
+Under reactive/ subdirectory there are several files with an implementation of actions to be performed. In our case, a single action, 5ginfire_robotview5g_qoe, has been added, replacing the transcoder action: 
+ 
+
+```
+$ mv my-vnf-image/charms/layers/my-charm/reactive/transcoder.py my-vnf-image/charms/layers/my-charm/reactive/5ginfire_robotview5g_qoe.py 
+$ meld 5ginfire-transcoder-vnf-original-image/charms/transcoder/reactive/transcoder.py my-vnf-image/charms/layers/my-charm/reactive/5ginfire_robotview5g_qoe.py 
+```
+
+So in our case, the file is called 5ginfire_robotview5g_qoe.py and its content is as follows: 
+
+
+```python
+from charmhelpers.core.hookenv import ( 
+  action_fail, 
+  action_get, 
+  action_set, 
+RobotView5G / 5GINFIRE  D2 
+Page 22 of (26) 
+  config, 
+  status_set, 
+) 
+from charms.reactive import when, set_state, remove_state 
+import charms.sshproxy 
+ 
+cfg = config() 
+ 
+@when('config.changed') 
+def config_changed(): 
+  set_state('5ginfire_robotview5g_qoe.configured') 
+  status_set('active', 'ready!') 
+ 
+@when('5ginfire_robotview5g_qoe.configured') 
+@when('actions.start-qoe') 
+def start_qoe(): 
+  rtsp_url = action_get('rtsp-url') 
+  video_width = action_get('video-width') 
+  video_height = action_get('video-height') 
+  status_report_ip = action_get('status-report-ip') 
+  status_report_port = action_get('status-report-port') 
+  experiment_name = action_get('experiment-name') 
+  extra_initial_delay = action_get('extra-initial-delay') 
+ 
+  err = '' 
+  try: 
+      cmd = "cd /home/ubuntu/qoe-tool/application/scripts" 
+      cmd += " && ./run-vnf.sh" 
+      cmd += " {0}".format(rtsp_url) 
+      cmd += " {0}".format(video_width) 
+      cmd += " {0}".format(video_height) 
+      cmd += " {0}".format(status_report_ip) 
+      cmd += " {0}".format(status_report_port) 
+      cmd += " {0}".format(experiment_name) 
+      cmd += " {0}".format(extra_initial_delay) 
+      result, err = charms.sshproxy._run(cmd) 
+  except: 
+      action_fail('command failed: ' + err) 
+  else: 
+      action_set({'output': result, 'errors': err}) 
+  finally: 
+      remove_state('actions.start-qoe') 
+
+```
+
+
+###  Building the charm 
+After the files have been edited, the charm is ready to be built. First, let’s install the necessary 
+software: 
+ 
+
+```
+sudo add-apt-repository ppa:juju/stable 
+sudo apt update 
+sudo apt install juju 
+
+```
+
+Then, set some environmental variables: 
+ 
+`cd my-vnf-image/charms/ 
+export JUJU_REPOSITORY=`pwd` 
+export LAYER_PATH=$JUJU_REPOSITORY/layers 
+cd $LAYER_PATH `
+
+Finally, we are ready to build the charm: 
+ 
+`charm build` 
+
+###   Building a package 
+The next step is to build the VNFD package, as described in the 5GinFIRE OpenCV Transcoder VNF Tutorial
+
+
+###  Uploading to a portal 
+
+After the package has been built, the VNFD is ready to be uploaded to a portal  in order for it to be onboarded. The necessary steps are described in the portal manual 
+
+
