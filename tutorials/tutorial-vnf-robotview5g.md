@@ -66,6 +66,205 @@ $ rm -r my-vnf-image/.git
 Now we are ready to edit the files. 
 
 
+###  Editing files 
+There is a number of diff editors available.. In our case, meld was used. The meaning of fields in the files and further info can be checked in the 5GinFIRE OpenCV Transcoder VNF Tutorial.
 
 
+###  Cloud init config 
+
+Let’s rename the cloud init config file and edit it: 
+ 
+
+```text
+$ mv my-vnf-image/vnf/cloud_init/transcoder_cloud_init.cfg my-vnf-image/vnf/cloud_init/my_vnf_cloud_init.cfg 
+$ meld 5ginfire-transcoder-vnf-original-image/vnf/cloud_init/transcoder_cloud_init.cfg my-vnf-image/vnf/cloud_init/my_vnf_cloud_init.cfg  
+```
+
+ 
+in our case, no change of the file content was required. Our file is named qoe_cloud_init.cfg and its content is as follows: 
+
+
+```text
+#cloud-config 
+password: 5ginfire 
+chpasswd: { expire: False } 
+ssh_pwauth: True
+```
+ 
+###  Main VNFD file 
+
+Let’s rename the main VNFD file and edit it: 
+ 
+
+```text
+$ mv my-vnf-image/vnf/opencv_transcoder_vnfd.yaml my-vnf-image/vnf/my_vnfd.yaml 
+$ meld 5ginfire-transcoder-vnf-original-image/vnf/opencv_transcoder_vnfd.yaml my-vnf-image/vnf/my_vnfd.yaml 
+```
+
+In our case, the file is called qoe-vnfd.yaml and its content is as follows: 
+
+
+ 
+
+```yaml
+vnfd:vnfd-catalog: 
+  vnfd:vnfd: 
+   -  id: robotview5g_qoe_vnf 
+      name: robotview5g_qoe_vnf 
+      short-name: qoe_vnf 
+      logo: 5GinFIRE.png 
+      vendor: Netictech 
+      version: '1.1' 
+      description: QoE NR estimation tool VNF created in RobotView5G project within 5GinFIRE 
+      connection-point: 
+      -   name: qoe_vnfd/cp_charm 
+          type: VPORT 
+      -   name: qoe_vnfd/cp_net 
+          type: VPORT 
+      vdu: 
+      -   cloud-init-file: qoe_cloud_init.cfg 
+          count: '1' 
+          external-interface: 
+          -   name: eth0 
+              virtual-interface: 
+                 type: VIRTIO 
+              vnfd-connection-point-ref: qoe_vnfd/cp_charm 
+          -   name: eth1 
+              virtual-interface: 
+                 type: VIRTIO 
+              vnfd-connection-point-ref: qoe_vnfd/cp_net 
+          id: robotview5g_qoe_vdu 
+          image: robotview5g_qoe_image 
+          name: robotview5g_qoe_vdu 
+          vm-flavor: 
+              memory-mb: '4096' 
+              storage-gb: '20' 
+              vcpu-count: '16' 
+      vnf-configuration: 
+          config-attributes: 
+              config-delay: 10 
+          service-primitive: 
+          -   name: config 
+              parameter: 
+              -   data-type: STRING 
+                 default-value: <rw_mgmt_ip> 
+                 name: ssh-hostname 
+              -   data-type: STRING 
+                 default-value: ubuntu 
+                 name: ssh-username 
+              -   data-type: STRING 
+                 default-value: 5ginfire 
+                 name: ssh-password 
+              -   data-type: STRING 
+                 name: ssh-private-key 
+          -   name: start-qoe 
+              parameter: 
+              -   data-type: STRING 
+                 name: rtsp-url 
+              -   data-type: INTEGER 
+                 name: video-width 
+              -   data-type: INTEGER 
+                 name: video-height 
+              -   data-type: STRING 
+                 name: status-report-ip 
+              -   data-type: INTEGER 
+                 name: status-report-port 
+              -   data-type: STRING 
+                 name: experiment-name 
+              -   data-type: INTEGER 
+                 name: extra-initial-delay 
+          initial-config-primitive: 
+          -   name: config 
+              parameter: 
+              -   name: ssh-hostname 
+                 value: <rw_mgmt_ip> 
+              -   name: ssh-username 
+                 value: ubuntu 
+              -   name: ssh-password 
+                 value: 5ginfire 
+              seq: '1' 
+          juju: 
+              charm: 5ginfire-robotview5g-qoe 
+
+```
+
+
+###   JUJU charm 
+Let’s modify the example in order to create our own charm: 
+ 
+
+```yaml
+$ mv my-vnf-image/charms/transcoder my-vnf-image/charms/layers/my-charm 
+```
+
+ 
+In our case, the directory name was changed to layers/5ginfire-robotview5g-qoe. An extra folder called layers/ will be useful when building the charm.  Now we can proceed to edit the files. 
+
+###  The layer file 
+Let’s modify the layer.yaml file: 
+ 
+
+```yaml
+$ meld my-vnf-image/charms/layers/my-charm/layer.yaml 5ginfire-transcoder-vnf-original-image/charms/transcoder/layer.yaml 
+```
+
+ 
+In our case, the file content is as follows: 
+
+
+```yaml
+"includes": 
+- "layer:options" 
+- "layer:basic" 
+- "layer:sshproxy" 
+- "layer:vnfproxy" 
+"options": 
+  "basic": 
+  "use_venv": !!bool "false" 
+  "packages": [] 
+  "include_system_packages": !!bool "false" 
+  "python_packages": [] 
+  "sshproxy": {} 
+  "vnfproxy": {} 
+  "5ginfire-robotview5g-qoe": {} 
+"is": "5ginfire-robotview5g-qoe" 
+```
+
+
+
+###  The metadata file 
+Let’s modify the metadata.yaml file: 
+ 
+
+```
+$ meld my-vnf-image/charms/layers/my-charm/metadata.yaml 5ginfire-transcoder-vnf-original-image/charms/transcoder/metadata.yaml 
+```
+
+
+In our case, the file content is as follows: 
+ 
+
+```yaml
+"name": "5ginfire-robotview5g-qoe" 
+"summary": "5GinFIRE RobotView5G QoE NR tool charm" 
+"maintainer": "Piotr Pawa\u0142owski 
+<piotr.pawalowski@netictech.com>" 
+"description": | 
+  The 5ginfire-robotview5g-qoe charm initializes the qoe VNF. 
+"tags": 
+  # Replace "misc" with one or more whitelisted tags from this list: # https://jujucharms.com/docs/stable/authors-charm-metadata 
+  - "misc" 
+  - "osm" 
+  - "vnf" 
+  - "streaming" 
+  - "monitoring" 
+  - "nfv" 
+"series": 
+D2  RobotView5G / 5GINFIRE 
+Page 17 of (26) 
+- "xenial" 
+- "trusty" 
+"subordinate": !!bool "false"
+
+```
 
