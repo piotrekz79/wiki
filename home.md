@@ -9,8 +9,8 @@ The following pages present different topics regarding 5GinFIRE services
 
 [Experimenting with 5GinFIRE infrastructure ](5-gin-fire-experimentation-tutorial)
 [Tutorial Creating a VNF: The OpenCV Transcoder VNF Example](tutorials/tutorial-opencv-vnf-transcoder)
-[Tutorial Creating a VNF - Experience from an Open Call participant](tutorials/tutorial-vnf-robotview5g)
 [Tutorial Creating a NSD: The OpenCV Transcoder NS Example](tutorials/tutorial-opencv-transcoder-ns)
+[Tutorial Creating a VNF/NSD - Experience from an Open Call participant](tutorials/tutorial-vnf-robotview5g)
 
 
 ## The 5GinFIRE Architecture, Technologies, Services and Testbeds
