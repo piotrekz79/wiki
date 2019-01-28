@@ -18,19 +18,19 @@ The following pages present different topics regarding 5GinFIRE services
 [Terminology,  Experimentation Workflow and Architecture](5-gin-fire-terminology-experimentation-workflow-and-architecture)
 [5GinFIRE Testbeds](5GinFIREtestbeds)
 [The portal Architecture and Design](portalarchitecturedesign)
-[The Portal API](portalarchitecturedesign/portal-api)
 [The 5GinFIRE MANO platform](osm)
 [Packaging for VxF/NSD](packagingvxfnsd)
 [The Unifier Gateway - 5G-In-A-Box ](unifiergateway)
-[The 5GinFIRE "mirror platform"](guide/5ginfire-mirror-platform)
 
 ## User Guides
-
+### Basic
 [The portal user guide](5-gin-fire-portal-user-guide)
+[Guide: External Access to VxFs for Experimenters](tutorials/guide-external-access-experimenters)
+[The 5GinFIRE "mirror platform"](guide/5ginfire-mirror-platform)
+### Advanced
 [Guide: Advanced Hardware Requirements](tutorials/guide-advanced-hardware-requirements)
 [Guide: Advanced Charm Debugging](tutorials/guide-advanced-charm-debugging)
-[Guide: External Access to VxFs for Experimenters](tutorials/guide-external-access-experimenters)
-
+[The Portal API](portalarchitecturedesign/portal-api)
 
 
 ## Representative Experiments by Experimenters
