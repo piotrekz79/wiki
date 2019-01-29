@@ -24,7 +24,7 @@ After obtaining VPN credentials and connecting to the VPN (a tutorial to connect
 - https://10.4.48.15:8443 (using *Chrome*  is recommended)
 - User and password details to be provided on demand.
 
-![Osmloginwindow](/uploads/mirror-site/osmloginwindow.png "Osmloginwindow"){.align-left}
+{.align-left}
 
 ## Onboarding a NS/VxF
 The process to onboard a VNF is detailed in the [ETSI OSM Wiki](https://osm.etsi.org/wikipub/index.php/OSM_Release_FOUR#Deploying_your_first_Network_Service). You just need to click on the *Onboard VNFD* button of the *VNF Packages* open list, and drag & drop the VNF package file.
