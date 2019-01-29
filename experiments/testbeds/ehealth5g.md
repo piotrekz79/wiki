@@ -7,19 +7,20 @@ In our example scenario we assume that some medical work with eHealth devices is
 
 ![Detector Scheme](/uploads/ehealth/detector-scheme.png "Detector Scheme")
 
-Detector edge01 VNFD description
+Detector edge01 VNFD.
 This VNF contains ffmpeg and ffserver software. It is configured to pull video stream, transcode, resize and restream it.
 
-Detector edge02 VNFD description
+Detector edge02 VNFD.
 The detector_edge02 VNF contains simple python script that pulls video frames from edge01 and tries to detect scene change in video, then serves frames together with detection information.
 
-Detector core VNF description
+Detector core VNF.
 The detector_core VNF contains python script used to receive frames and metadata and save them to files.
 
 Detector example NSD.
 This NSD consist of three VNFs described above.
 
-To recreate the experiment:
+# Recreating the experiment.
+0. Request setup of selected eHealth device ([our equipment](https://5ginfire.eu/ehealth/)) or video server with already recorded video.
 1. Request deployment of detector_example_nsd from 5GinFire portal, place edge VNFs in eHealth5G Tesbed edge and core VNF in eHealth5G Testbed core in
 frastructures.
 2. After successful deployment, run start_edge01.sh [video stream URL] in detector_edge01 VNF, then start_edge02.sh [edge01 ip address] in detector_edge02 VNF and finally start_core.sh [edge02 ip address] in detector_core VNF.
