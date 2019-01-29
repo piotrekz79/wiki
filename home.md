@@ -53,6 +53,7 @@ The following pages present different topics regarding 5GinFIRE services
 ### 1. Bristol Smart City
 [Smart City Safety](experiments/testbeds/bristol/SmartCitySafety)
 ### 2. 5TONIC
+[Video oon demand service](experiments/testbeds/5-tonic)
 ### 3. IT-AV 5G Automotive
 [Video-based Automotive Assisted Driving](experiments/testbed/5GAutomotive)
 ### 4. eHealth5G
