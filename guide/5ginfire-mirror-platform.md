@@ -35,7 +35,7 @@ Image extracted from the [ETSI OSM Wiki](https://osm.etsi.org/wikipub/index.php/
 
 A similar approach can be followed to import a NS package, selecting *Onboard NSD* instead of *Onboard VNFD*.
 
-%## Accessing the logs
+_## Accessing the logs
 If the onboarding fails, you can access the OSM logs to get more information about the error. To do that, access via *ssh* to the mirror platform, i.e., using the IP address *10.4.48.15*. The login and password for the *ssh* are the following:
 
 - Login: 5ginfire
