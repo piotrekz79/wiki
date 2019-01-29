@@ -28,5 +28,5 @@ The information collected through OBD-II from in-vehicles sensors is highly depe
 
 # Running the Experiment
 ## Connection
-This experiment requires the use of 3 VNFs, two of them deployed in ITAv, the vOBU and the vOBU manager, and one deployed in 5TONIC, the data analytics VNF. After requesting the deployment of the NSD, one should access the VNFs through the jump machine provided by the 5GinFIRE network management, along with the VPN credentials. 
+This experiment requires the use of 3 VNFs, two of them deployed in ITAv, the vOBU and the vOBU manager, and one deployed in 5TONIC, the data analytics VNF. After requesting the deployment of the related NSD, one should access the VNFs through the jump machine provided by the 5GinFIRE network management, along with the VPN credentials. 
 ## Setup
