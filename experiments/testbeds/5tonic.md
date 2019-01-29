@@ -1,4 +1,4 @@
-<!-- TITLE: 5 Tonic -->
+<!-- TITLE: Example: deployment of VoD service at 5TONIC -->
 <!-- SUBTITLE: A quick summary of 5 Tonic -->
 
 # Example: Deployment of a VoD service
