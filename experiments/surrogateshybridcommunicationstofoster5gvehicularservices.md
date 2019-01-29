@@ -8,7 +8,7 @@ University of Murcia - http://www.um.es
 ## Experiment description
 In vehicular scenarios, on-board units (OBU) have evolved from specific purpose units designed for telematic services such as fleet management or road tolling, to generic networked nodes capable of interconnecting other in-vehicle devices, acting as mobile routers. Although virtualization of network and computing nodes is a reality in cloud deployments, it is expanding to the edge of the access network in scenarios involving multi-access edge computing. This scenario presents a good frame to offload data analytics tasks from OBUs, which should focus on actions of higher priority such as maintaining vehicle connectivity, managing communication flows or applying security measures to data traffic.
 
-![Surrogate 1](/uploads/surrogates/surrogate-1.png "Surrogate 1")
+![Surr Architecture](/uploads/surrogates/surr-architecture.png "Surr Architecture")
 
 SURROGATES aims at virtualizing regular OBU tasks requiring a high computing load, on the basis of a hybrid communication system that allows a proactive connection between the real OBU and a virtual one. Over this channel, all sensor data collected from the vehicles are reported. The virtual OBU provides pre-processed information to be used by cloud services in the area of mobility and pollution, which will be accessible as a telematic service by final users.
 
