@@ -10,6 +10,22 @@ Figure 1 - Architecture of SURROGATES.
 
 ## Information collected through OBD-II
 
+The information collected through OBD-II from in-vehicles sensors is highly dependent on the brand an model of each vehicle. However, it is expected that most of the information listed below will be available for diagnosis and mechanical monitoring:
+* TIMESTAMP,seconds	
+* STATUS_MIL,boolean	
+* STATUS_DTC_COUNT,integer	
+* STATUS_IGNITION_TYPE,string	
+* ENGINE_LOAD,percent	
+* COOLANT_TEMP,degC	
+* INTAKE_PRESSURE,kilopascal	
+* RPM,revolutions_per_minute	
+* SPEED,kph	
+* TIMING_ADVANCE,degree	
+* INTAKE_TEMP,degC	
+* MAF,gps	
+* THROTTLE_POS,percent	
+* DISTANCE_W_MIL,kilometer
+
 # Running the Experiment
 ## Connection
 
