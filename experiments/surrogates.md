@@ -30,5 +30,23 @@ The information collected through OBD-II from in-vehicles sensors is highly depe
 ## Connection
 This experiment requires the use of 3 VNFs, two of them deployed in ITAv, the vOBU and the vOBU manager, and one deployed in 5TONIC, the data analytics VNF. After requesting the deployment of the related NSD, one should access the VNFs through the jump machine provided by the 5GinFIRE network management, along with the VPN credentials.
 ## Setup
+### vOBU
 
-### VNF manager
+### OBU manager
+The source code is located at /home/debian/surrogates-manager/
+The read-only key to access the repository is present in /home/debian/.ssh/id_rsa
+The repository has already a README.md
+#### Configuration
+The configuration is already prepared for listening in any address. The only change needed is in manager.conf the *listening port from 8070 to 8071* because there is a nginx proxy in front of the python to provide IPv6 support as well as queuing mechanisms. Therefore, the *nginx is the one that holds the IP addresses*.
+In /etc/nginx/sites-available/manager the IPv4 and IPv6 addresses for the instantiated VNF need to be updated in the *server_name param*. The listening port is set in the image already to 8070.
+#### Executing
+The manager has a systemd script that is in charge of launching the service.
+- systemctl restart manager
+The logs are present at /home/debian/surrogates-manager/output.log but some output might also go to /var/log/syslog (such as exceptions backtraces).
+The nginx is managed as usual with systemd as well.
+- systemctl restart nginx
+
+### Data analytics
+
+### OBU
+
