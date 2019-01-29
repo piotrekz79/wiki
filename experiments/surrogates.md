@@ -38,13 +38,11 @@ The read-only key to access the repository is present in /home/debian/.ssh/id_rs
 The repository has already a README.md
 #### Configuration
 The configuration is already prepared for listening in any address. The only change needed is in manager.conf the *listening port from 8070 to 8071* because there is a nginx proxy in front of the python to provide IPv6 support as well as queuing mechanisms. Therefore, the *nginx is the one that holds the IP addresses*.
-In /etc/nginx/sites-available/manager the IPv4 and IPv6 addresses for the instantiated VNF need to be updated in the *server_name param*. The listening port is set in the image already to 8070.
+In /etc/nginx/sites-available/manager the IPv4 and IPv6 addresses for the instantiated VNF need to be updated in the *server_name param*. The listening port is set in the image already to 8071.
 #### Executing
-The manager has a systemd script that is in charge of launching the service.
-- systemctl restart manager
+The manager has a systemd script that is in charge of launching the service: *systemctl restart manager*
 The logs are present at /home/debian/surrogates-manager/output.log but some output might also go to /var/log/syslog (such as exceptions backtraces).
-The nginx is managed as usual with systemd as well.
-- systemctl restart nginx
+The nginx is managed as usual with systemd as well: *systemctl restart nginx*
 
 ### Data analytics
 
