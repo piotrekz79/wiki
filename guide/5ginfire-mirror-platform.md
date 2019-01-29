@@ -35,7 +35,7 @@ Image extracted from the [ETSI OSM Wiki](https://osm.etsi.org/wikipub/index.php/
 
 A similar approach can be followed to import a NS package, selecting *Onboard NSD* instead of *Onboard VNFD*.
 
-_## Accessing the logs
+## Accessing the logs
 If the onboarding fails, you can access the OSM logs to get more information about the error. To do that, access via *ssh* to the mirror platform, i.e., using the IP address *10.4.48.15*. The login and password for the *ssh* are the following:
 
 - Login: 5ginfire
@@ -63,10 +63,10 @@ The RO logs can be found at the RO container, in the file */var/log/osm/openmano
 
 # The local toolset
 In addition to the mirror platform, 5GinFIRE partners have also prepared a local toolset that provides a complete and functional orchestration environment to support prototyping and testing. This toolset includes:
-•	An installation of OSM Release FOUR
-•	A VIM emulator solution, Vim-emu [25]
-The local toolset is provided as a single virtual machine, which can be downloaded by experimenters and other interested users from the 5GinFIRE website. With this toolset, experimenters may also test if a NS or VxF can be onboarded to OSM (and hence to the 5GinFIRE MANO system). 
-On the other hand, Vim-emu is capable of emulating the functionality of a VIM and an NFVI, providing a network emulation framework and supporting the deployment of VNFs as Docker containers. This way, the local toolset also complements the functionalities of the 5GinFIRE Portal, providing a mechanism to assist experimenters in the prototyping and testing of NSes.
- 
 
-uture versions of the platform will consider the provision of functionalities related to the deployment of NSes, using a [VIM emulator solution](https://osm.etsi.org/wikipub/index.php/VIM_emulator).
+*	An installation of OSM Release FOUR
+*	A VIM emulator solution, [Vim-emu](https://osm.etsi.org/wikipub/index.php/VIM_emulator).
+
+The local toolset is provided as a single virtual machine, which can be downloaded by experimenters and other interested users from the 5GinFIRE website. With this toolset, experimenters may also test if a NS or VxF can be onboarded to OSM (and hence to the 5GinFIRE MANO system). 
+
+On the other hand, Vim-emu is capable of emulating the functionality of a VIM and an NFVI, providing a network emulation framework and supporting the deployment of VNFs as Docker containers. This way, the local toolset also complements the functionalities of the 5GinFIRE Portal, providing a mechanism to assist experimenters in the prototyping and testing of NSes.
