@@ -28,7 +28,11 @@ The information collected through OBD-II from in-vehicles sensors is highly depe
 
 # Running the Experiment
 ## Connection
-This experiment requires the use of 3 VNFs, two of them deployed in ITAv, the vOBU and the vOBU manager, and one deployed in 5TONIC, the data analytics VNF. After requesting the deployment of the related NSD, one should access the VNFs through the jump machine provided by the 5GinFIRE network management, along with the VPN credentials.
+This experiment requires 4 VxF types, the vOBU manager and the vOBU itself that are deployed in ITAv which is playing the role of Edge, and the Aggregator and Cloud services, such as Data analytics, that are deployed in 5TONIC.
+
+The experiment makes use, alongside the management network, of 3 VLDs, the provider network that gives access to the cars and between the two experimentation facilities, one network in ITAv for edge communications and one in 5TONIC for internal cloud communication, such as database connectivity.
+
+After requesting the deployment of the related NSD, one should access the VNFs through the jump machine provided by the 5GinFIRE network management, along with the VPN credentials.
 ## Setup
 ### vOBU
 The source code is present in /home/debian/surrogates-vobu/
@@ -112,6 +116,6 @@ The rest of modules are used directly without installation.
 
 To run the service in the OBU run the script start.sh
 
-#### Executing
+#### Testing ODB Connectivity
 
-To start collecing the information from the in-vehicle sensor through OBD-II just run the script telemetry.sh on the OBU.
+To test if the OBD-II cable is working properly just run the script telemetry.sh on the OBU to verify of the data is gathered correctly.
