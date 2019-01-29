@@ -1,5 +1,5 @@
-<!-- TITLE: The 5GinFIRE Mirror Platform -->
-<!-- SUBTITLE: The 5Ginfire Mirror Platform -->
+<!-- TITLE: Tools for validation, prototyping, and testing -->
+<!-- SUBTITLE: The Mirror Platform & the Local Toolset-->
 
 # The 5GinFIRE Mirror Platform
 To enable experimenters and developers to carry out a first validation of their Network Services (NS) and Virtualized Network & Vertical Functions (VxFs), 5GinFIRE provides a functional replica of the MANO platform currently in production state. This replica, referred to as the *mirror platform* in this page, provides platform users with access to an OSM installation that supports the following functionalities:
@@ -10,9 +10,9 @@ To enable experimenters and developers to carry out a first validation of their 
 
 This way, the mirror platform allows platform users to verify if a NS or VxF can be onboarded to OSM, before formally requesting the onboarding of the component to the production MANO platform through the [5GinFIRE Portal](https://portal.5ginfire.eu). Its main purpose is to agilely detect errors in NS/VxF package specifications early in the experimentation process. This way, users can autonomously do a preliminary validation of their NS/VxF packages, making sure that they are compliant with the OSM software and can effectively be onboarded to the production OSM platform. This allows reducing potential interaction cycles and delays that would otherwise be necessary to set up an experiment with new NS/VxFs, optimizing the experimentation process.
 
-When using the mirror platform, take into account the following considerations:
+When using the mirror platform, please take into account the following considerations:
 
-1) The mirror platform does not attach any VIM tenant, hence it cannot be used to test the deployment of a NS. Future versions of the platform will consider the provision of functionalities related to the deployment of NSes, using a [VIM emulator solution](https://osm.etsi.org/wikipub/index.php/VIM_emulator).
+1) The mirror platform does not attach any VIM tenant, hence it cannot be used to test the deployment of a NS.
 2) The mirror platform may be restarted with certain periodicity, and data may be deleted for maintenance purposes. Users are encouraged to not consider this as a stable platform to keep copies of their NS/VxFs.
 
 ## Preliminary steps
@@ -22,17 +22,16 @@ To access the mirror platform, you need to connect to the 5GinFIRE VPN. You can 
 After obtaining VPN credentials and connecting to the VPN (a tutorial to connect to the 5GinFIRE VPN can be found [here](http://wiki.5ginfire.eu/tutorials/guide-external-access-experimenters)), you can access the Graphical User Interface (GUI) of the mirror platform through this link:
 
 - https://10.4.48.15:8443 (using *Chrome*  is recommended)
-	- User: *admin*
-	- Password: *admin*
+- User and password details to be provided on demand.
 
 ![Osmloginwindow](/uploads/mirror-site/osmloginwindow.png "Osmloginwindow"){.align-left}
 
 ## Onboarding a NS/VxF
-The process to onboard a VNF is detailed in the [ETSI OSM Wiki](https://osm.etsi.org/wikipub/index.php/OSM_Release_TWO#Deploying_your_first_Network_Service). You just need to click on the *import* button of the *catalog* tab, select *VNFD*, and indicate the VNF package file.
+The process to onboard a VNF is detailed in the [ETSI OSM Wiki](https://osm.etsi.org/wikipub/index.php/OSM_Release_FOUR#Deploying_your_first_Network_Service). You just need to click on the *Onboard VNFD* button of the *VNF Packages* open list, and drag & drop the VNF package file.
 
 ![Onboardingvnf](/uploads/mirror-site/onboardingvnf.png "Onboardingvnf"){.align-left}
 
-A similar approach can be followed to import a NS package, selecting *NSD* instead of *VNFD*.
+A similar approach can be followed to import a NS package, selecting *Onboard NSD* instead of *Onboard VNFD*.
 
 ## Accessing the logs
 If the onboarding fails, you can access the OSM logs to get more information about the error. To do that, access via *ssh* to the mirror platform, i.e., using the IP address *10.4.48.15*. The login and password for the *ssh* are the following:
@@ -58,3 +57,8 @@ The RO logs can be found at the RO container, in the file */var/log/osm/openmano
 
 ``> lxc file pull RO/var/log/osm/openmano.log .``
 
+
+
+# The local toolset
+
+uture versions of the platform will consider the provision of functionalities related to the deployment of NSes, using a [VIM emulator solution](https://osm.etsi.org/wikipub/index.php/VIM_emulator).
