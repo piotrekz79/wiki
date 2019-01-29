@@ -7,6 +7,8 @@ The idea is to offload data analytics tasks from OBUs, which should focus on act
 
 ![Surrogate 1](/uploads/surrogates/surrogate-1.png "Surrogate 1")
 Figure 1 - Architecture of SURROGATES.
+
+![Surr Architecture](/uploads/surrogates/surr-architecture.png "Surr Architecture")
 ## Information collected through OBD-II
 
 # Running the Experiment
