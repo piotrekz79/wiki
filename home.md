@@ -42,7 +42,7 @@ The following pages present different topics regarding 5GinFIRE services
 [5G Smart City Robotic Surveillance Platform - RobotView5G](experiments/RobotView5G_Smart_City_Robotic_Surveilance_Platform)
 ### 2. SURROGATES
 [Hybrid Communications to Foster 5G Vehicular Services - SURROGATES](experiments/SURROGATES_Hybrid_Communications_to_Foster_5G_Vehicular_Services)
-[Experimenting using 5GinFIRE SURROGATES VNFs](experiments/SURROGATES_vnf)
+[Experimenting using 5GinFIRE SURROGATES VNFs](experiments/surrogates-vnf)
 ### 3. CAVICO
 ### 4. VRU-Safe
 [5GinFIRE VRU-safe](experiments/VRUsafe)
