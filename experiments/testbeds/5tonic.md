@@ -19,6 +19,6 @@ Regarding the deployment of the NS, the diverse VNFs that conformy it can be dep
 
 In the experiment, after the deployment and configuration of the VNFs, a user device (a commodity laptop) was connected to the NFV infrastructure where the residential gateway was instantiated, obtaining access connectivity to the deployment. After the laptop’s interaction with the DHCP server, and completion of its network configuration, we used GStreamer to request and play a specific video file from the HTTP server. The figure below represents the TCP throughput of the video delivery corresponding to the experiment, measured at the user equipment. 
 
-
+![Vodthroughput](/uploads/5-tonic/vodthroughput.png "Vodthroughput")
 
 The video file was received with an average rate of 4.44 Mbits/s, being uninterruptedly played out as it was received from the HTTP server. An analogous execution of the service, using a physical machine to deploy the HTTP server, and connected to the user equipment through a switch, provided similar throughput (also shown in the figure).
