@@ -31,6 +31,25 @@ The information collected through OBD-II from in-vehicles sensors is highly depe
 This experiment requires the use of 3 VNFs, two of them deployed in ITAv, the vOBU and the vOBU manager, and one deployed in 5TONIC, the data analytics VNF. After requesting the deployment of the related NSD, one should access the VNFs through the jump machine provided by the 5GinFIRE network management, along with the VPN credentials.
 ## Setup
 ### vOBU
+The source code is present in /home/debian/surrogates-vobu/
+The read-only key to access the repository is present in /home/debian/.ssh/id_rsa
+The repository has already a README.md
+#### Configuration
+The configuration file is /home/debian/surrogates-vobu/receiver.conf
+
+The configuration is already prepared for listening in any IPv6 address at port 8080.
+
+The IPv4 from the manager must be set in *manager param*.
+
+The instance name must be set onto *name param*. This name must be set in the *hosts file* of the connecting entities with the address to be used to connect to the instance. This is, in the *aggregator* the IPv4 for the connectivity over the tunnel that connects ITAv and 5TONIC must be set, on the OBUs the IPv6 that provides the connectivity must be set on the hosts file. 
+
+**This is needed because of the dual stack that we are using on the testbed.**
+
+**WARNING** The hosts file is usually overwritten in the OBUs so make sure that the hosts file is fine before running the experiment.
+#### Executing
+The vobu has a systemd script that is in charge of launching the service: *systemctl restart vobu*
+The logs are present at /home/debian/surrogates-vobu/output.log but some output might also go to /var/log/syslog (such as exceptions backtraces).
+
 
 ### OBU manager
 The source code is located at /home/debian/surrogates-manager/
