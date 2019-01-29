@@ -3,7 +3,7 @@
 # Overview of the experiment
 This experiment provides an example of a simple Network Service (NS) that can be deployed over any NFV infrastructure(s) of 5GinFIRE, using the OSM stack available at 5TONIC. The Network Service (NS) of the experiment is illustrated in the figure below.
 
-![Hello Worldv 2](/uploads/5-tonic/hello-worldv-2.png "Hello Worldv 2")
+![Hello Worldv 2](/uploads/5-tonic/hello-worldv-2.png "Hello Worldv 2"){small}
 
 The NS is composed of two VNFs that are interconnected through a data link. Each VNF has a control and a data interface (the latter provides data connectivity with the correspondant VNF), and is assumed to obtain an IP network address for each of its interfaces through DHCP. The VNFs do not provide any specific network functionality (they have been developed only for testing purposes), and do not require additional configuration through the Juju interface of the OSM stack. The NS and the VNFs (images and NFV descriptors) have been made available in the 5GinFIRE portal, under an open source license.
 
