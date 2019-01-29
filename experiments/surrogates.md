@@ -85,12 +85,14 @@ This project involves the software required to be installed in the real OBUs. Th
 
 **Requisites**
 * Python 2.7
-For sender:
+
+- - For sender:
 * setuptools python module
 * obd python module
 * pyserial python module
 * pint python module
-For server:
+
+- -For server:
 * requests python module
 * urllib3 python module
 * bson python module
