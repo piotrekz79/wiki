@@ -8,7 +8,7 @@ This experiment provides an example of a simple Network Service (NS) that can be
 The NS is composed of two VNFs that are interconnected through a data link. Each VNF has a control and a data interface (the latter provides data connectivity with the correspondant VNF), and is assumed to obtain an IP network address for each of its interfaces through DHCP. The VNFs do not provide any specific network functionality (they have been developed only for testing purposes), and do not require additional configuration through the Juju interface of the OSM stack. The NS and the VNFs (images and NFV descriptors) have been made available in the 5GinFIRE portal, under an open source license.
 
 # Deployment of the experiment
-The aforementioned NS can be deployed using the 5GinFIRE portal, and each of its constituent VNFs can be allocated to any site of 5GinFIRE. Hence, the Hello World NS can be a multi/single-site NS. TR¡he virtual resources allocated to each virtual machine are summarized in the figure, and are specified in the corresponding VND descriptors.
+The aforementioned NS can be deployed using the 5GinFIRE portal, and each of its constituent VNFs can be allocated to any site of 5GinFIRE. Hence, the Hello World NS can be a multi/single-site NS. The virtual resources allocated to each virtual machine are summarized in the figure, and are specified in the corresponding VND descriptors.
 
 # Testing the NS
 After the succesful deployment of the NS, the experimenter can access any of the VNFs, following the procedures and policies defined by 5GinFIREE (see [here](http://wiki.5ginfire.eu/tutorials/guide-external-access-experimenters). From the VNF, the experimenter can verify the availability of network connectivity with the other VNF:
