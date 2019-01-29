@@ -11,9 +11,9 @@ The NS is composed of two VNFs that are interconnected through a data link. Each
 The aforementioned NS can be deployed using the 5GinFIRE portal, and each of its constituent VNFs can be allocated to any site of 5GinFIRE. Hence, the Hello World NS can be a multi/single-site NS. The virtual resources allocated to each virtual machine are summarized in the figure, and are specified in the corresponding VND descriptors.
 
 # Testing the NS
-After the succesful deployment of the NS, the experimenter can access any of the VNFs, following the procedures and policies defined by 5GinFIREE (see [here](http://wiki.5ginfire.eu/tutorials/guide-external-access-experimenters). From the VNF, the experimenter can verify the availability of network connectivity with the other VNF:
+After the succesful deployment of the NS, the experimenter can access any of the VNFs, following the procedures and policies defined by 5GinFIRE (see [here](http://wiki.5ginfire.eu/tutorials/guide-external-access-experimenters)). From the VNF, the experimenter can verify the availability of network connectivity with the other VNF:
 
 ``> ping -I <source-IP-address> <destination-IP-address>``
 
-Where ``<source-IP-address>`` is the Ip address of the local VNF on its data interface; while ``<destination-IP-address>`` is the IP address of the other VNF on its data interface.
+Where ``<source-IP-address>`` is the IP address of the local VNF on its data interface; while ``<destination-IP-address>`` is the IP address of the other VNF on its data interface.
 
