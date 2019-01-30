@@ -119,6 +119,7 @@ Each element in this list is composed by the following fields:
 + **version**: VLD version
 + **type**: VLD type (ELAN is the only value supported)
 + **mgmt-network**: indicates if the network is a VIM management network
++ **vim-network-name**: indicates if the VIM network where this VLD will be mapped to. A mgmt-plane network must be mapped to "provider" VIM network and a data-plane network must be mapped to "provider2" VIM network in order to be accessible through multiple VIMs and through the VPN connection.
 + **vnfd-connection-point-ref**: list of references to VNF connection points
 ++ **member-vnf-index-ref**: reference index defined in the constituent-vnfd
 ++ **vnfd-id-ref**: VNFD identifier defined in the constituent-vnfd
