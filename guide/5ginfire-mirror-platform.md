@@ -50,13 +50,13 @@ OSM Release FOUR includes several components in its architecture (e.g., a LifeCy
 
 To get information on the specific failure produced by the onboarding attempt, you will need to access the LCM and the RO logs.
 
-The LCM logs are available at the osm_lcm container. The file can be obtained from the host using the following command:
+The LCM logs are available at the osm_lcm container. The log can be verified from the host using the following command:
 
-``> lxc file pull SO-ub/var/log/rift/rift.log .``
+``> docker service logs osm_lcm``
 
 The RO logs can be found at the osm_ro container. You can get check the RO log with the following command:
 
-``> docker service logs osm_ro .``
+``> docker service logs osm_ro``
 
 
 
