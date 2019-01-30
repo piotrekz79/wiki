@@ -21,7 +21,7 @@ To access the mirror platform, you need to connect to the 5GinFIRE VPN. You can 
 ## Accessing the mirror platform
 After obtaining VPN credentials and connecting to the VPN (a tutorial to connect to the 5GinFIRE VPN can be found [here](http://wiki.5ginfire.eu/tutorials/guide-external-access-experimenters)), you can access the Graphical User Interface (GUI) of the mirror platform through this link:
 
-- https://10.4.48.15:8443 (using *Chrome*  is recommended)
+- http://10.4.48.15 (using *Chrome*  is recommended)
 - User and password details to be provided on demand.
 
 ![Osm Lwb Ui Login](/uploads/5-tonic/osm-lwb-ui-login.png "Osm Lwb Ui Login"){.align-left}
