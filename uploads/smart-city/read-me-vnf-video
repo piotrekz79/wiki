@@ -1,0 +1,28 @@
+This video transcoder is configured to serve the video live streaming from 3 cameras and display on Google Chrome. Three ports: 3141, 3142, 3143 are used for each stream.
+
+The VNFD has the config file to execute the initial configurations which include:
+ 1. Set up the password
+ 2. Get the IP address of the VNF and update the web page url
+
+Login
+ 1. Username: ubuntu
+ 2. Password: 5ginfire
+
+Check the initial configuration
+ 1. Run ifconfig to check the IP address
+ 2. Open the file /var/www/html/camera1.html and check at the line 7: IMAGE_SRC = "http://192.168.40.x:3141/cam.mjpg". If the IP is not update for this VNF, change it accordingly.
+ 3. Repeat the step 2 with /var/www/html/camera2.html and /var/www/html/camera3.html
+
+Execution
+Assuming that the source node is running
+At the VNF
+ 1. Run cd demo
+ 2. Run ./face-nvr-reg.py source-IP port name
+    2.1 Source-IP is the IP address of the streaming from the source node. (Observe, here we are using port 8880 for the source node. If your source node use different port, please open the face-nvr-reg.py file and change line 19: url = xxx accordingly)
+    2.2 Port is the port that you wish the processed video to be shown. Here you can choose 3141, 3142 and 3143
+    2.3 Name is the name of the camera. This argument was planed to be the name of the recorded video file. However we are not recording anything, thus it is not using. 
+
+At the user
+ 3. Once finish, open the browser (Google chrome) and type the url: IP-VNF/camerax.html
+    3.1 IP-VNF is the IP address of your VNF
+    3.2 x is the camera number which is assigned by port: 1=3141, 2=3142, 3=3143

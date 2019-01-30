@@ -1,0 +1,26 @@
+This audio transcoder is configured to serve the video live streaming from 3 microphones and display on Google Chrome. 
+
+The VNFD has the config file to execute the initial configurations which include:
+ 1. Set up the password
+
+Login
+ 1. Username: ubuntu
+ 2. Password: 5ginfire
+
+Execution
+At the VNF
+ 1. Run cd demo
+ 2. Run ./speech-reg2.py mic-number mode (Background process to perform speech recognition)
+    2.1 Mic-number is the number of microphone (Choose between 1/2/3)
+    2.2 Mode is the mode of recognizer. Choose between 1/2. 1 is the hybrid mode, which is Google and Sphinx. 2 is off-line mode, which is only Sphinx. For Google API, it needs the internet.
+ 3. Run ./audio_server2.py mic-number (Process to get the audio stream)
+    3.1 Mic-number is the number of microphone (Choose between 1/2/3). It must be the same number as 2.1
+
+At the source node
+ 4. Run ./audio_client2.py IP-VNF
+    4.1 IP-VNF is the IP address of your VNF
+    (You may need to change the parameters in this file depending on your microphone specification)
+
+At the user
+ 3. Once finish, open the browser (Google chrome) and type the url: IP-VNF/index2.html
+    3.1 IP-VNF is the IP address of your VNF
