@@ -70,7 +70,7 @@ The local toolset is provided as a single virtual machine, which can be download
 
 On the other hand, Vim-emu is capable of emulating the functionality of a VIM and an NFVI, providing a network emulation framework and supporting the deployment of VNFs as Docker containers. This way, the local toolset also complements the functionalities of the 5GinFIRE Portal, providing a mechanism to assist experimenters in the prototyping and testing of NSes.
 
-As a final note, the requirements needed to execute this virtual machine are the following: 
+The virtual machine of the local toolset can be downloade [here](http://vm-images.netcom.it.uc3m.es/osm-images/osm-R4-vimemu/). As a final note, the requirements needed to execute this virtual machine are the following: 
 
 - 1 vCPU.
 - 4 GB of memory.
