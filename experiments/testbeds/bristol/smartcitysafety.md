@@ -24,7 +24,7 @@ The architecture is composed of four building-blocks.
 
 The Smart City Safety uses two VNFs:
 
-**1. VNF Video transcoder**
+### **1. VNF Video transcoder**
 
 This VNF enables three functionalities:
 a- Receive 360 live streaming video and codify for a rectagular format
@@ -34,6 +34,8 @@ c- Execute face recognition
 The VNF video transcoder is based on OpenCV and it is publicly available at 5GinFIRE VxF repository
 
 
-**2. VNF Audio transcoder**
+
+
+### **2. VNF Audio transcoder**
 
 This VNF enables  Speech recognition based on Google Cloud Speech API and Sphinx. It allows to convert audio to text and identify some suspicious words. It also available at 5GinFIRE VxF repository. 
