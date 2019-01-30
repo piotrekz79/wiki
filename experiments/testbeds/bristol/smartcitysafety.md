@@ -7,6 +7,7 @@ Given the critical importance of security in cities, innovations in the technolo
 ## System Architecture
 Figure 1 shows the smart city safety architecture deployed at Bristol testbed.
 
+
 ![Scsarch](/uploads/scsarch.png "Scsarch")
 
 The architecture is composed of four building-blocks.
