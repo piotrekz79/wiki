@@ -36,14 +36,13 @@ Image extracted from the [ETSI OSM Wiki](https://osm.etsi.org/wikipub/index.php/
 A similar approach can be followed to import a NS package, selecting *Onboard NSD* instead of *Onboard VNFD*.
 
 ## Accessing the logs
-If the onboarding fails, you can access the OSM logs to get more information about the error. To do that, access via *ssh* to the mirror platform, i.e., using the IP address *10.4.48.15*. The login and password for the *ssh* are the following:
+If the onboarding fails, you can access the OSM logs to get more information about the error. To do that, access via *ssh* to the mirror platform, i.e., using the IP address *10.4.48.15*:
 
-- Login: 5ginfire
-- Password: 5ginfire
+- User and password details to be provided on demand
 
-``> ssh 5ginfire@10.4.48.15``
+``> ssh user@10.4.48.15``
 
-OSM Release TWO includes three main components: a Service Orchestrator (SO), a Resource Orchestrator (RO), and VNF Configuration and Abstraction (VCA) module. Each of these components is executed in a Linux container. You can see the information regarding these containers with the following command:
+OSM Release FOUR includes several components in its architecture, : a Service Orchestrator (SO), a Resource Orchestrator (RO), and VNF Configuration and Abstraction (VCA) module. Each of these components is executed in a Linux container. You can see the information regarding these containers with the following command:
 
 ``> lxc list``
 
