@@ -33,9 +33,11 @@ c- Execute face recognition
 
 The VNF video transcoder is based on OpenCV and it is publicly available at 5GinFIRE VxF repository
 
-
+[The configuration to use the VNF is available here.]([Read Me Vnf Video](/uploads/smart-city/read-me-vnf-video "Read Me Vnf Video"))
 
 
 ### **2. VNF Audio transcoder**
 
 This VNF enables  Speech recognition based on Google Cloud Speech API and Sphinx. It allows to convert audio to text and identify some suspicious words. It also available at 5GinFIRE VxF repository. 
+
+[The configuration to use the VNF is available here.]([Read Me Vnf Audio](/uploads/smart-city/read-me-vnf-audio "Read Me Vnf Audio"))
