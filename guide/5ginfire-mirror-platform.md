@@ -8,7 +8,7 @@ To enable experimenters and developers to carry out a first validation of their 
 2) Onboarding of NSes.
 3) Access to OSM logs, to get information on any onboarding errors.
 
-This way, the mirror platform allows platform users to verify if a NS or VxF can be onboarded to OSM, before formally requesting the onboarding of the component to the production MANO platform through the [5GinFIRE Portal](https://portal.5ginfire.eu). Its main purpose is to agilely detect errors in NS/VxF package specifications early in the experimentation process. This way, users can autonomously do a preliminary validation of their NS/VxF packages, making sure that they are compliant with the OSM software and can effectively be onboarded to the production OSM platform. This allows reducing potential interaction cycles and delays that would otherwise be necessary to set up an experiment with new NS/VxFs, optimizing the experimentation process.
+This way, the mirror platform allows platform users to verify if an NS or VxF can be onboarded to OSM, before formally requesting the onboarding of the component to the production MANO platform through the [5GinFIRE Portal](https://portal.5ginfire.eu). Its main purpose is to agilely detect errors in NS/VxF package specifications early in the experimentation process. This way, users can autonomously do a preliminary validation of their NS/VxF packages, making sure that they are compliant with the OSM software and can effectively be onboarded to the production OSM platform. This allows reducing potential interaction cycles and delays that would otherwise be necessary to set up an experiment with new NS/VxFs, optimizing the experimentation process.
 
 When using the mirror platform, please take into account the following considerations:
 
