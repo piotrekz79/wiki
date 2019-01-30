@@ -1,7 +1,7 @@
 <!-- TITLE: Example: deployment of VoD service at 5TONIC -->
 
 # Overview of the experiment
-As an example of an experiment that can be carried out over the 5TONIC infrastructure, in the following we describe the process followed to deploy a Video-on-Demand (VoD) service, and we validate is appropriate operation. The Network Service (NS) of the experiment is illustrated in the figure below.
+As an example of an experiment that can be carried out over the 5TONIC infrastructure, in the following we describe the process followed to deploy a Video-on-Demand (VoD) service, and we validate its appropriate operation. The Network Service (NS) of the experiment is illustrated in the figure below.
 
 ![Vod Ns](/uploads/5-tonic/vod-ns.png "Vod Ns")
 
