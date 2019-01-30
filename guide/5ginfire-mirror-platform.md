@@ -69,3 +69,10 @@ In addition to the mirror platform, 5GinFIRE partners have also prepared a local
 The local toolset is provided as a single virtual machine, which can be downloaded by experimenters and other interested users from the 5GinFIRE website. With this toolset, experimenters may also test if a NS or VxF can be onboarded to OSM (and hence to the 5GinFIRE MANO system). 
 
 On the other hand, Vim-emu is capable of emulating the functionality of a VIM and an NFVI, providing a network emulation framework and supporting the deployment of VNFs as Docker containers. This way, the local toolset also complements the functionalities of the 5GinFIRE Portal, providing a mechanism to assist experimenters in the prototyping and testing of NSes.
+
+As a final note, the requirements needed to execute this virtual machine are the following: 
+
+- 1 vCPU.
+- 4 GB of memory.
+- 65 GB of storage.
+- A network interface with Internet connectivity.
