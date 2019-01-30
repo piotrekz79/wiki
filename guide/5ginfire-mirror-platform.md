@@ -47,7 +47,7 @@ OSM Release FOUR includes several components in its architecture (e.g., a LifeCy
 ``> docker service list``
 
 ![Screen Shot 2018 07 16 At 17 17 55](/uploads/mirror-site/screen-shot-2018-07-16-at-17-17-55.png "Screen Shot 2018 07 16 At 17 17 55")
-![osmR4-list-dockers](/uploads/mirror-site/osmR4-list-dockers "osmR4-list-dockers")
+![osmR4-list-dockers](/uploads/mirror-site/osmR4-list-dockers.png "osmR4-list-dockers")
 
 To get information on the specific failure produced by the onboarding attempt, you will need to access the LCM and the RO logs.
 
