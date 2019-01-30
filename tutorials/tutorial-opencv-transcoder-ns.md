@@ -101,7 +101,7 @@ The Virtual Link Descriptors define the Virtual Link requirements for connecting
       description: "Data Network"
       version: "1.0"
       type: "ELAN"
-		vim-network-name: provider2
+			vim-network-name: provider2
       mgmt-network: "false"
       vnfd-connection-point-ref:
       - member-vnf-index-ref: 1
