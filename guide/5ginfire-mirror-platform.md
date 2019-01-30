@@ -42,15 +42,15 @@ If the onboarding fails, you can access the OSM logs to get more information abo
 
 ``> ssh user@10.4.48.15``
 
-OSM Release FOUR includes several components in its architecture, : a Service Orchestrator (SO), a Resource Orchestrator (RO), and VNF Configuration and Abstraction (VCA) module. Each of these components is executed in a Linux container. You can see the information regarding these containers with the following command:
+OSM Release FOUR includes several components in its architecture (e.g., a LifeCycle Management (LCM), a Resource Orchestrator (RO), and VNF Configuration and Abstraction (VCA) modules among others). Each of these components is executed in a Docker container. You can see the information regarding these containers with the following command:
 
-``> lxc list``
+``> docker service list``
 
 ![Screen Shot 2018 07 16 At 17 17 55](/uploads/mirror-site/screen-shot-2018-07-16-at-17-17-55.png "Screen Shot 2018 07 16 At 17 17 55")
 
-To get information on the specific failure produced by the onboarding attempt, you will need to access the SO and the RO logs.
+To get information on the specific failure produced by the onboarding attempt, you will need to access the LCM and the RO logs.
 
-The SO logs are available at the SO-ub container, at the following location: */var/log/rift/rift.log*. The file can be obtained from the host using the following command:
+The LCM logs are available at the osm_lcm container. The file can be obtained from the host using the following command:
 
 ``> lxc file pull SO-ub/var/log/rift/rift.log .``
 
