@@ -54,9 +54,9 @@ The LCM logs are available at the osm_lcm container. The file can be obtained fr
 
 ``> lxc file pull SO-ub/var/log/rift/rift.log .``
 
-The RO logs can be found at the RO container, in the file */var/log/osm/openmano.log*. You can get this file from the host with the following command:
+The RO logs can be found at the osm_ro container. You can get check the RO log with the following command:
 
-``> lxc file pull RO/var/log/osm/openmano.log .``
+``> docker service logs osm_ro .``
 
 
 
