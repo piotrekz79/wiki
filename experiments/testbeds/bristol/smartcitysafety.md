@@ -31,7 +31,7 @@ a- Receive 360 live streaming video and codify for a rectagular format
 b- Execute face detection given the live streaming video in a rectagular format
 c- Execute face recognition 
 
-The VNF video transcoder is based on OpenCV and it is publicly available at 5GinFIRE VxF repository
+The VNF video transcoder is based on OpenCV and it is publicly available at 5GinFIRE VxF repository 
 
 The configuration to use the VNF is available here. [Read Me Vnf Video](/uploads/smart-city/read-me-vnf-video.pdf "Read Me Vnf Video")
 
