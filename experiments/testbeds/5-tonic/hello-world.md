@@ -13,7 +13,7 @@ The aforementioned NS can be deployed using the 5GinFIRE portal, and each of its
 # Testing the NS
 After the succesful deployment of the NS, the experimenter can access any of the VNFs, following the procedures and policies defined by 5GinFIRE (see [here](http://wiki.5ginfire.eu/tutorials/guide-external-access-experimenters)). From the VNF, the experimenter can verify the availability of network connectivity with the other VNF:
 
-``> ping -I <source-IP-address> <destination-IP-address>``
+``> ping <destination-IP-address> -I <source-IP-address>``
 
 Where ``<source-IP-address>`` is the IP address of the local VNF on its data interface; while ``<destination-IP-address>`` is the IP address of the other VNF on its data interface.
 
