@@ -20,7 +20,8 @@ Your VNF is described in terms of a Virtual Network Function Descriptor. Please 
 ### Select or Create your VNFs
 
 Either you browse the public VNF catalog at https://portal.5ginfire.eu/#!/vxf_marketplace or you create your own VNFs.
-For creating VNFs compliant with OSM TWO see our tutorials in main page: http://wiki.5ginfire.eu/
+For creating VNFs  see our tutorials in main page: http://wiki.5ginfire.eu/
+**Note**: Currently 5GinFIRE support VNFs packaged with archive format for OSM FOUR
 
 IMPORTANT TIP: in 5GinFIRE, management and data planes are decoupled. Therefore, if you wish to be able to remotely access your VNFs while executing experiments, you need to incorporate an interface in the managament plane to your VMs. The process described in http://wiki.5ginfire.eu/tutorials/guide-external-access-experimenters makes use of such interfaces.
 
@@ -34,6 +35,12 @@ When you have prepared your VNFs you need to upload them to the portal. You need
 By default when you open an account you will have the roles of "EXPERIMENTER" and "VXF_DEVELOPER".
 Please check the portal user guide: http://wiki.5ginfire.eu/5-gin-fire-portal-user-guide
 For VNF uploading: http://wiki.5ginfire.eu/5-gin-fire-portal-user-guide#vx-f-developer-user-interface-description
+
+### VNF Image
+
+The image of your VNF can be either a public URL (hosted for example on a public server, or you ftp server, etc ) or can be uploaded to the portal to Admin->Registered Images.
+**Note:**The image that you use the it must be uploaded to your Experimentation Testbeds! You need to contact and coordinate with your Mentor for this action!
+
 
 ### VNF validation 
 
@@ -56,7 +63,8 @@ If your VNF is valid, it will be onboarded to OSM.
 Your experiment is described in terms of a Network Service Descriptor. Please see: http://wiki.5ginfire.eu/packagingvxfnsd
 
 Either you browse the public NSD catalog at https://portal.5ginfire.eu/#!/experiments_marketplace or you create your own NSD.
-For creating NSD compliant with OSM TWO see our tutorials in main page: http://wiki.5ginfire.eu/
+For creating NSD compliant with OSM  see our tutorials in main page: http://wiki.5ginfire.eu/
+**Note**: Currently 5GinFIRE support NSDs packaged with archive format for OSM FOUR
 
 ### Pre validation 
 
