@@ -48,5 +48,11 @@ The type of data presented in the JSON column is as follows:
 Operations to change the resources in real time, such as changing the center frequency or the bandwidth, can be accomplished simply the performing a request_tx_resources or request_rx_resources with the new configuration wanted and the same id. 
 
 # HyDRA Client Library 
+We developed a client library that implements all the RRMF with the objective of facilitating the development of SDR radios by the EVIs. This library abstracts the client-server communication as a set of functions calls that generate the JSON request, send it to the HyDRA-AAS server. The client library is installed in all HyDRA-AAS VM's as a C/C++ library.
+
+To use the library, experiments can use any of the HyDRA-AAS VNFs or VMs available in the WINS_5G testbed or install it manually.  Given that HyDRA-AAS is installed, developers can have access to the client library API by adding the following include to their C/C++ code:
+
+#include "hydra/hydra_client.h"
+
 
 
