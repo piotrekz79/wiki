@@ -54,5 +54,37 @@ To use the library, experiments can use any of the HyDRA-AAS VNFs or VMs availab
 
 #include "hydra/hydra_client.h"
 
+## Implementation of Radio Resource Management Functions
+This include gives access to the hydra_client class, which implements all the RRMF described previously. The definition of the class is as follows: 
+hydra_client(/* IP of the client VM connecting to HyDRA server */
+             std::string client_ip = "localhost",     
+             /* IP of the HyDRA server */
+             std::string server_ip = "localhost",
+             /* Port HyDRA server is running. 5000 by default */
+             unsigned int u_port = 5000,
+             /* Client ID. Must be unique */
+             unsigned int u_client_id = 10,
+             /* Print debug messages */
+             bool b_debug = false);
+
+This class implements the RRM functions as follows. The reader can refer to Table 1 for a description of the RRMFs.
+int request_rx_resources(/* Central frequency */
+                         double d_centre_freq,
+                         /* Bandwidth */
+                         double d_bandwidth,
+                         /* Advanced option. */
+                         bool bpad = false);
+int request_tx_resources(/* Central frequency */
+                         double d_centre_freq,
+                         /* Bandwidth */
+                         double d_bandwidth,
+                         /* Advanced option */
+                         bool bpad = false);
+/* Check if HyDRA-AAS is running */
+std::string check_connection();
+/* Query the available resources */
+std::string query_resources();
+/* Free resources */
+std::string free_resources();
 
 
