@@ -61,6 +61,7 @@ The following pages present different topics regarding 5GinFIRE services
 [eHealth5G Example Experiment](experiments/testbeds/eHealth5G)
 ### 5. 5G-VINO
 ### 6. WINS-5G
+[Software Defined Radio Slices with HyDRA Example Experiment](experiments/testbeds/WINS_5G)
 ### 7.  UFU Future Internet
 
 
