@@ -24,6 +24,30 @@ The four VNF and their interaction are shown in Figure 1. The Client VNF impleme
 # Recreating the Experiment
 By launching the HyDRA-AAS NSD and VNFD services, the experiment will automatically be setup, configured, and started.
 # HyDRA-AAS: The Client for Radio Resource Management Functions
+We implemented a Radio Resource Management Functions (RRMF) in HyDRA-AAS to support EVI assess to available physical radio resources and to request the creation of new vRF front-ends. Descriptions and examples of HyDRA RRMF are shown in Table 1. Experimenters can send a JSON request to the HyDRA-AAS server on port 5000 (default). 
 
+RRMF name	Scope	Status	Description	Example JSON
+check_connection	Global	Implemented	Check if the HyDRA-AAS server is up and running. If yes, HyDRA-AAS will reply, otherwise the message will timeout.	{"xvl_syn":""}
+
+
+query_resources	Global	Implemented	Returns a list of tuples in the form (CF, BW) of all portions of radio spectrum available to use by HyDRA. Note: this portions can be in use by external radio access technologies.	{"xvl_que":""}
+free_resources	Global	Implemented	Free all radio resources used by the client. 	{"xvl_fre": {
+   "id": + u_id
+   }
+}
+request_tx_resources	Global	Implemented	Creates a new vRF front-end and virtual network interface. This slices the physical USRP with a new vRF front-end with TX only capabilities. The virtual network interface is used to provide HyDRA-AAS functionalities.	{"xvl_rtx":
+  {"id": + u_id,
+   "centre_freq:" + d_centre_freq,
+   "padding:" + bpad,
+   "bandwidth:" + d_bandwidth
+   }
+}
+request_rx_resources	Global	Implemented	Creates a new vRF front-end and virtual network interface. This slices the physical USRP with a new vRF front-end with TX only capabilities. The virtual network interface is used to provide HyDRA-AAS functionalities.	{"xvl_rrx":
+  {"id": + u_id,
+   "centre_freq:" + d_centre_freq,
+   "padding:" + bpad,
+   "bandwidth:" + d_bandwidth
+   }
+}
 
 # HyDRA Client Library 
