@@ -24,7 +24,7 @@ The four VNF and their interaction are shown in Figure 1. The Client VNF impleme
 # Recreating the Experiment
 By launching the HyDRA-AAS NSD and VNFD services, the experiment will automatically be setup, configured, and started.
 # HyDRA-AAS: The Client for Radio Resource Management Functions
-We implemented a Radio Resource Management Functions (RRMF) in HyDRA-AAS to support EVI assess to available physical radio resources and to request the creation of new vRF front-ends. Descriptions and examples of HyDRA RRMF are shown in Table 1. Experimenters can send a JSON request to the HyDRA-AAS server on port 5000 (default). 
+We implemented a Radio Resource Management Functions (RRMF) in HyDRA-AAS to support EVI assess to available physical radio resources and to request the creation of new vRF front-ends. Descriptions and examples of HyDRA RRMF are shown below. Experimenters can send a JSON request to the HyDRA-AAS server on port 5000 (default). 
 
 RRMF name	Scope	Status	Description	Example JSON
 check_connection	Global	Implemented	Check if the HyDRA-AAS server is up and running. If yes, HyDRA-AAS will reply, otherwise the message will timeout.	{"xvl_syn":""}
