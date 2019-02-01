@@ -26,6 +26,7 @@ By launching the HyDRA-AAS NSD and VNFD services, the experiment will automatica
 # HyDRA-AAS: The Client for Radio Resource Management Functions
 We implemented a Radio Resource Management Functions (RRMF) in HyDRA-AAS to support EVI assess to available physical radio resources and to request the creation of new vRF front-ends. Descriptions and examples of HyDRA RRMF are shown below. Experimenters can send a JSON request to the HyDRA-AAS server on port 5000 (default). 
 
+### Table 1 List of new RRMFs
 **RRMF name**: check_connection
 **Description**: Check if the HyDRA-AAS server is up and running. If yes, HyDRA-AAS will reply, otherwise the message will timeout.	
 
@@ -95,8 +96,9 @@ To use the library, experiments can use any of the HyDRA-AAS VNFs or VMs availab
 
 #include "hydra/hydra_client.h"
 
+This include gives access to the hydra_client class, which implements all the RRMF described previously.
 ## Implementation of Radio Resource Management Functions
-This include gives access to the hydra_client class, which implements all the RRMF described previously. The definition of the class is as follows: 
+The definition of the hydra_client.h class is as follows: 
 
 ```text
 
