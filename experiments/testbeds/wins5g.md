@@ -29,15 +29,56 @@ We implemented a Radio Resource Management Functions (RRMF) in HyDRA-AAS to supp
 RRMF name: check_connection	
 Description: Check if the HyDRA-AAS server is up and running. If yes, HyDRA-AAS will reply, otherwise the message will timeout.	
 
+```text
+Example JSON
+{"xvl_syn":""}
+```
 
 RRMF name: query_resources		
 Description: Returns a list of tuples in the form (CF, BW) of all portions of radio spectrum available to use by HyDRA. Note: this portions can be in use by external radio access technologies.	
+```text
+Example JSON
+{"xvl_que":""}
+```
+
+RRMF name: free_resources		
+Description: Free all radio resources used by the client. 
+```text
+Example JSON
+{"xvl_fre": {
+   "id": + u_id
+   }
+}
+
+```
+
+
 
 RRMF name: request_tx_resources	
 Description: Creates a new vRF front-end and virtual network interface. This slices the physical USRP with a new vRF front-end with TX only capabilities. The virtual network interface is used to provide HyDRA-AAS functionalities.	
+```text
+Example JSON
+{"xvl_rtx":
+  {"id": + u_id,
+   "centre_freq:" + d_centre_freq,
+   "padding:" + bpad,
+   "bandwidth:" + d_bandwidth
+   }
+}
+```
 
 RRMF name: request_rx_resources		
 Description: Creates a new vRF front-end and virtual network interface. This slices the physical USRP with a new vRF front-end with TX only capabilities. The virtual network interface is used to provide HyDRA-AAS functionalities.	
+```text
+Example JSON
+{"xvl_rrx":
+  {"id": + u_id,
+   "centre_freq:" + d_centre_freq,
+   "padding:" + bpad,
+   "bandwidth:" + d_bandwidth
+   }
+}
+```
 
 The type of data presented in the JSON column is as follows:
 * u_id: integer. Identifies the ID of the client. Each client connected to a HyDRA-AAS has a unique ID starting from 1.
