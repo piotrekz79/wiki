@@ -28,7 +28,7 @@ We implemented a Radio Resource Management Functions (RRMF) in HyDRA-AAS to supp
 
 RRMF name: check_connection	
 Description: Check if the HyDRA-AAS server is up and running. If yes, HyDRA-AAS will reply, otherwise the message will timeout.	
-Example Json: {"xvl_syn":""}
+Example Json: \{"xvl_syn":""\}
 
 
 query_resources	Global	Implemented	Returns a list of tuples in the form (CF, BW) of all portions of radio spectrum available to use by HyDRA. Note: this portions can be in use by external radio access technologies.	{"xvl_que":""}
