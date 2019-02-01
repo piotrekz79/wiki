@@ -39,7 +39,7 @@ For VNF uploading: http://wiki.5ginfire.eu/5-gin-fire-portal-user-guide#vx-f-dev
 ### VNF Image
 
 The image of your VNF can be either a public URL (hosted for example on a public server, or you ftp server, etc ) or can be uploaded to the portal to Admin->Registered Images.
-**Note:**The image that you use the it must be uploaded to your Experimentation Testbeds! You need to contact and coordinate with your Mentor for this action!
+**Importan Note**: The image that you use the it must be uploaded to your Experimentation Testbeds! You need to contact and coordinate with your Mentor for this action!
 
 
 ### VNF validation 
