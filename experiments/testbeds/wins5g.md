@@ -34,14 +34,14 @@ Example JSON
 {"xvl_syn":""}
 ```
 
-**RRMF name:** **query_resources**
+**RRMF name**: **query_resources**
 **Description**: Returns a list of tuples in the form (CF, BW) of all portions of radio spectrum available to use by HyDRA. Note: this portions can be in use by external radio access technologies.	
 ```text
 Example JSON
 {"xvl_que":""}
 ```
 
-**RRMF name:** **free_resources	**	
+**RRMF name**: **free_resources	**	
 **Description: **Free all radio resources used by the client. 
 ```text
 Example JSON
@@ -53,7 +53,7 @@ Example JSON
 ```
 
 
-**RRMF name:** **request_tx_resources	**
+**RRMF name**: **request_tx_resources	**
 **Description**: Creates a new vRF front-end and virtual network interface. This slices the physical USRP with a new vRF front-end with TX only capabilities. The virtual network interface is used to provide HyDRA-AAS functionalities.	
 ```text
 Example JSON
@@ -66,7 +66,7 @@ Example JSON
 }
 ```
 
-**RRMF name:** **request_rx_resources		**
+**RRMF name**: **request_rx_resources		**
 **Description**: Creates a new vRF front-end and virtual network interface. This slices the physical USRP with a new vRF front-end with TX only capabilities. The virtual network interface is used to provide HyDRA-AAS functionalities.	
 ```text
 Example JSON
