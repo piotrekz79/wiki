@@ -56,6 +56,9 @@ To use the library, experiments can use any of the HyDRA-AAS VNFs or VMs availab
 
 ## Implementation of Radio Resource Management Functions
 This include gives access to the hydra_client class, which implements all the RRMF described previously. The definition of the class is as follows: 
+
+```text
+
 hydra_client(/* IP of the client VM connecting to HyDRA server */
              std::string client_ip = "localhost",     
              /* IP of the HyDRA server */
@@ -66,25 +69,97 @@ hydra_client(/* IP of the client VM connecting to HyDRA server */
              unsigned int u_client_id = 10,
              /* Print debug messages */
              bool b_debug = false);
+```
+
 
 This class implements the RRM functions as follows. The reader can refer to Table 1 for a description of the RRMFs.
+
+
+```text
 int request_rx_resources(/* Central frequency */
                          double d_centre_freq,
                          /* Bandwidth */
                          double d_bandwidth,
                          /* Advanced option. */
                          bool bpad = false);
+												 
 int request_tx_resources(/* Central frequency */
                          double d_centre_freq,
                          /* Bandwidth */
                          double d_bandwidth,
                          /* Advanced option */
                          bool bpad = false);
+												 
 /* Check if HyDRA-AAS is running */
 std::string check_connection();
 /* Query the available resources */
 std::string query_resources();
 /* Free resources */
 std::string free_resources();
+```
+
+## 	Example Application
+Below we provide a C++ example application that uses all the RRMF resource functions. This source code is located in all HyDRA-AAS VMs/VNFs in the directory /home/ubuntu/gr-hydra/app/client.cc, whereas the executable (binary) version can be found in /home/ubuntu/gr-hydra/build/app/client.
+
+```text
+
+#include "hydra/hydra_client.h"
+#include <iostream>
+int main()
+{
+  double cf_tx = 1.1e9; // Central frequency for transmission
+  double cf_rx = 1.2e9; // Central frequency for reception
+
+
+  /* Instantiate the HyDRA client */
+  hydra::hydra_client s1 = hydra::hydra_client("127.0.0.1", "127.0.0.1", 5000, 90, true);
+  
+  /* Check connection */
+  std::cout << s1.check_connection() << std::endl;
+
+  /* Query TX and RX resources */
+  std::cout << s1.query_resources() << std::endl;
+
+  /* Request RX resources. Parameters are: cf, bandwidth, bpad */
+  std::cout << s1.request_tx_resources(cf_tx + 200e3, 200e3, false) << std::endl;
+  std::cout << s1.request_rx_resources(cf_rx + 200e3, 200e3, false) << std::endl;
+
+
+  /* Free resources from a given service */
+  std::cout <<  s1.free_resources() << std::endl;
+
+  std::cout << "Press CTRL-C to quit" << std::endl;
+  while (1) usleep(1000);
+
+  return 0;
+}
+```
+
+
+To compile the example above, you should use the following command in a terminal:
+
+g++ filename.cpp -lhydra -o client
+
+where filename.cpp is the name of the file with the code shown above. This will create a binary file named client. To execute it type:
+
+./client
+
+The output of executing the client should look as follows if HyDRA-AAS is running (in this example in the localhost, otherwise you need to change the server_ip parameter when creating the hydra_client instance). For the sake of simplicity, we included only the first lines. Moreover, only the first line is shown if HyDRA-AAS is not running.
+
+```text
+Connecting to XVL server...
+Sending:	{"xvl_syn":""}
+{
+    "xvl_ack": {
+        "status": "true",
+        "message": {
+            "condition": "Enabled",
+            "name": "XVL Hypervisor Server",
+            "version": "0.1"
+        }
+    }
+}
+```
+
 
 
