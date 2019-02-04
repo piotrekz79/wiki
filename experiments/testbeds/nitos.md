@@ -748,3 +748,7 @@ And the respective description for the disaggregated network is the following:
                 vnfd-connection-point-ref: usrp-data
 ```
 
+# Experimenting with the NITOS VNFs
+
+The provided VNFs are already onboarded to the 5GinFIRE portal. Selecting an NSD from the ones prepared and as a target the NITOS testbed will deploy it during the scheduled time, if the resources exist in the testbed. All the VNFs can be deployed at any other testbed as well, though their bahaviour may not be foreseen, as they require specific Cloud-Init services in order to bootstrap their services, or handling from the NITOS side for the wireless interfaces.
+
