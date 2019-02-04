@@ -37,7 +37,7 @@ Upon receiving such a VNF Description, the VIM of the NITOS side turns on the LT
     vdu:
     - cloud-init-file: cloud-config.txt
       count: '1'
-**      description: type:Lte,virtual-apn:TEST_SS,dlambr:50000000,ulambr:50000000,qci:5,cluster-client:lte_client1,virtual-cluster:TEST_SS**
+      description: type:Lte,virtual-apn:TEST_SS,dlambr:50000000,ulambr:50000000,qci:5,cluster-client:lte_client1,virtual-cluster:TEST_SS
 			id: lteUEVM
       image: ubuntu1404_cloud
       interface:
@@ -62,7 +62,7 @@ Upon receiving such a VNF Description, the VIM of the NITOS side turns on the LT
 ```
 
 
-The image that is loaded for this VNF is a generic Ubuntu 14.04 image, but can be configured to anything else from the experimenter. Please notice the bold line in the description field that allows the NITOS VIM take care of all the low level configuration settings for the LTE equipment in the testbed.
+The image that is loaded for this VNF is a generic Ubuntu 14.04 image, but can be configured to anything else from the experimenter. Please notice the description field that allows the NITOS VIM take care of all the low level configuration settings for the LTE equipment in the testbed.
 
 The respective NSD is the following:
 
@@ -134,7 +134,7 @@ The following is a VNF with WiFi connectivity, running over an Access Point.
     vdu:
     - cloud-init-file: cloud-config.txt
       count: '1'
-**      description: type:WifiAP,interface:wlan0,essid:test,mode:g,channel:1**
+      description: type:WifiAP,interface:wlan0,essid:test,mode:g,channel:1
 			id: wifApVM
       image: ubuntu1404_cloud
       interface:
@@ -186,7 +186,7 @@ Similarly, for a VNF running over a Station interface, associated with the WiFi 
     vdu:
     - cloud-init-file: cloud-config.txt
       count: '1'
-      **description: type:WifiClient,interface:wlan0,essid:test**
+      description: type:WifiClient,interface:wlan0,essid:test
       id: wifiClientVM
       image: ubuntu1404_cloud
       interface:
@@ -287,7 +287,7 @@ Similar to the previous cases, some parameters are being passed through the desc
     vdu:
     - cloud-init-file: cloud-config.txt
       count: '1'
-      **description: type:mmWave,physical-node-id:1**
+      description: type:mmWave,physical-node-id:1
       id: mmwaveOneVM
       image: ubuntu1404_cloud
       interface:
@@ -336,7 +336,7 @@ vnfd:vnfd-catalog:
     vdu:
     - cloud-init-file: cloud-config.txt
       count: '1'
-      **description: type:mmWave,physical-node-id:2**
+      description: type:mmWave,physical-node-id:2
       id: mmwaveTwoVM
       image: ubuntu1404_cloud
       interface:
