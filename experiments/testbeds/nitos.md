@@ -15,7 +15,7 @@ For the LTE case, provisioning a VNF with such capabilities equals to providing 
 The provided VNF has one network connection as a management connection running over the Ethernet network of NITOS, and a second connection to the NITOS LTE infrastructure. Some parameters are needed for the connection to the LTE network, including the LTE subscriber group which the VNF will belong to, the Access Point Name (APN) that the subscriber group will use, and parameters about the maximum Uplink and Downlink traffic that the VNF will use. Tools invoked from the NITOS VIM side automatically retrieve lower level parameters that are required for connecting the LTE network, such as the International Mobile Subscriber Identifier (IMSI). 
 Upon receiving such a VNF Description, the VIM of the NITOS side turns on the LTE base station (if it is powered off), and registers the LTE UE of the compute node that will be used to the LTE EPC. Along with these parameters, the APN that is passed from the experimenter and the subscriber group are also registered to the NITOS EPC, whereas tools running on the compute node facilitate the connection of the UE to the LTE network, by issuing AT commands over the USB interface of the UE. Once the connection is established, the LTE interface of the compute node is attached to a bridge which is offering the connectivity to the VNF. The extra fields are currently passed through the description of the VNF.  
 
-`
+``
 	 vnfd:vnfd-catalog:
   vnfd:
   - connection-point:
@@ -58,12 +58,12 @@ Upon receiving such a VNF Description, the VIM of the NITOS side turns on the LT
         memory-mb: '4096'
         storage-gb: '5'
         vcpu-count: '4'
-    version: '1.0'`
+    version: '1.0'``
 
 The image that is loaded for this VNF is a generic Ubuntu 14.04 image, but can be configured to anything else from the experimenter. Please notice the bold line in the description field that allows the NITOS VIM take care of all the low level configuration settings for the LTE equipment in the testbed.
 
 The respective NSD is the following:
-`
+``
  nsd:nsd-catalog:
   nsd:
   - constituent-vnfd:
@@ -94,7 +94,7 @@ The respective NSD is the following:
       - member-vnf-index-ref: '1'
         vnfd-connection-point-ref: eth1
         vnfd-id-ref: lteUE-vnf
-		`
+		``
 
 
 
