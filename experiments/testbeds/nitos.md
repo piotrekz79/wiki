@@ -103,7 +103,7 @@ The respective NSD is the following:
 
 
 
-## VNFDs for WiFi connection
+# VNFDs for WiFi connection
 
 For the WiFi case, each node of the testbed is using a highly configurable WiFi card, can supports all of the modes of the IEEE 802.11 suite of protocols (Access Point, Station, Mesh, Ad-hoc, Monitor). For the needs of 5GinFIRE, only the modes of Access Point and Station are exposed through the NITOS VIM. This means that experimenters may use the NITOS nodes in order to set them up as WiFi Access Points (APs), and use the respective nodes configured as clients and associated with them. For the needs of 5GinFIRE, the experimenters may deploy VNFs to the NITOS nodes that are using the WiFi interface.
 
@@ -255,7 +255,7 @@ And the respective NSD is the following:
 ```
 
 
-## VNFDs for mmWave connection
+# VNFDs for mmWave connection
 
 For the mmWave case, each NITOS node is able to use one the six mmWave nodes that are available in the testbed. The mmWave nodes support only point-to-point communication, and up to three pairs can be configured for simultaneous transmissions. Each of the six nodes is addressed through a VLAN interface; traffic sent over VLAN 692 is reaching the first node, VLAN 693 the second, etc. For the provisioning of VNFs using a mmWave link, a similar process is followed like for the previous technologies. A VLAN interface is created on the compute node that is attached to a bridge communicating with a second network interface of the VNF. Traffic sent over this interface gets subsequently transmitted over the VLAN, reaching the mmWave node and then over the air. At the receiving mmWave node, the traffic is encapsulated in the respective VLAN addressing the mmWave node. Traffic is transmitted over the VLAN and can be delivered at the VNF that has this VLAN configured at the compute node.
 
@@ -409,11 +409,11 @@ nsd:nsd-catalog:
 All the aforementioned VNFs can be deployed at any other testbed; however, in such a case they will use only the available provider networks that exist at the testbed. For the NITOS case, the VIM retrieves these parameters from the VNFDs and prepares the wireless networks and compute nodes of the testbed prior to deploying them.
 
 
-## VNFDs for deploying a software based LTE network
+# VNFDs for deploying a software based LTE network
 
 The provided VNFs that 5G-VINO provides to the project regard the effortless establishment of a fully-fledged LTE network, based on the Open Source implementation of the LTE stack by OpenAirInterface (OAI). The functionality has been wrapped in two different flavors: one deploying the entire LTE network as a single Base Station, accompanied with its EPC, and a second one that assumes a disaggregated base station setup, realizing the Option 7-1 split from 3GPP. The functionality for the first element is wrapped in a single NSD, using two VNFs, whereas for the second one a single NSD with 3 VNFs. The RAN VNFs in both cases use the SDR device that is located on some NITOS nodes, by doing a PCI passthrough of the entire USB3 controller. 
 
-### LTE RAN VNFs
+## LTE RAN VNFs
 
 For running the LTE network, the OAI software stack is used; this consists of all the eNB related functionality, written completely in software and using a compatible RF-frontend to transmit the LTE signals over the air. The compatible RF-frontend that we use in NITOS is the USRP B210 series [12] Software Defined Radio (SDR) device, interfaced from the OAI side through the uhd_driver. The OAI RAN VNF has been setup using the guidelines provided from the developers of the platform. The VNF is running Ubuntu 16.04.2, using Linux Kernel version 4.8 and all the sleep states and frequency scaling for the processor are deactivated, thus assuring the smooth execution of the code. The USRP device is configured as a pass-through interface to the VNF in order to allow its handling from the code running inside the VM. It is worth to mention, that ordinary USB3 pass-through is not working in a stable manner for the VNF; this means that periodically the requested samples for transmitting/receiving from the USRP device are less than those requested by OpenAirInterface and are causing the system to crash. The applied workaround for this issue is to pass-through the entire USB 3 PCI controller that the USRP is mounted on; this allows us to smoothly execute the OAI code from the VNF.
 
@@ -583,7 +583,7 @@ The following two VNFs regard the setup of a disaggregated base station, using a
 ```
 
 
-### LTE Core Network VNF
+## LTE Core Network VNF
 
 Similarly to the RAN VNF, the core network VNF has been setup according to the guidelines provided for the OpenAirInterface Core Network component. The VNF is running Ubuntu 16.04 LTS, with Linux Kernel 4.7 and the GTP kernel module installed. This module allows other solutions provided from the OpenAirInterface Alliance, such as the Low Latency MEC feature to be installed on the Core Network VNF. 
 
@@ -633,7 +633,7 @@ vnfd:vnfd-catalog:
 ```
 
 
-### NSDs for software LTE
+## NSDs for software LTE
 
 Two different NSDs are provided to 5GinFIRE; one making use of the older monolithic base station and the core network (2 VNFs) and one using the disaggregated base station (RRU + RCC) and the core network (3 VNFs). The descriptions can be found below.
 
@@ -688,7 +688,7 @@ nsd:nsd-catalog:
                 vnfd-connection-point-ref: usrp-data
 ```
 
-
+And the respective description for the disaggregated network is the following:
 
 ```text
   nsd:nsd-catalog:
