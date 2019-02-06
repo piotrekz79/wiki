@@ -64,6 +64,7 @@ The following pages present different topics regarding 5GinFIRE services
 ### 6. WINS-5G
 [Software Defined Radio Slices with HyDRA Example Experiment](experiments/testbeds/WINS_5G)
 ### 7.  UFU Future Internet
+[UFU Example Experiment](experiments/testbeds/UFU)
 
 
 
