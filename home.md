@@ -6,7 +6,7 @@
 The following pages present different topics regarding 5GinFIRE services
 
 ## Tutorials and Best practices
-
+[Tutorial Video Demonstrating an Experiment Lifecycle](https://www.youtube.com/watch?v=1S-8BWm35CU)
 [Experimenting with 5GinFIRE infrastructure ](5-gin-fire-experimentation-tutorial)
 [Tutorial Creating a VNF: The OpenCV Transcoder VNF Example](tutorials/tutorial-opencv-vnf-transcoder)
 [Tutorial Creating a NSD: The OpenCV Transcoder NS Example](tutorials/tutorial-opencv-transcoder-ns)
