@@ -9,21 +9,21 @@ In our example scenario we assume that some medical work with eHealth devices is
 
 ## Components description
 
-## Video resizer - detector_edge01_vnfd
+### Video resizer - detector_edge01_vnfd
 This VNF contains ffmpeg and ffserver software.
 It is configured to pull video stream, transcode, resize and restream it.
 
-## Scene detect - detector_edge02_vnfd
+### Scene detect - detector_edge02_vnfd
 This VNF contains simple python script based on OpenCV.
 Application functionality:
 - pulling video frames from video resizer
 - detecting scene change in video by comparing the colors between each two frames
 - serving frames together with detection information
 
-## Video and metadata archive - detector_core_vnfd
+### Video and metadata archive - detector_core_vnfd
 The detector_core VNF contains python script used to receive frames with metadata and save them to files.
 
-## Experiment - detector_example_nsd
+### Experiment - detector_example_nsd
 This NSD consist of three VNFs described above.
 
 # Recreating the experiment.
