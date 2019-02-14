@@ -31,7 +31,8 @@ A summary of the testbed constituent equipment and capabilities is:
 •	Nokia 4G and Evolution 5G NR
 		o	4G EPC & LTE-A (Dual FDD licensed bands for 1800MHz and 2600MHz; with 15MHz of T&D licence in 2600MHz band)
 		o	Evolution towards 5G Core
-		o	5G NR Massive MIMO (TDD band 42 at 3.5GHz; with 20MHz T&D licence) with evolved EPC option 3.x 
+		o	5G NR Massive MIMO (TDD band 42 at 3.5GHz; with 20MHz T&D licence) 
+		o	Envolved EPC option 3.x under current acquisition and implementation as a roadmap item. 
 		
 			
 •	Self-organising multipoint-to-multipoint wireless mesh network
