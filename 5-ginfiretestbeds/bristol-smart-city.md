@@ -153,7 +153,7 @@ The rapid deployment of this testbed by the Smart Internet Lab across two cuttin
 
 # Contact
 
-Aloizio P. Silva (aloizio.eisenmann.dasilva@bristol.ac.uk)
+Alex Mavromatis (a.mavromatis@bristol.ac.uk); Xavier Priem (xavier.priem@bristol.ac.uk); Aloizio P. Silva (aloizio.eisenmann.dasilva@bristol.ac.uk)
 Merchant Venturers Building, High Performance Network Laboratory
 University of Bristol – UK
 Woodland Road BS8 1UB
