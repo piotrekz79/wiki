@@ -47,7 +47,7 @@ The following pages present different topics regarding 5GinFIRE services
 ### 4. VRU-Safe
 [5GinFIRE VRU-safe](experiments/VRUsafe)
 ### 5. SFCLola
-[Experimenting with SFCLola VNF](experiments/VNF_VFF)
+[Experimenting with SFCLola VNF](/uploads/sfclola/vnf-vff.docx "Vnf Vff")
 ## Representative Experiments by TestBed Providers
 
 ### 1. Bristol Smart City
