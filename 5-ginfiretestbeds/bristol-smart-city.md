@@ -28,11 +28,11 @@ A summary of the testbed constituent equipment and capabilities is:
 		o	SDN enabled Ruckus Wi-Fi (T710 and R720)
 		o	Nokia Wi-Fi (AC400)
 		
-•	Nokia 4G and 5G NR
+•	Nokia 4G and Evolution 5G NR
 		o	4G EPC & LTE-A (Dual FDD licensed bands for 1800MHz and 2600MHz; with 15MHz of T&D licence in 2600MHz band)
-		o	5G Core & 5G NR Massive MIMO (TDD band 42 at 3.5GHz; with 20MHz T&D licence)
-			The project expected availability after November 2018
-			Handset availability is beyond January 2019
+		o	Evolution towards 5G Core
+		o	5G NR Massive MIMO (TDD band 42 at 3.5GHz; with 20MHz T&D licence) with evolved EPC option 3.x 
+		
 			
 •	Self-organising multipoint-to-multipoint wireless mesh network
 		o	CCS MetNet a 26GHz with 112MHz T&D licence providing 1.2Gbps throughput
