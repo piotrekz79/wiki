@@ -4,10 +4,10 @@
 # 5GinFIRE Mentors
 Here is a list of 5GinFIRE Mentors. 
 
-**Bristol Smart City Testbed - University of Bristol**: Aloizio Eisenmann 
+**Bristol Smart City Testbed - University of Bristol**: Alex Mavromatis, Xavier Priem
 **IT-Aveiro Automotive testbed**: Miguel Luís
 **IT Aveiro**: Diogo Gomes 
-**5TONIC**: Ivan Vidal
+**5TONIC**: UC3M Operations 5GinFIRE
 **eHealth Testbed - PSNC**: Damian Parniewicz
 **NITOS testbed - University of Thessaly**: Nikos Makris
  **Iris Testbed** : Diarmuid Collins
@@ -19,8 +19,8 @@ Currently the **Mentors** of the **2nd call of experiment**s are the following:
 * 5G-CAGE – Mentor: **Miguel Luís**
 * TelMed5G – Mentor: **Damian Parniewicz** 
 * DIRECTOR 5G – Mentor: **Diarmuid Collins**
-* FB5G – Mentor: **Ivan Vidal**
-* Sec5G – Mentor: **Aloizio Pereira da Silva**
+* FB5G – Mentor: **UC3M Operations 5GinFIRE**
+* Sec5G – Mentor: **Alex Mavromatis**
 
 Currently the **Mentors** of the **1st call of experiments** are the following:
 * SURROGATES (using Aveiro testbed) – Mentor: **Miguel Luis**
