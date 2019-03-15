@@ -15,14 +15,22 @@ Here is a list of 5GinFIRE Mentors.
 **University of Patras**: Ioannis Chatzis
 
 # 5GinFIRE Mentors per Experiment
-Currently the **Mentors** of the **2nd call of experiment**s are the following:
+Currently the **Mentors** of the **2nd call of experiments** are the following:
+* P4in5G – Mentors: **UC3M Operations 5GinFIRE, Miguel Luís**
+* MARATHON – Mentor: **To be determined** 
+* MIGRATE – Mentor: **To be determined** 
+* PARAMEDIC-SCALE – Mentor: **To be determined** 
+* COSMOS – Mentor: **To be determined** 
+* 5G-SAFETY – Mentor: **To be determined** 
+
+Currently the **Mentors** of the **1st call of experiments, second phase** are the following:
 * 5G-CAGE – Mentor: **Miguel Luís**
 * TelMed5G – Mentor: **Damian Parniewicz** 
 * DIRECTOR 5G – Mentor: **Diarmuid Collins**
 * FB5G – Mentor: **UC3M Operations 5GinFIRE**
 * Sec5G – Mentor: **Alex Mavromatis**
 
-Currently the **Mentors** of the **1st call of experiments** are the following:
+Currently the **Mentors** of the **1st call of experiments, first phase** are the following:
 * SURROGATES (using Aveiro testbed) – Mentor: **Miguel Luis**
 * CAVICO (using Aveiro testbed) – Mentor: **Miguel Luis**
 * SFCLola (multisite experiment) – Mentor: **Diogo Gomes**
