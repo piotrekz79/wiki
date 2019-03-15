@@ -18,7 +18,7 @@ Here is a list of 5GinFIRE Mentors.
 Currently the **Mentors** of the **2nd call of experiments** are the following:
 * P4in5G – Mentors: **UC3M Operations 5GinFIRE**
 * MARATHON – Mentor: **Diarmuid Collins** 
-* MIGRATE – Mentor: **To be determined** 
+* MIGRATE – Mentor: **Miguel Luis** 
 * PARAMEDIC-SCALE – Mentor: **To be determined** 
 * COSMOS – Mentor: **To be determined** 
 * 5G-SAFETY – Mentor: **To be determined** 
