@@ -21,7 +21,7 @@ Currently the **Mentors** of the **2nd call of experiments** are the following:
 * MIGRATE – Mentor: **Miguel Luis** 
 * PARAMEDIC-SCALE – Mentor: **Alex Mavromatis** 
 * COSMOS – Mentor: **Alex Mavromatis** 
-* 5G-SAFETY – Mentor: **To be determined** 
+* 5G-SAFETY – Mentor: **Nikos Makris** 
 
 Currently the **Mentors** of the **1st call of experiments, second phase** are the following:
 * 5G-CAGE – Mentor: **Miguel Luís**
