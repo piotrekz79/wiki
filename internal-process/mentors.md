@@ -16,7 +16,7 @@ Here is a list of 5GinFIRE Mentors.
 
 # 5GinFIRE Mentors per Experiment
 Currently the **Mentors** of the **2nd call of experiments** are the following:
-* P4in5G – Mentors: **UC3M Operations 5GinFIRE, Miguel Luís**
+* P4in5G – Mentors: **UC3M Operations 5GinFIRE**
 * MARATHON – Mentor: **To be determined** 
 * MIGRATE – Mentor: **To be determined** 
 * PARAMEDIC-SCALE – Mentor: **To be determined** 
