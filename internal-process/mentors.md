@@ -20,7 +20,7 @@ Currently the **Mentors** of the **2nd call of experiments** are the following:
 * MARATHON – Mentor: **Diarmuid Collins** 
 * MIGRATE – Mentor: **Miguel Luis** 
 * PARAMEDIC-SCALE – Mentor: **Alex Mavromatis** 
-* COSMOS – Mentor: **To be determined** 
+* COSMOS – Mentor: **Alex Mavromatis** 
 * 5G-SAFETY – Mentor: **To be determined** 
 
 Currently the **Mentors** of the **1st call of experiments, second phase** are the following:
