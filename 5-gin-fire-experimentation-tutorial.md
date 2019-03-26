@@ -70,6 +70,16 @@ For creating NSD compliant with OSM  see our tutorials in main page: http://wiki
 
 The NSD developer verifies that the NSD can be onboarded to [The 5GinFIRE "mirror platform"](guide/5ginfire-mirror-platform). If so, the developer can proceed with submitting the NSD. Otherwsie, the developer should fix any error regarding the NSD packages or descriptors, until on-boarding is successful. NSD developers can request support from 5GinFIRE partners to address any issues regarding NSD, e.g., through the mailing list, bugzilla, or the slack channel. The request will be visible to all partners working on infrastructures and services, such that anyone can provide support to the questions.
 
+### VLD setup
+The experimenter should name the Management and Data VLDs in the yaml file appropriately for automatic network definition during automatic instantiation of the NS.
+-The VLD which will be used for the Management plane should have a name ending in "_mgmt".
+-The VLD which will be used for the Data plane should have a name ending in "_data".
+
+The NSD is then onboarded automatically to the 5GinFIRE OSM component at 5TONIC.
+In nominal situation the NSD will get a status ONBOARDED. The Bugzilla ticket status is changed to RESOLVED-FIXED and the NSD is marked as Valid (in order for the NSD to appear in the list for Deployment Requests).
+Exception: if there is no way to onboard it due to errors, the ticket status is changed to RESOLVED-INVALID the NSD should be marked as NOT-VALID and the 5TONIC team needs to manually identify why this is not possible
+
+
 ### Portal uploading
 
 When you have prepared your NSD you need to upload them to the portal. You need first to open an account to the portal. https://portal.5ginfire.eu 
