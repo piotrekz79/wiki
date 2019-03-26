@@ -75,9 +75,6 @@ The experimenter should name the Management and Data VLDs in the yaml file appro
 -The VLD which will be used for the Management plane should have a name ending in "_mgmt".
 -The VLD which will be used for the Data plane should have a name ending in "_data".
 
-The NSD is then onboarded automatically to the 5GinFIRE OSM component at 5TONIC.
-In nominal situation the NSD will get a status ONBOARDED. The Bugzilla ticket status is changed to RESOLVED-FIXED and the NSD is marked as Valid (in order for the NSD to appear in the list for Deployment Requests).
-Exception: if there is no way to onboard it due to errors, the ticket status is changed to RESOLVED-INVALID the NSD should be marked as NOT-VALID and the 5TONIC team needs to manually identify why this is not possible
 
 
 ### Portal uploading
@@ -94,6 +91,11 @@ You will be notified if your NSD is valid in terms of:
 - NSD Packaging for target OSM version (Currently TWO but we are moving to FOUR)
 - Onboarding capability
 - Deployment capability
+
+The NSD is  onboarded automatically to the 5GinFIRE OSM component at 5TONIC.
+In nominal situation the NSD will get a status ONBOARDED. The Bugzilla ticket status is changed to RESOLVED-FIXED and the NSD is marked as Valid (in order for the NSD to appear in the list for Deployment Requests).
+Exception: if there is no way to onboard it due to errors, the ticket status is changed to RESOLVED-INVALID the NSD should be marked as NOT-VALID and the 5TONIC team needs to manually identify why this is not possible
+
 
 ### NSD onboarding
 
