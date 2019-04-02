@@ -25,7 +25,7 @@ Insert your VPN credentials and click OK
 
 ![OpenVPN Credentials](/uploads/external-access-for-experimenters/openvpncredentials.png "OpenVPN Credentials")
 
-Once connected, you can establish an SSH connection to the gateway (or jump machine): 10.4.255.10, using its credentials (for security reasons you should ask the credentials to your Mentor)
+Once connected, you can establish an SSH connection to the gateway (or jump machine): 10.4.255.10, using its credentials (for security reasons you should ask your Mentor for the credentials)
 
 ![SSH to Jump Machine](/uploads/external-access-for-experimenters/jumpmachinessh.png "SSH to Jump Machine")
 
