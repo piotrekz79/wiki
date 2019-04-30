@@ -132,7 +132,7 @@ The iMON solution will be realised on top of the PPDR ONE infrastructure as a Sa
 	* Body worn camera
 	* Head placed camera
 * Drone   
-	* DJI Mavic Air 2
+	* DJI Mavic 2 Zoom
 * Environmental/industrial sensors
 	* Water level sensor SENIX - ToughSonic REMOTE 14
 	* Water level sensor SENIX - ToughSonic REMOTE 30
