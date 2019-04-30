@@ -95,6 +95,65 @@ The current IP addressing configuration is as follows:
 
 Mobile EPC core (Amarisoft) can be configured to run in different network segments.
 
+## PPDR ONE Equipment
+
+PPDR ONE testbed provides the following functional tools:
+* PPDR services toolset for demonstration and evaluation
+* user terminals, embedded computers and IoT devices
+* network and service testing, verification and benchmarking toolset
+
+**PPDR services toolset for demonstration and evaluation**
+
+iMON solution available as part of the 5GINFIRE experimenters comprises two main components:
+
+** iMON Dashboard** 
+Tactical Dashboard exposing real-time PPDR services for a common operational picture, situational awareness, and intervention management. It features a rich client HTML5/PHP web application, supporting: RT common operational picture, RT assets tracking and backlog, data analytics, and visualisations, intervention reports, and logs; Backend: RT notifications, exposed APIs, automated hierarchical (group) user and device management.
+
+** iMON Mobile App**
+Android Mobile application for triage and tracking from the field. Native mobile app with field sensing, time and distance-based location tracking, automated triage reporting (official procedural reporting formats, image attachments, automatically retrieved location data); automatic sync with COP; use of COTS mobile devices with IP67.
+
+![Imon](/uploads/ppdrone/imon.png "Imon")
+**Figure 5: iMON**
+
+The iMON solution will be realised on top of the PPDR ONE infrastructure as a SaaS (Software as a Service) model and will be available to the experimenters as a service to test novel operational procedures supported with 5G-enabled technologies.
+
+ **User terminals, embedded computers and IoT**
+
+* Commercial and Ruggedized Android mobile phones with dual USIM capabilities
+	* DOOGEE S60
+	* ULEFONE Armor 2
+	* Cat 60
+	* HTC
+* Ruggedized industrial platforms with mobile radio support (LTE/LTE-A/LTE-A Pro) for deployment of experimenters’ docker containers
+	* Advantech ARK Embedded computer ARK-2121L
+	* Beagle board embedded computer BLACK-4G
+	* Beagle board embedded computer BLACK-Wireless
+* Wearable cameras
+	* Body worn camera
+	* Head placed camera
+* Drone   
+	* DJI Mavic Air 2
+* Environmental/industrial sensors
+	* Water level sensor SENIX - ToughSonic REMOTE 14
+	* Water level sensor SENIX - ToughSonic REMOTE 30
+
+When the PDPR ONE equipment resources are successfully reserved, the experimenters will also be able to access them physically at INTERNET INSTITUTE’s premises in Ljubljana on prescheduled dates, or the ININ team could arrange for personnel who will use the equipment on behalf of the experimenters.
+
+** Network and service testing, verification and benchmarking toolset**
+
+qMON Intervention Monitoring solution is a telco-grade 5G-ready measurement automation system for mobile, fixed and cloud environments (TRL9). It provides:
+* Probes, management backend and analytics tools
+* Live network and service tests/troubleshooting 
+* Real-time performance and SLS/SLA monitoring
+* Drive and benchmark testing for broadband PPDR networks (LTE/4G and 5G)
+* PPDR network coverage and mission critical application performance assessment
+* QoE/QoS prediction in live BB PPDR networks
+
+The qMON system comprises 4 main parts based either on cloud VMs or dedicated consumer and industrial HW:
+* **qMON NetworkSensor** – Autonomous distributed agent for emulating user (mobile/fixed) activities and active services/applications
+* **qMON Manage** – cloud-based back-end agent management
+* **qMON Collector**– centralized data and KPI collection infrastructure;
+* **qMON Insight** – Advanced KPI analysis and visualizations using professional real-time and offline BI analytics tools (Kibana, Grafana and Tableau).
 
 
 
