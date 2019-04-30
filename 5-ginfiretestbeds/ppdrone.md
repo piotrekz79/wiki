@@ -139,7 +139,7 @@ The iMON solution will be realised on top of the PPDR ONE infrastructure as a Sa
 
 When the PDPR ONE equipment resources are successfully reserved, the experimenters will also be able to access them physically at INTERNET INSTITUTE’s premises in Ljubljana on prescheduled dates, or the ININ team could arrange for personnel who will use the equipment on behalf of the experimenters.
 
-** Network and service testing, verification and benchmarking toolset**
+**Network and service testing, verification and benchmarking toolset**
 
 qMON Intervention Monitoring solution is a telco-grade 5G-ready measurement automation system for mobile, fixed and cloud environments (TRL9). It provides:
 * Probes, management backend and analytics tools
@@ -154,6 +154,37 @@ The qMON system comprises 4 main parts based either on cloud VMs or dedicated co
 * **qMON Manage** – cloud-based back-end agent management
 * **qMON Collector**– centralized data and KPI collection infrastructure;
 * **qMON Insight** – Advanced KPI analysis and visualizations using professional real-time and offline BI analytics tools (Kibana, Grafana and Tableau).
+
+![Qmon](/uploads/ppdrone/qmon.png "Qmon")
+**Figure 6: qMON**
+
+qMON NetworkSensor is provided to experimenters also as a VxF in client and server mode:
+* qMON NetworkSensor Client VxF (acts as a measurement client, emulates user)
+* qMON NetworkSensor Server VxF (acst as a measurement server, support multiple measurement clients)
+Along with VxFs, the NSD templates are also available to experimenters enabling them to setup different network service topologies, for example:
+* Client NSD (enables single qMON NetworkSensor Client VxF)
+* Server NSD (enables single qMON NetworkSensor Server VxF)
+* Client-Server NSD (enables qMON NetworkSensor Client and Server VxFs, fully configured through charms, supports multi-VIM deployment)
+
+## Experimentation
+Experimentation activities in PPDR ONE test bed are supported through the 5GinFIRE portal. Using the portal the experimenters are able to:
+* create the experiment using PPDR ONE facility
+* deploy virtual functions (VxF) at the PPDR ONE Stationary and Portable node,
+* access to deployed virtual machines (VxF) at the PPDR ONE Stationary and Portable node.
+
+The results of qMON network measurement probes are available through qMON cloud in various forms (e.g. MySQL, influxdb, elasticsearch).
+
+Experimenters may contact us via email (see Contact info) in order to:
+* reserve various end user device(s) for ensuring device availability and proper human staff support,
+* reserve laboratory to conduct on-site experimentation with own hardware devices,
+* ask for support and providing analytics of network measurement tests.
+
+
+## Contact
+**PPDR ONE team ** (ppdrone@iinstitute.eu)
+
+Internet Institute Ltd., Ljubljana (Slovenia)
+Trzaska cesta 25, 1000 Ljubljana, Slovenia
 
 
 
