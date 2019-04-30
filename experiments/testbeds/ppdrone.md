@@ -435,5 +435,8 @@ The qMON NetworkSensor Client and Server VxFs use specific OpenStack image, so i
 ## Results and analytics
 All the results, measurement KPIs and test metadata is stored in the qMON Cloud in MySQL/MSSQL database. They can be made available to the experimentors online, via dump or via some other tool such as Elasticserch, Influxdb or Prometheus. Additionally, Grafana dashboards are available to experimenters to allow near real-time monitoring of the KPIs.
 
+![Grafana Overview](/uploads/ppdrone/grafana-overview.png "Grafana Overview")
+**Figure 7: Grafana qMON Overview Dashboard**
 
-
+![Grafana Ping](/uploads/ppdrone/grafana-ping.png "Grafana Ping")
+**Figure 8: Grafana qMON Ping Dashboard**
