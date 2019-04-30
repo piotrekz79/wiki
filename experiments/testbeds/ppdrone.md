@@ -30,3 +30,29 @@ The qMON system comprises 4 main parts based either on cloud VMs, containers or 
 
 ![Qmon](/uploads/ppdrone/qmon.png "Qmon")
 **Figure 3: qMON System Components**
+
+Various network KPIs are measured and saved during the measurements, among them but not limited to, are the following KPIs:
+
+* RTT (round trip time)
+* DNS
+* IPERF Download
+* IPERF Upload
+* HTTP/FTP Download
+* WEB MOS
+* FTP UPLOAD
+
+If the qMON NetworkSensor runs on phsyical device with a modem (Linux-based PC or Android) the radio KPIs are also collected (e.g. RSRP, RSRQ, CA State…)
+
+## Components description
+
+qMON NetworkSensor is provided to experimenters as a VxF in client and server mode. 
+
+### VxF
+
+**qMON NetworkSensor Client VxF**
+
+* Acts as a measurement client
+* Emulates end user
+* Can be deployed as as simple service (client only) or in client-server mode.
+
+Example template for qMON NetworkSensor Client VxF:
