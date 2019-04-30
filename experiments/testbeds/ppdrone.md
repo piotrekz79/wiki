@@ -345,7 +345,7 @@ nsd:nsd-catalog:
 This network service instantiates single qMON NetworkSensor Server VxF which allows multiple qMON NetworkSensor Clients (either deployed manually by PPDR ONE stuff or deployed as a VxF by the experimenter. For example, this NSD can be used to instantiate measurement server in the PPDR ONE Portable node and run qMON NetworkServer Client on the Android device connected to RAN hosted by the same PPDR ONE node. This enables testing 5G topologies such as Isolated Operations for PPDR while collecting network and radio KPIs. 
 
 ![Qmon Server Nsd](/uploads/ppdrone/qmon-server-nsd.png "Qmon Server Nsd")
-**Figure 4: qMON Simple Server NSD**
+**Figure 5: qMON Simple Server NSD**
 
 Example template for qMON NetworkSensor Server NSD:
 
@@ -374,3 +374,66 @@ nsd:nsd-catalog:
                 vnfd-id-ref: qmon_server_vnfd
 
 ```
+
+**Client-Server NSD**
+
+This network service instantiates qMON NetworkSensor Client and Server VxFs. It can run in the same VIM or between different VIM providers to measure connectivity parameters between different clouds. It support configuration of parameters to allow fully automated deployment (via static IP configuration) or it can be deployed and configured later via “configuration primitives” via OSM. The service uses two networks, one for management (e.g. charms from OSM) and one for data connectivity with the latter being the one actually under test. 
+
+![Qmon Server Nsd](/uploads/ppdrone/qmon-server-nsd.png "Qmon Server Nsd")
+**Figure 6: qMON Simple Server NSD**
+
+The example of Client-Server NSD:
+
+```text
+nsd:nsd-catalog:
+    nsd:
+    -   constituent-vnfd:
+        -   member-vnf-index: 1
+            vnfd-id-ref: qmon_server_vnfd
+        -   member-vnf-index: 2
+            vnfd-id-ref: qmon_client_vnfd
+        description: qMON Cloud Client Server VNF Service (Static IP, auto config)
+        id: qmon_client_server_nsd
+        logo: qmon-64.png
+        name: qmon_client_server_ns
+        short-name: qmon_client_server_ns
+        vendor: ININ
+        version: '1.0'
+        vld:
+        -   id: provider
+            mgmt-network: 'true'
+            name: provider
+            short-name: provider
+            vim-network-name: provider
+            vnfd-connection-point-ref:
+            -   member-vnf-index-ref: 1
+                vnfd-connection-point-ref: ens3
+                vnfd-id-ref: qmon_server_vnfd
+            -   member-vnf-index-ref: 2
+                vnfd-connection-point-ref: ens3
+                vnfd-id-ref: qmon_client_vnfd
+        -   id: provider2
+            name: provider2
+            short-name: provider2
+            vim-network-name: provider2
+            vnfd-connection-point-ref:
+            -   ip-address: 10.154.98.10
+                member-vnf-index-ref: 1
+                vnfd-connection-point-ref: ens4
+                vnfd-id-ref: qmon_server_vnfd
+            -   ip-address: 10.154.98.11
+                member-vnf-index-ref: 2
+                vnfd-connection-point-ref: ens4
+                vnfd-id-ref: qmon_client_vnfd
+
+```
+
+## Deployment of the experiment
+The deployment of qMON VxF can be easily recreated by utilizing provided VxF and NSD templates. PPDR ONE stuff is available for support and help with the configuration on different network topologies. 
+The qMON NetworkSensor Client and Server VxFs use specific OpenStack image, so if deployment should occur in multiple VIMs, the image must be present on all involved VIM providers.
+
+## Results and analytics
+All the results, measurement KPIs and test metadata is stored in the qMON Cloud in MySQL/MSSQL database. They can be made available to the experimentors online, via dump or via some other tool such as Elasticserch, Influxdb or Prometheus. Additionally, Grafana dashboards are available to experimenters to allow near real-time monitoring of the KPIs.
+
+
+
