@@ -49,3 +49,24 @@ Nodes are using separate VPN connection to 5TONIC central site and act as a sepa
 ![Facility Detailed Architecure](/uploads/ppdrone/facility-detailed-architecure.png "Facility Detailed Architecure")
 **Figure 4: PPDR ONE Infrastructure **
 
+PPDR ONE Stationary node hardware details:
+
+* 2x IBM System x3550 M4	Rack server (cloud infrastructure)	
+	* 2x Intel Xeon E5-2660v2 10 Core / 20 Threads / 2.2GHz / 25MB Cache, 128GB RAM, 6x 600GB 10k SAS, 4x 1GbE, 2x 10GbE, 1x FC Dual Port 8Gb
+* 1x MikroTik RM Cloud Router Switch CRS328 edge switch/router (data connectivity,	24x 1GbE (PoE), 4x 10GbE, IP routing/Ethernet switching, L2/L3 VPNs
+* 1x Shuttle SH370R6	Mini tower server (mobile system)	Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz, 8GB RAM, 2x 1GbE
+* 1x Amarisoft SDR card	PCI-based SDR card with 4 antennas, GPS time synchronization option	LTE, LTE-Advanced, NB-IoT, LAA, frequencies from 70 MHz and up to 6.0 GHz including PPDR band 700 MHz flexible RF channel bandwidth from 200 kHz (NB-IoT) and up to 56 MHz
+
+PPDR ONE Mobile node hardware details:
+
+*1x iBase FWA8708-C
+	* multi-purpose industrial rack server (cloud infrastructure, data connectivity, mobile system)	6x Intel Xeon E-2174G 3.8GHz / 4.7GHz
+  * 32 GB RAM
+  * 128 GB SSD
+  * SSD 1.92TB Enterprise Entry SATA 2.5in (1.92TB Available in RAID 1)
+  * IP routing/Ethernet switching
+  * Amarisoft LTE/EPC software (3GPP Release 14)
+  * 1x Amarisoft SDR card	SDR card with 4 antennas, GPS time synchronization option	LTE, LTE-Advanced, NB-IoT, LAA, frequencies from 70 MHz and up to 6.0 GHz including PPDR band 700 MHz flexible RF channel bandwidth from 200 kHz (NB-IoT) and up to 56 MHz
+
+
+
