@@ -379,8 +379,8 @@ nsd:nsd-catalog:
 
 This network service instantiates qMON NetworkSensor Client and Server VxFs. It can run in the same VIM or between different VIM providers to measure connectivity parameters between different clouds. It support configuration of parameters to allow fully automated deployment (via static IP configuration) or it can be deployed and configured later via “configuration primitives” via OSM. The service uses two networks, one for management (e.g. charms from OSM) and one for data connectivity with the latter being the one actually under test. 
 
-![Qmon Server Nsd](/uploads/ppdrone/qmon-server-nsd.png "Qmon Server Nsd")
-**Figure 6: qMON Simple Server NSD**
+![Qmon Client Server Nsd](/uploads/ppdrone/qmon-client-server-nsd.png "Qmon Client Server Nsd")
+**Figure 6: qMON Client Server NSD**
 
 The example of Client-Server NSD:
 
