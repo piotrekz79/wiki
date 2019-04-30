@@ -184,7 +184,7 @@ Experimenters may contact us via email (see Contact info) in order to:
 
 
 ## Contact
-**PPDR ONE team ** (ppdrone@iinstitute.eu)
+**PPDR ONE team** (ppdrone@iinstitute.eu)
 
 Internet Institute Ltd., Ljubljana (Slovenia)
 Trzaska cesta 25, 1000 Ljubljana, Slovenia
