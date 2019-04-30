@@ -430,6 +430,7 @@ nsd:nsd-catalog:
 
 ## Deployment of the experiment
 The deployment of qMON VxF can be easily recreated by utilizing provided VxF and NSD templates. PPDR ONE stuff is available for support and help with the configuration on different network topologies. 
+
 The qMON NetworkSensor Client and Server VxFs use specific OpenStack image, so if deployment should occur in multiple VIMs, the image must be present on all involved VIM providers.
 
 ## Results and analytics
