@@ -25,3 +25,17 @@ The PPDR ONE test bed features:
 
 The PPDR ONE facility acts as a VIM and NFVI provider, connected through a secure VPN connection with the 5TONIC core site. MANO is connected to PPDR ONE VIM via the OpenStack APIs. The EPC/eNB provisioning is realized through predefined mobile profiles (e.g. different frequency bands, bandwidth, QoS profiles etc.). Selected mobile profiles will be provisioned manually on demand via e-mail, Slack or some other tool such as Bugzilla. Compute monitoring (e.g. CPU/RAM) and network monitoring (e.g. RTT, DL/UL speed) is offered as a cloud-based service in Grafana/Kibana.
 
+![Ppdrone Overview](/uploads/ppdrone/ppdrone-overview.png "Ppdrone Overview")
+**Figure 1: Overview of PPDR ONE infrastructure**
+
+## Infrastructure
+
+The testbed provides two nodes:
+* PPDR ONE Stationary (located in Ljubljana, Slovenia)
+* PPDR ONE Portable (can be shipped at the experimenter site)
+
+The site in Ljubljana provides cloud infrastructure over two dedicated physical servers (IBM x3550 M4), providing redundancy and migration mechanisms, and dedicated hardware Ethernet switches for data network connectivity. Additionally, 10G connectivity is provided between two host machines. 5G-ready mobile system is enabled on the dedicated physical server with integrated PCI-based SDR card with configurable parameters, such as RF channel bandwidth capability, band selection, etc. The mobile network provides connectivity from experimenters’ mobile clients (e.g., smartphone applications) to the VMs and VNFs hosted on the PPDR ONE cloud infrastructure. 
+
+![Ppdrone Overview](/uploads/ppdrone/ppdrone_stationary.png "PPDR ONE Stationary ")
+**Figure 2: PPDR ONE Stationary **
+
