@@ -56,3 +56,244 @@ qMON NetworkSensor is provided to experimenters as a VxF in client and server mo
 * Can be deployed as as simple service (client only) or in client-server mode.
 
 Example template for qMON NetworkSensor Client VxF:
+
+
+```text
+vnfd:vnfd-catalog:
+    vnfd:
+    -   connection-point:
+        -   name: ens3
+            type: VPORT
+        -   name: ens4
+            type: VPORT
+        description: qMON Cloud Agent VNF with 2 nic
+        id: qmon_vnfd_2net
+        logo: inin-64.png
+        mgmt-interface:
+            cp: ens3
+        monitoring-param:
+        -   aggregation-type: AVERAGE
+            id: metric_vim_client_load
+            name: metric_vim_client_load
+            vnf-metric:
+                vnf-metric-name-ref: load
+        -   aggregation-type: AVERAGE
+            id: metric_vim_client_loadpct
+            name: metric_vim_client_loadpct
+            vnf-metric:
+                vnf-metric-name-ref: load_pct
+        -   aggregation-type: AVERAGE
+            id: metric_vim_client_users
+            name: metric_vim_client_users
+            vnf-metric:
+                vnf-metric-name-ref: users
+        -   aggregation-type: AVERAGE
+            id: metric_vim_client_mempct
+            name: metric_vim_client_mempct
+            vnf-metric:
+                vnf-metric-name-ref: mem_pct
+        -   aggregation-type: AVERAGE
+            id: metric_vim_client_qmonrtt
+            name: metric_vim_client_qmonrtt
+            vnf-metric:
+                vnf-metric-name-ref: qmon_rtt
+        name: qmon_vnf_2net
+        short-name: qmon_vnf_2net
+        vdu:
+        -   cloud-init-file: qmon_cloud_init.cfg
+            count: 1
+            description: qmon_vnfd_2net-VM
+            id: qmon_vnfd_2net-VM
+            image: qoe_vnf
+            interface:
+            -   external-connection-point-ref: ens3
+                name: ens3
+                type: EXTERNAL
+                virtual-interface:
+                    bandwidth: '0'
+                    type: VIRTIO
+                    vpci: 0000:00:0a.0
+            -   external-connection-point-ref: ens4
+                name: ens4
+                type: EXTERNAL
+                virtual-interface:
+                    bandwidth: '0'
+                    type: VIRTIO
+                    vpci: 0000:00:0a.0
+            name: qmon_vnfd_2net-VM
+            vm-flavor:
+                memory-mb: 2048
+                storage-gb: 20
+                vcpu-count: 2
+        vendor: ININ
+        version: '1.0'
+        vnf-configuration:
+            config-primitive:
+            -   name: set-work-order
+                parameter:
+                -   data-type: STRING
+                    default-value: ''
+                    name: woid
+                -   data-type: STRING
+                    default-value: mndev.iinstitute.eu
+                    name: mn
+                -   data-type: STRING
+                    default-value: xxxx
+                    name: apikey
+            -   name: set-mn-url
+                parameter:
+                -   data-type: STRING
+                    default-value: ''
+                    name: mn
+            -   name: set-server-key
+                parameter:
+                -   data-type: STRING
+                    default-value: ''
+                    name: apikey
+            -   name: set-server-ip
+                parameter:
+                -   data-type: STRING
+                    default-value: ''
+                    name: ip
+            initial-config-primitive:
+            -   name: config
+                parameter:
+                -   name: ssh-hostname
+                    value: <rw_mgmt_ip>
+                -   name: ssh-username
+                    value: ubuntu
+                -   name: ssh-password
+                    value: qoe
+                -   name: mode
+                    value: client
+                seq: '1'
+            -   name: set-second-net
+                seq: '2'
+            -   name: set-second-net-dhcp
+                seq: '3'
+            -   name: set-work-order
+                parameter:
+                -   name: woid
+                    value: '257'
+                -   name: mn
+                    value: mndev.iinstitute.eu
+                -   name: apikey
+                    value: xxxxx
+                seq: '4'
+            -   name: set-server-ip
+                parameter:
+                -   name: ip
+                    value: 10.154.98.10
+                seq: '6'
+            -   name: set-qmon-monitoring
+                seq: '7'
+            juju:
+                charm: qmon-2net
+            metrics:
+            -   name: load
+            -   name: load_pct
+            -   name: users
+            -   name: mem_pct
+            -   name: qmon_rtt
+
+```
+
+**qMON NetworkSensor Server VxF**
+
+* acts as a measurement server,
+* support multiple measurement clients,
+* can be deployed as as simple service (server only) or in client-server mode.
+
+Example template for qMON NetworkSensor Server VxF:
+
+```text
+vnfd:vnfd-catalog:
+    vnfd:
+    -   connection-point:
+        -   name: ens3
+            type: VPORT
+        -   name: ens4
+            type: VPORT
+        description: qMON Cloud Reference Server VNF with 2 nic
+        id: qmon_server_vnfd_2net
+        logo: inin-64.png
+        mgmt-interface:
+            cp: ens3
+        monitoring-param:
+        -   aggregation-type: AVERAGE
+            id: metric_vim_server_load
+            name: metric_vim_server_load
+            vnf-metric:
+                vnf-metric-name-ref: load
+        -   aggregation-type: AVERAGE
+            id: metric_vim_server_loadpct
+            name: metric_vim_server_loadpct
+            vnf-metric:
+                vnf-metric-name-ref: load_pct
+        -   aggregation-type: AVERAGE
+            id: metric_vim_server_users
+            name: metric_vim_server_users
+            vnf-metric:
+                vnf-metric-name-ref: users
+        -   aggregation-type: AVERAGE
+            id: metric_vim_server_mempct
+            name: metric_vim_server_mempct
+            vnf-metric:
+                vnf-metric-name-ref: mem_pct
+        name: qmon_server_vnf_2net
+        short-name: qmon_server_vnf_2net
+        vdu:
+        -   cloud-init-file: qmon_cloud_init.cfg
+            count: 1
+            description: qmon_server_vnfd_2net-VM
+            id: qmon_server_vnfd_2net-VM
+            image: qoe_server_vnf
+            interface:
+            -   external-connection-point-ref: ens3
+                name: ens3
+                type: EXTERNAL
+                virtual-interface:
+                    bandwidth: '0'
+                    type: VIRTIO
+                    vpci: 0000:00:0a.0
+            -   external-connection-point-ref: ens4
+                name: ens4
+                type: EXTERNAL
+                virtual-interface:
+                    bandwidth: '0'
+                    type: VIRTIO
+                    vpci: 0000:00:0a.0
+            name: qmon_server_vnfd_2net-VM
+            vm-flavor:
+                memory-mb: 2048
+                storage-gb: 20
+                vcpu-count: 2
+        vendor: ININ
+        version: '1.0'
+        vnf-configuration:
+            initial-config-primitive:
+            -   name: config
+                parameter:
+                -   name: ssh-hostname
+                    value: <rw_mgmt_ip>
+                -   name: ssh-username
+                    value: ubuntu
+                -   name: ssh-password
+                    value: qoe
+                -   name: mode
+                    value: server
+                seq: '1'
+            -   name: set-second-net
+                seq: '2'
+            -   name: set-second-net-dhcp
+                seq: '3'
+            juju:
+                charm: qmon-2net
+            metrics:
+            -   name: load
+            -   name: load_pct
+            -   name: users
+            -   name: mem_pct
+
+```
+
