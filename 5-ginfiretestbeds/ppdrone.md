@@ -36,6 +36,16 @@ The testbed provides two nodes:
 
 The site in Ljubljana provides cloud infrastructure over two dedicated physical servers (IBM x3550 M4), providing redundancy and migration mechanisms, and dedicated hardware Ethernet switches for data network connectivity. Additionally, 10G connectivity is provided between two host machines. 5G-ready mobile system is enabled on the dedicated physical server with integrated PCI-based SDR card with configurable parameters, such as RF channel bandwidth capability, band selection, etc. The mobile network provides connectivity from experimenters’ mobile clients (e.g., smartphone applications) to the VMs and VNFs hosted on the PPDR ONE cloud infrastructure. 
 
-![Ppdrone Overview](/uploads/ppdrone/ppdrone_stationary.png "PPDR ONE Stationary ")
+![Ppdrone Stationary](/uploads/ppdrone/ppdrone-stationary.png "Ppdrone Stationary")
 **Figure 2: PPDR ONE Stationary **
+
+The aim of the portable PPDR ONE node is to offer the same type of PPDR related infrastructure capabilities and services but on a limited performance scale due to the compact portable hardware and therefore limited resources being available. The solution includes a physical rack-mounted server in a portable transport box capable of hosting OpenStack-based cloud, provide L2/L3 network services and host 5G-ready mobile system based on a PCI SDR card. 
+
+![Ppdrone Portable](/uploads/ppdrone/ppdrone-portable.png "Ppdrone Portable")
+**Figure 3: PPDR ONE Portable **
+
+Nodes are using separate VPN connection to 5TONIC central site and act as a separate VIM to the 5GINFIRE ecosystem.
+
+![Facility Detailed Architecure](/uploads/ppdrone/facility-detailed-architecure.png "Facility Detailed Architecure")
+**Figure 4: PPDR ONE Infrastructure **
 
