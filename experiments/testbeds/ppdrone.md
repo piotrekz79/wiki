@@ -297,3 +297,80 @@ vnfd:vnfd-catalog:
 
 ```
 
+### NSD
+
+Along with VxFs, the NSD templates are also available to experimenters enabling them to setup different network service topologies such as:
+
+* Client NSD (enables single qMON NetworkSensor Client VxF)
+* Server NSD (enables single qMON NetworkSensor Server VxF)
+* Client-Server NSD (enables qMON NetworkSensor Client and Server VxFs, fully configured through charms, supports multi-VIM deployment).
+
+**qMON Client NSD**
+
+This network service instantiates single qMON NetworkSensor Client VxF which allows measurements to the preconfigured qMON NetworkSensor Server (either deployed manually by PPDR ONE stuff or deployed as a VxF by the experimenter). Client NSD can be deployed on different hosts in the same VIM or on different VIMs.
+
+![Qmon Client Nsd](/uploads/ppdrone/qmon-client-nsd.png "Qmon Client Nsd")
+**Figure 4: qMON Simple Client NSD**
+
+Example template for qMON NetworkSensor Client NSD:
+
+```text
+nsd:nsd-catalog:
+    nsd:
+    -   constituent-vnfd:
+        -   member-vnf-index: 1
+            vnfd-id-ref: qmon_vnfd
+        description: qMON Cloud Agent Single VNF Service
+        id: qmon_vnf_nsd
+        logo: qmon-64.png
+        name: qmon_vnf_ns
+        short-name: qmon_vnf_ns
+        vendor: ININ
+        version: '1.0'
+        vld:
+        -   id: provider-dev
+            mgmt-network: 'true'
+            name: provider-dev
+            short-name: provider-dev
+            vim-network-name: provider-dev
+            vnfd-connection-point-ref:
+            -   member-vnf-index-ref: 1
+                vnfd-connection-point-ref: ens3
+                vnfd-id-ref: qmon_vnfd
+
+```
+
+**qMON Server NSD**
+
+This network service instantiates single qMON NetworkSensor Server VxF which allows multiple qMON NetworkSensor Clients (either deployed manually by PPDR ONE stuff or deployed as a VxF by the experimenter. For example, this NSD can be used to instantiate measurement server in the PPDR ONE Portable node and run qMON NetworkServer Client on the Android device connected to RAN hosted by the same PPDR ONE node. This enables testing 5G topologies such as Isolated Operations for PPDR while collecting network and radio KPIs. 
+
+![Qmon Server Nsd](/uploads/ppdrone/qmon-server-nsd.png "Qmon Server Nsd")
+**Figure 4: qMON Simple Server NSD**
+
+Example template for qMON NetworkSensor Server NSD:
+
+```text
+nsd:nsd-catalog:
+    nsd:
+    -   constituent-vnfd:
+        -   member-vnf-index: 1
+            vnfd-id-ref: qmon_server_vnfd
+        description: qMON Cloud Reference Server VNF Service
+        id: qmon_server_vnf_nsd
+        logo: qmon-64.png
+        name: qmon_server_vnf_ns
+        short-name: qmon_server_vnf_ns
+        vendor: ININ
+        version: '1.0'
+        vld:
+        -   id: provider
+            mgmt-network: 'true'
+            name: provider
+            short-name: provider
+            vim-network-name: provider
+            vnfd-connection-point-ref:
+            -   member-vnf-index-ref: 1
+                vnfd-connection-point-ref: ens3
+                vnfd-id-ref: qmon_server_vnfd
+
+```
