@@ -106,10 +106,10 @@ PPDR ONE testbed provides the following functional tools:
 
 iMON solution available as part of the 5GINFIRE experimenters comprises two main components:
 
-** iMON Dashboard** 
+**iMON Dashboard** 
 Tactical Dashboard exposing real-time PPDR services for a common operational picture, situational awareness, and intervention management. It features a rich client HTML5/PHP web application, supporting: RT common operational picture, RT assets tracking and backlog, data analytics, and visualisations, intervention reports, and logs; Backend: RT notifications, exposed APIs, automated hierarchical (group) user and device management.
 
-** iMON Mobile App**
+**iMON Mobile App**
 Android Mobile application for triage and tracking from the field. Native mobile app with field sensing, time and distance-based location tracking, automated triage reporting (official procedural reporting formats, image attachments, automatically retrieved location data); automatic sync with COP; use of COTS mobile devices with IP67.
 
 ![Imon](/uploads/ppdrone/imon.png "Imon")
@@ -159,9 +159,12 @@ The qMON system comprises 4 main parts based either on cloud VMs or dedicated co
 **Figure 6: qMON**
 
 qMON NetworkSensor is provided to experimenters also as a VxF in client and server mode:
+
 * qMON NetworkSensor Client VxF (acts as a measurement client, emulates user)
 * qMON NetworkSensor Server VxF (acst as a measurement server, support multiple measurement clients)
+
 Along with VxFs, the NSD templates are also available to experimenters enabling them to setup different network service topologies, for example:
+
 * Client NSD (enables single qMON NetworkSensor Client VxF)
 * Server NSD (enables single qMON NetworkSensor Server VxF)
 * Client-Server NSD (enables qMON NetworkSensor Client and Server VxFs, fully configured through charms, supports multi-VIM deployment)
