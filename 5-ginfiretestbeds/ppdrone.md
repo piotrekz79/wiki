@@ -49,7 +49,7 @@ Nodes are using separate VPN connection to 5TONIC central site and act as a sepa
 ![Facility Detailed Architecure](/uploads/ppdrone/facility-detailed-architecure.png "Facility Detailed Architecure")
 **Figure 4: PPDR ONE Infrastructure**
 
-PPDR ONE Stationary node hardware details:
+**PPDR ONE Stationary node hardware details:**
 
 * 2x IBM System x3550 M4	Rack server (cloud infrastructure)
 	* 2x Intel Xeon E5-2660v2 10 Core / 20 Threads / 2.2GHz / 25MB Cache
@@ -61,7 +61,7 @@ PPDR ONE Stationary node hardware details:
 * Amarisoft LTE/EPC software (3GPP Release 14)
 * 1x Amarisoft SDR card	PCI-based SDR card with 4 antennas, GPS time synchronization option	LTE, LTE-Advanced, NB-IoT, LAA, frequencies from 70 MHz and up to 6.0 GHz including PPDR band 700 MHz flexible RF channel bandwidth from 200 kHz (NB-IoT) and up to 56 MHz
 
-PPDR ONE Mobile node hardware details:
+**PPDR ONE Mobile node hardware details:**
 
 * 1x iBase FWA8708-C
 	* multi-purpose industrial rack server (cloud infrastructure, data connectivity, mobile system)	6x Intel Xeon E-2174G 3.8GHz / 4.7GHz
@@ -71,6 +71,30 @@ PPDR ONE Mobile node hardware details:
 	* IP routing/Ethernet switching
 	* Amarisoft LTE/EPC software (3GPP Release 14)
 	* 1x Amarisoft SDR card	SDR card with 4 antennas, GPS time synchronization option	LTE, LTE-Advanced, NB-IoT, LAA, frequencies from 70 MHz and up to 6.0 GHz including PPDR band 700 MHz flexible RF channel bandwidth from 200 kHz (NB-IoT) and up to 56 MHz
+
+**PPDR ONE networking**
+
+PPDR ONE network infrastructure is segmented via VLANs and IP subnets. IP pool was assigned to PPDR ONE test bed and is further segmented to allow different network paths for PPDR ONE stationary and portable nodes. 
+
+In general, three subnets are defined:
+* Management network for VIM (used by OSM to manage life cycle of a VM in OpenStack)
+* Management network for VM/VxF (use by OSM to run VNF configuration, i.e. charms)
+* Data network for VM/VxF (allows communication between VM/VxF between different 5GINFIRE sites)
+
+The current IP addressing configuration is as follows:
+
+**Ljubljana site:**
+* Management Network for VIM	10.154.96.0/24
+* Management Network for VM/VxF	10.154.97.0/24
+* Data Network for VM/VxF	10.154.98.0/24
+
+**Portable node:**
+* Management Network for VIM	10.154.104.0/24
+* Management Network for VM/VxF	10.154.105.0/24
+* Data Network for VM/VxF	10.154.106.0/24
+
+Mobile EPC core (Amarisoft) can be configured to run in different network segments.
+
 
 
 
