@@ -65,7 +65,8 @@ The following pages present different topics regarding 5GinFIRE services
 [Software Defined Radio Slices with HyDRA Example Experiment](experiments/testbeds/WINS_5G)
 ### 7.  UFU Future Internet
 [UFU Example Experiment](experiments/testebeds/UFU)
-
+### 8.  PPDR ONE
+[PPDR ONE Example Experiment](experiments/testbeds/ppdrone)
 
 
 ## 5GinFIRE Infrastructure Monitoring
