@@ -84,14 +84,14 @@ In general, three subnets are defined:
 The current IP addressing configuration is as follows:
 
 **Ljubljana site:**
-* Management Network for VIM	10.154.96.0/24
-* Management Network for VM/VxF	10.154.97.0/24
-* Data Network for VM/VxF	10.154.98.0/24
+* Management Network for VIM - 10.154.96.0/24
+* Management Network for VM/VxF - 10.154.97.0/24
+* Data Network for VM/VxF - 10.154.98.0/24
 
 **Portable node:**
-* Management Network for VIM	10.154.104.0/24
-* Management Network for VM/VxF	10.154.105.0/24
-* Data Network for VM/VxF	10.154.106.0/24
+* Management Network for VIM - 10.154.104.0/24
+* Management Network for VM/VxF - 10.154.105.0/24
+* Data Network for VM/VxF - 10.154.106.0/24
 
 Mobile EPC core (Amarisoft) can be configured to run in different network segments.
 
