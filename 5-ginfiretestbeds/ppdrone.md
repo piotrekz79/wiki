@@ -37,36 +37,40 @@ The testbed provides two nodes:
 The site in Ljubljana provides cloud infrastructure over two dedicated physical servers (IBM x3550 M4), providing redundancy and migration mechanisms, and dedicated hardware Ethernet switches for data network connectivity. Additionally, 10G connectivity is provided between two host machines. 5G-ready mobile system is enabled on the dedicated physical server with integrated PCI-based SDR card with configurable parameters, such as RF channel bandwidth capability, band selection, etc. The mobile network provides connectivity from experimenters’ mobile clients (e.g., smartphone applications) to the VMs and VNFs hosted on the PPDR ONE cloud infrastructure. 
 
 ![Ppdrone Stationary](/uploads/ppdrone/ppdrone-stationary.png "Ppdrone Stationary")
-**Figure 2: PPDR ONE Stationary **
+**Figure 2: PPDR ONE Stationary**
 
 The aim of the portable PPDR ONE node is to offer the same type of PPDR related infrastructure capabilities and services but on a limited performance scale due to the compact portable hardware and therefore limited resources being available. The solution includes a physical rack-mounted server in a portable transport box capable of hosting OpenStack-based cloud, provide L2/L3 network services and host 5G-ready mobile system based on a PCI SDR card. 
 
 ![Ppdrone Portable](/uploads/ppdrone/ppdrone-portable.png "Ppdrone Portable")
-**Figure 3: PPDR ONE Portable **
+**Figure 3: PPDR ONE Portable**
 
 Nodes are using separate VPN connection to 5TONIC central site and act as a separate VIM to the 5GINFIRE ecosystem.
 
 ![Facility Detailed Architecure](/uploads/ppdrone/facility-detailed-architecure.png "Facility Detailed Architecure")
-**Figure 4: PPDR ONE Infrastructure **
+**Figure 4: PPDR ONE Infrastructure**
 
 PPDR ONE Stationary node hardware details:
 
-* 2x IBM System x3550 M4	Rack server (cloud infrastructure)	
-	* 2x Intel Xeon E5-2660v2 10 Core / 20 Threads / 2.2GHz / 25MB Cache, 128GB RAM, 6x 600GB 10k SAS, 4x 1GbE, 2x 10GbE, 1x FC Dual Port 8Gb
+* 2x IBM System x3550 M4	Rack server (cloud infrastructure)
+	* 2x Intel Xeon E5-2660v2 10 Core / 20 Threads / 2.2GHz / 25MB Cache
+	* 128GB RAM, 6x 600GB 10k SAS
+	* 4x 1GbE, 2x 10GbE
+	* 1x FC Dual Port 8Gb
 * 1x MikroTik RM Cloud Router Switch CRS328 edge switch/router (data connectivity,	24x 1GbE (PoE), 4x 10GbE, IP routing/Ethernet switching, L2/L3 VPNs
 * 1x Shuttle SH370R6	Mini tower server (mobile system)	Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz, 8GB RAM, 2x 1GbE
+* Amarisoft LTE/EPC software (3GPP Release 14)
 * 1x Amarisoft SDR card	PCI-based SDR card with 4 antennas, GPS time synchronization option	LTE, LTE-Advanced, NB-IoT, LAA, frequencies from 70 MHz and up to 6.0 GHz including PPDR band 700 MHz flexible RF channel bandwidth from 200 kHz (NB-IoT) and up to 56 MHz
 
 PPDR ONE Mobile node hardware details:
 
-*1x iBase FWA8708-C
+* 1x iBase FWA8708-C
 	* multi-purpose industrial rack server (cloud infrastructure, data connectivity, mobile system)	6x Intel Xeon E-2174G 3.8GHz / 4.7GHz
-  * 32 GB RAM
-  * 128 GB SSD
-  * SSD 1.92TB Enterprise Entry SATA 2.5in (1.92TB Available in RAID 1)
-  * IP routing/Ethernet switching
-  * Amarisoft LTE/EPC software (3GPP Release 14)
-  * 1x Amarisoft SDR card	SDR card with 4 antennas, GPS time synchronization option	LTE, LTE-Advanced, NB-IoT, LAA, frequencies from 70 MHz and up to 6.0 GHz including PPDR band 700 MHz flexible RF channel bandwidth from 200 kHz (NB-IoT) and up to 56 MHz
+	* 32 GB RAM
+	* 128 GB SSD
+	* SSD 1.92TB Enterprise Entry SATA 2.5in (1.92TB Available in RAID 1)
+	* IP routing/Ethernet switching
+	* Amarisoft LTE/EPC software (3GPP Release 14)
+	* 1x Amarisoft SDR card	SDR card with 4 antennas, GPS time synchronization option	LTE, LTE-Advanced, NB-IoT, LAA, frequencies from 70 MHz and up to 6.0 GHz including PPDR band 700 MHz flexible RF channel bandwidth from 200 kHz (NB-IoT) and up to 56 MHz
 
 
 
