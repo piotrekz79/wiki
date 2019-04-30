@@ -19,7 +19,7 @@ qMON Intervention Monitoring solution is a telco-grade 5G-ready measurement auto
 * PPDR network coverage and mission critical application performance assessment
 * QoE/QoS prediction in live BB PPDR networks
 
-![Qmon System Architecture](/uploads/ppdrone/qmon-system-architecture.png "Qmon System Architecture")
+![Qmon System Architecture](/uploads/ppdrone/qmon-system-architecture-small.png "Qmon System Architecture")
 **Figure 2: qMON System Architecture**
 
 The qMON system comprises 4 main parts based either on cloud VMs, containers or dedicated consumer and industrial HW:
