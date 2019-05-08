@@ -44,6 +44,7 @@ The following pages present different topics regarding 5GinFIRE services.
 [Hybrid Communications to Foster 5G Vehicular Services - SURROGATES](experiments/SURROGATES_Hybrid_Communications_to_Foster_5G_Vehicular_Services)
 [Experimenting using 5GinFIRE SURROGATES VNFs](experiments/SURROGATES-VNFS)
 ### 3. CAVICO
+[5GinFIRE CAVICO for QoS- and QoE-controlled streaming](experiments/CAVICO)
 ### 4. VRU-Safe
 [5GinFIRE VRU-safe](experiments/VRUsafe)
 ### 5. SFCLola
