@@ -3,7 +3,7 @@
 
 ![5 Ginfire Logo 3](/uploads/5-ginfire-logo-3.png "5 Ginfire Logo 3"){.pagelogo}
 # Welcome to 5GinFIRE wiki pages
-The following pages present different topics regarding 5GinFIRE services
+The following pages present different topics regarding 5GinFIRE services.
 
 ## Tutorials and Best practices
 [Tutorial Video Demonstrating an Experiment Lifecycle](https://www.youtube.com/watch?v=1S-8BWm35CU)
