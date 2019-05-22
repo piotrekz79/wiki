@@ -15,7 +15,7 @@ Here is a list of 5GinFIRE Mentors.
 **University of Patras**: Ioannis Chatzis
 
 # 5GinFIRE Mentors per Experiment
-Currently the **Mentors** of the **2nd call of experiments** are the following:
+Currently the **Mentors** of the **3rd call of experiments** are the following:
 * CV2XinFIRE – Mentors: **Miguel Luis**
 * ICARUS – Mentor: **TBD** 
 * 5G-TouristEyes – Mentor: **Alex Mavromatis** 
