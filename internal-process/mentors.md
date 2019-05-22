@@ -16,6 +16,14 @@ Here is a list of 5GinFIRE Mentors.
 
 # 5GinFIRE Mentors per Experiment
 Currently the **Mentors** of the **2nd call of experiments** are the following:
+* CV2XinFIRE – Mentors: **Miguel Luis**
+* ICARUS – Mentor: **TBD** 
+* 5G-TouristEyes – Mentor: **Alex Mavromatis** 
+* ExSEC – Mentor: **TBD** 
+* 5G-DrivingTrainer – Mentor: **Miguel Luis** 
+* C2G-Ran – Mentor: **Diarmuid Collins** 
+
+Currently the **Mentors** of the **2nd call of experiments** are the following:
 * P4in5G – Mentors: **UC3M Operations 5GinFIRE**
 * MARATHON – Mentor: **Diarmuid Collins** 
 * MIGRATE – Mentor: **Miguel Luis** 
