@@ -19,6 +19,7 @@ The communication resources used in CAVICO project encompassed several nodes inc
 * RSU,
 * OBU,
 * Raspberry Pi.
+
 The consecutive steps to run the experiment are:
 1. login to 5GinFIRE network with OpenVPN using credentials;
 2. login to the Jump Machine: ssh using credentials;
