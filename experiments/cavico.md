@@ -69,4 +69,16 @@ Results are stored in the following files:
 * GPS.csv - GPS coordinates;
 * QOE.csv - QoE parameters: Frame, Blockiness, SpatialActivity, Letterbox, Pillarbox, Blockloss, Blur, TemporalActivity, Blackout, Freezing, Exposure, Contrast, Interlace, Noise, Slice, Flickering;
 * TA_S.csv - TA scale.
+
 The results can be downloaded from the server to plot them.
+# Example results
+VNF is capable to collect data that allow:
+* identifying use cases (useCase),
+* measuring transmission throughput (bitrate),
+and on this base it provides changes in:
+* the frame rate (FPS),
+* video resolution (res_X).
+
+![Usecase](/uploads/cavico/usecase.png "Usecase")
+![Bitrate](/uploads/cavico/bitrate.png "Bitrate")
+![Fps](/uploads/cavico/fps.png "Fps") ![Resx](/uploads/cavico/resx.png "Resx")
