@@ -1,5 +1,5 @@
-<!-- TITLE: Cavico -->
-<!-- SUBTITLE: A quick summary of Cavico -->
+<!-- TITLE: CAVICO -->
+<!-- SUBTITLE: A quick summary of CAVICO project -->
 
 # Description of the VNF
 The CAVICO project aims to provide a technology enabler for video streaming that is controlled in the function of QoE (Quality of Experience). In order to present a proof of the concept the demonstrator is based on a video camera installed in the car provided within automotive Experimental Vertical Instance (EVI) environment developed by IT Aveiro partner.
