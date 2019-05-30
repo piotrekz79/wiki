@@ -79,6 +79,5 @@ and on this base it provides changes in:
 * the frame rate (FPS),
 * video resolution (res_X).
 
-![Usecase](/uploads/cavico/usecase.png "Usecase")
-![Bitrate](/uploads/cavico/bitrate.png "Bitrate")
+![Usecase](/uploads/cavico/usecase.png "Usecase") ![Bitrate](/uploads/cavico/bitrate.png "Bitrate")
 ![Fps](/uploads/cavico/fps.png "Fps") ![Resx](/uploads/cavico/resx.png "Resx")
