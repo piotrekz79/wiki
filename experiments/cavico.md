@@ -60,7 +60,7 @@ Alternatively you can access applications at the client site via LMA Hub:
 Results are stored in the following files:
 * BI.csv - Block indicator;
 * control.csv:
-	* networkScale - ¯("throughput" ),
+	* networkScale - average throughput,
 	* FPS,
 	* res_X, res_Y - video resolution,
 	* bitrate - transmission throughput,
@@ -69,6 +69,4 @@ Results are stored in the following files:
 * GPS.csv - GPS coordinates;
 * QOE.csv - QoE parameters: Frame, Blockiness, SpatialActivity, Letterbox, Pillarbox, Blockloss, Blur, TemporalActivity, Blackout, Freezing, Exposure, Contrast, Interlace, Noise, Slice, Flickering;
 * TA_S.csv - TA scale.
-
-
 The results can be downloaded from the server to plot them.
