@@ -14,7 +14,7 @@ The system works in a server-client model. VNF is based on Ubuntu VM that has th
 * data exchange (‘provider2’ network).
 
 The communication resources used in CAVICO project encompassed several nodes including:
-* Gateway (Jump Machine) available via OpenVPN connection ([manual] (wiki.5ginfire.eu/tutorials/guide-external-access-experimenters)),
+* Gateway (Jump Machine) available via OpenVPN connection (wiki.5ginfire.eu/tutorials/guide-external-access-experimenters),
 * LMA Hub,
 * VNF server,
 * RSU,
