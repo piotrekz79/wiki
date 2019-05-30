@@ -75,6 +75,7 @@ The results can be downloaded from the server to plot them.
 VNF is capable to collect data that allow:
 * identifying use cases (useCase),
 * measuring transmission throughput (bitrate),
+
 and on this base it provides changes in:
 * the frame rate (FPS),
 * video resolution (res_X).
