@@ -4,7 +4,7 @@
 # 5GinFIRE Mentors
 Here is a list of 5GinFIRE Mentors. 
 
-**Bristol Smart City Testbed - University of Bristol**: Alex Mavromatis, Xavier Priem
+**Bristol Smart City Testbed - University of Bristol**: Alex Mavromatis
 **IT-Aveiro Automotive testbed**: Miguel Luís
 **IT Aveiro**: Diogo Gomes 
 **5TONIC**: UC3M Operations 5GinFIRE
@@ -17,7 +17,7 @@ Here is a list of 5GinFIRE Mentors.
 # 5GinFIRE Mentors per Experiment
 Currently the **Mentors** of the **3rd call of experiments** are the following:
 * CV2XinFIRE – Mentors: **Miguel Luis**
-* ICARUS – Mentor: **TBD** 
+* ICARUS – Mentor: **Luka Koršič** 
 * 5G-TouristEyes – Mentor: **Alex Mavromatis** 
 * ExSEC – Mentor: **TBD** 
 * 5G-DrivingTrainer – Mentor: **Miguel Luis** 
