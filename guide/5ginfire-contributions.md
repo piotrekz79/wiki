@@ -1,4 +1,4 @@
-<!-- TITLE: 5 Ginfire Contributions -->
-<!-- SUBTITLE: A quick summary of 5 Ginfire Contributions -->
+<!-- TITLE: 5GinFIRE Contributions -->
+<!-- SUBTITLE: A quick summary of 5GinFIRE Contributions -->
 
 # Header
