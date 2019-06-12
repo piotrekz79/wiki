@@ -1,7 +1,7 @@
 <!-- TITLE: 5GinFIRE Contributions -->
 <!-- SUBTITLE: A summary of 5GinFIRE contributions -->
 
-# Multi-site deployments with OSM R5
+# Multi-site deployments with OSM Release FIVE
 The following test describes a procedure to enable the multi-site deployment of network services in OSM Release FIVE, avoiding the utilization of a Wan Infrastructure Manager (WIM). This procedure has been developed in the context of the  [H2020 5GinFIRE project](https://5ginfire.eu).
 
 ## 1. WIM account creation 
