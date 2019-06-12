@@ -19,7 +19,7 @@ Currently the **Mentors** of the **3rd call of experiments** are the following:
 * CV2XinFIRE – Mentors: **Miguel Luis**
 * ICARUS – Mentor: **Luka Koršič** 
 * 5G-TouristEyes – Mentor: **Alex Mavromatis** 
-* ExSEC – Mentor: **TBD** 
+* ExSEC – Mentor: **Piotr Zuraniewski** 
 * 5G-DrivingTrainer – Mentor: **Miguel Luis** 
 * C2G-Ran – Mentor: **Diarmuid Collins** 
 
