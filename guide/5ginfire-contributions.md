@@ -9,7 +9,11 @@ The following test describes a procedure to enable the multi-site deployment of 
 
 The following OSM-CLI command shows the creation of a WIM account, and uses a specific JSON file that is also provided as an example ([dummy_wim_port_mappings.json](/uploads/contributions-osm-r-5-multi-site/dummy-wim-port-mappings.json "Dummy Wim Port Mappings")):
 
-`osm wim-create --name dummy-wim --wim_type odl --url http://dummy-wim-odl --wim_port_mapping dummy_wim_port_mappings.json`
+
+```text
+osm wim-create --name dummy-wim --wim_type odl --url http://dummy-wim-odl --wim_port_mapping dummy_wim_port_mappings.json
+```
+
 
 Regarding the parameters of the OSM-CLI command, and the JSON file, we want to note that:
 
