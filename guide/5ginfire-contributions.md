@@ -30,10 +30,10 @@ Regarding the parameters of the OSM-CLI command, and the JSON file, we want to n
 Execute the following commands to do the replacement:
 
 
-```text
-ro_container_id=$(docker ps | grep opensourcemano/ro:latest | cut -d" " -f1)
-docker cp modified_wimconn_odl.py $ro_container_id:/usr/lib/python2.7/dist-packages/osm_ro/wim/wimconn_odl.py
-```
+
+`ro_container_id=$(docker ps | grep opensourcemano/ro:latest | cut -d" " -f1)`
+`docker cp modified_wimconn_odl.py $ro_container_id:/usr/lib/python2.7/dist-packages/osm_ro/wim/wimconn_odl.py`
+
 
 
 3. Make the changes persistent. For this purpose, the image of the RO container needs to be updated, in order to let OSM start the updated RO after every OSM machine restart. This is done through the following commands, which get the ID of the opensourcemano/ro image and commit the change of the new image:
