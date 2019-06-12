@@ -10,3 +10,13 @@ The following test describes a procedure to enable the multi-site deployment of 
 The following OSM-CLI command shows the creation of a WIM account, and uses a specific JSON file that is also provided as an example ([dummy_wim_port_mappings.json](/uploads/contributions-osm-r-5-multi-site/dummy-wim-port-mappings.json "Dummy Wim Port Mappings")):
 
 `osm wim-create --name dummy-wim --wim_type odl --url http://dummy-wim-odl --wim_port_mapping dummy_wim_port_mappings.json`
+
+Regarding the parameters of the OSM-CLI command, and the JSON file, we want to note that:
+
++ This procedure considers ODL WIM types. Hence, the value of the “—wim_type” parameter is set to “odl”. 
+
++ The JSON file includes the specification of two VIMs ("openstack-site-1" and "openstack-site-2”). Additional VIMs can be specified in the file, depending on the specific configuration that needs to be done.
+
++ The VIM names specified in the JSON file must match the names of the VIMs attached to OSM.
+
++ The rest of the information included in the JSON file (i.e., “pop_switch_port”, “pop_switch_dpid” and “wan_service_mapping_info”) is required because of the OSM information model but never checked.  
