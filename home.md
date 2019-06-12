@@ -28,6 +28,7 @@ The following pages present different topics regarding 5GinFIRE services.
 [The portal user guide](5-gin-fire-portal-user-guide)
 [Guide: External Access to VxFs for Experimenters](tutorials/guide-external-access-experimenters)
 [Tools for validation, prototyping, and testing](guide/5ginfire-mirror-platform)
+[Contributions to upstream projects](guide/5ginfire-contributions)
 
 ### Advanced
 [Guide: Advanced Hardware Requirements](tutorials/guide-advanced-hardware-requirements)
