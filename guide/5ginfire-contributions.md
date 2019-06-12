@@ -19,4 +19,23 @@ Regarding the parameters of the OSM-CLI command, and the JSON file, we want to n
 
 - The VIM names specified in the JSON file must match the names of the VIMs attached to OSM.
 
-- The rest of the information included in the JSON file (i.e., “pop_switch_port”, “pop_switch_dpid” and “wan_service_mapping_info”) is required because of the OSM information model but never checked.  
+- The rest of the information included in the JSON file (i.e., “pop_switch_port”, “pop_switch_dpid” and “wan_service_mapping_info”) is required because of the OSM information model but never checked. 
+
+2. Modify the source code of the OSM Resource Orchestrator (RO). In multi-site deployments, the RO communicates with the WIM in order to create/check data paths among the involved sites, and waits for a positive answer from the WIM to proceed with the deployment. To bypass this behavior, replace the source code of the file “/usr/lib/python2.7/dist-packages/osm_ro/wim/wimconn_odl.py”, which is inside the RO container, with the source code provided by the file “modified_wimconn_odl.py)”
+
+Execute the following commands to do the replacement:
+
+
+```text
+ro_container_id=$(docker ps | grep opensourcemano/ro:latest | cut -d" " -f1)
+docker cp modified_wimconn_odl.py $ro_container_id:/usr/lib/python2.7/dist-packages/osm_ro/wim/wimconn_odl.py
+```
+
+
+3. Make the changes persistent. For this purpose, the image of the RO container needs to be updated, in order to let OSM start the updated RO after every OSM machine restart. This is done through the following commands, which get the ID of the opensourcemano/ro image and commit the change of the new image:
+
+
+```text
+ro_image_id=$(docker images | grep opensourcemano/ro | cut -d" " -f50) 
+docker commit $ro_image_id opensourcemano/ro:latest
+```
