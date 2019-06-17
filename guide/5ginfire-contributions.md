@@ -39,7 +39,7 @@ docker cp modified_wimconn_odl.py $ro_container_id:/usr/lib/python2.7/dist-packa
 
 
 ## 3. Save changes
-Make the changes persistent. For this purpose, the image of the RO container needs to be updated, in order to let OSM start the updated RO after every OSM machine restart. This is done through the following commands, which get the ID of the opensourcemano/ro image and commit the change of the new image:
+Make the changes persistent. For this purpose, the image of the RO container needs to be updated, in order to let OSM start the updated RO after every OSM machine restart. This is done through the following commands, which get the ID of the opensourcemano/ro container and commit the change of the new image:
 
 
 ```text
