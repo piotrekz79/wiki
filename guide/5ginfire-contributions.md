@@ -43,6 +43,6 @@ Make the changes persistent. For this purpose, the image of the RO container nee
 
 
 ```text
-ro_image_id=$(docker images | grep opensourcemano/ro | cut -d" " -f50) 
-docker commit $ro_image_id opensourcemano/ro:latest
+ro_container_id=$(docker ps | grep opensourcemano/ro:latest | cut -d" " -f1)
+docker commit $ro_container_id opensourcemano/ro:latest
 ```
