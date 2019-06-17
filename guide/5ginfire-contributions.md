@@ -12,7 +12,7 @@ The following OSM-CLI command shows the creation of a WIM account, and uses a sp
 
 
 ```text
-osm wim-create --name dummy-wim --wim_type odl --url http://dummy-wim-odl --wim_port_mapping dummy_wim_port_mappings.json
+osm wim-create --name dummy-wim --wim_type odl --url http://dummy-wim-odl --user osm --password osm --wim_port_mapping dummy_wim_port_mappings.json
 ```
 
 
