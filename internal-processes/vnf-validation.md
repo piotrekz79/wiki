@@ -10,7 +10,7 @@ The VNF archive is submitted to the portal. This automatically creates a ticket 
 This first step triggers that at least the portal has correctly parsed the descriptor.
 
 ## VNF Validation
-The VNF submition triggers a Validation mechanism and a related message appears to the Bugzilla ticket. If the submitted VNF passes successfully the Validation, the VNF is marked as Certified, the ticket status is changed to RESOLVED-FIXED automatically in the portal and the VNF resubmittion is not further allowed.
+The VNF submition triggers a Validation mechanism and a related message appears to the Bugzilla ticket. If the submitted VNF passes successfully the Validation, the ticket status is changed to RESOLVED-FIXED automatically in the portal.
 
 ## VNF Onboarding
 ### OSM2
