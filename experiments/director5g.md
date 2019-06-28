@@ -31,6 +31,7 @@ This scenario represents a case with 2 slices (in this case we dont have any per
 
 The scenario is as follows:
 
+![Ndn Hydra Slice Ping Scheme](/uploads/director-5-g/ndn-hydra-slice-ping-scheme.png "Ndn Hydra Slice Ping Scheme")
 # Testing
 
 From "ndn_hydra_client_2tx_2rx" ping the tap interfaces of "ndn_hydra_rx1" and "ndn_hydra_rx2" with IPs 1.1.1.2 and 2.2.2.2, respectively.
@@ -44,11 +45,6 @@ From "ndn_hydra_rx2" ping the tap1 interface of ""ndn_hydra_client_2tx_2rx", IP 
 ping 2.2.2.1
 
 # Troubleshooting
-
-Access our OpenStack server.
-
-You should see your VMs as shown below:
-
 Access each VM and kill the python process.
 
 In machine "ndn_hydra-server" exec (replace 192.168.5.54 by the ip of iris2):
