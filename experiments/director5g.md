@@ -1,36 +1,37 @@
-<!-- TITLE: Director 5G -->
+<!-- TITLE: Director 5G DynamIc REsource instantiation and ConTrol for 5G content delivery netwORks -->
 <!-- SUBTITLE: A quick summary of Director 5 G -->
 
 
-# Director 5G DynamIc REsource instantiation and ConTrol for 5G content delivery netwORks 
-
-	##build
+# build 
 
 The build script creates all the following VNFD and NS files:
 
-ndn_hydra_client_2tx_2rx_vnfd.tar.gz
-ndn_hydra_server_vnfd.tar.gz
-ndn_hydra_client_rx2_vnfd.tar.gz
-ndn_hydra_client_rx2_vnfd.tar.gz
-ndn_hydra_basic_nsd.tar.gz
-ndn_cdn_server_vnf.tar.gz
+##ndn_hydra_client_2tx_2rx_vnfd.tar.gz
+##ndn_hydra_server_vnfd.tar.gz
+##ndn_hydra_client_rx2_vnfd.tar.gz
+##ndn_hydra_client_rx2_vnfd.tar.gz
+##ndn_hydra_basic_nsd.tar.gz
+##ndn_cdn_server_vnf.tar.gz
+
 File 5 is a basic experiment consisting of a 2-EVI Base Station (ndn_hydra_client_2tx_rx and ndn_hydra_server), 2 clients (rx1 and rx3, for the 1st and 2nd EVI, respectively), and the ndn_cdn server hosting NDN data.
 
 To execute the build script just type:
 
-./build
-	#osm	
+##./build
+# osm	
 	
 The osm script is a simple utilitaria to easen the task of installing, uninstalling, creating, and deleting VNDFs and NSDs. Type the following command to get a detailed usage of it:
 
 ./osm l
-basic_nsd
+
+
+# basic_nsd
 
 This scenario represents a case with 2 slices (in this case we dont have any performance difference between them).
 
 The scenario is as follows:
 
-Testing
+# Testing
 
 From "ndn_hydra_client_2tx_2rx" ping the tap interfaces of "ndn_hydra_rx1" and "ndn_hydra_rx2" with IPs 1.1.1.2 and 2.2.2.2, respectively.
 ping 1.1.1.2
@@ -41,7 +42,8 @@ From "ndn_hydra_rx1" ping the tap0 interface of ""ndn_hydra_client_2tx_2rx", IP 
 ping 1.1.1.1
 From "ndn_hydra_rx2" ping the tap1 interface of ""ndn_hydra_client_2tx_2rx", IP 2.2.2.1
 ping 2.2.2.1
-Troubleshooting
+
+# Troubleshooting
 
 Access our OpenStack server.
 
