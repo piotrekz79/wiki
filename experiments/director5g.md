@@ -1,7 +1,8 @@
 <!-- TITLE: Director 5G DynamIc REsource instantiation and ConTrol for 5G content delivery netwORks -->
-<!-- SUBTITLE: A quick summary of Director 5 G -->
+<!-- SUBTITLE: A quick Tutorial how to compile and start the Director 5G VNF and Named data networking experiment over the HyDRA radio slice -->
 
-
+# download DIRECTOR 5G VNFs from github
+git clone https://github.com/jerryocoileain/director5g-vnfd.git
 # build 
 
 The build script creates all the following VNFD and NS files:
