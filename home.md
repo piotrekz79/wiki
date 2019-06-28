@@ -50,6 +50,8 @@ The following pages present different topics regarding 5GinFIRE services.
 [5GinFIRE VRU-safe](experiments/VRUsafe)
 ### 5. SFCLola
 [Experimenting with SFCLola VNF](/uploads/sfclola/vnf-vff.pdf "Vnf Vff")
+### 6. DIRECTOR 5G
+[Experiment with the DIRECTOR 5G Named Data Network Future Internet Architecture NFV](experiments/director5g)
 ## Representative Experiments by TestBed Providers
 
 ### 1. Bristol Smart City
