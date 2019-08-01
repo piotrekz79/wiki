@@ -94,20 +94,51 @@ If so, you can test the API at:
 
 If you get an answer, then NEF is working and you are not blocked by IDPS.
 
-# Experimenting
+# Basic Experimenting
 
-In machine "AF" exec:
+In machine "AF 1" exec:
 
 ```text
 python ~/NEF-develop_v2/af/af.py 1
 ```
 
+In machine "AF 2", edit the following file:
 
+```text
+~/NEF-develop_v2/af/af.py
 
+- afSubscribeOnNEF()
+- triggerRequest()
+- time.sleep(1)
++ #afSubscribeOnNEF()
++ #triggerRequest()
++ time.sleep(60)
+```
+
+Finally, in "AF 2" run:
+
+```text
+python ~/NEF-develop_v2/af/af.py 1
+```
+
+Outcome: AF 1 will get blocked by IDPS, while AF 2 will remain unblocked and getting responses as expected.
 # Troubleshooting
-Access each VM and kill the python process.
+Access each VM and kill all Python processes. Services will relaunch automatically.
 
+```text
+killall python
+```
 
+If one machine is not able to access the other, check the IP addresses of the target machine. Sometimes the interface used by Sec5G components fails to come up in OpenStack instances.
 
+List all interfaces and view interface name:
 
+```text
+ifconfig -a
+```
 
+Bring interface up:
+
+```text
+ifconfig <iface_name> up
+```
