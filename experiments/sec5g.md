@@ -76,7 +76,7 @@ NSD
 
 The default NSD included in the package has the following architecture:
 
-![NSD](/uploads/Sec5G-Basic-NSD.png "Basic NSD")
+![NSD](https://cloud.onesource.pt/s/MStB5r5oWKe2c9j/preview "Basic NSD")
 
 # Testing
 
