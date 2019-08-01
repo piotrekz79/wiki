@@ -1,5 +1,5 @@
 <!-- TITLE: Sec5G: Securing 5G for Mission Critical Services  -->
-<!-- SUBTITLE: A quick tutorial on how to run Sec5G experiments -->
+<!-- SUBTITLE: A quick tutorial on how to run basic Sec5G experiments -->
 
 # Download Sec5G Images
 AF: https://cloud.onesource.pt/s/Wx8SL7R43RxMF9K
