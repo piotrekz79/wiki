@@ -80,13 +80,13 @@ The default NSD included in the package has the following architecture:
 
 # Testing
 
-From the AF, ping NEF and check if you are able to access its API at port 5002:
+From the AF, ping NEF and check if you are able to access the machine:
 
 ```text
 ping 192.168.100.18
 ```
 
-If so, you can test the API at:
+If so, you can test the API with:
 
 ```text
  curl 192.168.100.18:5002
