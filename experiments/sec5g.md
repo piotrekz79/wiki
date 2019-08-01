@@ -76,7 +76,7 @@ NSD
 
 The default NSD included in the package has the following architecture:
 
-![Ndn Hydra Slice Ping Scheme](/uploads/director-5-g/ndn-hydra-slice-ping-scheme.png "Ndn Hydra Slice Ping Scheme")
+![NSD](/uploads/sec-5-g/Sec5G-Basic-NSD.png "Basic NSD")
 
 # Testing
 
