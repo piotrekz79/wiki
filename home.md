@@ -58,6 +58,8 @@ The following pages present different topics regarding 5GinFIRE services.
 ### 8. FB5G 
 [5GinFIRE FB5G](experiments/FB5G)
 
+### 9. COSMOS
+[5GinFIRE Computation Offloading for Smart Touristic Sites - COSMOS](/uploads/cosmos-wiki.pdf)
 
 
 ## Representative Experiments by TestBed Providers
