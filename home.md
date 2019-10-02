@@ -61,6 +61,8 @@ The following pages present different topics regarding 5GinFIRE services.
 ### 9. COSMOS
 [5GinFIRE Computation Offloading for Smart Touristic Sites - COSMOS](/uploads/cosmos-wiki.pdf)
 
+### 10. MARATHON
+[Experiment with the MARATHON RSMF - WINS_5G](experiments/marathon_upc)
 
 ## Representative Experiments by TestBed Providers
 
