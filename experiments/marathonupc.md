@@ -17,7 +17,7 @@ Universitat Politecnica de Catalunya (UPC)
 
 # MARATHON VNFs from GitHub
 
-The MARATHON VNFs are available at GitHub: https://github.com/annaumbert/Marathon/tree/master/RSMF/multi%20slice/vnfd_ansible
+The MARATHON VNFs are available at GitHub: https://github.com/annaumbert/Marathon/tree/master/vnfd_ansible
 
 ## build
 
