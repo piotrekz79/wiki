@@ -9,7 +9,7 @@ More specifically, an experimenter may want to dynamically establish service cha
 
 Our reference use case consists of multiple Vertical Applications (VAs) (e.g., video transcoder, face detection, face recognition) and/or Virtual Network Functions (VNFs) (e.g., firewall, NAT, DPI, load balancer) deployed and connected to each others through a SDN-based network. 
 
-http://wiki.5ginfire.eu/uploads/slicenet/slicenet1.png
+![Scenario for a service chain composed of VAs/VNFs](/uploads/slicenet/slicenet1.png "Scenario for a service chain composed of VAs/VNFs")
 
 Figure. 1 Scenario for a service chain composed of VAs/VNFs
 
