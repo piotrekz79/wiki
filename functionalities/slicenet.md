@@ -10,6 +10,9 @@ More specifically, an experimenter may want to dynamically establish service cha
 Our reference use case consists of multiple Vertical Applications (VAs) (e.g., video transcoder, face detection, face recognition) and/or Virtual Network Functions (VNFs) (e.g., firewall, NAT, DPI, load balancer) deployed and connected to each others through a SDN-based network. 
 
 
+
+
+
 In the following, as an example, we will consider two VAs connected through a SDN network. To do so, we build a NSD and two different VNFDs that allow for a network slice to be deployed with: (i) one VNF running SDN components (i.e., an SDN controller connected to one or more OpenFlow switches) connecting (ii) other two VNFs supposed to run different application software modules.
 
 We rely on cloud-init for the configuration of the VNFs by directly bringing the configuration scripts within the VNFDs. 
