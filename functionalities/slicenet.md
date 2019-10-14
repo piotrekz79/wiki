@@ -11,7 +11,6 @@ Our reference use case consists of multiple Vertical Applications (VAs) (e.g., v
 
 ![Scenario for a service chain composed of VAs/VNFs](/uploads/slicenet/slicenet1.png "Scenario for a service chain composed of VAs/VNFs")
 
-Figure. 1 Scenario for a service chain composed of VAs/VNFs
 
 In the following, as an example, we will consider two VAs connected through a SDN network. To do so, we build a NSD and two different VNFDs that allow for a network slice to be deployed with: (i) one VNF running SDN components (i.e., an SDN controller connected to one or more OpenFlow switches) connecting (ii) other two VNFs supposed to run different application software modules.
 
@@ -21,6 +20,8 @@ We rely on cloud-init for the configuration of the VNFs by directly bringing the
 
 The experiment starts by requiring the NS set-up by sending a request to OSM for onboarding the VNFD and NSD descriptors. Once the descriptors are validated, the NS deployment request is submitted to the target VIM. The VIM creates the necessary VMs (three in this example) according to the requirements specified in the descriptors. Once the VMs are instantiated, through cloud-init, the configuration scripts are executed and the configurations carried out. 
  
+ 
+![Slicenet-5G Network Service graph example](/uploads/slicenet/slicenet2.png "Slicenet-5G Network Service graph example")
 Figure. 2 Slicenet-5G Network Service graph example
 
 Initially, the three VMs are based on a simple Ubuntu image with three network interfaces as specified in the NSD (1 for management and 2 for data plane). Then, the following software is installed to create the slice:
