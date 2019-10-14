@@ -11,7 +11,7 @@ Our reference use case consists of multiple Vertical Applications (VAs) (e.g., v
 
 
 
-
+Figure. 1 Scenario for a service chain composed of VAs/VNFs
 
 In the following, as an example, we will consider two VAs connected through a SDN network. To do so, we build a NSD and two different VNFDs that allow for a network slice to be deployed with: (i) one VNF running SDN components (i.e., an SDN controller connected to one or more OpenFlow switches) connecting (ii) other two VNFs supposed to run different application software modules.
 
