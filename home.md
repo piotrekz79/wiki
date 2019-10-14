@@ -64,6 +64,11 @@ The following pages present different topics regarding 5GinFIRE services.
 ### 10. MARATHON
 [Experiment with the MARATHON RSMF - WINS_5G](experiments/marathon_upc)
 
+
+## Advanced functionalities
+
+[Slicenet-5g](functionalities/slicenet)
+
 ## Representative Experiments by TestBed Providers
 
 ### 1. Bristol Smart City
