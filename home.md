@@ -64,6 +64,9 @@ The following pages present different topics regarding 5GinFIRE services.
 ### 10. MARATHON
 [Experiment with the MARATHON RSMF - WINS_5G](experiments/marathon_upc)
 
+### 11. P4in5G
+[5GinFIRE P4in5G](experiments/p4in5G)
+
 
 ## Advanced functionalities
 
