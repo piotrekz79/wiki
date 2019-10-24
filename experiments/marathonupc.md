@@ -8,7 +8,7 @@ It was conceived to investigate the practical implementation and management of n
 
 The implementation of the MARATHON experiment consists of five Virtual Network Functions (VNFs) and four USRPs, as illustrated the figure. The VNFs are implemented using Linux Virtual Machines (VM).
 
-![Marathon architecture](/uploads/marathon/Marathon-components.png) { width=50% }
+![Marathon architecture](/uploads/marathon/Marathon-components.png) { width=20% }
 
 ### **Organization:** 
 Universitat Politecnica de Catalunya (UPC)
