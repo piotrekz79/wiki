@@ -26,7 +26,7 @@ in the `charms` subfolder of VNFD, next to the experimenter's charm . An example
 Note, that the `deployer` must the only charm in experimenter's VNFD in `charms` sections
 while the experimenter's charms land as parameters, see the example in `~/vnfds/vaf_vnfd` folder
 
-Finally, VNFD (as well as NSD) needs to be packaged and uploded to OSM. A simple script is provided for the illustration:
+Next, VNFD (as well as NSD) needs to be packaged and uploaded to OSM. A simple script is provided for the illustration:
 
 
 ```
@@ -64,4 +64,21 @@ rm ~/vnfds/${VNF}.tar.gz
 #osm upload-package ${VNF}.tar.gz
 #osm upload-package ${NSD}.tar.gz
 
+```
+
+In order to deploy, certain parameters need to be provided, by sourcing the appropriate file, see `~/scripts/generic.rc` for example.
+The experimenters need to alter at least `NSD_NAME`. Optionally, new juju model can be created which requires changing `MODEL` parameter. 
+Finally `~/scripts/deploy.sh` needs to be called to start a deployment. `undeploy.sh` script destroys the deployed model.
+
+```
+ubuntu@osm:~/scripts$ cat generic.rc
+#!/bin/bash
+
+export LOGIN=ubuntu
+export PASSWORD=ubuntu
+export VIM=5GINFIRE-tenants
+export CLOUD=firecloud-controller
+export MODEL=default
+export NSD_NAME=e2e_service
+export NS_NAME=video_aggregation
 ```
